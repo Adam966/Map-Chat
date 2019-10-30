@@ -1,0 +1,94 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.project.mapchat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:4:22-76
+12
+13    <uses-feature
+13-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:9:5-11:35
+14        android:glEsVersion="0x00020000"
+14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:10:9-41
+15        android:required="true" />
+15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:11:9-32
+16    <uses-feature
+16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:12:5-14:36
+17        android:name="android.hardware.wifi"
+17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:13:9-45
+18        android:required="false" /> <!-- Implied by ACCESS_WIFI_STATE. -->
+18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:14:9-33
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:16:5-67
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:16:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:5-79
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:22-76
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:5-76
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:22-73
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
+23
+24    <application
+24-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:5:5-19:19
+25        android:allowBackup="true"
+25-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:6:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:7:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:8:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:9:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:10:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:11:9-40
+34        <activity android:name="com.project.mapchat.MainActivity" >
+34-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:12:9-18:20
+34-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:12:19-47
+35            <intent-filter>
+35-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:13:13-17:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:14:17-69
+36-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:14:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:16:17-77
+38-->C:\Users\MI\Desktop\ProjektMapChat\app\src\main\AndroidManifest.xml:16:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <provider
+42-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
+43            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+43-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
+44            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
+44-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
+45            android:exported="false"
+45-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
+46            android:initOrder="100" />
+46-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
+47
+48        <service
+48-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
+49            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+49-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
+50            android:permission="android.permission.BIND_JOB_SERVICE" />
+50-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
+51    </application>
+52
+53</manifest>
