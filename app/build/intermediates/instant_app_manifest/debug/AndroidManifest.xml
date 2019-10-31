@@ -32,6 +32,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.project.mapchat.SettingsActivity" />
+        <activity android:name="com.project.mapchat.GroupsActivity" />
         <activity android:name="com.project.mapchat.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

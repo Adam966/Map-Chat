@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/action_groups"
+        android:enabled="true"
+        android:title="Groups"
+        android:icon="@mipmap/ic_groups"
+        android:roundIcon="@mipmap/ic_groups_round"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@mipmap/ic_home"
+        android:roundIcon="@mipmap/ic_home_round"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:title="Settings"
+        android:icon="@mipmap/ic_settings"
+        android:roundIcon="@mipmap/ic_settings_round"
+        app:showAsAction="ifRoom" />
+
+</menu>
