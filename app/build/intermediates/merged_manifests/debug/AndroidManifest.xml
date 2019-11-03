@@ -31,6 +31,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.project.mapchat.Onboarding" />
+        <activity
+            android:name="com.project.mapchat.ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
         <activity android:name="com.project.mapchat.SettingsActivity" />
         <activity android:name="com.project.mapchat.GroupsActivity" />
         <activity android:name="com.project.mapchat.MainActivity" >
@@ -50,6 +54,12 @@
         <service
             android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.project.mapchat.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

@@ -40,7 +40,7 @@
 22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:22-65
 23
 24    <application
-24-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:7:5-23:19
+24-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:7:5-27:19
 25        android:allowBackup="true"
 25-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:8:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -57,44 +57,64 @@
 32        android:testOnly="true"
 33        android:theme="@style/AppTheme" >
 33-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-40
-34        <activity android:name="com.project.mapchat.SettingsActivity" />
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-63
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:19-51
-35        <activity android:name="com.project.mapchat.GroupsActivity" />
-35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-52
-35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:19-49
-36        <activity android:name="com.project.mapchat.MainActivity" >
-36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-22:20
-36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:19-47
-37            <intent-filter>
-37-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:13-21:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:17-69
-38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:17-77
-40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:27-74
-41            </intent-filter>
-42        </activity>
+34        <activity android:name="com.project.mapchat.Onboarding" />
+34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-57
+34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:19-45
+35        <activity
+35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-17:60
+36            android:name="com.project.mapchat.ui.login.LoginActivity"
+36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:13-51
+37            android:label="@string/title_activity_login" />
+37-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:13-57
+38        <activity android:name="com.project.mapchat.SettingsActivity" />
+38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:9-54
+38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:19-51
+39        <activity android:name="com.project.mapchat.GroupsActivity" />
+39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:9-52
+39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:19-49
+40        <activity android:name="com.project.mapchat.MainActivity" >
+40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:9-26:20
+40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:19-47
+41            <intent-filter>
+41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:13-25:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:22:17-69
+42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:22:25-66
 43
-44        <provider
-44-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
-45            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-45-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
-46            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
-46-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
-47            android:exported="false"
-47-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
-48            android:initOrder="100" />
-48-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
-49
-50        <service
-50-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
-51            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-51-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
-52            android:permission="android.permission.BIND_JOB_SERVICE" />
-52-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
-53    </application>
-54
-55</manifest>
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:24:17-77
+44-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:24:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <provider
+48-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
+49            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+49-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
+50            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
+50-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
+51            android:exported="false"
+51-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
+52            android:initOrder="100" />
+52-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
+53
+54        <service
+54-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
+55            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+55-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
+56            android:permission="android.permission.BIND_JOB_SERVICE" />
+56-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
+57
+58        <provider
+58-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+59            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+60            android:authorities="com.project.mapchat.lifecycle-process"
+60-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+61            android:exported="false"
+61-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+62            android:multiprocess="true" />
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+63    </application>
+64
+65</manifest>
