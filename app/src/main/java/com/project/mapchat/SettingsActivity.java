@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
                         break;
                     case R.id.action_groups:
                         //Toast.makeText(MainActivity.this, "Group Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentGroups = new Intent(SettingsActivity.this,GroupsActivity.class);
+                        Intent intentGroups = new Intent(SettingsActivity.this, EventsActivity.class);
                         startActivity(intentGroups);
                         break;
                     case R.id.action_settings:

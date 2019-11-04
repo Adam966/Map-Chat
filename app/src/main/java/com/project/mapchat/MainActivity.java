@@ -4,11 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
@@ -19,6 +19,7 @@ import com.mapbox.mapboxsdk.maps.Style;
 public class MainActivity extends AppCompatActivity {
 
     private MapView mapView;
+    String preferences_name = "isFirstTime";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.action_groups:
                         //Toast.makeText(MainActivity.this, "Group Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentGroups = new Intent(MainActivity.this,GroupsActivity.class);
+                        Intent intentGroups = new Intent(MainActivity.this, EventsActivity.class);
                         startActivity(intentGroups);
                         break;
                     case R.id.action_settings:
@@ -65,10 +66,32 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intentSettings);
                         break;
                 }
-                return true;
+            return true;
             }
         });
+
     }
+
+    /*
+    public  void  firstTime(){
+
+        SharedPreferences sharedTime = getSharedPreferences(preferences_name,0);
+        if (sharedTime.getBoolean("firstTime",true))
+        {
+            Intent i = new Intent(MainActivity.this,OnboardingActivity.class);
+            startActivity(i);
+
+            Toast.makeText(MainActivity.this,
+                    "First time", Toast.LENGTH_LONG).show();
+
+            sharedTime.edit().putBoolean("firstTime",false).apply();
+        }
+        else
+        {
+            Toast.makeText(MainActivity.this,
+                    "Second Time", Toast.LENGTH_LONG).show();
+        }
+    }*/
 
     @Override
     public void onStart() {

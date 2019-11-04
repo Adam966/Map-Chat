@@ -1271,6 +1271,7 @@ id beginning
 id blocking
 id bottom
 id bottom_navigation
+id btnOnboarding
 id buttonPanel
 id center
 id center_horizontal
@@ -1429,6 +1430,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1510,6 +1512,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_event_add
 layout activity_groups
 layout activity_login
 layout activity_main

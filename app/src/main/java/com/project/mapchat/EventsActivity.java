@@ -9,7 +9,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class GroupsActivity extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +23,17 @@ public class GroupsActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()){
                     case R.id.action_home:
                         //Toast.makeText(MainActivity.this, "Home Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentHome = new Intent(GroupsActivity.this,MainActivity.class);
+                        Intent intentHome = new Intent(EventsActivity.this,MainActivity.class);
                         startActivity(intentHome);
                         break;
                     case R.id.action_groups:
                         //Toast.makeText(MainActivity.this, "Group Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentGroups = new Intent(GroupsActivity.this,GroupsActivity.class);
+                        Intent intentGroups = new Intent(EventsActivity.this, EventsActivity.class);
                         startActivity(intentGroups);
                         break;
                     case R.id.action_settings:
                         //Toast.makeText(MainActivity.this, "Settings Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentSettings = new Intent(GroupsActivity.this,SettingsActivity.class);
+                        Intent intentSettings = new Intent(EventsActivity.this,SettingsActivity.class);
                         startActivity(intentSettings);
                         break;
                 }
