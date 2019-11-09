@@ -6,132 +6,230 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+8-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+9-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:5:5-79
-11-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:5:22-76
-12
-13    <uses-feature
-13-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:9:5-11:35
-14        android:glEsVersion="0x00020000"
-14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:10:9-41
-15        android:required="true" />
-15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:11:9-32
-16    <uses-feature
-16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:12:5-14:36
-17        android:name="android.hardware.wifi"
-17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:13:9-45
-18        android:required="false" /> <!-- Implied by ACCESS_WIFI_STATE. -->
-18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:14:9-33
-19    <uses-permission android:name="android.permission.INTERNET" />
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:5-67
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:22-64
-20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:17:5-79
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:17:22-76
-21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:18:5-76
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:18:22-73
-22    <uses-permission android:name="android.permission.WAKE_LOCK" />
-22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:5-68
-22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:22-65
-23
-24    <application
-24-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:7:5-34:19
-25        android:allowBackup="true"
-25-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:8:9-35
-26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
-27        android:debuggable="true"
-28        android:icon="@mipmap/ic_launcher"
-28-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:9:9-43
-29        android:label="@string/app_name"
-29-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:10:9-41
-30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:11:9-54
-31        android:supportsRtl="true"
-31-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:12:9-35
-32        android:testOnly="true"
-33        android:theme="@style/AppTheme" >
-33-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-40
-34        <activity android:name="com.project.mapchat.EventAddActivity" />
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-53
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:19-51
-35        <activity
-35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-22:20
-36            android:name="com.project.mapchat.OnboardingActivity"
-36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:19-53
-37            android:launchMode="singleTask" >
-37-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:13-44
-38            <intent-filter>
-38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-21:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:17-69
-39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:17-77
-41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity
-44-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:9-25:60
-45            android:name="com.project.mapchat.ui.login.LoginActivity"
-45-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:24:13-51
-46            android:label="@string/title_activity_login" />
-46-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:25:13-57
-47        <activity android:name="com.project.mapchat.SettingsActivity" />
-47-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:9-54
-47-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:19-51
-48        <activity android:name="com.project.mapchat.EventsActivity" />
-48-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:9-52
-48-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:19-49
-49        <activity android:name="com.project.mapchat.MainActivity" >
-49-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:9-33:20
-49-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:19-47
-50            <intent-filter>
-50-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-21:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:17-69
-51-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:25-66
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:17-77
-53-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:27-74
-54            </intent-filter>
-55        </activity>
-56
-57        <provider
-57-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
-58            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-58-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
-59            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
-59-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
-60            android:exported="false"
-60-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
-61            android:initOrder="100" />
-61-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
-62
-63        <service
-63-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
-64            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-64-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
-65            android:permission="android.permission.BIND_JOB_SERVICE" />
-65-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
-66
-67        <provider
-67-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-68            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-68-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-69            android:authorities="com.project.mapchat.lifecycle-process"
-69-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-70            android:exported="false"
-70-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-71            android:multiprocess="true" />
-71-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-72    </application>
+11-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <uses-feature
+14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:9:5-11:35
+15        android:glEsVersion="0x00020000"
+15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:10:9-41
+16        android:required="true" />
+16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:11:9-32
+17    <uses-feature
+17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:12:5-14:36
+18        android:name="android.hardware.wifi"
+18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:13:9-45
+19        android:required="false" />
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:14:9-33
+20
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:5-79
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:22-76
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:5-76
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:22-73
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
+23-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
+24
+25    <application
+25-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:8:5-56:19
+26        android:allowBackup="true"
+26-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:9:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:10:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:11:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:12:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:13:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:14:9-40
+35        <activity android:name="com.project.mapchat.Login" />
+35-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:15:9-52
+35-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:15:19-40
+36        <activity android:name="com.project.mapchat.EventAddActivity" />
+36-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:16:9-54
+36-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:16:19-51
+37        <activity
+37-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:17:9-25:20
+38            android:name="com.project.mapchat.OnboardingActivity"
+38-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:18:13-47
+39            android:launchMode="singleTask" >
+39-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:19:13-44
+40            <intent-filter>
+40-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:20:13-24:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:21:17-69
+41-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:21:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:23:17-77
+43-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:23:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity android:name="com.project.mapchat.SettingsActivity" />
+46-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:26:9-54
+46-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:26:19-51
+47        <activity android:name="com.project.mapchat.EventsActivity" />
+47-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:27:9-52
+47-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:27:19-49
+48        <activity android:name="com.project.mapchat.MainActivity" >
+48-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:28:9-34:20
+48-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:28:19-47
+49            <intent-filter>
+49-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:20:13-24:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:21:17-69
+50-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:21:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:23:17-77
+52-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:23:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <meta-data
+56-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:36:9-38:55
+57            android:name="com.facebook.sdk.ApplicationId"
+57-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:37:13-58
+58            android:value="@string/facebook_app_id" />
+58-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:38:13-52
+59
+60        <activity
+60-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:40:9-43:48
+61            android:name="com.facebook.FacebookActivity"
+61-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:41:13-57
+62            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+62-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:42:13-96
+63            android:label="@string/app_name"
+63-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:43:13-45
+64            android:theme="@style/com_facebook_activity_theme" />
+64-->[com.facebook.android:facebook-common:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dc03b603f392a9c2b632d8314fb67eb0\jetified-facebook-common-5.9.0\AndroidManifest.xml:32:13-63
+65        <activity
+65-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:44:9-55:20
+66            android:name="com.facebook.CustomTabActivity"
+66-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:45:13-58
+67            android:exported="true" >
+67-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:46:13-36
+68            <intent-filter>
+68-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:47:13-54:29
+69                <action android:name="android.intent.action.VIEW" />
+69-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:48:17-69
+69-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:48:25-66
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:50:17-76
+71-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:50:27-73
+72                <category android:name="android.intent.category.BROWSABLE" />
+72-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:51:17-78
+72-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:51:27-75
 73
-74</manifest>
+74                <data android:scheme="@string/fb_login_protocol_scheme" />
+74-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:53:17-75
+74-->C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:53:23-72
+75            </intent-filter>
+76        </activity>
+77        <activity android:name="com.facebook.CustomTabMainActivity" />
+77-->[com.facebook.android:facebook-common:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dc03b603f392a9c2b632d8314fb67eb0\jetified-facebook-common-5.9.0\AndroidManifest.xml:33:9-71
+77-->[com.facebook.android:facebook-common:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dc03b603f392a9c2b632d8314fb67eb0\jetified-facebook-common-5.9.0\AndroidManifest.xml:33:19-68
+78
+79        <provider
+79-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
+80            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+80-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
+81            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
+81-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
+82            android:exported="false"
+82-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
+83            android:initOrder="100" />
+83-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
+84
+85        <service
+85-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
+86            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+86-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
+87            android:permission="android.permission.BIND_JOB_SERVICE" />
+87-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
+88
+89        <provider
+89-->[com.facebook.android:facebook-marketing:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\50f6a381604fc054d16da0ff1c52b6e6\jetified-facebook-marketing-5.9.0\AndroidManifest.xml:29:9-32:40
+90            android:name="com.facebook.marketing.internal.MarketingInitProvider"
+90-->[com.facebook.android:facebook-marketing:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\50f6a381604fc054d16da0ff1c52b6e6\jetified-facebook-marketing-5.9.0\AndroidManifest.xml:30:13-81
+91            android:authorities="com.project.mapchat.MarketingInitProvider"
+91-->[com.facebook.android:facebook-marketing:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\50f6a381604fc054d16da0ff1c52b6e6\jetified-facebook-marketing-5.9.0\AndroidManifest.xml:31:13-73
+92            android:exported="false" />
+92-->[com.facebook.android:facebook-marketing:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\50f6a381604fc054d16da0ff1c52b6e6\jetified-facebook-marketing-5.9.0\AndroidManifest.xml:32:13-37
+93        <!--
+94         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+95         with the application context. This config is merged in with the host app's manifest,
+96         but there can only be one provider with the same authority activated at any given
+97         point; so if the end user has two or more different apps that use Facebook SDK, only the
+98         first one will be able to use the provider. To work around this problem, we use the
+99         following placeholder in the authority to identify each host application as if it was
+100         a completely different provider.
+101        -->
+102        <provider
+102-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:39:9-42:40
+103            android:name="com.facebook.internal.FacebookInitProvider"
+103-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:40:13-70
+104            android:authorities="com.project.mapchat.FacebookInitProvider"
+104-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:41:13-72
+105            android:exported="false" />
+105-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:42:13-37
+106
+107        <receiver
+107-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:44:9-50:20
+108            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+108-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:45:13-86
+109            android:exported="false" >
+109-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:46:13-37
+110            <intent-filter>
+110-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:47:13-49:29
+111                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+111-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:48:17-95
+111-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:48:25-92
+112            </intent-filter>
+113        </receiver>
+114        <receiver
+114-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:51:9-58:20
+115            android:name="com.facebook.CampaignTrackingReceiver"
+115-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:52:13-65
+116            android:exported="true"
+116-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:53:13-36
+117            android:permission="android.permission.INSTALL_PACKAGES" >
+117-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:54:13-69
+118            <intent-filter>
+118-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:55:13-57:29
+119                <action android:name="com.android.vending.INSTALL_REFERRER" />
+119-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:56:17-79
+119-->[com.facebook.android:facebook-core:5.9.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bca19a7f7a7f809860eb9e993b107b73\jetified-facebook-core-5.9.0\AndroidManifest.xml:56:25-76
+120            </intent-filter>
+121        </receiver>
+122
+123        <provider
+123-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+124            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+124-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+125            android:authorities="com.project.mapchat.lifecycle-process"
+125-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+126            android:exported="false"
+126-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+127            android:multiprocess="true" />
+127-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+128    </application>
+129
+130</manifest>

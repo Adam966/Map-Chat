@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml",
+            "outputFile": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
             "map": [
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/res/values-he/values-he.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\79a88ff61eeaafd90916c40b41439a5a\\jetified-mapbox-android-sdk-8.4.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
