@@ -1,465 +1,452 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-android-sdk:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3de2350c0e601f1d27d06ee613c38424/facebook-android-sdk-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d363553db64fe03de19e308c7aab8cc8/jetified-facebook-login-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/da7122120fa1d6787305ac7b01ee3fdf/jetified-facebook-share-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:21:1-37:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:2:1-20:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e694a7e2aff166e32bb925c16729a19b/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:2:1-12:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1964611a1907e3ea07b40ce4c516c284/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.browser:browser:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d52aa75563c2cc8edb955a24f2134bd9/browser-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/34085af895daa23049fd0af188e6a001/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:2:1-30:12
-MERGED from [com.facebook.android:facebook-places:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/32cc727ed8f596119acbbcb28b90b111/facebook-places-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/82b4f859dea4c24e8b0fbcefed345711/jetified-facebook-applinks-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b800951b5f60c7c525d47a6cc5f7291f/facebook-messenger-5.9.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:21:1-61:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ba2af06f417607d7ef1ca9f201a0d139/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/402e2fb3baa5e6ca3b4a0d7ccbd7cd5b/transition-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d0ded5cea15f573b35d37971b2cb5d6d/jetified-mapbox-android-gestures-0.5.1/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f3997ce16a5c00ae84a772d300d0e1e8/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/331f61861c2d3a925f2252286afb1f53/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/daa47187fb0f0a7c419d1b10e1677cdd/activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/beed28e19d4f55ab2c17aff66e0bc400/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e0d80e5c178a0db065288a448fc598ef/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/04087833f388d5ffa97a080d757646c2/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eb11c4797d5d5b24d5dcbbebe26babf4/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/740a70a0c89c8c085b6e012b4bd7790e/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/31dc29ba3158cee4b1ca2bf2f6ff141b/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/435f1166e6a428a0025d9cd273cb35a2/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/a6ce3afbff3f1ae3fa1fe13048b173d9/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/aa91d8d2653c363bbd5da9d9892260d3/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ccc4f60e4549c263b614feec2a027fa2/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/730df1fa1dcdcf65ffb5a0d2aefd2e91/jetified-mapbox-android-accounts-0.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/420f294924962582b4c42c622af43461/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/66e997bde0b6ece28f7fd36f5f4a1584/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8787729f29cf7add1bc29c81caccddfd/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0a3a404008aebf912522087cf0742529/lifecycle-service-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0ba63abb86f498920538dfcd0a627f47/circleimageview-3.0.1/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/6470973f5963fca7901b5b9580a77997/soloader-0.6.1/AndroidManifest.xml:2:1-13:12
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-android-sdk:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\3de2350c0e601f1d27d06ee613c38424\facebook-android-sdk-5.9.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5453097e8e047d8cd37caf4a89b7daae\jetified-facebook-login-5.11.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\63c013d3056baf8b3a39ab6476595575\jetified-facebook-share-5.11.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:21:1-37:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e694a7e2aff166e32bb925c16729a19b\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d52aa75563c2cc8edb955a24f2134bd9\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:2:1-30:12
+MERGED from [com.facebook.android:facebook-places:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\32cc727ed8f596119acbbcb28b90b111\facebook-places-5.9.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\fb78bb6bd7549b2548e63745813160a3\jetified-facebook-applinks-5.11.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\b800951b5f60c7c525d47a6cc5f7291f\facebook-messenger-5.9.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:21:1-61:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\402e2fb3baa5e6ca3b4a0d7ccbd7cd5b\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f2bc75d0f26f025b90fb778ae411d564\jetified-mapbox-android-gestures-0.5.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\04087833f388d5ffa97a080d757646c2\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\18971f30f8898b97e87c58d10c939e57\jetified-mapbox-android-accounts-0.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0a3a404008aebf912522087cf0742529\lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0ba63abb86f498920538dfcd0a627f47\circleimageview-3.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.soloader:soloader:0.6.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\6470973f5963fca7901b5b9580a77997\soloader-0.6.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:2:1-14:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
 	package
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:3:5-34
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:1-52:12
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:5:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:13:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:13:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:11:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:11:5-79
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:13:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:13:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:11:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:16:5-67
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:16:5-67
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:16:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:16:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:16:5-67
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:16:5-67
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:8:5-54:19
-MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3de2350c0e601f1d27d06ee613c38424/facebook-android-sdk-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3de2350c0e601f1d27d06ee613c38424/facebook-android-sdk-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d363553db64fe03de19e308c7aab8cc8/jetified-facebook-login-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d363553db64fe03de19e308c7aab8cc8/jetified-facebook-login-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/da7122120fa1d6787305ac7b01ee3fdf/jetified-facebook-share-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/da7122120fa1d6787305ac7b01ee3fdf/jetified-facebook-share-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:28:5-35:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e694a7e2aff166e32bb925c16729a19b/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e694a7e2aff166e32bb925c16729a19b/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:10:5-20
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:18:5-28:19
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:18:5-28:19
-MERGED from [com.facebook.android:facebook-places:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/32cc727ed8f596119acbbcb28b90b111/facebook-places-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/32cc727ed8f596119acbbcb28b90b111/facebook-places-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/82b4f859dea4c24e8b0fbcefed345711/jetified-facebook-applinks-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/82b4f859dea4c24e8b0fbcefed345711/jetified-facebook-applinks-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b800951b5f60c7c525d47a6cc5f7291f/facebook-messenger-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b800951b5f60c7c525d47a6cc5f7291f/facebook-messenger-5.9.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:28:5-59:19
-MERGED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:28:5-59:19
-MERGED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:9:5-20
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
-MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0ba63abb86f498920538dfcd0a627f47/circleimageview-3.0.1/AndroidManifest.xml:9:5-20
-MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0ba63abb86f498920538dfcd0a627f47/circleimageview-3.0.1/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/6470973f5963fca7901b5b9580a77997/soloader-0.6.1/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/6470973f5963fca7901b5b9580a77997/soloader-0.6.1/AndroidManifest.xml:11:5-20
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:8:5-50:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\3de2350c0e601f1d27d06ee613c38424\facebook-android-sdk-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\3de2350c0e601f1d27d06ee613c38424\facebook-android-sdk-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5453097e8e047d8cd37caf4a89b7daae\jetified-facebook-login-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5453097e8e047d8cd37caf4a89b7daae\jetified-facebook-login-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\63c013d3056baf8b3a39ab6476595575\jetified-facebook-share-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\63c013d3056baf8b3a39ab6476595575\jetified-facebook-share-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:28:5-35:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e694a7e2aff166e32bb925c16729a19b\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e694a7e2aff166e32bb925c16729a19b\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:18:5-28:19
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:18:5-28:19
+MERGED from [com.facebook.android:facebook-places:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\32cc727ed8f596119acbbcb28b90b111\facebook-places-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\32cc727ed8f596119acbbcb28b90b111\facebook-places-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\fb78bb6bd7549b2548e63745813160a3\jetified-facebook-applinks-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\fb78bb6bd7549b2548e63745813160a3\jetified-facebook-applinks-5.11.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\b800951b5f60c7c525d47a6cc5f7291f\facebook-messenger-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\b800951b5f60c7c525d47a6cc5f7291f\facebook-messenger-5.9.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:28:5-59:19
+MERGED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:28:5-59:19
+MERGED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:22:5-28:19
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0ba63abb86f498920538dfcd0a627f47\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0ba63abb86f498920538dfcd0a627f47\circleimageview-3.0.1\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\6470973f5963fca7901b5b9580a77997\soloader-0.6.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\6470973f5963fca7901b5b9580a77997\soloader-0.6.1\AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.project.mapchat.Login
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-52
-	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:19-40
-activity#com.project.mapchat.EventAddActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-54
-	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:19-51
-activity#com.project.mapchat.OnboardingActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:9-25:20
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:15:9-21:41
 	android:launchMode
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:13-44
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:16:13-44
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:15:19-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:17-69
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.project.mapchat.EventAddActivity
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:22:9-54
+	android:name
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:22:19-51
+activity#com.project.mapchat.OnboardingActivity
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:23:9-26:20
+	android:name
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:24:13-47
 activity#com.project.mapchat.SettingsActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:9-54
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:27:9-54
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:19-51
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:27:19-51
 activity#com.project.mapchat.EventsActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:9-52
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:28:9-52
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:19-49
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:28:19-49
 activity#com.project.mapchat.MainActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:9-34:20
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:29:9-30:20
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:19-47
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:29:19-47
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:36:9-38:55
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:32:9-34:55
 	android:value
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:13-52
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:34:13-52
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:37:13-58
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:33:13-58
 activity#com.facebook.FacebookActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:9-43:48
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:29:9-32:66
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:36:9-39:48
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:43:13-45
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:39:13-45
 	android:configChanges
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:13-96
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:38:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:13-57
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:37:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:44:9-53:20
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:34:9-67
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:34:9-67
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:40:9-49:20
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:34:9-67
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:45:13-58
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:41:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:47:13-52:29
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:43:13-48:29
 action#android.intent.action.VIEW
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:17-69
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:17-76
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:45:17-76
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:27-73
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:45:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:17-78
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:46:17-78
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:27-75
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:46:27-75
 data
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:17-75
+ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:47:17-75
 	android:scheme
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:23-72
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml:47:23-72
 uses-sdk
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-android-sdk:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3de2350c0e601f1d27d06ee613c38424/facebook-android-sdk-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3de2350c0e601f1d27d06ee613c38424/facebook-android-sdk-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d363553db64fe03de19e308c7aab8cc8/jetified-facebook-login-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d363553db64fe03de19e308c7aab8cc8/jetified-facebook-login-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/da7122120fa1d6787305ac7b01ee3fdf/jetified-facebook-share-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/da7122120fa1d6787305ac7b01ee3fdf/jetified-facebook-share-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8392647ca9531c13a8f0d6b7ad086e7e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e694a7e2aff166e32bb925c16729a19b/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e694a7e2aff166e32bb925c16729a19b/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5eab63e3e217f33e4882f2fa7cd985ff/glide-4.10.0/AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1964611a1907e3ea07b40ce4c516c284/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1964611a1907e3ea07b40ce4c516c284/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/add2bdb41de46d90e5d3bd4e75929820/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/dd07e922b5233b833d82ee834e6becf7/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bbc51c53aec70aeae5178e82f15e817a/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d52aa75563c2cc8edb955a24f2134bd9/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d52aa75563c2cc8edb955a24f2134bd9/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abc680e55824c418c024460e31034ed4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/34085af895daa23049fd0af188e6a001/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/34085af895daa23049fd0af188e6a001/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-places:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/32cc727ed8f596119acbbcb28b90b111/facebook-places-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/32cc727ed8f596119acbbcb28b90b111/facebook-places-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/82b4f859dea4c24e8b0fbcefed345711/jetified-facebook-applinks-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/82b4f859dea4c24e8b0fbcefed345711/jetified-facebook-applinks-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b800951b5f60c7c525d47a6cc5f7291f/facebook-messenger-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b800951b5f60c7c525d47a6cc5f7291f/facebook-messenger-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:24:5-26:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ba2af06f417607d7ef1ca9f201a0d139/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ba2af06f417607d7ef1ca9f201a0d139/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/402e2fb3baa5e6ca3b4a0d7ccbd7cd5b/transition-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/402e2fb3baa5e6ca3b4a0d7ccbd7cd5b/transition-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d0ded5cea15f573b35d37971b2cb5d6d/jetified-mapbox-android-gestures-0.5.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d0ded5cea15f573b35d37971b2cb5d6d/jetified-mapbox-android-gestures-0.5.1/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f3997ce16a5c00ae84a772d300d0e1e8/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f3997ce16a5c00ae84a772d300d0e1e8/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/331f61861c2d3a925f2252286afb1f53/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/331f61861c2d3a925f2252286afb1f53/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/daa47187fb0f0a7c419d1b10e1677cdd/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/daa47187fb0f0a7c419d1b10e1677cdd/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/beed28e19d4f55ab2c17aff66e0bc400/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/beed28e19d4f55ab2c17aff66e0bc400/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e0d80e5c178a0db065288a448fc598ef/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e0d80e5c178a0db065288a448fc598ef/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/04087833f388d5ffa97a080d757646c2/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/04087833f388d5ffa97a080d757646c2/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eb11c4797d5d5b24d5dcbbebe26babf4/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eb11c4797d5d5b24d5dcbbebe26babf4/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/740a70a0c89c8c085b6e012b4bd7790e/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/740a70a0c89c8c085b6e012b4bd7790e/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/31dc29ba3158cee4b1ca2bf2f6ff141b/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/31dc29ba3158cee4b1ca2bf2f6ff141b/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/435f1166e6a428a0025d9cd273cb35a2/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/435f1166e6a428a0025d9cd273cb35a2/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/a6ce3afbff3f1ae3fa1fe13048b173d9/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/a6ce3afbff3f1ae3fa1fe13048b173d9/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/aa91d8d2653c363bbd5da9d9892260d3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/aa91d8d2653c363bbd5da9d9892260d3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ccc4f60e4549c263b614feec2a027fa2/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ccc4f60e4549c263b614feec2a027fa2/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/730df1fa1dcdcf65ffb5a0d2aefd2e91/jetified-mapbox-android-accounts-0.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/730df1fa1dcdcf65ffb5a0d2aefd2e91/jetified-mapbox-android-accounts-0.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/420f294924962582b4c42c622af43461/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/420f294924962582b4c42c622af43461/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/66e997bde0b6ece28f7fd36f5f4a1584/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/66e997bde0b6ece28f7fd36f5f4a1584/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8787729f29cf7add1bc29c81caccddfd/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8787729f29cf7add1bc29c81caccddfd/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e90be152f08ce99fb09048a87e58bfc3/gifdecoder-4.10.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c9c8616d74aa0ab3eb457d24b669c685/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ef17d609918d2a5f5a86d1ea02678f/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9d52be8c254a228a91eaf05f51d52923/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/9093771a98b01557e81860f4122d7892/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7ec682ca46f5c90ea9a9e0cba0c0310a/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0a3a404008aebf912522087cf0742529/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0a3a404008aebf912522087cf0742529/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0554424e228349ffc3db0700d1324aa1/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bad233a64070d55cab9a83b26afbf154/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7acef2a7bfef3795312317efec15d83e/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0ba63abb86f498920538dfcd0a627f47/circleimageview-3.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0ba63abb86f498920538dfcd0a627f47/circleimageview-3.0.1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/6470973f5963fca7901b5b9580a77997/soloader-0.6.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/6470973f5963fca7901b5b9580a77997/soloader-0.6.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:7:5-9:41
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\3de2350c0e601f1d27d06ee613c38424\facebook-android-sdk-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\3de2350c0e601f1d27d06ee613c38424\facebook-android-sdk-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5453097e8e047d8cd37caf4a89b7daae\jetified-facebook-login-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5453097e8e047d8cd37caf4a89b7daae\jetified-facebook-login-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\63c013d3056baf8b3a39ab6476595575\jetified-facebook-share-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\63c013d3056baf8b3a39ab6476595575\jetified-facebook-share-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e694a7e2aff166e32bb925c16729a19b\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e694a7e2aff166e32bb925c16729a19b\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d52aa75563c2cc8edb955a24f2134bd9\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d52aa75563c2cc8edb955a24f2134bd9\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\34085af895daa23049fd0af188e6a001\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-places:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\32cc727ed8f596119acbbcb28b90b111\facebook-places-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\32cc727ed8f596119acbbcb28b90b111\facebook-places-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\fb78bb6bd7549b2548e63745813160a3\jetified-facebook-applinks-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\fb78bb6bd7549b2548e63745813160a3\jetified-facebook-applinks-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\b800951b5f60c7c525d47a6cc5f7291f\facebook-messenger-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\b800951b5f60c7c525d47a6cc5f7291f\facebook-messenger-5.9.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ba2af06f417607d7ef1ca9f201a0d139\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\402e2fb3baa5e6ca3b4a0d7ccbd7cd5b\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\402e2fb3baa5e6ca3b4a0d7ccbd7cd5b\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f2bc75d0f26f025b90fb778ae411d564\jetified-mapbox-android-gestures-0.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-gestures:0.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f2bc75d0f26f025b90fb778ae411d564\jetified-mapbox-android-gestures-0.5.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\f3997ce16a5c00ae84a772d300d0e1e8\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\331f61861c2d3a925f2252286afb1f53\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\daa47187fb0f0a7c419d1b10e1677cdd\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\beed28e19d4f55ab2c17aff66e0bc400\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e0d80e5c178a0db065288a448fc598ef\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\04087833f388d5ffa97a080d757646c2\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\04087833f388d5ffa97a080d757646c2\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\eb11c4797d5d5b24d5dcbbebe26babf4\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\740a70a0c89c8c085b6e012b4bd7790e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\31dc29ba3158cee4b1ca2bf2f6ff141b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\a6ce3afbff3f1ae3fa1fe13048b173d9\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\18971f30f8898b97e87c58d10c939e57\jetified-mapbox-android-accounts-0.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-accounts:0.2.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\18971f30f8898b97e87c58d10c939e57\jetified-mapbox-android-accounts-0.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\d4ef17d609918d2a5f5a86d1ea02678f\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7ec682ca46f5c90ea9a9e0cba0c0310a\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0a3a404008aebf912522087cf0742529\lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0a3a404008aebf912522087cf0742529\lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0554424e228349ffc3db0700d1324aa1\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bad233a64070d55cab9a83b26afbf154\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\7acef2a7bfef3795312317efec15d83e\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0ba63abb86f498920538dfcd0a627f47\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\0ba63abb86f498920538dfcd0a627f47\circleimageview-3.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\6470973f5963fca7901b5b9580a77997\soloader-0.6.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\6470973f5963fca7901b5b9580a77997\soloader-0.6.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\MI\Desktop\MapChat\app\src\main\AndroidManifest.xml
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/11d90aa731fcd895ee5268ad48ef6f0f/jetified-facebook-common-5.9.0/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\ea2a8db289fa4a29b7e505adb9db73c3\jetified-facebook-common-5.11.0\AndroidManifest.xml:33:19-68
 uses-feature#0x00020000
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:9:5-11:35
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:9:5-11:35
 	android:glEsVersion
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:10:9-41
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:10:9-41
 	android:required
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:11:9-32
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:11:9-32
 uses-feature#android.hardware.wifi
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:12:5-14:36
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:12:5-14:36
 	android:required
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:14:9-33
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:14:9-33
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:13:9-45
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:13:9-45
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:17:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:14:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:14:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:12:5-79
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e2cd55fcb4e5957e006d2c7972e3bd4c/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:12:5-79
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:14:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:14:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:12:5-79
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\36bfe881fa20b48adfd55e2b7d549a22\jetified-mapbox-android-core-1.3.0\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:17:22-76
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:18:5-76
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:15:5-76
-MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:15:5-76
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:5-76
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:15:5-76
+MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:15:5-76
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:18:22-73
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\79a88ff61eeaafd90916c40b41439a5a\jetified-mapbox-android-sdk-8.4.0\AndroidManifest.xml:18:22-73
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:5-68
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:22-65
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
 provider#com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
 	android:authorities
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
 	android:exported
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
 	android:initOrder
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
 service#com.mapbox.android.telemetry.crash.CrashReporterJobIntentService
-ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
+ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
 	android:permission
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
 	android:name
-		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/01956565f468f53a33deb8aa0157936c/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
-provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:29:9-32:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:31:13-73
-	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-marketing:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/1c6033793f2cc4983166a9ea1792a3f6/jetified-facebook-marketing-5.9.0/AndroidManifest.xml:30:13-81
+		ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\38ebd28753d78929acbbe983fd2c8ba5\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:48:25-92
 receiver#com.facebook.CampaignTrackingReceiver
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:51:9-58:20
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:51:9-58:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:53:13-36
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:53:13-36
 	android:permission
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:54:13-69
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:54:13-69
 	android:name
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:52:13-65
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:52:13-65
 intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:55:13-57:29
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:55:13-57:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:56:17-79
+ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:17-79
 	android:name
-		ADDED from [com.facebook.android:facebook-core:5.9.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/698832f7e389f55c1a95febbd231ebfa/jetified-facebook-core-5.9.0/AndroidManifest.xml:56:25-76
+		ADDED from [com.facebook.android:facebook-core:5.11.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\16eec5284398b34ba1db4b73da253d68\jetified-facebook-core-5.11.0\AndroidManifest.xml:56:25-76
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
 	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\MI\.gradle\caches\transforms-2\files-2.1\bba9e662e9f4bf0da774229f97b853fc\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79

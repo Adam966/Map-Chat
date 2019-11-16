@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,7 +46,7 @@ public class Login extends AppCompatActivity {
         circleImageView = findViewById(R.id.profile_image);
 
         callbackManager = CallbackManager.Factory.create();
-        loginButton.setReadPermissions(Arrays.asList("email","public_profile"));
+        loginButton.setReadPermissions(Arrays.asList("email"));
         checkLogin();
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -94,29 +95,12 @@ public class Login extends AppCompatActivity {
             @Override
             public void onCompleted(JSONObject object, GraphResponse response)
             {
-                try {
-                    String firstName = object.getString("firstName");
-                    String lastName = object.getString("lastName");
-                    String email = object.getString("email");
-                    String id = object.getString("id");
-                    String image_url = "https//graph.facebook.com/"+id+"/picture?type=normal";
-
-                    txtName.setText(firstName+lastName);
-                    txtEmail.setText(email);
-
-                    RequestOptions reqOptions = new RequestOptions();
-                    reqOptions.dontAnimate();
-
-                    Glide.with(Login.this).load(image_url).into(circleImageView);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+                Log.i("FACEBOOK", object.toString());
             }
         });
 
         Bundle parameters = new Bundle();
-        parameters.putString("fields","firstName,lastName,email,id");
+        parameters.putString("fields","email");
         request.setParameters(parameters);
         request.executeAsync();
 
