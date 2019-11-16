@@ -17,7 +17,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -117,7 +117,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -141,7 +141,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_send_button_icon.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable\\com_facebook_send_button_icon.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable\\com_facebook_send_button_icon.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_messenger_button_send_white_small.xml.flat",
@@ -197,7 +197,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_icon.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_button_icon.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_button_icon.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -309,7 +309,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_logo_helmet.png.flat",
@@ -329,7 +329,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_blue.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
@@ -341,7 +341,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
@@ -361,7 +361,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_messenger_button_send_round_shadow.png.flat",
@@ -421,7 +421,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_header_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
@@ -441,7 +441,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_close.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -521,7 +521,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -533,7 +533,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_close.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_close.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_close.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mapbox_user_icon_stale.png.flat",
@@ -545,7 +545,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_messenger_bubble_large_blue.png.flat",
@@ -597,7 +597,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -629,7 +629,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
@@ -825,7 +825,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_radio_to_on_mtrl_animation_interpolator_0.xml.flat",
@@ -977,7 +977,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1021,7 +1021,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1085,7 +1085,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1093,7 +1093,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_checked_mtrl_animation_interpolator_1.xml.flat",
@@ -1109,7 +1109,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_button_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material_anim.xml.flat",
@@ -1257,7 +1257,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_settings_round.png.flat",
@@ -1265,7 +1265,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_list_divider_material.xml.flat",
@@ -1281,7 +1281,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_login_fragment.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\layout\\com_facebook_login_fragment.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\layout\\com_facebook_login_fragment.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_logo_icon.png.flat",
@@ -1313,7 +1313,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
@@ -1413,11 +1413,11 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat",
@@ -1433,7 +1433,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_close.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_close.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
@@ -1449,7 +1449,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1465,7 +1465,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon_white.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1489,7 +1489,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_send_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable\\com_facebook_button_send_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -1509,7 +1509,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_activity_layout.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\layout\\com_facebook_activity_layout.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
@@ -1537,7 +1537,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
@@ -1549,7 +1549,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_favicon_blue.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_favicon_blue.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_favicon_blue.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mapbox_logo_helmet.png.flat",
@@ -1577,7 +1577,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
@@ -1593,7 +1593,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_messenger_bubble_large_blue.png.flat",
@@ -1601,7 +1601,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mapbox_info_icon_default.png.flat",
@@ -1609,7 +1609,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_square.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_square.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
@@ -1701,7 +1701,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_portrait.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1781,7 +1781,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1909,7 +1909,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
@@ -1973,7 +1973,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_tooltip_bubble.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\layout\\com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
@@ -2189,7 +2189,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_mapbox_infowindow_content.xml.flat",
@@ -2265,7 +2265,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -2329,7 +2329,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
@@ -2349,7 +2349,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_home.png.flat",
@@ -2481,7 +2481,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_topnub.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_user_stroke_icon.png.flat",
@@ -2521,7 +2521,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -2569,7 +2569,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_com_facebook_button_text_color.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\color\\com_facebook_button_text_color.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\color\\com_facebook_button_text_color.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
@@ -2621,7 +2621,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_com_facebook_send_button_text_color.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\color\\com_facebook_send_button_text_color.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\color\\com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -2645,7 +2645,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\63c013d3056baf8b3a39ab6476595575\\jetified-facebook-share-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_white.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\109caf05885cca08ebad8eb1153d51de\\jetified-facebook-share-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
@@ -2689,7 +2689,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
@@ -2737,7 +2737,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_auth_dialog_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_auth_dialog_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -2873,7 +2873,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_design_password_eye.xml.flat",
@@ -2889,7 +2889,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\5453097e8e047d8cd37caf4a89b7daae\\jetified-facebook-login-5.11.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\7999c2a24f87a57f342c336cc2cdb7b2\\jetified-facebook-login-5.9.0\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_fab_ripple_color.xml.flat",
@@ -2941,7 +2941,7 @@
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable_com_facebook_button_like_background.xml.flat",
-        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\ea2a8db289fa4a29b7e505adb9db73c3\\jetified-facebook-common-5.11.0\\res\\drawable\\com_facebook_button_like_background.xml"
+        "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\dc03b603f392a9c2b632d8314fb67eb0\\jetified-facebook-common-5.9.0\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
         "merged": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",

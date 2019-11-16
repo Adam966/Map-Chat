@@ -160,10 +160,6 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
-attr civ_border_color
-attr civ_border_overlay
-attr civ_border_width
-attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1417,7 +1413,6 @@ id direct
 id disableHome
 id display_always
 id edit_query
-id email
 id end
 id end_padder
 id enterAlways
@@ -1432,7 +1427,6 @@ id filled
 id fixed
 id forever
 id ghost_view
-id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1469,7 +1463,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id name
 id navigation_header_container
 id never
 id never_display
@@ -1490,7 +1483,6 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
-id profile_image
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -1559,6 +1551,7 @@ id textStart
 id textView
 id textView2
 id textView3
+id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -2356,7 +2349,6 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
-styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha
