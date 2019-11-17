@@ -40,7 +40,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
->
         </activity>
         <activity android:name="com.project.mapchat.EventAddActivity" />
         <activity android:name="com.project.mapchat.OnboardingActivity" >

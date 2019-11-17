@@ -46,7 +46,7 @@ public class Login extends AppCompatActivity {
         circleImageView = findViewById(R.id.profile_image);
 
         callbackManager = CallbackManager.Factory.create();
-        loginButton.setReadPermissions(Arrays.asList("email"));
+        loginButton.setReadPermissions("public_profile email");
         checkLogin();
 
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
@@ -95,15 +95,28 @@ public class Login extends AppCompatActivity {
             @Override
             public void onCompleted(JSONObject object, GraphResponse response)
             {
-                Log.i("FACEBOOK", object.toString());
+                try {
+                    String name = object.getString("name");
+                    String email = object.getString("email");
+                    String id = object.getString("id");
+                    String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
+                    txtName.setText(name);
+                    txtEmail.setText(email);
+                    Glide.with(Login.this).load(imageUrl).into(circleImageView);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                /*Log.i("FACEBOOK", object.toString());
+                Log.i("NAME",name);
+                Log.i("EMAIL",email);*/
+
             }
         });
 
         Bundle parameters = new Bundle();
-        parameters.putString("fields","email");
+        parameters.putString("fields","id,name,link,email,picture");
         request.setParameters(parameters);
         request.executeAsync();
-
     }
 
     private void checkLogin(){
