@@ -1372,6 +1372,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnOnboarding
+id btn_logout
 id button
 id buttonPanel
 id cancel_action

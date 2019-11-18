@@ -8,24 +8,24 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/cb634fe4b4d1fdfcd5255e485d30a0c1/material-1.0.0/res/drawable-xxxhdpi-v4/design_ic_visibility_off.png"
     },
     {
-        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/layout/abc_dialog_title_material.xml"
-    },
-    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_icon.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/res/drawable-xxxhdpi-v4/mapbox_user_icon.png"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_abc_dialog_title_material.xml.flat",
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/55f3228f49ae3242e5b484c6c96a5e74/jetified-facebook-common-5.11.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
-    },
-    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/55f3228f49ae3242e5b484c6c96a5e74/jetified-facebook-common-5.11.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_bearing_icon.png.flat",
@@ -44,12 +44,12 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/res/drawable-mdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
-        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/res/drawable-xxhdpi-v4/mapbox_logo_icon.png"
-    },
-    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_logo_icon.png.flat",
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ca9b2934f425bafb8f26a0087440109d/jetified-mapbox-android-sdk-8.4.0/res/drawable-xxhdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
-        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_settings_round.png.flat",
-        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/mipmap-xxhdpi/ic_settings_round.png"
-    },
-    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_settings_round.png.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/mipmap-xxhdpi/ic_settings_round.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
