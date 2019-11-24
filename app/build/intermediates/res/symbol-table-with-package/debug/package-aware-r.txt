@@ -1417,7 +1417,6 @@ id direct
 id disableHome
 id display_always
 id edit_query
-id email
 id end
 id end_padder
 id enterAlways
@@ -1469,7 +1468,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id name
 id navigation_header_container
 id never
 id never_display

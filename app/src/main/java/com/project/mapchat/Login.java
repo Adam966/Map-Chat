@@ -35,8 +35,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class Login extends AppCompatActivity {
 
     private LoginButton loginButton;
-    private CircleImageView circleImageView;
-    private TextView txtName,txtEmail;
     private CallbackManager callbackManager;
 
     @Override
@@ -45,8 +43,6 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         loginButton = findViewById(R.id.login_button);
-        txtName = findViewById(R.id.name);
-        txtEmail = findViewById(R.id.email);
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
@@ -87,8 +83,6 @@ public class Login extends AppCompatActivity {
         protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken)
         {
             if(currentAccessToken==null){
-                txtName.setText("");
-                txtEmail.setText("");
                 Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG);
             }else{
                 loadUserProfile(currentAccessToken);
@@ -103,24 +97,13 @@ public class Login extends AppCompatActivity {
             public void onCompleted(JSONObject object, GraphResponse response)
             {
                 try {
-                    String name = object.getString("name");
-                    String email = object.getString("email");
                     String id = object.getString("id");
 
-                    SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
-                    editor.putString("id", id);
-                    editor.apply();
+                    setIdToPrefs(id);
 
-                    // String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
-                    txtName.setText(name);
-                    txtEmail.setText(email);
-                    // Glide.with(Login.this).load(imageUrl).into(circleImageView);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                /*Log.i("FACEBOOK", object.toString());
-                Log.i("NAME",name);
-                Log.i("EMAIL",email);*/
 
             }
         });
@@ -135,6 +118,13 @@ public class Login extends AppCompatActivity {
         if(AccessToken.getCurrentAccessToken() != null){
             loadUserProfile(AccessToken.getCurrentAccessToken());
         }
+    }
+
+
+    private void setIdToPrefs(String id){
+        SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
+        editor.putString("id", id);
+        editor.apply();
     }
 
 }
