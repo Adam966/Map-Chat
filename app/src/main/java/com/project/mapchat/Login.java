@@ -116,7 +116,9 @@ public class Login extends AppCompatActivity {
 
     private void checkLogin(){
         if(AccessToken.getCurrentAccessToken() != null){
-            loadUserProfile(AccessToken.getCurrentAccessToken());
+            //loadUserProfile(AccessToken.getCurrentAccessToken());
+            Intent i = new Intent(Login.this,MainActivity.class);
+            startActivity(i);
         }
     }
 
