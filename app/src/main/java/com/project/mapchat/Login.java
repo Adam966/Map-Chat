@@ -3,7 +3,9 @@ package com.project.mapchat;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -45,7 +47,6 @@ public class Login extends AppCompatActivity {
         loginButton = findViewById(R.id.login_button);
         txtName = findViewById(R.id.name);
         txtEmail = findViewById(R.id.email);
-        circleImageView = findViewById(R.id.profile_image);
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
@@ -58,7 +59,7 @@ public class Login extends AppCompatActivity {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
                        Log.i("SUCC","On success");
-                       Intent i = new Intent(Login.this,SettingsActivity.class);
+                       Intent i = new Intent(Login.this,OnboardingActivity.class);
                        startActivity(i);
                     }
 
@@ -88,7 +89,6 @@ public class Login extends AppCompatActivity {
             if(currentAccessToken==null){
                 txtName.setText("");
                 txtEmail.setText("");
-                circleImageView.setImageResource(0);
                 Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG);
             }else{
                 loadUserProfile(currentAccessToken);
@@ -106,10 +106,15 @@ public class Login extends AppCompatActivity {
                     String name = object.getString("name");
                     String email = object.getString("email");
                     String id = object.getString("id");
-                    String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
+
+                    SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
+                    editor.putString("id", id);
+                    editor.apply();
+
+                    // String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
                     txtName.setText(name);
                     txtEmail.setText(email);
-                    Glide.with(Login.this).load(imageUrl).into(circleImageView);
+                    // Glide.with(Login.this).load(imageUrl).into(circleImageView);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

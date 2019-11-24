@@ -4,18 +4,23 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.bumptech.glide.Glide;
 import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class SettingsActivity extends AppCompatActivity {
 
     private Button logoutBtn;
+    private CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +28,9 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         logoutBtn = findViewById(R.id.btn_logout);
+        circleImageView = findViewById(R.id.profile_image);
+
+        setImage(getUserId());
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,4 +66,16 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
     }
+
+    private String getUserId(){
+        SharedPreferences prefs = getSharedPreferences("user", MODE_PRIVATE);
+        String id = prefs.getString("id",null);
+        return id;
+    }
+
+    private void setImage(String id){
+        String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
+        Glide.with(SettingsActivity.this).load(imageUrl).into(circleImageView);
+    }
+
 }

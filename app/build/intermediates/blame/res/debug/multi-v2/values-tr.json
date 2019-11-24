@@ -4,7 +4,24 @@
             "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/37ec02f661e3547c5499ecdfd9f3cd1f/appcompat-1.1.0/res/values-tr/values-tr.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-tr/values-tr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "5396",
+                        "endColumns": "100",
+                        "endOffsets": "5492"
+                    }
+                },
+                {
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0bfcde3a3bada73dbb0a11d4b4175d5c/jetified-facebook-login-5.11.0/res/values-tr/values-tr.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/389e19f6f2bd4e48dcd58a4861941ddf/jetified-facebook-login-5.11.2/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,23 +52,6 @@
                         "startOffsets": "2797,2959,3096,3232,3345,3430,3516,3596,3684,3776,3889,3999,4092,4185,4292,4412,4494,4577,4754,4850,4959,5075,5178",
                         "endColumns": "161,136,135,112,84,85,79,87,91,112,109,92,92,106,119,81,82,176,95,108,115,102,138",
                         "endOffsets": "2954,3091,3227,3340,3425,3511,3591,3679,3771,3884,3994,4087,4180,4287,4407,4489,4572,4749,4845,4954,5070,5173,5312"
-                    }
-                },
-                {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/res/values-tr/values-tr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "53",
-                        "startColumns": "4",
-                        "startOffsets": "5396",
-                        "endColumns": "100",
-                        "endOffsets": "5492"
                     }
                 }
             ]

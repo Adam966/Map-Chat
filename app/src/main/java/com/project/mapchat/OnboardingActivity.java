@@ -25,7 +25,6 @@ public class OnboardingActivity extends AppCompatActivity {
                /* Intent intentMain = new Intent(OnboardingActivity.this, MainActivity.class);
                 startActivity(intentMain);*/
                 Intent i=new Intent(OnboardingActivity.this, MainActivity.class);
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }
         });
