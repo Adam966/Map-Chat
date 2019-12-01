@@ -104,7 +104,6 @@ public class Login extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
             }
         });
 
@@ -118,6 +117,7 @@ public class Login extends AppCompatActivity {
         if(AccessToken.getCurrentAccessToken() != null){
             //loadUserProfile(AccessToken.getCurrentAccessToken());
             Intent i = new Intent(Login.this,MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
         }
     }

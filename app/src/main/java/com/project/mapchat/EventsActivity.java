@@ -11,8 +11,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class EventsActivity extends AppCompatActivity {
 
+    private SharedPrefs modSharedPrefs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        modSharedPrefs = new SharedPrefs(this);
+
+        if(modSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groups);
 

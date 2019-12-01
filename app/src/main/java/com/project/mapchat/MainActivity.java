@@ -19,10 +19,20 @@ import com.mapbox.mapboxsdk.maps.Style;
 public class MainActivity extends AppCompatActivity {
 
     private MapView mapView;
+    private SharedPrefs modSharedPrefs;
     String preferences_name = "isFirstTime";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        modSharedPrefs = new SharedPrefs(this);
+
+        if(modSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
 
         Mapbox.getInstance(this, getString(R.string.access_token));

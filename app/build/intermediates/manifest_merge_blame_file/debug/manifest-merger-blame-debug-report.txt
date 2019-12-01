@@ -56,8 +56,8 @@
 32        android:supportsRtl="true"
 32-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-35
 33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-40
+34        android:theme="@style/AppNormal" >
+34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-41
 35        <activity
 35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-22:20
 36            android:name="com.project.mapchat.Login"

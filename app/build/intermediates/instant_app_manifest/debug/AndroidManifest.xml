@@ -32,7 +32,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppNormal" >
         <activity
             android:name="com.project.mapchat.Login"
             android:launchMode="singleTask" >

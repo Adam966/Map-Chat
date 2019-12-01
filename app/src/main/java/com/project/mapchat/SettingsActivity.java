@@ -10,9 +10,12 @@ import android.provider.Settings;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
 import com.facebook.login.LoginManager;
+import com.facebook.share.Share;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -21,11 +24,38 @@ public class SettingsActivity extends AppCompatActivity {
 
     private Button logoutBtn;
     private CircleImageView circleImageView;
+    private SharedPrefs modSharedPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        modSharedPrefs = new SharedPrefs(this);
+
+        if(modSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        final Switch switchDarkMode = findViewById(R.id.switchDark);
+        if(modSharedPrefs.loadDarkModeState() == true){
+            switchDarkMode.setChecked(true);
+        }
+        switchDarkMode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    modSharedPrefs.setDarkModeState(true);
+                    restart();
+                }else{
+                    modSharedPrefs.setDarkModeState(false);
+                    restart();
+                }
+            }
+        });
 
         logoutBtn = findViewById(R.id.btn_logout);
         circleImageView = findViewById(R.id.profile_image);
@@ -76,6 +106,11 @@ public class SettingsActivity extends AppCompatActivity {
     private void setImage(String id){
         String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
         Glide.with(SettingsActivity.this).load(imageUrl).into(circleImageView);
+    }
+
+    private void restart(){
+        Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
+        startActivity(i);
     }
 
 }
