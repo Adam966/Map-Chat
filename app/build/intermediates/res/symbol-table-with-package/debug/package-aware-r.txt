@@ -1798,6 +1798,7 @@ string path_password_strike_through
 string search_menu_title
 string settings
 string status_bar_notification_info_overflow
+string user_location_permission
 string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
