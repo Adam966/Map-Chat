@@ -34,21 +34,23 @@
         android:testOnly="true"
         android:theme="@style/AppNormal" >
         <activity
-            android:name="com.project.mapchat.Login"
-            android:launchMode="singleTask" >
+            android:name="com.project.mapchat.Splash"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.project.mapchat.Login"
+            android:launchMode="singleTask" />
         <activity android:name="com.project.mapchat.EventAddActivity" />
-        <activity android:name="com.project.mapchat.OnboardingActivity" >
-        </activity>
+        <activity android:name="com.project.mapchat.OnboardingActivity" />
         <activity android:name="com.project.mapchat.SettingsActivity" />
         <activity android:name="com.project.mapchat.EventsActivity" />
-        <activity android:name="com.project.mapchat.MainActivity" >
-        </activity>
+        <activity android:name="com.project.mapchat.MainActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

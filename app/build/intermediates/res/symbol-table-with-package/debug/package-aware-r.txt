@@ -1289,6 +1289,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable splash_bkg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1646,6 +1647,7 @@ layout activity_login
 layout activity_main
 layout activity_onboarding
 layout activity_settings
+layout activity_splash
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -2045,6 +2047,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
