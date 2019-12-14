@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,8 @@ import org.json.JSONObject;
 import java.util.Arrays;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+import static android.view.View.GONE;
 
 public class Login extends AppCompatActivity {
 
@@ -116,9 +119,12 @@ public class Login extends AppCompatActivity {
     private void checkLogin(){
         if(AccessToken.getCurrentAccessToken() != null){
             //loadUserProfile(AccessToken.getCurrentAccessToken());
+            setViewInvisible();
             Intent i = new Intent(Login.this,MainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
+        }else{
+            setViewVisible();
         }
     }
 
@@ -127,6 +133,16 @@ public class Login extends AppCompatActivity {
         SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
         editor.putString("id", id);
         editor.apply();
+    }
+
+    private void setViewInvisible(){
+        findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
+        findViewById(R.id.login_button).setVisibility(GONE);
+    }
+
+    private void setViewVisible() {
+        findViewById(R.id.loadingBar).setVisibility(GONE);
+        findViewById(R.id.login_button).setVisibility(View.VISIBLE);
     }
 
 }
