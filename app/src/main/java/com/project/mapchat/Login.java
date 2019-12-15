@@ -134,8 +134,8 @@ public class Login extends AppCompatActivity {
     }
 
     // request pre friendov
-    private void getFbFriends(AccessToken newAccesToken){
-        GraphRequest request2 = GraphRequest.newMyFriendsRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONArrayCallback() {
+    private void getFbFriends(AccessToken newAccessToken){
+        GraphRequest request2 = GraphRequest.newMyFriendsRequest(newAccessToken, new GraphRequest.GraphJSONArrayCallback() {
             @Override
             public void onCompleted(JSONArray jsonArray, GraphResponse graphResponse) {
                 Log.i("RESPONSE2",jsonArray.toString());
