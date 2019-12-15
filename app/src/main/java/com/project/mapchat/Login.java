@@ -27,6 +27,7 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -56,7 +57,7 @@ public class Login extends AppCompatActivity {
         FacebookSdk.addLoggingBehavior(LoggingBehavior.INCLUDE_ACCESS_TOKENS);
 
         callbackManager = CallbackManager.Factory.create();
-        loginButton.setReadPermissions("public_profile email");
+        loginButton.setReadPermissions("public_profile email user_friends");
 
         checkLogin();
 
@@ -65,7 +66,7 @@ public class Login extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                        setViewInvisible();
+                       setViewInvisible();
                        Log.i("SUCC","On success");
                        Intent i = new Intent(Login.this,OnboardingActivity.class);
                        startActivity(i);
@@ -89,6 +90,7 @@ public class Login extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    //pri zmene tokenu napr. pri jeho vymazaní
     AccessTokenTracker tokenTracker = new AccessTokenTracker() {
         @Override
         protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken)
@@ -101,11 +103,12 @@ public class Login extends AppCompatActivity {
                }
             }else{
                 loadUserProfile(currentAccessToken);
+                getFbFriends(currentAccessToken);
             }
         }
     };
 
-    // callback pre request
+    // request pre profil uzivatela
     private void loadUserProfile(AccessToken newAccessToken){
 
         GraphRequest request = GraphRequest.newMeRequest(newAccessToken, new GraphRequest.GraphJSONObjectCallback() {
@@ -113,6 +116,7 @@ public class Login extends AppCompatActivity {
             public void onCompleted(JSONObject object, GraphResponse response)
             {
                 try {
+                    Log.i("RESPONSE",response.toString());
                     String id = object.getString("id");
                     Toast.makeText(Login.this, "loadUserProfile"+AccessToken.getCurrentAccessToken().toString() , Toast.LENGTH_SHORT).show();
                     appSharedPrefs.setId(id);
@@ -124,9 +128,20 @@ public class Login extends AppCompatActivity {
         });
 
         Bundle parameters = new Bundle();
-        parameters.putString("fields","id,name,link,email,picture");
+        parameters.putString("fields","id,name,link,email,picture,friends");
         request.setParameters(parameters);
         request.executeAsync();
+    }
+
+    // request pre friendov
+    private void getFbFriends(AccessToken newAccesToken){
+        GraphRequest request2 = GraphRequest.newMyFriendsRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONArrayCallback() {
+            @Override
+            public void onCompleted(JSONArray jsonArray, GraphResponse graphResponse) {
+                Log.i("RESPONSE2",jsonArray.toString());
+            }
+        });
+        request2.executeAsync();
     }
 
     private void checkLogin(){
