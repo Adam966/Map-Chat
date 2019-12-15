@@ -39,11 +39,14 @@ public class Login extends AppCompatActivity {
 
     private LoginButton loginButton;
     private CallbackManager callbackManager;
+    private SharedPrefs appSharedPrefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        appSharedPrefs = new SharedPrefs(this);
 
         loginButton = findViewById(R.id.login_button);
 
@@ -51,8 +54,10 @@ public class Login extends AppCompatActivity {
 
         callbackManager = CallbackManager.Factory.create();
         loginButton.setReadPermissions("public_profile email");
+
         checkLogin();
 
+        // prihlásenie cez facebook
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
@@ -80,19 +85,19 @@ public class Login extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-
     AccessTokenTracker tokenTracker = new AccessTokenTracker() {
         @Override
         protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken)
         {
             if(currentAccessToken==null){
-                Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG);
+                Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG).show();
             }else{
                 loadUserProfile(currentAccessToken);
             }
         }
     };
 
+    // callback pre request
     private void loadUserProfile(AccessToken newAccessToken){
 
         GraphRequest request = GraphRequest.newMeRequest(newAccessToken, new GraphRequest.GraphJSONObjectCallback() {
@@ -101,8 +106,7 @@ public class Login extends AppCompatActivity {
             {
                 try {
                     String id = object.getString("id");
-
-                    setIdToPrefs(id);
+                    appSharedPrefs.setId(id);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -119,21 +123,14 @@ public class Login extends AppCompatActivity {
     private void checkLogin(){
         if(AccessToken.getCurrentAccessToken() != null){
             //loadUserProfile(AccessToken.getCurrentAccessToken());
-            setViewInvisible();
-            Intent i = new Intent(Login.this,MainActivity.class);
-            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(i);
-        }else{
-            setViewVisible();
+            //setViewInvisible();
+            //Intent i = new Intent(Login.this,MainActivity.class);
+            //i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            //startActivity(i);
+            Toast.makeText(this, "checkLogin() "+AccessToken.getCurrentAccessToken().toString(), Toast.LENGTH_SHORT).show();
         }
     }
 
-
-    private void setIdToPrefs(String id){
-        SharedPreferences.Editor editor = getSharedPreferences("user", MODE_PRIVATE).edit();
-        editor.putString("id", id);
-        editor.apply();
-    }
 
     private void setViewInvisible(){
         findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);

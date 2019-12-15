@@ -4,20 +4,39 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class SharedPrefs {
-    SharedPreferences modSharedPrefs;
+    SharedPreferences appSharedPrefs;
 
     protected SharedPrefs(Context context){
-        modSharedPrefs = context.getSharedPreferences("filename",Context.MODE_PRIVATE);
+        appSharedPrefs = context.getSharedPreferences("appUser",Context.MODE_PRIVATE);
     }
 
     protected void setDarkModeState(Boolean state){
-        SharedPreferences.Editor editor = modSharedPrefs.edit();
+        SharedPreferences.Editor editor = appSharedPrefs.edit();
         editor.putBoolean("darkmode",state);
         editor.commit();
     }
 
     protected Boolean loadDarkModeState(){
-        Boolean state = modSharedPrefs.getBoolean("darkmode",false);
+        Boolean state = appSharedPrefs.getBoolean("darkmode",false);
         return state;
+    }
+
+    protected void setId(String id){
+        SharedPreferences.Editor editor = appSharedPrefs.edit();
+        editor.putString("id", id);
+        editor.apply();
+    }
+
+    protected String getId(){
+        String id = appSharedPrefs.getString("id",null);
+        return id;
+    }
+
+    protected void setToken(){
+
+    }
+
+    protected void getToken(){
+
     }
 }
