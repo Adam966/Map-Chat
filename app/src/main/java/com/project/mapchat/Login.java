@@ -22,6 +22,7 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
+import com.facebook.LoggingBehavior;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
@@ -51,6 +52,8 @@ public class Login extends AppCompatActivity {
         loginButton = findViewById(R.id.login_button);
 
         FacebookSdk.sdkInitialize(getApplicationContext());
+        FacebookSdk.setIsDebugEnabled(true);
+        FacebookSdk.addLoggingBehavior(LoggingBehavior.INCLUDE_ACCESS_TOKENS);
 
         callbackManager = CallbackManager.Factory.create();
         loginButton.setReadPermissions("public_profile email");
@@ -62,6 +65,7 @@ public class Login extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
+                        setViewInvisible();
                        Log.i("SUCC","On success");
                        Intent i = new Intent(Login.this,OnboardingActivity.class);
                        startActivity(i);
@@ -90,7 +94,11 @@ public class Login extends AppCompatActivity {
         protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken)
         {
             if(currentAccessToken==null){
-                Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG).show();
+               // Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG).show();
+               if(AccessToken.getCurrentAccessToken() == null){
+                   setViewVisible();
+                   Toast.makeText(Login.this, "TOKEN REMOVED", Toast.LENGTH_SHORT).show();
+               }
             }else{
                 loadUserProfile(currentAccessToken);
             }
@@ -106,6 +114,7 @@ public class Login extends AppCompatActivity {
             {
                 try {
                     String id = object.getString("id");
+                    Toast.makeText(Login.this, "loadUserProfile"+AccessToken.getCurrentAccessToken().toString() , Toast.LENGTH_SHORT).show();
                     appSharedPrefs.setId(id);
 
                 } catch (JSONException e) {
@@ -121,12 +130,12 @@ public class Login extends AppCompatActivity {
     }
 
     private void checkLogin(){
+
         if(AccessToken.getCurrentAccessToken() != null){
-            //loadUserProfile(AccessToken.getCurrentAccessToken());
-            //setViewInvisible();
-            //Intent i = new Intent(Login.this,MainActivity.class);
-            //i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            //startActivity(i);
+            setViewInvisible();
+            Intent i = new Intent(Login.this,MainActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
             Toast.makeText(this, "checkLogin() "+AccessToken.getCurrentAccessToken().toString(), Toast.LENGTH_SHORT).show();
         }
     }
