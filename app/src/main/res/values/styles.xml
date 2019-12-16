@@ -21,5 +21,14 @@
         <item name="android:windowBackground">@drawable/splash_bkg</item>
     </style>
 
+    <style name="AppNormal.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppNormal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppNormal.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 
 </resources>

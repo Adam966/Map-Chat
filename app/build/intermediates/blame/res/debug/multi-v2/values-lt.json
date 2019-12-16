@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml",
+            "outputFile": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\3e5d1904bc8aa42ced67c1cf1c95c275\\jetified-mapbox-android-sdk-8.4.0\\res\\values-lt\\values-lt.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,236,310,394,466,569,647,779,914,1099,1225",
+                        "endColumns": "180,73,83,71,102,77,131,134,184,125,132",
+                        "endOffsets": "231,305,389,461,564,642,774,909,1094,1220,1353"
                     },
                     "to": {
-                        "startLines": "41",
-                        "startColumns": "4",
-                        "startOffsets": "4260",
-                        "endColumns": "100",
-                        "endOffsets": "4356"
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2874,3055,3129,3213,3285,3388,3466,3598,3733,3918,4044",
+                        "endColumns": "180,73,83,71,102,77,131,134,184,125,132",
+                        "endOffsets": "3050,3124,3208,3280,3383,3461,3593,3728,3913,4039,4172"
                     }
                 },
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-lt\\values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/res/values-lt/values-lt.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\values-lt\\values-lt.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,236,310,394,466,569,647,779,914,1099,1225",
-                        "endColumns": "180,73,83,71,102,77,131,134,184,125,132",
-                        "endOffsets": "231,305,389,461,564,642,774,909,1094,1220,1353"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2874,3055,3129,3213,3285,3388,3466,3598,3733,3918,4044",
-                        "endColumns": "180,73,83,71,102,77,131,134,184,125,132",
-                        "endOffsets": "3050,3124,3208,3280,3383,3461,3593,3728,3913,4039,4172"
+                        "startLines": "41",
+                        "startColumns": "4",
+                        "startOffsets": "4260",
+                        "endColumns": "100",
+                        "endOffsets": "4356"
                     }
                 }
             ]

@@ -2,6 +2,7 @@ package com.project.mapchat;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,6 +11,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     String preferences_name = "isFirstTime";
 
     private LocationEngine locationEngine;
-    private long DEFAULT_INTERVAL_IN_MILLISECONDS = 10000L;
+    private long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 25;
 
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
@@ -162,9 +164,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         locationEngine.requestLocationUpdates(request, callback, getMainLooper());
         locationEngine.getLastLocation(callback);
     }
+
     ////////////////////////////////////////////// LOCATION CHANGE CALLBACK ////////////////////////
-    private static class MainActivityLocationCallback
-            implements LocationEngineCallback<LocationEngineResult> {
+    private static class MainActivityLocationCallback implements LocationEngineCallback<LocationEngineResult> {
 
         private final WeakReference<MainActivity> activityWeakReference;
 
@@ -182,8 +184,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if (location == null) {
                     return;
                 }
-                Toast.makeText(activity, String.format("LOCATION TEST", String.valueOf(result.getLastLocation().getLatitude()) + String.valueOf(result.getLastLocation().getLongitude())), Toast.LENGTH_SHORT).show();
-
                 if (activity.mapboxMap != null && result.getLastLocation() != null) {
                     activity.mapboxMap.getLocationComponent().forceLocationUpdate(result.getLastLocation());
                 }
@@ -220,6 +220,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     "Second Time", Toast.LENGTH_LONG).show();
         }
     }*/
+
+    //////////////////////////////// ADD EVENT /////////////////////////////////////////////////////
+    public void addEvent(View view) {
+        startActivity(new Intent(this, EventAddActivity.class));
+    }
 
     @Override
     public void onStart() {

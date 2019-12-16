@@ -1,44 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml",
+            "outputFile": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-vi/values-vi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "67",
-                        "startColumns": "4",
-                        "startOffsets": "6948",
-                        "endColumns": "100",
-                        "endOffsets": "7044"
-                    }
-                },
-                {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/res/values-vi/values-vi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,170,347,420,498,569,657,744,872,988,1181,1305,1441,1517",
-                        "endColumns": "114,176,72,77,70,87,86,127,115,192,123,135,75,78",
-                        "endOffsets": "165,342,415,493,564,652,739,867,983,1176,1300,1436,1512,1591"
-                    },
-                    "to": {
-                        "startLines": "52,53,54,55,56,57,58,59,60,61,62,63,64,65",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5323,5438,5615,5688,5766,5837,5925,6012,6140,6256,6449,6573,6709,6785",
-                        "endColumns": "114,176,72,77,70,87,86,127,115,192,123,135,75,78",
-                        "endOffsets": "5433,5610,5683,5761,5832,5920,6007,6135,6251,6444,6568,6704,6780,6859"
-                    }
-                },
-                {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-vi/values-vi.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/res/values-vi/values-vi.xml",
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "67",
+                        "startColumns": "4",
+                        "startOffsets": "6948",
+                        "endColumns": "100",
+                        "endOffsets": "7044"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\aeb2c88b6a6cbf9c80029c6b3028dae9\\jetified-facebook-login-5.13.0\\res\\values-vi\\values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "2798,2958,3089,3229,3339,3424,3510,3586,3672,3764,3877,3988,4081,4174,4282,4402,4481,4565,4749,4845,4951,5069,5177",
                         "endColumns": "159,130,139,109,84,85,75,85,91,112,110,92,92,107,119,78,83,183,95,105,117,107,145",
                         "endOffsets": "2953,3084,3224,3334,3419,3505,3581,3667,3759,3872,3983,4076,4169,4277,4397,4476,4560,4744,4840,4946,5064,5172,5318"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\3e5d1904bc8aa42ced67c1cf1c95c275\\jetified-mapbox-android-sdk-8.4.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,170,347,420,498,569,657,744,872,988,1181,1305,1441,1517",
+                        "endColumns": "114,176,72,77,70,87,86,127,115,192,123,135,75,78",
+                        "endOffsets": "165,342,415,493,564,652,739,867,983,1176,1300,1436,1512,1591"
+                    },
+                    "to": {
+                        "startLines": "52,53,54,55,56,57,58,59,60,61,62,63,64,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5323,5438,5615,5688,5766,5837,5925,6012,6140,6256,6449,6573,6709,6785",
+                        "endColumns": "114,176,72,77,70,87,86,127,115,192,123,135,75,78",
+                        "endOffsets": "5433,5610,5683,5761,5832,5920,6007,6135,6251,6444,6568,6704,6780,6859"
                     }
                 }
             ]

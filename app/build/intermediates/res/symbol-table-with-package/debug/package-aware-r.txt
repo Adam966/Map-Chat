@@ -1004,6 +1004,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1376,6 +1377,8 @@ id browser_actions_menu_view
 id btnOnboarding
 id btn_logout
 id button
+id button2
+id button3
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1424,6 +1427,10 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id eventDate
+id eventName
+id eventTime
+id eventVisibility
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1432,7 +1439,9 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id floatingActionButton
 id forever
+id friendListSpinner
 id ghost_view
 id glide_custom_view_target_tag
 id gone
@@ -1509,6 +1518,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchViewLocation
 id search_badge
 id search_bar
 id search_button
@@ -1649,6 +1659,7 @@ layout activity_main
 layout activity_onboarding
 layout activity_settings
 layout activity_splash
+layout add_event_dialog
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -1801,6 +1812,7 @@ string path_password_strike_through
 string search_menu_title
 string settings
 string status_bar_notification_info_overflow
+string title_activity_main2
 string user_location_permission
 string welcome
 style AlertDialog_AppCompat
@@ -1811,6 +1823,9 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppDark
 style AppNormal
+style AppNormal_AppBarOverlay
+style AppNormal_NoActionBar
+style AppNormal_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
