@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\values-pa\\values-pa.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "53",
-                        "startColumns": "4",
-                        "startOffsets": "5436",
-                        "endColumns": "100",
-                        "endOffsets": "5532"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-pa\\values-pa.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\aeb2c88b6a6cbf9c80029c6b3028dae9\\jetified-facebook-login-5.13.0\\res\\values-pa\\values-pa.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2767,2932,3062,3210,3323,3409,3498,3582,3672,3761,3875,3989,4084,4179,4291,4422,4502,4588,4764,4859,4967,5082,5192",
                         "endColumns": "164,129,147,112,85,88,83,89,88,113,113,94,94,111,130,79,85,175,94,107,114,109,164",
                         "endOffsets": "2927,3057,3205,3318,3404,3493,3577,3667,3756,3870,3984,4079,4174,4286,4417,4497,4583,4759,4854,4962,5077,5187,5352"
+                    }
+                },
+                {
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-pa/values-pa.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "5436",
+                        "endColumns": "100",
+                        "endOffsets": "5532"
                     }
                 }
             ]

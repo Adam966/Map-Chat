@@ -6519,7 +6519,7 @@ public final class R {
     public static final int activity_onboarding=0x7f0b0020;
     public static final int activity_settings=0x7f0b0021;
     public static final int activity_splash=0x7f0b0022;
-    public static final int add_event_dialog=0x7f0b0023;
+    public static final int add_event_layout=0x7f0b0023;
     public static final int browser_actions_context_menu_page=0x7f0b0024;
     public static final int browser_actions_context_menu_row=0x7f0b0025;
     public static final int com_facebook_activity_layout=0x7f0b0026;

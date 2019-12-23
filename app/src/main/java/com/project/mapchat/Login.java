@@ -48,6 +48,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        findViewById(R.id.loadingBar).setVisibility(GONE);
+
         appSharedPrefs = new SharedPrefs(this);
 
         loginButton = findViewById(R.id.login_button);

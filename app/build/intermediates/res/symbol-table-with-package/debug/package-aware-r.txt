@@ -1659,7 +1659,7 @@ layout activity_main
 layout activity_onboarding
 layout activity_settings
 layout activity_splash
-layout add_event_dialog
+layout add_event_layout
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout

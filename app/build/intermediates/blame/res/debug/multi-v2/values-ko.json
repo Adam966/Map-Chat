@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\f01b27bb220ecb79298884ef36a7a2fb\\core-1.1.0\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "66",
-                        "startColumns": "4",
-                        "startOffsets": "6187",
-                        "endColumns": "100",
-                        "endOffsets": "6283"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\d74b5b498b35fd5cb32d0a6997bb1d3d\\appcompat-1.1.0\\res\\values-ko\\values-ko.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\3e5d1904bc8aa42ced67c1cf1c95c275\\jetified-mapbox-android-sdk-8.4.0\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,269,337,405,472,549,628,719,807,936,1031,1141",
-                        "endColumns": "98,114,67,67,66,76,78,90,87,128,94,109,61",
-                        "endOffsets": "149,264,332,400,467,544,623,714,802,931,1026,1136,1198"
-                    },
-                    "to": {
-                        "startLines": "52,53,54,55,56,57,58,59,60,61,62,63,64",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4961,5060,5175,5243,5311,5378,5455,5534,5625,5713,5842,5937,6047",
-                        "endColumns": "98,114,67,67,66,76,78,90,87,128,94,109,61",
-                        "endOffsets": "5055,5170,5238,5306,5373,5450,5529,5620,5708,5837,5932,6042,6104"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\MI\\.gradle\\caches\\transforms-2\\files-2.1\\aeb2c88b6a6cbf9c80029c6b3028dae9\\jetified-facebook-login-5.13.0\\res\\values-ko\\values-ko.xml",
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +35,40 @@
                         "startOffsets": "2685,2820,2940,3059,3168,3248,3332,3409,3494,3580,3687,3789,3877,3965,4060,4173,4252,4333,4462,4556,4657,4763,4859",
                         "endColumns": "134,119,118,108,79,83,76,84,85,106,101,87,87,94,112,78,80,128,93,100,105,95,101",
                         "endOffsets": "2815,2935,3054,3163,3243,3327,3404,3489,3575,3682,3784,3872,3960,4055,4168,4247,4328,4457,4551,4652,4758,4854,4956"
+                    }
+                },
+                {
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/values-ko/values-ko.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "66",
+                        "startColumns": "4",
+                        "startOffsets": "6187",
+                        "endColumns": "100",
+                        "endOffsets": "6283"
+                    }
+                },
+                {
+                    "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/res/values-ko/values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,269,337,405,472,549,628,719,807,936,1031,1141",
+                        "endColumns": "98,114,67,67,66,76,78,90,87,128,94,109,61",
+                        "endOffsets": "149,264,332,400,467,544,623,714,802,931,1026,1136,1198"
+                    },
+                    "to": {
+                        "startLines": "52,53,54,55,56,57,58,59,60,61,62,63,64",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4961,5060,5175,5243,5311,5378,5455,5534,5625,5713,5842,5937,6047",
+                        "endColumns": "98,114,67,67,66,76,78,90,87,128,94,109,61",
+                        "endOffsets": "5055,5170,5238,5306,5373,5450,5529,5620,5708,5837,5932,6042,6104"
                     }
                 }
             ]
