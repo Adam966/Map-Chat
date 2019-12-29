@@ -38,9 +38,7 @@
         mapbox:layout_constraintTop_toTopOf="parent"
         mapbox:layout_constraintVertical_bias="0.529"
         mapbox:mapbox_cameraZoom="14"
-        >
-
-    </com.mapbox.mapboxsdk.maps.MapView>
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -52,6 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_navigation_main"
-        app:itemIconSize="30dp"/>
+        app:itemIconSize="30dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

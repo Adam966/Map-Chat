@@ -54,11 +54,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         modSharedPrefs = new SharedPrefs(this);
 
-        if(modSharedPrefs.loadDarkModeState() == true){
-            setTheme(R.style.AppDark);
-        }else {
-            setTheme(R.style.AppNormal);
-        }
+        setDarkMode(modSharedPrefs);
 
         super.onCreate(savedInstanceState);
 
@@ -103,13 +99,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
         this.mapboxMap = mapboxMap;
-
-        mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
-            @Override
-            public void onStyleLoaded(@NonNull Style style) {
-                enableLocationComponent(style);
-            }
-        });
+        setDarkModeMap(mapboxMap);
     }
     ///////////////////////////////////////////// LOCATION PERMISSIONS /////////////////////////////
     @Override
@@ -204,27 +194,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    /*
-    public  void  firstTime(){
-
-        SharedPreferences sharedTime = getSharedPreferences(preferences_name,0);
-        if (sharedTime.getBoolean("firstTime",true))
-        {
-            Intent i = new Intent(MainActivity.this,OnboardingActivity.class);
-            startActivity(i);
-
-            Toast.makeText(MainActivity.this,
-                    "First time", Toast.LENGTH_LONG).show();
-
-            sharedTime.edit().putBoolean("firstTime",false).apply();
-        }
-        else
-        {
-            Toast.makeText(MainActivity.this,
-                    "Second Time", Toast.LENGTH_LONG).show();
-        }
-    }*/
-
     //////////////////////////////// ADD EVENT /////////////////////////////////////////////////////
     public void addEvent(View view) {
         startActivity(new Intent(this, EventAddActivity.class));
@@ -275,5 +244,31 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
+    }
+
+    private void setDarkMode(SharedPrefs prefs){
+        if(prefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+    }
+
+    private void setDarkModeMap(MapboxMap mapbox){
+        if(modSharedPrefs.loadDarkModeState() == true){
+            mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {
+                @Override
+                public void onStyleLoaded(@NonNull Style style) {
+                    enableLocationComponent(style);
+                }
+            });
+        }else {
+            mapbox.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+                @Override
+                public void onStyleLoaded(@NonNull Style style) {
+                    enableLocationComponent(style);
+                }
+            });
+        }
     }
 }
