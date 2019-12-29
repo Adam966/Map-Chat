@@ -93,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             return true;
             }
         });
-
     }
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
     @Override
@@ -246,6 +245,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView.onSaveInstanceState(outState);
     }
 
+    // setting darkmode
     private void setDarkMode(SharedPrefs prefs){
         if(prefs.loadDarkModeState() == true){
             setTheme(R.style.AppDark);
@@ -254,6 +254,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    // setting dark color for mapbox map
     private void setDarkModeMap(MapboxMap mapbox){
         if(modSharedPrefs.loadDarkModeState() == true){
             mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {

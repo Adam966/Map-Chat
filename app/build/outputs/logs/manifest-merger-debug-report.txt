@@ -59,6 +59,7 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/tomvarga/.gradle
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/534dfe358287b68b5ba1038d10b7afc0/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b0972071a30160448ccdb7b1c8372af4/circleimageview-3.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/74aaedf3b59a2fae5f45c673701c0ab2/sdp-android-1.0.6/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5b0ee67b9004438ac3572407bf9fcc64/soloader-0.6.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d98fc1aa3f908291fd5100c5fe432aa0/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
@@ -350,6 +351,8 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/cache
 MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/69ba81d17fd1c26c75281615add0554c/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b0972071a30160448ccdb7b1c8372af4/circleimageview-3.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b0972071a30160448ccdb7b1c8372af4/circleimageview-3.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/74aaedf3b59a2fae5f45c673701c0ab2/sdp-android-1.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.intuit.sdp:sdp-android:1.0.6] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/74aaedf3b59a2fae5f45c673701c0ab2/sdp-android-1.0.6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5b0ee67b9004438ac3572407bf9fcc64/soloader-0.6.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5b0ee67b9004438ac3572407bf9fcc64/soloader-0.6.1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d98fc1aa3f908291fd5100c5fe432aa0/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:7:5-9:41
