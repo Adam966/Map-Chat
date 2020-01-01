@@ -3,13 +3,11 @@ package com.project.mapchat;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentSender;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +16,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -128,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
 
         } else {
-            mEnableGps();
+            EnableGPS();
         }
 
     }
@@ -159,7 +156,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         } else {
             Toast.makeText(this, R.string.user_location_permission, Toast.LENGTH_SHORT).show();
-            finish();
         }
     }
     //////////////////////////////////////// LOCATION COMPONENT INITIALIZATION /////////////////////
@@ -320,7 +316,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    ///////////////// GOOGLE POPUP TO GPS ON ///////////////
+    //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
@@ -336,16 +332,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
-    public void mEnableGps() {
+    public void EnableGPS() {
         googleApiClient = new GoogleApiClient.Builder(context)
                 .addApi(LocationServices.API).addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .build();
         googleApiClient.connect();
-        mLocationSetting();
+        LocationSetting();
     }
 
-    public void mLocationSetting() {
+    public void LocationSetting() {
         locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         locationRequest.setInterval(1 * 1000);
@@ -353,11 +349,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         locationSettingsRequest = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
 
-        mResult();
+        serviceResult();
 
     }
 
-    public void mResult() {
+    public void serviceResult() {
         pendingResult = LocationServices.SettingsApi.checkLocationSettings(googleApiClient, locationSettingsRequest.build());
         pendingResult.setResultCallback(new ResultCallback<LocationSettingsResult>() {
             @Override
@@ -402,6 +398,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (resultCode) {
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
+                        this.recreate();
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:
