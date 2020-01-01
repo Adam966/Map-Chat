@@ -45,4 +45,9 @@ public class SharedPrefs {
         editor.putBoolean("state",state);
         editor.apply();
     }
+
+    protected Boolean getOnboardingState(){
+        Boolean state = appSharedPrefs.getBoolean("state",false);
+        return state;
+    }
 }
