@@ -22,9 +22,7 @@ public class OnboardingActivity extends AppCompatActivity {
         btnRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent intentMain = new Intent(OnboardingActivity.this, MainActivity.class);
-                startActivity(intentMain);*/
-                Intent i=new Intent(OnboardingActivity.this, MainActivity.class);
+                Intent i= new Intent(OnboardingActivity.this, MainActivity.class);
                 startActivity(i);
             }
         });
