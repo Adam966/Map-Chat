@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/2946ca0ea6c89dab7d7d9fbc18e54292/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.android:facebook-android-sdk:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/55c1f640130df629578bf4eaccbfa611/facebook-android-sdk-5.11.2/AndroidManifest.xml:21:1-31:12
 MERGED from [com.facebook.android:facebook-login:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/AndroidManifest.xml:21:1-31:12
@@ -14,6 +14,11 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/tomvarga/.
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/05168a99ce6bc986f8dc92d58ead19f3/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4e92895794ebcba9daa0638ba5773078/glide-4.10.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ac5406afff2c32ba204aff877db35a/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5e5428838914e25b5ebf89a98cec89e3/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b198d367166617ab038c04401afd7dd4/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/47fc3950c814b04977735368112c37af/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d934be3c652b5ff5c18e2d68c8236453/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/c63ceca946e9bc27525371878741042e/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -62,20 +67,20 @@ MERGED from [de.hdodenhof:circleimageview:3.0.1] /Users/tomvarga/.gradle/caches/
 MERGED from [com.intuit.sdp:sdp-android:1.0.6] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/74aaedf3b59a2fae5f45c673701c0ab2/sdp-android-1.0.6/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5b0ee67b9004438ac3572407bf9fcc64/soloader-0.6.1/AndroidManifest.xml:2:1-13:12
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d98fc1aa3f908291fd5100c5fe432aa0/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:2:11-69
@@ -87,16 +92,20 @@ MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gr
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-core:1.3.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d98fc1aa3f908291fd5100c5fe432aa0/jetified-mapbox-android-core-1.3.0/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:5-81
+	android:name
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:7:5-67
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:5-67
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:16:5-67
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:16:5-67
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:16:5-67
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:7:22-64
 application
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:8:5-54:19
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:9:5-55:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/2946ca0ea6c89dab7d7d9fbc18e54292/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/2946ca0ea6c89dab7d7d9fbc18e54292/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/55c1f640130df629578bf4eaccbfa611/facebook-android-sdk-5.11.2/AndroidManifest.xml:28:5-29:19
@@ -113,6 +122,16 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gra
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/05168a99ce6bc986f8dc92d58ead19f3/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4e92895794ebcba9daa0638ba5773078/glide-4.10.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4e92895794ebcba9daa0638ba5773078/glide-4.10.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ac5406afff2c32ba204aff877db35a/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ac5406afff2c32ba204aff877db35a/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5e5428838914e25b5ebf89a98cec89e3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5e5428838914e25b5ebf89a98cec89e3/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b198d367166617ab038c04401afd7dd4/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b198d367166617ab038c04401afd7dd4/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:18:5-28:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:18:5-28:19
 MERGED from [com.facebook.android:facebook-places:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4f73a34f2f68142d42699090181195cc/facebook-places-5.11.2/AndroidManifest.xml:28:5-29:19
@@ -138,105 +157,105 @@ MERGED from [com.facebook.soloader:soloader:0.6.1] /Users/tomvarga/.gradle/cache
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-41
 activity#com.project.mapchat.Splash
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-24:20
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-25:20
 	android:launchMode
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:13-44
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-44
 	android:theme
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:13-47
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:13-35
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:13-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:27-74
 activity#com.project.mapchat.Login
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:25:9-27:47
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:9-28:47
 	android:launchMode
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:13-44
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:13-44
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:13-34
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:13-34
 activity#com.project.mapchat.EventAddActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:9-54
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:9-54
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:19-51
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:19-51
 activity#com.project.mapchat.OnboardingActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:9-56
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:9-56
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:19-53
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:19-53
 activity#com.project.mapchat.SettingsActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:9-54
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:9-54
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:19-51
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:19-51
 activity#com.project.mapchat.EventsActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:9-52
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:9-52
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:19-49
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:19-49
 activity#com.project.mapchat.MainActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:9-50
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:33:9-50
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:19-47
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:33:19-47
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:34:9-36:55
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:35:9-37:55
 	android:value
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:36:13-52
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:35:13-58
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:36:13-58
 activity#com.facebook.FacebookActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:9-41:48
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-42:48
 MERGED from [com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:29:9-32:66
 MERGED from [com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:29:9-32:66
 	android:label
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:13-45
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:13-45
 	android:configChanges
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:13-96
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:13-96
 	android:theme
 		ADDED from [com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:13-57
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:13-57
 activity#com.facebook.CustomTabActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:9-53:20
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:43:9-54:20
 MERGED from [com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:34:9-67
 MERGED from [com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:34:9-67
 	android:exported
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:44:13-36
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:45:13-36
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:43:13-58
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:44:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/fb_login_protocol_scheme
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:45:13-52:29
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:13-53:29
 action#android.intent.action.VIEW
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:17-69
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:25-66
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:47:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:17-76
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:17-76
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:27-73
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:17-78
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:17-78
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:27-75
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:27-75
 data
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:17-75
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:52:17-75
 	android:scheme
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:23-72
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:52:23-72
 uses-sdk
 INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml
@@ -261,6 +280,16 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gra
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/05168a99ce6bc986f8dc92d58ead19f3/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4e92895794ebcba9daa0638ba5773078/glide-4.10.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.10.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4e92895794ebcba9daa0638ba5773078/glide-4.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ac5406afff2c32ba204aff877db35a/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d4ac5406afff2c32ba204aff877db35a/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5e5428838914e25b5ebf89a98cec89e3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/5e5428838914e25b5ebf89a98cec89e3/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b198d367166617ab038c04401afd7dd4/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b198d367166617ab038c04401afd7dd4/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/47fc3950c814b04977735368112c37af/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/47fc3950c814b04977735368112c37af/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d934be3c652b5ff5c18e2d68c8236453/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -397,6 +426,20 @@ MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarg
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:15:5-76
 	android:name
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:8.4.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/AndroidManifest.xml:18:22-73
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:5-68
 	android:name

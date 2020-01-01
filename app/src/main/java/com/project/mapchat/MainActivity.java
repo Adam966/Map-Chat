@@ -1,19 +1,22 @@
 package com.project.mapchat;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mapbox.android.core.location.LocationEngine;
@@ -36,24 +39,26 @@ import com.mapbox.mapboxsdk.maps.Style;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener {
 
+    // Mapbox
     private MapView mapView;
     private MapboxMap mapboxMap;
-    private SharedPrefs modSharedPrefs;
-    private PermissionsManager permissionsManager;
-
     private LocationEngine locationEngine;
     private long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 25;
-
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
+
+    // Class for Shared Preferences
+    private SharedPrefs modSharedPrefs;
+
+    // Permissions
+    private PermissionsManager permissionsManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         modSharedPrefs = new SharedPrefs(this);
-
         setDarkMode(modSharedPrefs);
 
         super.onCreate(savedInstanceState);
@@ -100,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
     }
+
     ///////////////////////////////////////////// LOCATION PERMISSIONS /////////////////////////////
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -128,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (PermissionsManager.areLocationPermissionsGranted(this)) {
 
             LocationComponent locationComponent = mapboxMap.getLocationComponent();
+
             LocationComponentActivationOptions locationComponentActivationOptions =
                     LocationComponentActivationOptions.builder(this, loadedMapStyle)
                             .useDefaultLocationEngine(false)
@@ -139,6 +146,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             locationComponent.setRenderMode(RenderMode.NORMAL);
 
             initLocationEngine();
+
         } else {
             permissionsManager = new PermissionsManager(this);
             permissionsManager.requestLocationPermissions(this);
@@ -219,6 +227,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onStop() {
         super.onStop();
+
+        if (locationEngine != null) {
+            locationEngine.removeLocationUpdates(callback);
+        }
+
         mapView.onStop();
     }
 
