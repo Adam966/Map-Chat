@@ -39,4 +39,15 @@ public class SharedPrefs {
     protected void getToken(){
 
     }
+
+    protected void setOnboardingState(boolean state){
+        SharedPreferences.Editor editor = appSharedPrefs.edit();
+        editor.putBoolean("state",state);
+        editor.apply();
+    }
+
+    protected Boolean getOnboardingState(){
+        Boolean state = appSharedPrefs.getBoolean("state",false);
+        return state;
+    }
 }

@@ -1,19 +1,43 @@
 package com.project.mapchat;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
+=======
+>>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+<<<<<<< HEAD
+=======
+import android.content.IntentSender;
+>>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResult;
+import com.google.android.gms.location.LocationSettingsStates;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mapbox.android.core.location.LocationEngine;
 import com.mapbox.android.core.location.LocationEngineCallback;
@@ -35,41 +59,48 @@ import com.mapbox.mapboxsdk.maps.Style;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, PermissionsListener {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
+    // Mapbox
     private MapView mapView;
     private MapboxMap mapboxMap;
-    private SharedPrefs modSharedPrefs;
-    private PermissionsManager permissionsManager;
-    String preferences_name = "isFirstTime";
-
     private LocationEngine locationEngine;
     private long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 25;
-
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
+
+    // Google
+    public static final int REQUEST_LOCATION=001;
+    GoogleApiClient googleApiClient;
+    LocationManager locationManager;
+    LocationRequest locationRequest;
+    LocationSettingsRequest.Builder locationSettingsRequest;
+    Context context;
+    PendingResult<LocationSettingsResult> pendingResult;
+
+    // Class for Shared Preferences
+    private SharedPrefs modSharedPrefs;
+
+    // Permissions
+    private PermissionsManager permissionsManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         modSharedPrefs = new SharedPrefs(this);
-
-        if(modSharedPrefs.loadDarkModeState() == true){
-            setTheme(R.style.AppDark);
-        }else {
-            setTheme(R.style.AppNormal);
-        }
+        setDarkMode(modSharedPrefs);
 
         super.onCreate(savedInstanceState);
+        context = this;
 
         Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
 
-        mapView = findViewById(R.id.mapView);
-        mapView.onCreate(savedInstanceState);
-        mapView.getMapAsync(this);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem item = menu.getItem(1);
+        item.setChecked(true);
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -94,19 +125,27 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
 
+        mapView = findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(this);
+
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
+
+        } else {
+            EnableGPS();
+        }
+
     }
+
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
         this.mapboxMap = mapboxMap;
-
-        mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
-            @Override
-            public void onStyleLoaded(@NonNull Style style) {
-                enableLocationComponent(style);
-            }
-        });
+        setDarkModeMap(mapboxMap);
     }
+
     ///////////////////////////////////////////// LOCATION PERMISSIONS /////////////////////////////
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -126,7 +165,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         } else {
             Toast.makeText(this, R.string.user_location_permission, Toast.LENGTH_SHORT).show();
-            finish();
         }
     }
     //////////////////////////////////////// LOCATION COMPONENT INITIALIZATION /////////////////////
@@ -135,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (PermissionsManager.areLocationPermissionsGranted(this)) {
 
             LocationComponent locationComponent = mapboxMap.getLocationComponent();
+
             LocationComponentActivationOptions locationComponentActivationOptions =
                     LocationComponentActivationOptions.builder(this, loadedMapStyle)
                             .useDefaultLocationEngine(false)
@@ -146,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             locationComponent.setRenderMode(RenderMode.NORMAL);
 
             initLocationEngine();
+
         } else {
             permissionsManager = new PermissionsManager(this);
             permissionsManager.requestLocationPermissions(this);
@@ -200,30 +240,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    /*
-    public  void  firstTime(){
-
-        SharedPreferences sharedTime = getSharedPreferences(preferences_name,0);
-        if (sharedTime.getBoolean("firstTime",true))
-        {
-            Intent i = new Intent(MainActivity.this,OnboardingActivity.class);
-            startActivity(i);
-
-            Toast.makeText(MainActivity.this,
-                    "First time", Toast.LENGTH_LONG).show();
-
-            sharedTime.edit().putBoolean("firstTime",false).apply();
-        }
-        else
-        {
-            Toast.makeText(MainActivity.this,
-                    "Second Time", Toast.LENGTH_LONG).show();
-        }
-    }*/
-
     //////////////////////////////// ADD EVENT /////////////////////////////////////////////////////
     public void addEvent(View view) {
-        startActivity(new Intent(this, EventAddActivity.class));
+        startActivity(new Intent(this, AddEventActivity.class));
     }
 
     @Override
@@ -247,6 +266,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onStop() {
         super.onStop();
+
+        if (locationEngine != null) {
+            locationEngine.removeLocationUpdates(callback);
+        }
+
         mapView.onStop();
     }
 
@@ -272,4 +296,129 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
     }
+
+    // setting darkmode
+    private void setDarkMode(SharedPrefs prefs){
+        if(prefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+    }
+
+    // setting dark color for mapbox map
+    private void setDarkModeMap(MapboxMap mapbox){
+        if(modSharedPrefs.loadDarkModeState() == true){
+            mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {
+                @Override
+                public void onStyleLoaded(@NonNull Style style) {
+                    enableLocationComponent(style);
+                }
+            });
+        }else {
+            mapbox.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+                @Override
+                public void onStyleLoaded(@NonNull Style style) {
+                    enableLocationComponent(style);
+                }
+            });
+        }
+    }
+
+    //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
+    @Override
+    public void onConnected(@Nullable Bundle bundle) {
+
+    }
+
+    @Override
+    public void onConnectionSuspended(int i) {
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
+
+    public void EnableGPS() {
+        googleApiClient = new GoogleApiClient.Builder(context)
+                .addApi(LocationServices.API).addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
+                .build();
+        googleApiClient.connect();
+        LocationSetting();
+    }
+
+    public void LocationSetting() {
+        locationRequest = LocationRequest.create();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(1 * 1000);
+        locationRequest.setFastestInterval(1 * 1000);
+
+        locationSettingsRequest = new LocationSettingsRequest.Builder().addLocationRequest(locationRequest);
+
+        serviceResult();
+
+    }
+
+    public void serviceResult() {
+        pendingResult = LocationServices.SettingsApi.checkLocationSettings(googleApiClient, locationSettingsRequest.build());
+        pendingResult.setResultCallback(new ResultCallback<LocationSettingsResult>() {
+            @Override
+            public void onResult(@NonNull LocationSettingsResult locationSettingsResult) {
+                Status status = locationSettingsResult.getStatus();
+
+
+                switch (status.getStatusCode()) {
+                    case LocationSettingsStatusCodes.SUCCESS:
+                        // All location settings are satisfied. The client can initialize location
+                        // requests here.
+
+                        break;
+                    case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+
+                        try {
+
+                            status.startResolutionForResult(MainActivity.this, REQUEST_LOCATION);
+                        } catch (IntentSender.SendIntentException e) {
+
+                        }
+                        break;
+                    case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                        // Location settings are not satisfied. However, we have no way to fix the
+                        // settings so we won't show the dialog.
+
+
+                        break;
+                }
+            }
+
+        });
+    }
+
+    //callback method
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        final LocationSettingsStates states = LocationSettingsStates.fromIntent(data);
+        switch (requestCode) {
+            case REQUEST_LOCATION:
+                switch (resultCode) {
+                    case Activity.RESULT_OK:
+                        // All required changes were successfully made
+                        this.recreate();
+                        Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
+                        break;
+                    case Activity.RESULT_CANCELED:
+                        // The user was asked to change settings, but chose not to
+                        Toast.makeText(context, "Gps Canceled", Toast.LENGTH_SHORT).show();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        }
+    }
+
 }

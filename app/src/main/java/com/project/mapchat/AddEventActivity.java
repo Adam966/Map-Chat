@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.SearchView;
-import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -17,13 +15,12 @@ import com.project.mapchat.dialogs.TimePickerFragment;
 
 import java.util.Date;
 
-public class EventAddActivity extends AppCompatActivity implements DatePickerFragment.DialogListener, TimePickerFragment.DialogListener {
+public class AddEventActivity extends AppCompatActivity implements DatePickerFragment.DialogListener, TimePickerFragment.DialogListener {
     private EditText eventName;
-    private SearchView locationSearch;
     private Switch eventVisibility;
-    private Spinner friendList;
     private TextView date;
     private TextView time;
+    private TextView placeName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +28,10 @@ public class EventAddActivity extends AppCompatActivity implements DatePickerFra
         setContentView(R.layout.add_event_layout);
 
         eventName =  findViewById(R.id.eventName);
-        locationSearch = findViewById(R.id.searchViewLocation);
         eventVisibility = findViewById(R.id.eventVisibility);
-        friendList = findViewById(R.id.friendListSpinner);
         date = findViewById(R.id.eventDate);
         time = findViewById(R.id.eventTime);
-
+        placeName = findViewById(R.id.friendName);
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +60,7 @@ public class EventAddActivity extends AppCompatActivity implements DatePickerFra
         finish();
     }
 
+    ////////////////////////////////////// TIME AND DATE PICKER ////////////////////////////////////
     @Override
     public void getDate(Date date) {
         this.date.setText(date.toString().substring(0, 10));
@@ -74,4 +70,26 @@ public class EventAddActivity extends AppCompatActivity implements DatePickerFra
     public void getTime(Date date) {
         time.setText(date.toString().substring(10, 19));
     }
+
+    ///////////////////////////////////// CHOOSE PLACE /////////////////////////////////////////////
+    public void choosePlace(View view) {
+        startActivity(new Intent(this, ChoosePlace.class));
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        if (intent.getStringExtra("placeName") != null)
+            placeName.setText(intent.getStringExtra("placeName"));
+        else
+            placeName.setText("Choose place");
+    }
+
+    ///////////////////////////////////// CHOOSE FRIENDS ///////////////////////////////////////////
+    public void chooseFriends(View view) {
+        startActivity(new Intent(this, ChooseFriends.class));
+    }
+
+
 }

@@ -3,6 +3,7 @@
     package="com.project.mapchat">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppNormal">
+
         <activity
             android:name=".Splash"
             android:launchMode="singleTask"
@@ -23,9 +25,23 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".Login"
             android:launchMode="singleTask" />
+        <activity
+            android:name=".AddEventActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".ChoosePlace"
+            android:theme="@style/Transparent" />
+        <activity android:name=".ChooseFriends"
+            android:theme="@style/Transparent"/>
+
+=======
+            android:name=".Login" />
         <activity android:name=".EventAddActivity" />
+>>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
         <activity android:name=".OnboardingActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".EventsActivity" />
