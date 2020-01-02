@@ -1,19 +1,15 @@
 package com.project.mapchat;
 
-<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-=======
->>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-<<<<<<< HEAD
+
 =======
 import android.content.IntentSender;
->>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;

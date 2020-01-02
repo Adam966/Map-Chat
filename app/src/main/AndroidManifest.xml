@@ -25,7 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".Login"
             android:launchMode="singleTask" />
         <activity
@@ -38,10 +37,7 @@
         <activity android:name=".ChooseFriends"
             android:theme="@style/Transparent"/>
 
-=======
-            android:name=".Login" />
         <activity android:name=".EventAddActivity" />
->>>>>>> 0f300d9ae081a4e0045507c670517c7466b5ce74
         <activity android:name=".OnboardingActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".EventsActivity" />
