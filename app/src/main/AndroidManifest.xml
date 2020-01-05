@@ -37,7 +37,6 @@
         <activity android:name=".ChooseFriends"
             android:theme="@style/Transparent"/>
 
-        <activity android:name=".EventAddActivity" />
         <activity android:name=".OnboardingActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".EventsActivity" />

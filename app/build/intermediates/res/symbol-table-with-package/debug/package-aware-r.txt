@@ -868,6 +868,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 dimen _100sdp
 dimen _101sdp
 dimen _102sdp
@@ -1940,6 +1941,7 @@ drawable googleg_standard_color_18
 drawable ic_home_24px
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_location_on_black_24dp
 drawable ic_menu_24px
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1997,6 +1999,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id PlaceName
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -2081,6 +2084,8 @@ id btn_logout
 id button
 id button2
 id button3
+id button4
+id button5
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -2093,6 +2098,7 @@ id checked
 id chronometer
 id clip_horizontal
 id clip_vertical
+id closeEventBtn
 id collapseActionView
 id com_facebook_body_frame
 id com_facebook_button_xout
@@ -2144,7 +2150,9 @@ id filled
 id fixed
 id floatingActionButton
 id forever
-id friendListSpinner
+id friendName
+id friendNameAdapter
+id friendsList
 id ghost_view
 id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
@@ -2180,6 +2188,7 @@ id list_item
 id loadingBar
 id login_button
 id logoView
+id mapText
 id mapView
 id masked
 id media_actions
@@ -2210,6 +2219,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id placeName
 id profile_image
 id progress_bar
 id progress_circular
@@ -2227,7 +2237,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchViewLocation
+id searchViewFriends
 id search_badge
 id search_bar
 id search_button
@@ -2265,6 +2275,7 @@ id submenuarrow
 id submit_area
 id switchDark
 id tabMode
+id tagName
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2280,6 +2291,7 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView3
+id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -2363,7 +2375,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_event_add
 layout activity_events
 layout activity_login
 layout activity_main
@@ -2394,6 +2405,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dp_example
+layout friend_adapter_layout
+layout friends_picker_layout
+layout map_event_view
 layout mapbox_attribution_list_item
 layout mapbox_infowindow_content
 layout mapbox_mapview_internal
@@ -2421,6 +2435,8 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout place_picker_layout
+layout places_adapter_layout
 layout sdp_example
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -2949,6 +2965,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
+style Transparent
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

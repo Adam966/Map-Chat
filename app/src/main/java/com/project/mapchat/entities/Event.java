@@ -1,58 +1,128 @@
+
 package com.project.mapchat.entities;
 
-import java.util.ArrayList;
-import java.util.Date;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class Event {
-    private Date date;
-    private String desription;
-    private ArrayList<String> list;
-    private String locationName;
-    private String cordinates;
-    private String tag;
 
-    public Event(Date date, String desription, ArrayList<String> list, String locationName, String cordinates, String tag) {
-        this.date = date;
-        this.desription = desription;
-        this.list = list;
-        this.locationName = locationName;
-        this.cordinates = cordinates;
-        this.tag = tag;
+    @SerializedName("eventName")
+    @Expose
+    private String eventName;
+    @SerializedName("location")
+    @Expose
+    private Location location;
+    @SerializedName("description")
+    @Expose
+    private String description;
+    @SerializedName("date")
+    @Expose
+    private String date;
+    @SerializedName("type")
+    @Expose
+    private Boolean type;
+    @SerializedName("tag")
+    @Expose
+    private String tag;
+    @SerializedName("ownerID")
+    @Expose
+    private Double ownerID;
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Event() {
     }
 
-    public Date getDate() {
+    /**
+     * 
+     * @param date
+     * @param eventName
+     * @param description
+     * @param location
+     * @param tag
+     * @param id
+     * @param type
+     * @param ownerID
+     */
+    public Event(String eventName, Location location, String description, String date, Boolean type, String tag, Double ownerID, Integer id) {
+        super();
+        this.eventName = eventName;
+        this.location = location;
+        this.description = description;
+        this.date = date;
+        this.type = type;
+        this.tag = tag;
+        this.ownerID = ownerID;
+        this.id = id;
+    }
+
+    public String getEventName() {
+        return eventName;
+    }
+
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDate() {
         return date;
     }
 
-    public String getDesription() {
-        return desription;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public ArrayList<String> getList() {
-        return list;
+    public Boolean getType() {
+        return type;
     }
 
-    public String getLocationName() {
-        return locationName;
-    }
-
-    public String getCordinates() {
-        return cordinates;
+    public void setType(Boolean type) {
+        this.type = type;
     }
 
     public String getTag() {
         return tag;
     }
 
-    @Override
-    public String toString() {
-        return "Event{" +
-                "date=" + date +
-                ", desription='" + desription + '\'' +
-                ", list=" + list +
-                ", locationName='" + locationName + '\'' +
-                ", cordinates='" + cordinates + '\'' +
-                ", tag='" + tag + '\'' +
-                '}';
+    public void setTag(String tag) {
+        this.tag = tag;
     }
+
+    public Double getOwnerID() {
+        return ownerID;
+    }
+
+    public void setOwnerID(Double ownerID) {
+        this.ownerID = ownerID;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
 }

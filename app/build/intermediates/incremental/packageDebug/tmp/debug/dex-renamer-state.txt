@@ -1,7 +1,7 @@
-#Wed Jan 01 23:30:21 CET 2020
-base.0=/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Mon Jan 06 00:04:44 CET 2020
+base.0=C\:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=C\:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

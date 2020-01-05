@@ -21,6 +21,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     private TextView date;
     private TextView time;
     private TextView placeName;
+    private TextView tagName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         date = findViewById(R.id.eventDate);
         time = findViewById(R.id.eventTime);
         placeName = findViewById(R.id.friendName);
+        tagName = findViewById(R.id.tagName);
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
