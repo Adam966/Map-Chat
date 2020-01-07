@@ -4,18 +4,18 @@
     <style name="AppNormal" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="bkgcolor">#FFFFFF</item>
-        <item name="barcolor">@color/colorPrimary</item>
+        <item name="barcolor">#0000A0</item>
         <item name="iconcolor">#FFFFFF</item>
-        <item name="coloriconchecked">#000000</item>
-        <item name="textcolor">#FFFFFF</item>
+        <item name="coloriconchecked">#010154</item>
+        <item name="textcolor">#0000A0</item>
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="bkgcolor">#4B4B4C</item>
+        <item name="bkgcolor">#0000A0</item>
         <item name="barcolor">#000000</item>
-        <item name="iconcolor">#FFFFFF</item>
-        <item name="coloriconchecked">#4B4B4C</item>
+        <item name="iconcolor">#0000A0</item>
+        <item name="coloriconchecked">#010154</item>
         <item name="textcolor">#FFFFFF</item>
     </style>
 

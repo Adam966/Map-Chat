@@ -307,6 +307,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView.onDestroy();
     }
 
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -502,7 +503,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (resultCode) {
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
-                        this.recreate();
+                        recreate();
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:
@@ -515,5 +516,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 break;
         }
     }
+
+    @Override
+    public void recreate()
+    {
+        if (android.os.Build.VERSION.SDK_INT >= 11)
+        {
+            super.recreate();
+        }
+        else
+        {
+            startActivity(getIntent());
+            finish();
+        }
+    }
+
 
 }

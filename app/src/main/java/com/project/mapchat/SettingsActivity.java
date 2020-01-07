@@ -70,7 +70,7 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
         MenuItem item = menu.getItem(2);
         item.setChecked(true);
