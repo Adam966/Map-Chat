@@ -180,6 +180,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             Toast.makeText(this, R.string.user_location_permission, Toast.LENGTH_SHORT).show();
         }
     }
+
     //////////////////////////////////////// LOCATION COMPONENT INITIALIZATION /////////////////////
     @SuppressLint("MissingPermission")
     private void enableLocationComponent(Style loadedMapStyle) {
@@ -292,6 +293,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onLowMemory();
         mapView.onLowMemory();
     }
+
 
     @Override
     protected void onDestroy() {
@@ -421,7 +423,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-
     }
 
     @Override
@@ -434,6 +435,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
+    /////////////////////////// GOOGLE SERVICE ///////////////////////////
     public void EnableGPS() {
         googleApiClient = new GoogleApiClient.Builder(context)
                 .addApi(LocationServices.API).addConnectionCallbacks(this)
@@ -462,6 +464,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onResult(@NonNull LocationSettingsResult locationSettingsResult) {
                 Status status = locationSettingsResult.getStatus();
 
+                Log.i("CODE",status.toString());
 
                 switch (status.getStatusCode()) {
                     case LocationSettingsStatusCodes.SUCCESS:
@@ -481,12 +484,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
                         // Location settings are not satisfied. However, we have no way to fix the
                         // settings so we won't show the dialog.
-
-
                         break;
                 }
             }
-
         });
     }
 
@@ -500,7 +500,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (resultCode) {
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
-                        /*recreate();*/
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:
@@ -513,20 +512,4 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 break;
         }
     }
-
-    @Override
-    public void recreate()
-    {
-        if (android.os.Build.VERSION.SDK_INT >= 11)
-        {
-            super.recreate();
-        }
-        else
-        {
-            startActivity(getIntent());
-            finish();
-        }
-    }
-
-
 }

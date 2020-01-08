@@ -2295,7 +2295,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView3
 id textView4
 id text_input_password_toggle
 id textinput_counter
