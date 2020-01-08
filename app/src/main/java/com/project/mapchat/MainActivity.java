@@ -143,16 +143,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
-        mapView.getMapAsync(this);
-
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
-
         } else {
             EnableGPS();
         }
-
+        mapView.getMapAsync(this);
     }
 
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
@@ -503,7 +500,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (resultCode) {
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
-                        recreate();
+                        /*recreate();*/
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:
