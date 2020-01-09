@@ -58,202 +58,203 @@
 32-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:13:9-54
 33        android:supportsRtl="true"
 33-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:14:9-35
-34        android:theme="@style/AppNormal" >
-34-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-41
-35        <activity android:name="com.project.mapchat.TutorialActivity" />
-35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-63
-35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:19-51
-36        <activity
-36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:9-25:20
-37            android:name="com.project.mapchat.Splash"
-37-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-35
-38            android:theme="@style/SplashTheme" >
-38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:13-47
-39            <intent-filter>
-39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:13-24:29
-40                <action android:name="android.intent.action.MAIN" />
-40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:17-69
-40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:25-66
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:17-77
-42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:27-74
-43            </intent-filter>
-44        </activity>
-45        <activity
-45-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:9-28:47
-46            android:name="com.project.mapchat.Login"
-46-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:13-34
-47            android:launchMode="singleTask" />
-47-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:13-44
-48        <activity
-48-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:9-32:50
-49            android:name="com.project.mapchat.AddEventActivity"
-49-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:13-45
-50            android:launchMode="singleTask"
-50-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:13-44
-51            android:theme="@style/Transparent" />
-51-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:13-47
-52        <activity
-52-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:33:9-35:50
-53            android:name="com.project.mapchat.ChoosePlace"
-53-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:34:13-40
-54            android:theme="@style/Transparent" />
-54-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:35:13-47
-55        <activity
-55-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:36:9-38:50
-56            android:name="com.project.mapchat.ChooseFriends"
-56-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:37:13-42
-57            android:theme="@style/Transparent" />
-57-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:13-47
-58        <activity android:name="com.project.mapchat.OnboardingActivity" />
-58-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-56
-58-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-53
-59        <activity android:name="com.project.mapchat.SettingsActivity" />
-59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:9-54
-59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:19-51
-60        <activity android:name="com.project.mapchat.EventsActivity" />
-60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:9-52
-60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:19-49
-61        <activity android:name="com.project.mapchat.MainActivity" />
-61-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:9-50
-61-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:19-47
-62
-63        <meta-data
-63-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:44:9-46:55
-64            android:name="com.facebook.sdk.ApplicationId"
-64-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:45:13-58
-65            android:value="@string/facebook_app_id" />
-65-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:13-52
-66
-67        <activity
-67-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:9-51:48
-68            android:name="com.facebook.FacebookActivity"
-68-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:13-57
-69            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-69-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:13-96
-70            android:label="@string/app_name"
-70-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:13-45
-71            android:theme="@style/com_facebook_activity_theme" />
-71-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:32:13-63
-72        <activity
-72-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:52:9-63:20
-73            android:name="com.facebook.CustomTabActivity"
-73-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:53:13-58
-74            android:exported="true" >
-74-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:54:13-36
-75            <intent-filter>
-75-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:55:13-62:29
-76                <action android:name="android.intent.action.VIEW" />
-76-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:56:17-69
-76-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:56:25-66
-77
-78                <category android:name="android.intent.category.DEFAULT" />
-78-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:17-76
-78-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:27-73
-79                <category android:name="android.intent.category.BROWSABLE" />
-79-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:59:17-78
-79-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:59:27-75
-80
-81                <data android:scheme="@string/fb_login_protocol_scheme" />
-81-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:61:17-75
-81-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:61:23-72
-82            </intent-filter>
-83        </activity>
-84        <activity android:name="com.facebook.CustomTabMainActivity" />
-84-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:9-71
-84-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:19-68
-85        <!--
-86         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
-87         with the application context. This config is merged in with the host app's manifest,
-88         but there can only be one provider with the same authority activated at any given
-89         point; so if the end user has two or more different apps that use Facebook SDK, only the
-90         first one will be able to use the provider. To work around this problem, we use the
-91         following placeholder in the authority to identify each host application as if it was
-92         a completely different provider.
-93        -->
-94        <provider
-94-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:39:9-42:40
-95            android:name="com.facebook.internal.FacebookInitProvider"
-95-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:40:13-70
-96            android:authorities="com.project.mapchat.FacebookInitProvider"
-96-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:41:13-72
-97            android:exported="false" />
-97-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:42:13-37
-98
-99        <receiver
-99-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:44:9-50:20
-100            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-100-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:45:13-86
-101            android:exported="false" >
-101-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:46:13-37
-102            <intent-filter>
-102-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:47:13-49:29
-103                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-103-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:17-95
-103-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:25-92
-104            </intent-filter>
-105        </receiver>
-106        <receiver
-106-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:51:9-58:20
-107            android:name="com.facebook.CampaignTrackingReceiver"
-107-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:52:13-65
-108            android:exported="true"
-108-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:53:13-36
-109            android:permission="android.permission.INSTALL_PACKAGES" >
-109-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:54:13-69
-110            <intent-filter>
-110-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:55:13-57:29
-111                <action android:name="com.android.vending.INSTALL_REFERRER" />
-111-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:17-79
-111-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:25-76
-112            </intent-filter>
-113        </receiver>
-114
-115        <provider
-115-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
-116            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-116-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
-117            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
-117-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
-118            android:exported="false"
-118-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
-119            android:initOrder="100" />
-119-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
-120
-121        <service
-121-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
-122            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-122-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
-123            android:permission="android.permission.BIND_JOB_SERVICE" />
-123-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
-124
-125        <activity
-125-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-126            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-126-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-127            android:exported="false"
-127-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-128            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-128-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-129
-130        <meta-data
-130-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-131            android:name="com.google.android.gms.version"
-131-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-132            android:value="@integer/google_play_services_version" />
-132-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-133
-134        <provider
-134-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-135            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-135-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-136            android:authorities="com.project.mapchat.lifecycle-process"
-136-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-137            android:exported="false"
-137-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-138            android:multiprocess="true" />
-138-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-139    </application>
-140
-141</manifest>
+34        android:testOnly="true"
+35        android:theme="@style/AppNormal" >
+35-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:15:9-41
+36        <activity android:name="com.project.mapchat.TutorialActivity" />
+36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-63
+36-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:19-51
+37        <activity
+37-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:9-25:20
+38            android:name="com.project.mapchat.Splash"
+38-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:13-35
+39            android:theme="@style/SplashTheme" >
+39-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:19:13-47
+40            <intent-filter>
+40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:20:13-24:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:17-69
+41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:21:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:17-77
+43-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:23:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:26:9-28:47
+47            android:name="com.project.mapchat.Login"
+47-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:27:13-34
+48            android:launchMode="singleTask" />
+48-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:28:13-44
+49        <activity
+49-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:29:9-32:50
+50            android:name="com.project.mapchat.AddEventActivity"
+50-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:30:13-45
+51            android:launchMode="singleTask"
+51-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:31:13-44
+52            android:theme="@style/Transparent" />
+52-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:32:13-47
+53        <activity
+53-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:33:9-35:50
+54            android:name="com.project.mapchat.ChoosePlace"
+54-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:34:13-40
+55            android:theme="@style/Transparent" />
+55-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:35:13-47
+56        <activity
+56-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:36:9-38:50
+57            android:name="com.project.mapchat.ChooseFriends"
+57-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:37:13-42
+58            android:theme="@style/Transparent" />
+58-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:13-47
+59        <activity android:name="com.project.mapchat.OnboardingActivity" />
+59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-56
+59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-53
+60        <activity android:name="com.project.mapchat.SettingsActivity" />
+60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:9-54
+60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:19-51
+61        <activity android:name="com.project.mapchat.EventsActivity" />
+61-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:9-52
+61-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:41:19-49
+62        <activity android:name="com.project.mapchat.MainActivity" />
+62-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:9-50
+62-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:42:19-47
+63
+64        <meta-data
+64-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:44:9-46:55
+65            android:name="com.facebook.sdk.ApplicationId"
+65-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:45:13-58
+66            android:value="@string/facebook_app_id" />
+66-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:46:13-52
+67
+68        <activity
+68-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:48:9-51:48
+69            android:name="com.facebook.FacebookActivity"
+69-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:49:13-57
+70            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+70-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:50:13-96
+71            android:label="@string/app_name"
+71-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:51:13-45
+72            android:theme="@style/com_facebook_activity_theme" />
+72-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:32:13-63
+73        <activity
+73-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:52:9-63:20
+74            android:name="com.facebook.CustomTabActivity"
+74-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:53:13-58
+75            android:exported="true" >
+75-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:54:13-36
+76            <intent-filter>
+76-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:55:13-62:29
+77                <action android:name="android.intent.action.VIEW" />
+77-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:56:17-69
+77-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:56:25-66
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:17-76
+79-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:27-73
+80                <category android:name="android.intent.category.BROWSABLE" />
+80-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:59:17-78
+80-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:59:27-75
+81
+82                <data android:scheme="@string/fb_login_protocol_scheme" />
+82-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:61:17-75
+82-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:61:23-72
+83            </intent-filter>
+84        </activity>
+85        <activity android:name="com.facebook.CustomTabMainActivity" />
+85-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:9-71
+85-->[com.facebook.android:facebook-common:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/AndroidManifest.xml:33:19-68
+86        <!--
+87         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+88         with the application context. This config is merged in with the host app's manifest,
+89         but there can only be one provider with the same authority activated at any given
+90         point; so if the end user has two or more different apps that use Facebook SDK, only the
+91         first one will be able to use the provider. To work around this problem, we use the
+92         following placeholder in the authority to identify each host application as if it was
+93         a completely different provider.
+94        -->
+95        <provider
+95-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:39:9-42:40
+96            android:name="com.facebook.internal.FacebookInitProvider"
+96-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:40:13-70
+97            android:authorities="com.project.mapchat.FacebookInitProvider"
+97-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:41:13-72
+98            android:exported="false" />
+98-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:42:13-37
+99
+100        <receiver
+100-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:44:9-50:20
+101            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+101-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:45:13-86
+102            android:exported="false" >
+102-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:46:13-37
+103            <intent-filter>
+103-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:47:13-49:29
+104                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+104-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:17-95
+104-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:48:25-92
+105            </intent-filter>
+106        </receiver>
+107        <receiver
+107-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:51:9-58:20
+108            android:name="com.facebook.CampaignTrackingReceiver"
+108-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:52:13-65
+109            android:exported="true"
+109-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:53:13-36
+110            android:permission="android.permission.INSTALL_PACKAGES" >
+110-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:54:13-69
+111            <intent-filter>
+111-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:55:13-57:29
+112                <action android:name="com.android.vending.INSTALL_REFERRER" />
+112-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:17-79
+112-->[com.facebook.android:facebook-core:5.13.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7d1551e1c09a59703114e8f27f965d2a/jetified-facebook-core-5.13.0/AndroidManifest.xml:56:25-76
+113            </intent-filter>
+114        </receiver>
+115
+116        <provider
+116-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
+117            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+117-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
+118            android:authorities="com.project.mapchat.mapboxtelemetryinitprovider"
+118-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
+119            android:exported="false"
+119-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
+120            android:initOrder="100" />
+120-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
+121
+122        <service
+122-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
+123            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+123-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3d558904c0cf19acf720e266f81f6b2a/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
+125
+126        <activity
+126-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+127-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+128            android:exported="false"
+128-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+129-->[com.google.android.gms:play-services-base:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+130
+131        <meta-data
+131-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+132            android:name="com.google.android.gms.version"
+132-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+133            android:value="@integer/google_play_services_version" />
+133-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/3e9d16b8a300e737f12f4755458e3ff2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+134
+135        <provider
+135-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+136            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+136-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+137            android:authorities="com.project.mapchat.lifecycle-process"
+137-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+138            android:exported="false"
+138-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+139            android:multiprocess="true" />
+139-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b3c088406576b03c69a90621925ddf75/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+140    </application>
+141
+142</manifest>

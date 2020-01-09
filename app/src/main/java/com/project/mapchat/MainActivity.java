@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
         } else {
             EnableGPS();
+            this.recreate();
         }
         mapView.getMapAsync(this);
     }
@@ -301,7 +302,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (locationEngine != null) {
             locationEngine.removeLocationUpdates(callback);
         }
-        markerViewManager.onDestroy();
+        // kvoli tomuto tu mi crashoval appka
+       // markerViewManager.onDestroy();
 
         mapView.onDestroy();
     }

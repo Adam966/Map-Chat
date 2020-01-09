@@ -2165,6 +2165,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id guideline
 id home
 id homeAsUp
 id icon
@@ -2237,6 +2238,7 @@ id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
 id screen
+id screen_viewpager
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -2279,6 +2281,7 @@ id stretch
 id submenuarrow
 id submit_area
 id switchDark
+id tabLayout
 id tabMode
 id tagName
 id tag_accessibility_actions
@@ -2312,6 +2315,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tutorialDescription
+id tutorialImage
+id tutorialTitle
 id unchecked
 id uniform
 id unknown
@@ -2385,6 +2391,7 @@ layout activity_main
 layout activity_onboarding
 layout activity_settings
 layout activity_splash
+layout activity_tutorial
 layout add_event_layout
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -2411,6 +2418,7 @@ layout design_text_input_password_icon
 layout dp_example
 layout friend_adapter_layout
 layout friends_picker_layout
+layout layout_screen
 layout map_event_view
 layout mapbox_attribution_list_item
 layout mapbox_infowindow_content

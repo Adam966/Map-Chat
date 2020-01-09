@@ -1148,6 +1148,10 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/f01b27bb220ecb79298884ef36a7a2fb/core-1.1.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_activity_tutorial.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/layout/activity_tutorial.xml"
+    },
+    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
@@ -1994,6 +1998,10 @@
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/b57ac753aea2467efb44ea1a44ec6b6a/jetified-facebook-login-5.13.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_layout_screen.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/layout/layout_screen.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
