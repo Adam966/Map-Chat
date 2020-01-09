@@ -1950,6 +1950,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_settings_applications_24px
+drawable indicator
+drawable indicator_selected
+drawable indicator_selector
 drawable item_selected
 drawable mapbox_compass_icon
 drawable mapbox_info_bg_selector
@@ -2281,8 +2284,8 @@ id stretch
 id submenuarrow
 id submit_area
 id switchDark
-id tabLayout
 id tabMode
+id tab_tutorial
 id tagName
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2391,7 +2394,6 @@ layout activity_main
 layout activity_onboarding
 layout activity_settings
 layout activity_splash
-layout activity_tutorial
 layout add_event_layout
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

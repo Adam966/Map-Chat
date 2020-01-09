@@ -13,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppNormal">
-        <activity android:name=".TutorialActivity"></activity>
         <activity
             android:name=".Splash"
             android:theme="@style/SplashTheme">
