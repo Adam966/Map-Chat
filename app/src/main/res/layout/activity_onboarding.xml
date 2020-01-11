@@ -12,41 +12,46 @@
         android:id="@+id/btnOnboarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="12dp"
-        android:text="Next"
+        android:text="skip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tab_tutorial" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_tutorial" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/screen_viewpager"
-        android:layout_width="410dp"
-        android:layout_height="646dp"
+        android:layout_width="412dp"
+        android:layout_height="564dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tab_tutorial"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.149" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_tutorial"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        app:tabIndicator="@null"
-        app:tabBackground="@drawable/indicator_selector"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnOnboarding"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982">
-    </com.google.android.material.tabs.TabLayout>
+        app:layout_constraintVertical_bias="0.888"
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabIndicator="@null"></com.google.android.material.tabs.TabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
