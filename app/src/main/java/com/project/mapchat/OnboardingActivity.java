@@ -128,12 +128,14 @@ public class OnboardingActivity extends AppCompatActivity {
 
             btnRedirect.setVisibility(View.INVISIBLE);
             tab_tutorial.setVisibility(View.INVISIBLE);
+            btnFinish.setVisibility(View.VISIBLE);
     }
 
     private void otherTutorialScreens(){
 
         btnRedirect.setVisibility(View.VISIBLE);
         tab_tutorial.setVisibility(View.VISIBLE);
+        btnFinish.setVisibility(View.INVISIBLE);
     }
 
     private void checkFirstTime(SharedPrefs prefs){
