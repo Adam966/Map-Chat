@@ -118,6 +118,7 @@ public class OnboardingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(OnboardingActivity.this,MainActivity.class);
                 startActivity(i);
+                appSharedPrefs.setOnboardingState(true);
                 finish();
             }
         });
