@@ -2144,6 +2144,8 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id eventDate
+id eventItemName
+id eventItemRecycle
 id eventName
 id eventTime
 id eventVisibility
@@ -2184,6 +2186,7 @@ id infowindow_title
 id inline
 id invisible
 id italic
+id itemLayout
 id item_touch_helper_previous_elevation
 id labeled
 id large
@@ -2301,7 +2304,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView4
 id text_input_password_toggle
 id textinput_counter
@@ -2389,6 +2391,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_actual_event
 layout activity_events
 layout activity_login
 layout activity_main
@@ -2419,6 +2422,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dp_example
+layout event_item_layout
 layout friend_adapter_layout
 layout friends_picker_layout
 layout layout_screen

@@ -6,47 +6,47 @@ import android.content.SharedPreferences;
 public class SharedPrefs {
     SharedPreferences appSharedPrefs;
 
-    protected SharedPrefs(Context context){
+    public SharedPrefs(Context context){
         appSharedPrefs = context.getSharedPreferences("appUser",Context.MODE_PRIVATE);
     }
 
-    protected void setDarkModeState(Boolean state){
+    public void setDarkModeState(Boolean state){
         SharedPreferences.Editor editor = appSharedPrefs.edit();
         editor.putBoolean("darkmode",state);
         editor.commit();
     }
 
-    protected Boolean loadDarkModeState(){
+    public Boolean loadDarkModeState(){
         Boolean state = appSharedPrefs.getBoolean("darkmode",false);
         return state;
     }
 
-    protected void setId(String id){
+    public void setId(String id){
         SharedPreferences.Editor editor = appSharedPrefs.edit();
         editor.putString("id", id);
         editor.apply();
     }
 
-    protected String getId(){
+    public String getId(){
         String id = appSharedPrefs.getString("id",null);
         return id;
     }
 
-    protected void setToken(){
+    public void setToken(){
 
     }
 
-    protected void getToken(){
+    public void getToken(){
 
     }
 
-    protected void setOnboardingState(boolean state){
+    public void setOnboardingState(boolean state){
         SharedPreferences.Editor editor = appSharedPrefs.edit();
         editor.putBoolean("tutorialViewed",state);
         editor.apply();
     }
 
-    protected Boolean getOnboardingState(){
+    public Boolean getOnboardingState(){
         Boolean state = appSharedPrefs.getBoolean("tutorialViewed",false);
         return state;
     }

@@ -13,8 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppNormal">
+        <activity android:name=".main.activities.ActualEvent"></activity>
         <activity
-            android:name=".Splash"
+            android:name=".main.activities.Splash"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +24,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".main.activities.Login"
             android:launchMode="singleTask" />
         <activity
-            android:name=".AddEventActivity"
+            android:name=".main.activities.AddEventActivity"
             android:launchMode="singleTask"
             android:theme="@style/Transparent" />
         <activity
@@ -35,10 +36,10 @@
         <activity
             android:name=".ChooseFriends"
             android:theme="@style/Transparent" />
-        <activity android:name=".OnboardingActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".EventsActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".tutorial.OnboardingActivity" />
+        <activity android:name=".main.activities.SettingsActivity" />
+        <activity android:name=".main.activities.EventsActivity" />
+        <activity android:name=".main.activities.MainActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

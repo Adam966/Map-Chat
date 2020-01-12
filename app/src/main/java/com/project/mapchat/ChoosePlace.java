@@ -12,6 +12,7 @@ import com.mapbox.api.geocoding.v5.MapboxGeocoding;
 import com.mapbox.api.geocoding.v5.models.CarmenFeature;
 import com.mapbox.api.geocoding.v5.models.GeocodingResponse;
 import com.project.mapchat.adapters.PlacesAdapter;
+import com.project.mapchat.main.activities.AddEventActivity;
 
 import java.util.ArrayList;
 
