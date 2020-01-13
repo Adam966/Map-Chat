@@ -2198,6 +2198,7 @@ id line3
 id listMode
 id list_item
 id loadingBar
+id loginError
 id loginPageText
 id login_button
 id logoView

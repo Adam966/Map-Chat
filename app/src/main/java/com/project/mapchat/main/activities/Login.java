@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -49,6 +50,7 @@ public class Login extends AppCompatActivity {
     private LoginButton loginButton;
     private CallbackManager callbackManager;
     private SharedPrefs appSharedPrefs;
+    TextView loginError;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +62,7 @@ public class Login extends AppCompatActivity {
         appSharedPrefs = new SharedPrefs(this);
 
         loginButton = findViewById(R.id.login_button);
+        loginError = findViewById(R.id.loginError);
 
         FacebookSdk.sdkInitialize(getApplicationContext());
         FacebookSdk.setIsDebugEnabled(true);
@@ -83,12 +86,12 @@ public class Login extends AppCompatActivity {
 
                     @Override
                     public void onCancel() {
-                        // App code
+                        loginError.setText("Login Canceled");
                     }
 
                     @Override
                     public void onError(FacebookException exception) {
-                        // App code
+                        loginError.setText("Login Error");
                     }
                 });
     }
@@ -148,7 +151,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void checkLogin(){
-
+        // nahradit s requestom updateUserData
         if(AccessToken.getCurrentAccessToken() != null){
             setViewInvisible();
             Intent i = new Intent(Login.this, MainActivity.class);
@@ -157,7 +160,6 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "checkLogin() "+AccessToken.getCurrentAccessToken().toString(), Toast.LENGTH_SHORT).show();
         }
     }
-
 
     private void setViewInvisible(){
         findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
@@ -192,6 +194,43 @@ public class Login extends AppCompatActivity {
                 .getInstance()
                 .getloginAuthReq()
                 .loginAuthRequest(requestBody);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                Log.wtf("ResponseCode",String.valueOf(response.code()));
+                if(response.isSuccessful()){
+                    Log.wtf("ResponseServerDano",response.toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void updateUserData(String serverToken,String facebookToken){
+
+        HashMap<String, String> params = new HashMap<>();
+        // putting token to parameters of request
+        params.put("Authorization","Bearer"+" "+serverToken);
+        params.put("fToken","Bearer"+" "+serverToken);
+
+        // making Request Body through Gson Library
+        String strRequestBody = new Gson().toJson(params);
+        Log.wtf("updateUserData",strRequestBody);
+
+        final RequestBody requestBody = RequestBody.create(MediaType.
+                parse("application/json"),strRequestBody);
+
+        Log.wtf("requestBody",requestBody.toString());
+
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .getupdateUserDataReq()
+                .updateUserDataRequest(serverToken,facebookToken);
 
         call.enqueue(new Callback<ResponseBody>() {
             @Override

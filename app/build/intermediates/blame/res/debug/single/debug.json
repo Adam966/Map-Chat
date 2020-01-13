@@ -20,12 +20,12 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d05eaeeae4c6c000d0118a1f6f004614/jetified-facebook-common-5.13.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_bearing_icon.png.flat",
