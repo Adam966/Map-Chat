@@ -3,6 +3,7 @@ package com.project.mapchat.main.activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,9 +29,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.event_item_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.event_item_layout,parent,false);
         ViewHolder holder = new ViewHolder(view);
-        return new ViewHolder(view);
+        return holder;
     }
 
     @Override
@@ -40,12 +41,13 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
 
        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
            @Override
-           public void onClick(View v) {
-                Intent i = new Intent(v.getContext(),MainActivity.class);
+           public void onClick(View view) {
+                Log.wtf("ONCLICK","Works");
+                Intent i = new Intent(view.getContext(),MainActivity.class);
                 i.putExtra("eventName",eventName);
+                view.getContext().startActivity(i);
            }
        });
-
     }
 
     @Override
