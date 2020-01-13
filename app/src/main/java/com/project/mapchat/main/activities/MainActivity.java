@@ -149,7 +149,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
         } else {
             EnableGPS();
-            this.recreate();
         }
         mapView.getMapAsync(this);
     }
@@ -332,7 +331,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents(style);
+                    //getEvents(style);
                 }
             });
         }else {
@@ -340,7 +339,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents(style);
+                    //getEvents(style);
                 }
             });
         }
@@ -379,6 +378,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
+    /*
     private void getEvents(final Style style) {
         ServerService service = new ServerService();
         service.createRetrofit();
@@ -395,6 +395,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
     }
+    */
 
     private void createMarkerPopUp(Symbol symbol) {
         markerViewManager = new MarkerViewManager(mapView, mapboxMap);
@@ -503,7 +504,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 switch (resultCode) {
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
-                        this.recreate();
+                        //this.recreate();
+                        restart();
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:
@@ -514,6 +516,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         break;
                 }
                 break;
+        }
+    }
+
+    private void restart() {
+        if (android.os.Build.VERSION.SDK_INT >= 11) {
+            //Code for recreate
+            this.recreate();
+        } else {
+            //Code for Intent
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
         }
     }
 }

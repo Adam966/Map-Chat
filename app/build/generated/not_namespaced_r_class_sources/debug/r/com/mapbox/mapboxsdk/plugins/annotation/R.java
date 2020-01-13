@@ -889,20 +889,20 @@ public final class R {
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
         public static final int abc_tooltip = 0x7f0b001b;
-        public static final int mapbox_attribution_list_item = 0x7f0b0040;
-        public static final int mapbox_infowindow_content = 0x7f0b0041;
-        public static final int mapbox_mapview_internal = 0x7f0b0042;
-        public static final int mapbox_view_image_marker = 0x7f0b0043;
-        public static final int notification_action = 0x7f0b004c;
-        public static final int notification_action_tombstone = 0x7f0b004d;
-        public static final int notification_template_custom_big = 0x7f0b0054;
-        public static final int notification_template_icon_group = 0x7f0b0055;
-        public static final int notification_template_part_chronometer = 0x7f0b0059;
-        public static final int notification_template_part_time = 0x7f0b005a;
-        public static final int select_dialog_item_material = 0x7f0b005e;
-        public static final int select_dialog_multichoice_material = 0x7f0b005f;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0060;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b0061;
+        public static final int mapbox_attribution_list_item = 0x7f0b003f;
+        public static final int mapbox_infowindow_content = 0x7f0b0040;
+        public static final int mapbox_mapview_internal = 0x7f0b0041;
+        public static final int mapbox_view_image_marker = 0x7f0b0042;
+        public static final int notification_action = 0x7f0b004b;
+        public static final int notification_action_tombstone = 0x7f0b004c;
+        public static final int notification_template_custom_big = 0x7f0b0053;
+        public static final int notification_template_icon_group = 0x7f0b0054;
+        public static final int notification_template_part_chronometer = 0x7f0b0058;
+        public static final int notification_template_part_time = 0x7f0b0059;
+        public static final int select_dialog_item_material = 0x7f0b005d;
+        public static final int select_dialog_multichoice_material = 0x7f0b005e;
+        public static final int select_dialog_singlechoice_material = 0x7f0b005f;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0060;
     }
     public static final class string {
         private string() {}

@@ -32,6 +32,7 @@ public class ChooseFriends extends AppCompatActivity implements FriendAdapter.On
         searchView = findViewById(R.id.searchViewFriends);
         recyclerView = findViewById(R.id.friendsList);
 
+        /*
         serverService = new ServerService();
         serverService.createRetrofit();
         serverService.getService().getFriends(1).enqueue(new Callback<ArrayList<Friend>>() {
@@ -45,6 +46,8 @@ public class ChooseFriends extends AppCompatActivity implements FriendAdapter.On
                 Log.i("ERROR", t.getMessage());
             }
         });
+
+        */
     }
 
     @Override
