@@ -15,7 +15,7 @@ public class ServerService {
     private static ServerService clientInstance;
     private Retrofit retrofit;
 
-    public void createRetrofit() {
+    public ServerService() {
 
         // for debugging request
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
@@ -26,9 +26,9 @@ public class ServerService {
 
         // build retrofit client with url of the server
         retrofit = new Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
-                .client(client)
                 .baseUrl(BASE_URL)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
                 .build();
         }
 

@@ -4153,3 +4153,4 @@ int styleable mapbox_MapView_mapbox_uiRotateGestures 42
 int styleable mapbox_MapView_mapbox_uiScrollGestures 43
 int styleable mapbox_MapView_mapbox_uiTiltGestures 44
 int styleable mapbox_MapView_mapbox_uiZoomGestures 45
+int xml network_security_config 0x7f110000

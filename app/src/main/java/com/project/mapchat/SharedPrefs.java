@@ -32,12 +32,26 @@ public class SharedPrefs {
         return id;
     }
 
-    public void setToken(){
-
+    public void setServerToken(String token){
+        SharedPreferences.Editor editor = appSharedPrefs.edit();
+        editor.putString("serverToken",token);
+        editor.apply();
     }
 
-    public void getToken(){
+    public String getServerToken(){
+        String token = appSharedPrefs.getString("serverToken",null);
+        return token;
+    }
 
+    public void setFbToken(String token){
+        SharedPreferences.Editor editor = appSharedPrefs.edit();
+        editor.putString("fbToken",token);
+        editor.apply();
+    }
+
+    public String getFbToken(){
+        String token = appSharedPrefs.getString("fbToken",null);
+        return token;
     }
 
     public void setOnboardingState(boolean state){

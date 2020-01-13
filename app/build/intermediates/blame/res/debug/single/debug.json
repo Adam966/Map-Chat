@@ -3000,6 +3000,10 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/xml/network_security_config.xml"
+    },
+    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/bd8a4935a17dde33dc1d62d4f9914d3b/play-services-base-17.0.0/res/drawable-hdpi-v4/googleg_standard_color_18.png"
     },

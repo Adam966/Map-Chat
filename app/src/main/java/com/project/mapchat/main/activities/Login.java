@@ -3,7 +3,9 @@ package com.project.mapchat.main.activities;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,13 +23,24 @@ import com.facebook.LoggingBehavior;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.gson.Gson;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.service.ServerService;
 import com.project.mapchat.tutorial.OnboardingActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.HashMap;
+
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 import static android.view.View.GONE;
 
@@ -111,15 +124,9 @@ public class Login extends AppCompatActivity {
             @Override
             public void onCompleted(JSONObject object, GraphResponse response)
             {
-                try {
-                    Log.i("RESPONSE",response.toString());
-                    String id = object.getString("id");
-                    Toast.makeText(Login.this, "loadUserProfile"+AccessToken.getCurrentAccessToken().toString() , Toast.LENGTH_SHORT).show();
-                    appSharedPrefs.setId(id);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+                Log.wtf("RESPONSE",response.toString());
+                Toast.makeText(Login.this, "loadUserProfile" , Toast.LENGTH_SHORT).show();
+                loginAuthRequest(AccessToken.getCurrentAccessToken());
             }
         });
 
@@ -160,6 +167,46 @@ public class Login extends AppCompatActivity {
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
+    }
+
+    private void loginAuthRequest(AccessToken accessToken){
+
+        // getting access token to string token
+        String token = String.valueOf(accessToken.getToken());
+
+        HashMap<String, String> params = new HashMap<>();
+        // putting token to parameters of request
+        params.put("token",token);
+
+        // making Request Body through Gson Library
+        String strRequestBody = new Gson().toJson(params);
+        Log.wtf("loginAuthToken",strRequestBody);
+
+
+        final RequestBody requestBody = RequestBody.create(MediaType.
+                parse("application/json"),strRequestBody);
+
+        Log.wtf("requestBody",requestBody.toString());
+
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .getloginAuthReq()
+                .loginAuthRequest(requestBody);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                Log.wtf("ResponseCode",String.valueOf(response.code()));
+                if(response.isSuccessful()){
+                    Log.wtf("ResponseServerDano",response.toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
 }

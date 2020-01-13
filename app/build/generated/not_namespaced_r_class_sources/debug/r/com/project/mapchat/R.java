@@ -24215,4 +24215,7 @@ public final class R {
      */
     public static final int mapbox_MapView_mapbox_uiZoomGestures=45;
   }
+  public static final class xml {
+    public static final int network_security_config=0x7f110000;
+  }
 }
