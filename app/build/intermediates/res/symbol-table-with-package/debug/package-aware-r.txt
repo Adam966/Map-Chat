@@ -1889,6 +1889,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1949,6 +1950,7 @@ drawable ic_menu_24px
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_send_black_24dp
 drawable ic_settings_applications_24px
 drawable indicator
 drawable indicator_selected
@@ -1984,6 +1986,7 @@ drawable messenger_button_white_bg_round
 drawable messenger_button_white_bg_selector
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
+drawable my_message
 drawable nav_item_color_state
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1999,6 +2002,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable splash_bkg
+drawable their_message
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -2065,6 +2069,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addEventActionButton
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2074,6 +2079,7 @@ id async
 id attributionView
 id auto
 id automatic
+id avatar
 id barrier
 id beginning
 id blocking
@@ -2138,6 +2144,7 @@ id dimensions
 id direct
 id disableHome
 id display_always
+id editText
 id edit_query
 id end
 id end_padder
@@ -2157,7 +2164,6 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
-id floatingActionButton
 id forever
 id friendName
 id friendNameAdapter
@@ -2207,12 +2213,15 @@ id mapView
 id masked
 id media_actions
 id message
+id message_body
+id messages_view
 id messenger_send_button
 id middle
 id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name
 id navigation_header_container
 id never
 id never_display
@@ -2223,6 +2232,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id openChatActionButton
 id open_graph
 id outline
 id packed
@@ -2392,6 +2402,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat
 layout activity_events
 layout activity_login
 layout activity_main
@@ -2439,6 +2450,7 @@ layout messenger_button_send_white_round
 layout messenger_button_send_white_small
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout my_message
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -2461,6 +2473,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout their_message
 menu bottom_navigation_main
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -260,6 +260,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(new Intent(this, AddEventActivity.class));
     }
 
+    public void openChat(View view) {
+        startActivity(new Intent(this, ChatActivity.class));
+    }
+
     @Override
     public void onStart() {
         super.onStart();

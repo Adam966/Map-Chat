@@ -24,6 +24,7 @@ android {
 }
 
 dependencies {
+
     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
 
     implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:4.9.0'
@@ -31,7 +32,7 @@ dependencies {
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v8:0.7.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-markerview-v8:0.3.0'
 
-    implementation 'com.squareup.retrofit2:retrofit:(2.7.0)'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson'
 
     implementation 'de.hdodenhof:circleimageview:3.0.1'

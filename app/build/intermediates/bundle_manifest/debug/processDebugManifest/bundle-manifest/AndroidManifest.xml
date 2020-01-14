@@ -34,6 +34,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppNormal" >
+        <activity android:name="com.project.mapchat.main.activities.ChatActivity" />
         <activity
             android:name="com.project.mapchat.main.activities.Splash"
             android:theme="@style/SplashTheme" >

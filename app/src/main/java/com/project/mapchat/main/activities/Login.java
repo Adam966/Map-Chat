@@ -96,6 +96,45 @@ public class Login extends AppCompatActivity {
                 });
     }
 
+    private void loginAuthRequest(AccessToken accessToken){
+
+        // getting access token to string token
+        String token = String.valueOf(accessToken.getToken());
+
+        HashMap<String, String> params = new HashMap<>();
+        // putting token to parameters of request
+        params.put("token",token);
+
+        // making Request Body through Gson Library
+        String strRequestBody = new Gson().toJson(params);
+        Log.wtf("loginAuthToken",strRequestBody);
+
+        final RequestBody requestBody = RequestBody.create(MediaType.
+                parse("application/json"),strRequestBody);
+
+        Log.wtf("requestBody",requestBody.toString());
+
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .getloginAuthReq()
+                .loginAuthRequest(requestBody);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                Log.wtf("ResponseCode",String.valueOf(response.code()));
+                if(response.isSuccessful()){
+                    Log.wtf("ResponseServerDano",response.toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         callbackManager.onActivityResult(requestCode,resultCode,data);
@@ -113,6 +152,7 @@ public class Login extends AppCompatActivity {
                    setViewVisible();
                    Toast.makeText(Login.this, "TOKEN REMOVED", Toast.LENGTH_SHORT).show();
                }
+
             }else{
                 loadUserProfile(currentAccessToken);
                 getFbFriends(currentAccessToken);
@@ -137,6 +177,7 @@ public class Login extends AppCompatActivity {
         parameters.putString("fields","id,name,link,email,picture,friends");
         request.setParameters(parameters);
         request.executeAsync();
+
     }
 
     // request pre friendov
@@ -169,46 +210,6 @@ public class Login extends AppCompatActivity {
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
-    }
-
-    private void loginAuthRequest(AccessToken accessToken){
-
-        // getting access token to string token
-        String token = String.valueOf(accessToken.getToken());
-
-        HashMap<String, String> params = new HashMap<>();
-        // putting token to parameters of request
-        params.put("token",token);
-
-        // making Request Body through Gson Library
-        String strRequestBody = new Gson().toJson(params);
-        Log.wtf("loginAuthToken",strRequestBody);
-
-
-        final RequestBody requestBody = RequestBody.create(MediaType.
-                parse("application/json"),strRequestBody);
-
-        Log.wtf("requestBody",requestBody.toString());
-
-        Call<ResponseBody> call = ServerService
-                .getInstance()
-                .getloginAuthReq()
-                .loginAuthRequest(requestBody);
-
-        call.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Log.wtf("ResponseCode",String.valueOf(response.code()));
-                if(response.isSuccessful()){
-                    Log.wtf("ResponseServerDano",response.toString());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-            }
-        });
     }
 
     private void updateUserData(String serverToken,String facebookToken){
@@ -247,5 +248,4 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
 }
