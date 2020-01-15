@@ -83,8 +83,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private MapView mapView;
     private MapboxMap mapboxMap;
     private LocationEngine locationEngine;
-    private long DEFAULT_INTERVAL_IN_MILLISECONDS = 3000L;
-    private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 25;
+    private long DEFAULT_INTERVAL_IN_MILLISECONDS = 1000L;
+    private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 1;
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
     private ImageView userLocation;
 
@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             Toast.makeText(this, "Gps is Enabled", Toast.LENGTH_SHORT).show();
         } else {
-            EnableGPS();
+           EnableGPS();
         }
         mapView.getMapAsync(this);
     }
@@ -165,6 +165,21 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
+    }
+
+    public void userLocation(View view) {
+        Log.wtf("LOCATION", "GET USER LOCATION");
+        enableLocationComponent(mapboxMap.getStyle());
+    }
+
+    ////////////////////////////////// CHANGE CAMERA POSITION //////////////////////////////////////
+    private void changeCameraPosition(LatLng latLng) {
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latLng)
+                .zoom(14)
+                .build();
+        Log.wtf("CAMERA POSITION", "CHANGE");
+        mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 7000);
     }
 
     ///////////////////////////////////////////// LOCATION PERMISSIONS /////////////////////////////
@@ -285,6 +300,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onResume() {
         super.onResume();
         mapView.onResume();
+        Log.wtf("ONRESUME","On resume is on");
     }
 
     @Override
