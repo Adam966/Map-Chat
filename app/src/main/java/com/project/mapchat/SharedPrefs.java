@@ -64,4 +64,12 @@ public class SharedPrefs {
         Boolean state = appSharedPrefs.getBoolean("tutorialViewed",false);
         return state;
     }
+
+    public void removeServerToken(){
+      appSharedPrefs.edit().remove("serverToken").apply();
+    }
+
+    public void removeFbToken(){
+        appSharedPrefs.edit().remove("fbToken").apply();
+    }
 }

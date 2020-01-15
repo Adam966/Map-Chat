@@ -166,14 +166,14 @@ public class Login extends AppCompatActivity {
         {
             if(currentAccessToken==null){
                // Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG).show();
-               if(AccessToken.getCurrentAccessToken() == null){
+               if(AccessToken.getCurrentAccessToken() == null ){
                    setViewVisible();
                    Toast.makeText(Login.this, "TOKEN REMOVED", Toast.LENGTH_SHORT).show();
                }
 
             }else{
                 loadUserProfile(currentAccessToken);
-                getFbFriends(currentAccessToken);
+                // getFbFriends(currentAccessToken);
             }
         }
     };
@@ -199,6 +199,7 @@ public class Login extends AppCompatActivity {
     }
 
     // request pre friendov
+    /*
     private void getFbFriends(AccessToken newAccessToken){
         GraphRequest request2 = GraphRequest.newMyFriendsRequest(newAccessToken, new GraphRequest.GraphJSONArrayCallback() {
             @Override
@@ -209,14 +210,15 @@ public class Login extends AppCompatActivity {
         request2.executeAsync();
     }
 
+     */
+
     private void checkLogin(){
-        // nahradit s requestom updateUserData
-        if(AccessToken.getCurrentAccessToken() != null){
+        if(appSharedPrefs.getServerToken() != null && appSharedPrefs.getFbToken() != null){
             setViewInvisible();
             Intent i = new Intent(Login.this, MainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
-            Toast.makeText(this, "checkLogin() "+AccessToken.getCurrentAccessToken().toString(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "checkLogin()", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -230,39 +232,4 @@ public class Login extends AppCompatActivity {
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
     }
 
-    private void updateUserData(String serverToken,String facebookToken){
-
-        HashMap<String, String> params = new HashMap<>();
-        // putting token to parameters of request
-        params.put("Authorization","Bearer"+" "+serverToken);
-        params.put("fToken","Bearer"+" "+serverToken);
-
-        // making Request Body through Gson Library
-        String strRequestBody = new Gson().toJson(params);
-        Log.wtf("updateUserData",strRequestBody);
-
-        final RequestBody requestBody = RequestBody.create(MediaType.
-                parse("application/json"),strRequestBody);
-
-        Log.wtf("requestBody",requestBody.toString());
-
-        Call<ResponseBody> call = ServerService
-                .getInstance()
-                .getupdateUserDataReq()
-                .updateUserDataRequest(serverToken,facebookToken);
-
-        call.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Log.wtf("ResponseCode",String.valueOf(response.code()));
-                if(response.isSuccessful()){
-                }
-            }
-
-            @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-            }
-        });
-    }
 }
