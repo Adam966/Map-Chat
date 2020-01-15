@@ -11,7 +11,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServerService {
-    private final String BASE_URL = "http://192.168.0.103:5000/";
+    // change ip address when connected to another wifi or network
+    private final String BASE_URL = "http://192.168.2.15:5000/";
     private static ServerService clientInstance;
     private Retrofit retrofit;
 

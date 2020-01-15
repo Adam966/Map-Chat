@@ -34,6 +34,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 import okhttp3.MediaType;
@@ -124,7 +125,11 @@ public class Login extends AppCompatActivity {
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
-                    Log.wtf("ResponseServerDano",response.toString());
+                    try {
+                        Log.wtf("Dano",response.body().string());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 
@@ -238,7 +243,6 @@ public class Login extends AppCompatActivity {
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
-                    Log.wtf("ResponseServerDano",response.toString());
                 }
             }
 
