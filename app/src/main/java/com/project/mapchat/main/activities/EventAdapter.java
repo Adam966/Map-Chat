@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.mapchat.R;
@@ -19,11 +20,11 @@ import java.util.List;
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
     private List<String> eventsData;
-    private LayoutInflater inflater;
+    private ConstraintLayout inflater;
 
     public EventAdapter(List<String> eventsData, Context context) {
         this.eventsData = eventsData;
-        this.inflater = LayoutInflater.from(context);
+        //this.inflater = ConstraintLayout.from(context);
     }
 
     @NonNull
@@ -45,6 +46,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
                 Log.wtf("ONCLICK","Works");
                 Intent i = new Intent(view.getContext(),MainActivity.class);
                 i.putExtra("eventName",eventName);
+                i.putExtra("Lat", 50.56);
+                i.putExtra("Lon", 80.54);
                 view.getContext().startActivity(i);
            }
        });
@@ -58,7 +61,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView eventName;
-        LinearLayout parentLayout;
+        ConstraintLayout parentLayout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -44,6 +44,8 @@ import com.mapbox.android.core.location.LocationEngineResult;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
+import com.mapbox.mapboxsdk.camera.CameraPosition;
+import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
 import com.mapbox.mapboxsdk.geometry.LatLng;
 import com.mapbox.mapboxsdk.location.LocationComponent;
 import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions;
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private long DEFAULT_INTERVAL_IN_MILLISECONDS = 3000L;
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 25;
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
-    private MarkerViewManager markerViewManager;
+    private ImageView userLocation;
 
     // Google
     public static final int REQUEST_LOCATION=001;
@@ -112,6 +114,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
+
+        userLocation = findViewById(R.id.userLocation);
+        userLocation.setImageDrawable(getDrawable(R.drawable.ic_my_location_black_24dp));
+        userLocation.bringToFront();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
@@ -156,6 +162,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
+        Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
     }
@@ -218,6 +225,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         locationEngine.requestLocationUpdates(request, callback, getMainLooper());
         locationEngine.getLastLocation(callback);
+
+        if (getIntent().getDoubleExtra("Lat", 0) != 0) {
+            changeCameraPosition(new LatLng(getIntent().getDoubleExtra("Lat", 0), getIntent().getDoubleExtra("Lon", 0)));
+            getIntent().removeExtra("Lat");
+        }
     }
 
     ////////////////////////////////////////////// LOCATION CHANGE CALLBACK ////////////////////////
@@ -264,6 +276,23 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(new Intent(this, ChatActivity.class));
     }
 
+    //////////////////////////////// GET USER POSITION /////////////////////////////////////////////
+    public void userLocation(View view) {
+        Log.wtf("LOCATION", "GET USER LOCATION");
+        enableLocationComponent(mapboxMap.getStyle());
+    }
+
+    ////////////////////////////////// CHANGE CAMERA POSITION //////////////////////////////////////
+    private void changeCameraPosition(LatLng latLng) {
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latLng)
+                .zoom(14)
+                .build();
+        Log.wtf("CAMERA POSITION", "CHANGE");
+        mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 7000);
+    }
+
+
     @Override
     public void onStart() {
         super.onStart();
@@ -306,9 +335,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (locationEngine != null) {
             locationEngine.removeLocationUpdates(callback);
         }
-        // kvoli tomuto tu mi crashoval appka
-       // markerViewManager.onDestroy();
-
         mapView.onDestroy();
     }
 
@@ -319,7 +345,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView.onSaveInstanceState(outState);
     }
 
-    // setting darkmode
+    ///////////////////////////////////// setting darkmode /////////////////////////////////////////
     private void setDarkMode(SharedPrefs prefs){
         if(prefs.loadDarkModeState() == true){
             setTheme(R.style.AppDark);
@@ -375,7 +401,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         manager.addClickListener(new OnSymbolClickListener() {
             @Override
             public void onAnnotationClick(Symbol symbol) {
-                //createMarkerPopUp(symbol);
                 Toast.makeText(getApplicationContext(), "SYMBOL CLICKED", Toast.LENGTH_LONG).show();
             }
         });
@@ -401,27 +426,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     */
 
-    private void createMarkerPopUp(Symbol symbol) {
-        markerViewManager = new MarkerViewManager(mapView, mapboxMap);
-
-        View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.map_event_view, null);
-        view.setLayoutParams(new FrameLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT));
-
-
-        final MarkerView markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(),symbol.getLatLng().getLongitude()), view);
-
-        TextView textView = view.findViewById(R.id.mapText);
-        ImageView imageView = view.findViewById(R.id.closeEventBtn);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                markerViewManager.removeMarker(markerView);
-            }
-        });
-        markerViewManager.addMarker(markerView);
-
-    }
-
     private LatLng createRandomLatLng() {
         Random random = new Random();
         return new LatLng((random.nextDouble() * -180.0) + 90.0, (random.nextDouble() * -360.0) + 180.0);
@@ -443,7 +447,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
-    /////////////////////////// GOOGLE SERVICE ///////////////////////////
+    /////////////////////////// GOOGLE SERVICE /////////////////////////////////////////////////////
     public void EnableGPS() {
         googleApiClient = new GoogleApiClient.Builder(context)
                 .addApi(LocationServices.API).addConnectionCallbacks(this)
