@@ -13,13 +13,10 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -59,23 +56,14 @@ import com.mapbox.mapboxsdk.plugins.annotation.OnSymbolClickListener;
 import com.mapbox.mapboxsdk.plugins.annotation.Symbol;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
-import com.mapbox.mapboxsdk.plugins.markerview.MarkerView;
-import com.mapbox.mapboxsdk.plugins.markerview.MarkerViewManager;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.entities.Event;
-import com.project.mapchat.service.ServerService;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-
-import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
@@ -98,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     PendingResult<LocationSettingsResult> pendingResult;
 
     // Class for Shared Preferences
-    private SharedPrefs modSharedPrefs;
+    private SharedPrefs appSharedPrefs;
 
     // Permissions
     private PermissionsManager permissionsManager;
@@ -106,11 +94,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        modSharedPrefs = new SharedPrefs(this);
-        setDarkMode(modSharedPrefs);
+        appSharedPrefs = new SharedPrefs(this);
+        setDarkMode(appSharedPrefs);
 
         super.onCreate(savedInstanceState);
         context = this;
+
+        // accessing tokens from shared preferences
+        Log.i("Tokens",appSharedPrefs.getServerToken()+"   "+appSharedPrefs.getServerToken());
 
         Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
@@ -354,7 +345,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     ////////////////////////////////////// SET STYLE FOR MAP ///////////////////////////////////////
     private void setDarkModeMap(MapboxMap mapbox){
-        if(modSharedPrefs.loadDarkModeState() == true){
+        if(appSharedPrefs.loadDarkModeState() == true){
             mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
@@ -511,7 +502,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     case Activity.RESULT_OK:
                         // All required changes were successfully made
                         //this.recreate();
-                        restart();
                         Toast.makeText(context, "Gps enabled", Toast.LENGTH_SHORT).show();
                         break;
                     case Activity.RESULT_CANCELED:

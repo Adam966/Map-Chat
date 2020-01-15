@@ -126,8 +126,21 @@ public class Login extends AppCompatActivity {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
                     try {
-                        Log.wtf("Dano",response.body().string());
+                        String responseData = response.body().string();
+
+                        JSONObject jsonobject = new JSONObject(responseData);
+                        String serverToken = jsonobject.getString("token");
+                        String fbToken = jsonobject.getString("facebookToken");
+
+                        Log.wtf("serverToken",serverToken);
+                        Log.wtf("facebookToken",fbToken);
+
+                        appSharedPrefs.setServerToken(serverToken);
+                        appSharedPrefs.setFbToken(fbToken);
+
                     } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
