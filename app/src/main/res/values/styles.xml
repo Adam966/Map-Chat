@@ -4,10 +4,10 @@
     <style name="AppNormal" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="bkgcolor">#FFFFFF</item>
-        <item name="barcolor">#0000A0</item>
-        <item name="iconcolor">#FFFFFF</item>
-        <item name="coloriconchecked">#010154</item>
-        <item name="textcolor">#0000A0</item>
+        <item name="barcolor">#293896</item>
+        <item name="iconcolor">#FF9750</item>
+        <item name="coloriconchecked">#141B4A</item>
+        <item name="textcolor">#293896</item>
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">

@@ -7,11 +7,12 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
+import retrofit2.http.Multipart;
 
 public interface UserInfo {
 
     @Headers("Content-Type:application/json")
     @GET("api/user/userinfo")
-    Call<ResponseBody> userInfoRequest(@Header("Authorization") String serverToken, @Body RequestBody body);
+    Call<ResponseBody> userInfoRequest(@Header("Authorization") RequestBody serverToken);
 
 }

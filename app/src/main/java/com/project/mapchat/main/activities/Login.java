@@ -166,9 +166,10 @@ public class Login extends AppCompatActivity {
         {
             if(currentAccessToken==null){
                // Toast.makeText(Login.this,"User Logged out",Toast.LENGTH_LONG).show();
-               if(AccessToken.getCurrentAccessToken() == null ){
+               if(AccessToken.getCurrentAccessToken() == null && appSharedPrefs.getServerToken() == null
+                  && appSharedPrefs.getFbToken() == null){
                    setViewVisible();
-                   Toast.makeText(Login.this, "TOKEN REMOVED", Toast.LENGTH_SHORT).show();
+                   Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
                }
 
             }else{

@@ -56,7 +56,6 @@ public class ApplicationOwner extends Application implements LifecycleObserver {
         HashMap<String, String> params = new HashMap<>();
         // putting token to parameters of request
         params.put("Authorization","Bearer"+" "+serverToken);
-        params.put("fToken","Bearer"+" "+serverToken);
 
         // making Request Body through Gson Library
         String strRequestBody = new Gson().toJson(params);
