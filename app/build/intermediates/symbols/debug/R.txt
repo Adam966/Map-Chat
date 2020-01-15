@@ -2119,7 +2119,10 @@ int drawable notify_panel_notification_icon_bg 0x7f0700d4
 int drawable splash_bkg 0x7f0700d5
 int drawable tooltip_frame_dark 0x7f0700d6
 int drawable tooltip_frame_light 0x7f0700d7
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
 int id ALT 0x7f080000
 int id CTRL 0x7f080001
 int id FUNCTION 0x7f080002
@@ -2737,7 +2740,10 @@ int id wide 0x7f08014d
 int id withText 0x7f08014e
 int id wrap 0x7f08014f
 int id wrap_content 0x7f080150
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
 int integer abc_config_activityDefaultDur 0x7f090000
 int integer abc_config_activityShortDur 0x7f090001
 int integer app_bar_elevation_anim_duration 0x7f090002

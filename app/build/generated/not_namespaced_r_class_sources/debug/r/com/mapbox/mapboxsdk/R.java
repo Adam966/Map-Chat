@@ -186,6 +186,7 @@ public final class R {
         private drawable() {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int mapbox_compass_icon = 0x7f0700aa;
         public static final int mapbox_info_bg_selector = 0x7f0700ab;
         public static final int mapbox_info_icon_default = 0x7f0700ac;
@@ -218,6 +219,8 @@ public final class R {
         public static final int notification_tile_bg = 0x7f0700d5;
         public static final int notify_panel_notification_icon_bg = 0x7f0700d6;
 =======
+=======
+>>>>>>> dev
         public static final int mapbox_compass_icon = 0x7f0700a9;
         public static final int mapbox_info_bg_selector = 0x7f0700aa;
         public static final int mapbox_info_icon_default = 0x7f0700ab;
@@ -249,7 +252,10 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f0700d2;
         public static final int notification_tile_bg = 0x7f0700d3;
         public static final int notify_panel_notification_icon_bg = 0x7f0700d4;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class id {
         private id() {}

@@ -63,6 +63,7 @@ public final class R {
         private drawable() {}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int messenger_bubble_large_blue = 0x7f0700bd;
         public static final int messenger_bubble_large_white = 0x7f0700be;
         public static final int messenger_bubble_small_blue = 0x7f0700bf;
@@ -85,6 +86,8 @@ public final class R {
         public static final int notification_tile_bg = 0x7f0700d5;
         public static final int notify_panel_notification_icon_bg = 0x7f0700d6;
 =======
+=======
+>>>>>>> dev
         public static final int messenger_bubble_large_blue = 0x7f0700bc;
         public static final int messenger_bubble_large_white = 0x7f0700bd;
         public static final int messenger_bubble_small_blue = 0x7f0700be;
@@ -106,7 +109,10 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f0700d2;
         public static final int notification_tile_bg = 0x7f0700d3;
         public static final int notify_panel_notification_icon_bg = 0x7f0700d4;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class id {
         private id() {}

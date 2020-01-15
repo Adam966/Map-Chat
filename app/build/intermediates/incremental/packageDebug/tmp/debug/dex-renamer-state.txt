@@ -1,10 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Wed Jan 15 00:31:46 CET 2020
 base.0=/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 =======
 #Tue Jan 14 22:55:48 CET 2020
 base.0=C\:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+#Tue Jan 14 22:55:48 CET 2020
+base.0=C\:\\Users\\MI\\Desktop\\MapChat\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+>>>>>>> dev
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex

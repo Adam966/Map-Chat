@@ -82,7 +82,10 @@ public final class R {
         public static final int none = 0x7f0800d7;
         public static final int standard = 0x7f080119;
         public static final int wide = 0x7f08014d;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class string {
         private string() {}

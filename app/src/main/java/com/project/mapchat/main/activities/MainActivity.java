@@ -275,24 +275,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void openChat(View view) {
         startActivity(new Intent(this, ChatActivity.class));
     }
-
-    //////////////////////////////// GET USER POSITION /////////////////////////////////////////////
-    public void userLocation(View view) {
-        Log.wtf("LOCATION", "GET USER LOCATION");
-        enableLocationComponent(mapboxMap.getStyle());
-    }
-
-    ////////////////////////////////// CHANGE CAMERA POSITION //////////////////////////////////////
-    private void changeCameraPosition(LatLng latLng) {
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(latLng)
-                .zoom(14)
-                .build();
-        Log.wtf("CAMERA POSITION", "CHANGE");
-        mapboxMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 7000);
-    }
-
-
     @Override
     public void onStart() {
         super.onStart();

@@ -7036,7 +7036,10 @@ public final class R {
     public static final int splash_bkg=0x7f0700d5;
     public static final int tooltip_frame_dark=0x7f0700d6;
     public static final int tooltip_frame_light=0x7f0700d7;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -7656,7 +7659,10 @@ public final class R {
     public static final int withText=0x7f08014e;
     public static final int wrap=0x7f08014f;
     public static final int wrap_content=0x7f080150;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;

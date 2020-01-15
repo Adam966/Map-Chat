@@ -1951,10 +1951,14 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 <<<<<<< HEAD
+<<<<<<< HEAD
 drawable ic_send_black_24dp
 =======
 drawable ic_my_location_black_24dp
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+drawable ic_my_location_black_24dp
+>>>>>>> dev
 drawable ic_settings_applications_24px
 drawable indicator
 drawable indicator_selected

@@ -103,7 +103,10 @@ public final class R {
         public static final int start = 0x7f08011a;
         public static final int top = 0x7f080139;
         public static final int wrap = 0x7f08014f;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class styleable {
         private styleable() {}

@@ -702,6 +702,7 @@ public final class R {
         public static final int abc_textfield_search_material = 0x7f07005b;
         public static final int abc_vector_test = 0x7f07005c;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int mapbox_compass_icon = 0x7f0700aa;
         public static final int mapbox_info_bg_selector = 0x7f0700ab;
         public static final int mapbox_info_icon_default = 0x7f0700ac;
@@ -736,6 +737,8 @@ public final class R {
         public static final int tooltip_frame_dark = 0x7f0700d9;
         public static final int tooltip_frame_light = 0x7f0700da;
 =======
+=======
+>>>>>>> dev
         public static final int mapbox_compass_icon = 0x7f0700a9;
         public static final int mapbox_info_bg_selector = 0x7f0700aa;
         public static final int mapbox_info_icon_default = 0x7f0700ab;
@@ -769,7 +772,10 @@ public final class R {
         public static final int notify_panel_notification_icon_bg = 0x7f0700d4;
         public static final int tooltip_frame_dark = 0x7f0700d6;
         public static final int tooltip_frame_light = 0x7f0700d7;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class id {
         private id() {}
@@ -976,7 +982,10 @@ public final class R {
         public static final int uniform = 0x7f080145;
         public static final int up = 0x7f080148;
         public static final int wrap_content = 0x7f080150;
+<<<<<<< HEAD
 >>>>>>> 4d334511d07c4d4b10c0e70fbfee04834630f4d2
+=======
+>>>>>>> dev
     }
     public static final class integer {
         private integer() {}
