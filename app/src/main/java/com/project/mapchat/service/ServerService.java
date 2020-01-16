@@ -1,5 +1,6 @@
 package com.project.mapchat.service;
 
+import com.project.mapchat.service.requests.GetAllEvents;
 import com.project.mapchat.service.requests.LoginAuth;
 import com.project.mapchat.service.requests.UpdateUserData;
 import com.project.mapchat.service.requests.UserFriends;
@@ -57,5 +58,7 @@ public class ServerService {
         public UserInfo getuserInfoReq(){
             return retrofit.create(UserInfo.class);
         }
+
+        public GetAllEvents getAllEvents() {return retrofit.create(GetAllEvents.class);}
 
 }

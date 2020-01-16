@@ -58,14 +58,21 @@ import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.Event;
+import com.project.mapchat.service.ServerService;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
     // Mapbox
     private MapView mapView;
@@ -328,7 +335,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView.onDestroy();
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -351,7 +357,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getEvents(style);
+                    getEvents();
                 }
             });
         }else {
@@ -359,17 +365,37 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getEvents(style);
+                    getEvents();
                 }
             });
         }
     }
 
-    ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
-    private void setMapLayer(Style style, ArrayList<Event> list) {
-        style.addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
+    /////////////////////////////////// GET ALL EVENTS /////////////////////////////////////////////
+    private void getEvents() {
+        Call<ArrayList<Event>> call = ServerService
+                .getInstance()
+                .getAllEvents()
+                .allEvents();
 
-        SymbolManager manager = new SymbolManager(mapView, mapboxMap, style);
+        call.enqueue(new Callback<ArrayList<Event>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
+                setMapLayer(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
+    private void setMapLayer(ArrayList<Event> list) {
+        mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
+
+        SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle());
         manager.setIconAllowOverlap(true);
 
         List<SymbolOptions> symbolOptionsList = new ArrayList<>();
@@ -394,27 +420,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 Toast.makeText(getApplicationContext(), "SYMBOL CLICKED", Toast.LENGTH_LONG).show();
             }
         });
-
     }
-
-    /*
-    private void getEvents(final Style style) {
-        ServerService service = new ServerService();
-        service.createRetrofit();
-
-        service.getService().getAllEvents().enqueue(new Callback<ArrayList<Event>>() {
-            @Override
-            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
-                setMapLayer(style, response.body());
-            }
-
-            @Override
-            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
-                Log.i("ERROR", t.getMessage());
-            }
-        });
-    }
-    */
 
     private LatLng createRandomLatLng() {
         Random random = new Random();
