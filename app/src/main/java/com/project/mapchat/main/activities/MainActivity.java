@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents();
+                    //getEvents();
                 }
             });
         }else {
@@ -365,7 +365,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents();
+                    //getEvents();
                 }
             });
         }
