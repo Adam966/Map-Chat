@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -156,7 +157,6 @@ public class Login extends AppCompatActivity {
                 setViewVisible();
                 LoginManager.getInstance().logOut();
             }
-
         });
     }
 
@@ -217,9 +217,7 @@ public class Login extends AppCompatActivity {
             }
         });
         request2.executeAsync();
-    }
-
-     */
+    }*/
 
     private void checkLogin(){
         if(appSharedPrefs.getServerToken() != null && appSharedPrefs.getFbToken() != null){
@@ -237,11 +235,13 @@ public class Login extends AppCompatActivity {
 
     private void setViewInvisible(){
         findViewById(R.id.login_button).setVisibility(GONE);
+        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#293896"));
         findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
     }
 
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
+        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#FFFFFF"));
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
     }
 
