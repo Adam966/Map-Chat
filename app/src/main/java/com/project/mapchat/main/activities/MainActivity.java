@@ -113,9 +113,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
 
+        /*
         userLocation = findViewById(R.id.userLocation);
         userLocation.setImageDrawable(getDrawable(R.drawable.ic_my_location_black_24dp));
-        userLocation.bringToFront();
+        userLocation.bringToFront();*/
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();

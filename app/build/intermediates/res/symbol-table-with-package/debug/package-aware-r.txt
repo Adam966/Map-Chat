@@ -1941,6 +1941,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_chat_bubble_outline_24px
+drawable ic_event_24px
 drawable ic_home_24px
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2223,6 +2225,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myLocationActionButton
 id name
 id navigation_header_container
 id never
@@ -2343,7 +2346,6 @@ id unknown
 id unlabeled
 id up
 id useLogo
-id userLocation
 id view_offset_helper
 id visible
 id wide
