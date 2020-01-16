@@ -169,6 +169,7 @@ public class Login extends AppCompatActivity {
                if(AccessToken.getCurrentAccessToken() == null && appSharedPrefs.getServerToken() == null
                   && appSharedPrefs.getFbToken() == null){
                    setViewVisible();
+
                    Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
                }
 
@@ -220,6 +221,10 @@ public class Login extends AppCompatActivity {
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
             Toast.makeText(this, "checkLogin()", Toast.LENGTH_SHORT).show();
+        }else{
+            if(AccessToken.getCurrentAccessToken() != null){
+                LoginManager.getInstance().logOut();
+            }
         }
     }
 

@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
 
         appSharedPrefs = new SharedPrefs(this);
-        setDarkMode(appSharedPrefs);
+        //setDarkMode(appSharedPrefs);
 
         super.onCreate(savedInstanceState);
         context = this;
@@ -156,6 +156,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
+        //mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5fyoun504er1iqmrzc7zlbk"));
     }
 
     public void userLocation(View view) {
@@ -354,7 +355,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
             });
         }else {
-            mapbox.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+            mapbox.setStyle(Style.OUTDOORS, new Style.OnStyleLoaded() {
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
