@@ -104,6 +104,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         appSharedPrefs = new SharedPrefs(this);
         //setDarkMode(appSharedPrefs);
 
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
         context = this;
 
@@ -354,7 +360,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     ////////////////////////////////////// SET STYLE FOR MAP ///////////////////////////////////////
     private void setDarkModeMap(MapboxMap mapbox){
         if(appSharedPrefs.loadDarkModeState() == true){
-            mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {
+            mapbox.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5hao1a708ya1iqfrrwlwd9d/draft"), new Style.OnStyleLoaded() {
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
