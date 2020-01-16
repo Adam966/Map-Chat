@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,12 +15,27 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
+import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.gson.Gson;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.service.ServerService;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -57,15 +74,17 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        userInfoRequest(appSharedPrefs.getServerToken());
+
         logoutBtn = findViewById(R.id.btn_logout);
         circleImageView = findViewById(R.id.profile_image);
-
-        setImage(appSharedPrefs.getId());
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 LoginManager.getInstance().logOut();
+                appSharedPrefs.removeServerToken();
+                appSharedPrefs.removeFbToken();
                 Intent i = new Intent(SettingsActivity.this, Login.class);
                 startActivity(i);
             }
@@ -108,6 +127,42 @@ public class SettingsActivity extends AppCompatActivity {
     private void restart(){
         Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
         startActivity(i);
+    }
+
+    private void userInfoRequest(String serverToken){
+
+        HashMap<String, String> params = new HashMap<>();
+        // putting token to parameters of request
+        params.put("Authorization","Bearer"+" "+serverToken);
+
+        // making Request Body through Gson Library
+        String strRequestBody = new Gson().toJson(params);
+        Log.wtf("updateUserData",strRequestBody);
+
+        final RequestBody requestBody = RequestBody.create(MediaType.
+                parse("application/json"),strRequestBody);
+
+        Log.wtf("requestBody",requestBody.toString());
+
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .getuserInfoReq()
+                .userInfoRequest(requestBody);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                Log.wtf("ResponseCode",String.valueOf(response.code()));
+                if(response.isSuccessful()){
+                    Log.wtf("UserInfo","SUCCESS");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
 }

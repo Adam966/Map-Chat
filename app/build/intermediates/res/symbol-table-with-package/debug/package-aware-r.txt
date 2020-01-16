@@ -778,6 +778,7 @@ color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color darkBlue
+color darkPurple
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1945,7 +1946,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location_on_black_24dp
 drawable ic_mapchatlogo
-drawable ic_mapchatlogodark
 drawable ic_menu_24px
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle

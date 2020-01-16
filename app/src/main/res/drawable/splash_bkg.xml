@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-    <item android:drawable="@color/darkBlue" />
+    <item android:drawable="@color/darkPurple" />
     <item
         android:drawable="@drawable/ic_mapchatlogo"
         android:gravity="center"/>
