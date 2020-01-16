@@ -9,17 +9,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.entities.Event;
+import com.project.mapchat.service.ServerService;
 
 import java.util.ArrayList;
 
-public class EventsActivity extends AppCompatActivity {
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
+public class EventsActivity extends AppCompatActivity {
     private SharedPrefs appSharedPrefs;
-    EventAdapter eventAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +39,6 @@ public class EventsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
-
-        ArrayList<String> eventItems = new ArrayList<>();
-        eventItems.add("event1");
-        eventItems.add("event2");
-
-        RecyclerView recyclerView = findViewById(R.id.eventItemRecycle);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        eventAdapter = new EventAdapter(eventItems,this);
-        recyclerView.setAdapter(eventAdapter);
-
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
@@ -72,6 +67,38 @@ public class EventsActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        getEvents();
+    }
+
+    private void getEvents() {
+        Call<ArrayList<Event>> call = ServerService
+                .getInstance()
+                .getAllEvents()
+                .allEvents();
+
+        call.enqueue(new Callback<ArrayList<Event>>() {
+            @Override
+            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
+                setAdapter(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
+                Toast.makeText(getBaseContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void setAdapter(ArrayList<Event> list) {
+        ArrayList<String> eventItems = new ArrayList<>();
+        eventItems.add("event1");
+        eventItems.add("event2");
+
+        RecyclerView recyclerView = findViewById(R.id.eventItemRecycle);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        EventAdapter eventAdapter = new EventAdapter(eventItems,this);
+        recyclerView.setAdapter(eventAdapter);
     }
 }
 
