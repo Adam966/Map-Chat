@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -15,7 +14,6 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
-import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
@@ -23,10 +21,6 @@ import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.service.ServerService;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -137,7 +131,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // making Request Body through Gson Library
         String strRequestBody = new Gson().toJson(params);
-        Log.wtf("updateUserData",strRequestBody);
+        Log.wtf("userInfo",strRequestBody);
 
         final RequestBody requestBody = RequestBody.create(MediaType.
                 parse("application/json"),strRequestBody);
@@ -146,8 +140,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         Call<ResponseBody> call = ServerService
                 .getInstance()
-                .getuserInfoReq()
-                .userInfoRequest(requestBody);
+                .getUserInfoReq()
+                .userInfoRequest(serverToken);
 
         call.enqueue(new Callback<ResponseBody>() {
             @Override

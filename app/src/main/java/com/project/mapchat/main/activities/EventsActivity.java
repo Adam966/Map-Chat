@@ -68,14 +68,14 @@ public class EventsActivity extends AppCompatActivity {
             }
         });
 
-        getEvents();
+        //getEvents();
     }
 
-    private void getEvents() {
+    private void getEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
                 .getAllEvents()
-                .allEvents();
+                .getUserEventsRequest(serverToken);
 
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override

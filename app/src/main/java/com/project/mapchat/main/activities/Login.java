@@ -154,6 +154,7 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Log.wtf("Failure","Fail req");
                 setViewVisible();
                 LoginManager.getInstance().logOut();
             }

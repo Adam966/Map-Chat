@@ -58,7 +58,6 @@ import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
-import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.Event;
 import com.project.mapchat.service.ServerService;
 
@@ -67,7 +66,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -364,7 +362,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getEvents();
+                    //getUserEvents();
                 }
             });
         }else {
@@ -372,18 +370,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getEvents();
+                    //getUserEvents();
                 }
             });
         }
     }
 
     /////////////////////////////////// GET ALL EVENTS /////////////////////////////////////////////
-    private void getEvents() {
+    private void getUserEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
                 .getAllEvents()
-                .allEvents();
+                .getUserEventsRequest(serverToken);
 
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override

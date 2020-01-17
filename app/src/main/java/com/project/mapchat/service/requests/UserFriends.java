@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 public interface UserFriends {
 
     @Headers("Content-Type:application/json")
-    @POST("/api/user/friends")
+    @POST("api/user/friends")
     Call<ResponseBody> userFriendRequest(@Header("Authorization") String serverToken);
 
 }
