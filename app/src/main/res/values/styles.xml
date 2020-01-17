@@ -12,11 +12,11 @@
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="bkgcolor">#0000A0</item>
-        <item name="barcolor">#111111</item>
+        <item name="bkgcolor">#242424</item>
+        <item name="barcolor">#090A0A</item>
         <item name="iconcolor">#FF9750</item>
         <item name="coloriconchecked">#3E4CA0</item>
-        <item name="textcolor">#FFFFFF</item>
+        <item name="textcolor">#FF9750</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">

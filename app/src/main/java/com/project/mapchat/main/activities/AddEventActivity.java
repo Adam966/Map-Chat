@@ -39,6 +39,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         placeName = findViewById(R.id.friendName);
         tagName = findViewById(R.id.tagName);
 
+
         date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

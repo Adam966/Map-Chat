@@ -294,6 +294,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void openChat(View view) {
         startActivity(new Intent(this, ChatActivity.class));
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -376,11 +377,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    /////////////////////////////////// GET ALL EVENTS /////////////////////////////////////////////
+    /////////////////////////////////// GET ALL USER EVENTS /////////////////////////////////////////////
     private void getUserEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
-                .getAllEvents()
+                .getUserEvents()
                 .getUserEventsRequest(serverToken);
 
         call.enqueue(new Callback<ArrayList<Event>>() {

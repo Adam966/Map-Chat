@@ -102,7 +102,7 @@ public class ServerService {
         }
 
 
-        // ADMIN REQUEST
+        // ADMIN REQUESTS
         public AddAdminPrivilege addAdminPrivilege(){
             return retrofit.create(AddAdminPrivilege.class);
         }
