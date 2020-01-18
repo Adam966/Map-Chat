@@ -410,14 +410,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     .withIconImage("location_icon")
             );
         }
-
+/*
         for (Event e: list) {
             symbolOptionsList.add(new SymbolOptions()
-                    .withLatLng(new LatLng(e.getLocation().getCoordinates().getLat(), e.getLocation().getCoordinates().getLon()))
+                    .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
             );
         }
-
+*/
         manager.create(symbolOptionsList);
 
         manager.addClickListener(new OnSymbolClickListener() {

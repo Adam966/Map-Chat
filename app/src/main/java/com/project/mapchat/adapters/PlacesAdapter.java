@@ -47,6 +47,7 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
             super(itemView);
 
             textView = itemView.findViewById(R.id.placeName);
+            textView.setSelected(true);
             this.itemClick = itemClick;
             itemView.setOnClickListener(this);
         }

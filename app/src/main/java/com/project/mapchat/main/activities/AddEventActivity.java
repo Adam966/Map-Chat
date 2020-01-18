@@ -5,27 +5,45 @@ import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.project.mapchat.ChooseFriends;
 import com.project.mapchat.ChoosePlace;
 import com.project.mapchat.R;
 import com.project.mapchat.dialogs.DatePickerFragment;
 import com.project.mapchat.dialogs.TimePickerFragment;
-import com.project.mapchat.main.activities.MainActivity;
+import com.project.mapchat.entities.Event;
+import com.project.mapchat.entities.Location;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AddEventActivity extends AppCompatActivity implements DatePickerFragment.DialogListener, TimePickerFragment.DialogListener {
+    /////////////////////////////// EVENT OBJ ////////////////////
+    private Event event;
+    private Location location;
+    private int visibility;
+
+    /////////////////////////////// EVENT UI///////////////////////
     private EditText eventName;
     private Switch eventVisibility;
+
     private TextView date;
     private TextView time;
+    private TextView timeText;
+    private TextView dateText;
+    private EditText description;
+
+    private TextView tags;
+
     private TextView placeName;
-    private TextView tagName;
+    private EditText tagName;
+
+    private TextView error;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +54,16 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         eventVisibility = findViewById(R.id.eventVisibility);
         date = findViewById(R.id.eventDate);
         time = findViewById(R.id.eventTime);
-        placeName = findViewById(R.id.friendName);
+        timeText = findViewById(R.id.timeText);
+        dateText = findViewById(R.id.dateText);
         tagName = findViewById(R.id.tagName);
+        tags = findViewById(R.id.tags);
+        description = findViewById(R.id.description);
+        error = findViewById(R.id.error);
+        placeName = findViewById(R.id.placeName);
+
+        placeName.setSelected(true);
+
 
 
         date.setOnClickListener(new View.OnClickListener() {
@@ -55,11 +81,24 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
                 dialog.show(getSupportFragmentManager(), "timepicker");
             }
         });
+
+        eventVisibility.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                visibility = b ? 1 : 0;
+            }
+        });
     }
 
     ////////////////////////////////////// ADD EVENT FUNCTIONS /////////////////////////////////////
     public void addEvent(View view) {
-
+        if(checkEvent()) {
+            addNewEvent();
+            Log.wtf("EVENT", event.toString());
+            //startActivity(new Intent(this, MainActivity.class));
+        } else {
+            error.setVisibility(View.VISIBLE);
+        }
     }
 
     public void cancel(View view) {
@@ -67,10 +106,42 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         finish();
     }
 
+    private boolean checkEvent() {
+        boolean isCorrect = false;
+
+        if (eventName.getText().toString().length() > 3 )
+            isCorrect = true;
+
+        if (!(timeText.getText().toString().equals("") && dateText.getText().toString().equals("")))
+            isCorrect = true;
+
+        if (description.getText().toString().length() != 0)
+            isCorrect = true;
+
+        if (!placeName.getText().toString().equals(""))
+            isCorrect = true;
+
+        return isCorrect;
+    }
+
+    private void addNewEvent() {
+        event = new Event();
+        event.setGroupName(eventName.getText().toString());
+        event.setDescription(description.getText().toString());
+        event.setLocation(location);
+        //event.setTags();
+        event.setType(visibility);
+        event.setMeetTime(date.getText().toString() + "" + time.getText().toString());
+        //request to server
+    }
+
     ////////////////////////////////////// TIME AND DATE PICKER ////////////////////////////////////
     @Override
     public void getDate(Date date) {
-        this.date.setText(date.toString().substring(0, 10));
+        String pattern = "yyyy-MM-dd";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String formattedDate = simpleDateFormat.format(date);
+        this.date.setText(formattedDate);
     }
 
     @Override
@@ -86,17 +157,20 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+        location = new Location();
+        location.setAddress(intent.getStringExtra("address"));
+        location.setCountry(intent.getStringExtra("country"));
+        location.setPostalCode(intent.getStringExtra("postcode"));
+        location.setTown(intent.getStringExtra("city"));
+        location.setAddress(intent.getStringExtra("address"));
+        location.setLatitude(String.valueOf(intent.getDoubleExtra("latitued", 0)));
+        location.setLongtitude(String.valueOf(intent.getDoubleExtra("longitued", 0)));
+
+        Log.wtf("Location", location.toString());
 
         if (intent.getStringExtra("placeName") != null)
             placeName.setText(intent.getStringExtra("placeName"));
         else
             placeName.setText("Choose place");
     }
-
-    ///////////////////////////////////// CHOOSE FRIENDS ///////////////////////////////////////////
-    public void chooseFriends(View view) {
-        startActivity(new Intent(this, ChooseFriends.class));
-    }
-
-
 }

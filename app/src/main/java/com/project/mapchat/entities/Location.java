@@ -6,68 +6,31 @@ import com.google.gson.annotations.SerializedName;
 
 public class Location {
 
-    @SerializedName("coordinates")
+    @SerializedName("Country")
     @Expose
-    private Coordinates coordinates;
-    @SerializedName("address")
-    @Expose
-    private String address;
-    @SerializedName("postCode")
-    @Expose
-    private String postCode;
-    @SerializedName("town")
+    private String country;
+    @SerializedName("Town")
     @Expose
     private String town;
-    @SerializedName("state")
+    @SerializedName("PostalCode")
     @Expose
-    private String state;
+    private String postalCode;
+    @SerializedName("Address")
+    @Expose
+    private String address;
+    @SerializedName("longtitude")
+    @Expose
+    private String longtitude;
+    @SerializedName("latitude")
+    @Expose
+    private String latitude;
 
-    /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Location() {
+    public String getCountry() {
+        return country;
     }
 
-    /**
-     * 
-     * @param address
-     * @param town
-     * @param coordinates
-     * @param postCode
-     * @param state
-     */
-    public Location(Coordinates coordinates, String address, String postCode, String town, String state) {
-        super();
-        this.coordinates = coordinates;
-        this.address = address;
-        this.postCode = postCode;
-        this.town = town;
-        this.state = state;
-    }
-
-    public Coordinates getCoordinates() {
-        return coordinates;
-    }
-
-    public void setCoordinates(Coordinates coordinates) {
-        this.coordinates = coordinates;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPostCode() {
-        return postCode;
-    }
-
-    public void setPostCode(String postCode) {
-        this.postCode = postCode;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getTown() {
@@ -78,12 +41,47 @@ public class Location {
         this.town = town;
     }
 
-    public String getState() {
-        return state;
+    public String getPostalCode() {
+        return postalCode;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getLongtitude() {
+        return longtitude;
+    }
+
+    public void setLongtitude(String longtitude) {
+        this.longtitude = longtitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "country='" + country + '\'' +
+                ", town='" + town + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", address='" + address + '\'' +
+                ", longtitude='" + longtitude + '\'' +
+                ", latitude='" + latitude + '\'' +
+                '}';
+    }
 }
