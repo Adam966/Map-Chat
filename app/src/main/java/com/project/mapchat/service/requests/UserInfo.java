@@ -13,6 +13,6 @@ public interface UserInfo {
 
     @Headers("Content-Type:application/json")
     @GET("api/user/userinfo")
-    Call<ResponseBody> userInfoRequest(@Header("Authorization") RequestBody serverToken);
+    Call<ResponseBody> userInfoRequest(@Header("Authorization") String serverToken);
 
 }

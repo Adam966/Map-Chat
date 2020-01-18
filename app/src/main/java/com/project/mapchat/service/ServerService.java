@@ -1,7 +1,16 @@
 package com.project.mapchat.service;
 
-import com.project.mapchat.service.requests.GetAllEvents;
+import com.project.mapchat.service.requests.AddAdminPrivilege;
+import com.project.mapchat.service.requests.CreateEvent;
+import com.project.mapchat.service.requests.DeleteEvent;
+import com.project.mapchat.service.requests.GetEventTags;
+import com.project.mapchat.service.requests.GetEventUsers;
+import com.project.mapchat.service.requests.GetEvents;
+import com.project.mapchat.service.requests.GetUserEvents;
+import com.project.mapchat.service.requests.LeaveEvent;
 import com.project.mapchat.service.requests.LoginAuth;
+import com.project.mapchat.service.requests.RemoveUserFromEvent;
+import com.project.mapchat.service.requests.RevokeAdminPrivilege;
 import com.project.mapchat.service.requests.UpdateUserData;
 import com.project.mapchat.service.requests.UserFriends;
 import com.project.mapchat.service.requests.UserInfo;
@@ -42,7 +51,8 @@ public class ServerService {
             return clientInstance;
         }
 
-        // getting requests
+
+        // USER EVENTS
         public LoginAuth getloginAuthReq(){
             return retrofit.create(LoginAuth.class);
         }
@@ -51,14 +61,58 @@ public class ServerService {
             return retrofit.create(UpdateUserData.class);
         }
 
-        public UserFriends getuserFriendsReq(){
+        public UserFriends getUserFriendsReq(){
             return retrofit.create(UserFriends.class);
         }
 
-        public UserInfo getuserInfoReq(){
+        public UserInfo getUserInfoReq(){
             return retrofit.create(UserInfo.class);
         }
 
-        public GetAllEvents getAllEvents() {return retrofit.create(GetAllEvents.class);}
+
+        // EVENT REQUESTS
+        public CreateEvent createEvent(){
+            return retrofit.create(CreateEvent.class);
+        }
+
+        public DeleteEvent deleteEvent(){
+            return retrofit.create(DeleteEvent.class);
+        }
+
+        public LeaveEvent leaveEvent(){
+            return retrofit.create(LeaveEvent.class);
+        }
+
+
+        // EVENTS REQUESTS
+        public GetEvents getEvents(){
+            return retrofit.create(GetEvents.class);
+        }
+
+        public GetUserEvents getUserEvents() {
+            return retrofit.create(GetUserEvents.class);
+        }
+
+        public GetEventTags getEventTags(){
+            return retrofit.create(GetEventTags.class);
+        }
+
+        public GetEventUsers getEventUsers(){
+            return retrofit.create(GetEventUsers.class);
+        }
+
+
+        // ADMIN REQUEST
+        public AddAdminPrivilege addAdminPrivilege(){
+            return retrofit.create(AddAdminPrivilege.class);
+        }
+
+        public RevokeAdminPrivilege revokeAdminPrivilege(){
+            return retrofit.create(RevokeAdminPrivilege.class);
+        }
+
+        public RemoveUserFromEvent removeUserFromEvent(){
+            return retrofit.create(RemoveUserFromEvent.class);
+        }
 
 }

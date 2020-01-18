@@ -10,7 +10,7 @@ import retrofit2.http.POST;
 public interface UpdateUserData {
 
     @Headers("Content-Type:application/json")
-    @GET("/api/user/updateUserData")
+    @GET("api/user/updateUserData")
     Call<ResponseBody> updateUserDataRequest(@Header("Authorization") String serverToken, @Header("fToken") String facebookToken);
 
 }

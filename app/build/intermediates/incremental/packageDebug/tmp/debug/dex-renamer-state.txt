@@ -1,4 +1,4 @@
-#Thu Jan 16 00:48:01 CET 2020
+#Fri Jan 17 23:51:14 CET 2020
 base.0=/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

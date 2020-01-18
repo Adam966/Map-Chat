@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -35,6 +36,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.ConnectException;
 import java.util.HashMap;
 
 import okhttp3.MediaType;
@@ -79,10 +81,10 @@ public class Login extends AppCompatActivity {
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                       setViewInvisible();
-                       Log.i("SUCC","On success");
-                       Intent i = new Intent(Login.this, OnboardingActivity.class);
-                       startActivity(i);
+                       // when we have access token on result
+                        Log.i("SUCC","On success");
+                        loginAuthRequest(loginResult.getAccessToken());
+                        setViewInvisible();
                     }
 
                     @Override
@@ -98,24 +100,23 @@ public class Login extends AppCompatActivity {
     }
 
     private void loginAuthRequest(AccessToken accessToken){
-
+        Call<ResponseBody> call = null;
         // getting access token to string token
         String token = String.valueOf(accessToken.getToken());
 
         HashMap<String, String> params = new HashMap<>();
         // putting token to parameters of request
-        params.put("token",token);
+        params.put("token", token);
 
         // making Request Body through Gson Library
         String strRequestBody = new Gson().toJson(params);
-        Log.wtf("loginAuthToken",strRequestBody);
+        Log.wtf("loginAuthToken", strRequestBody);
 
         final RequestBody requestBody = RequestBody.create(MediaType.
-                parse("application/json"),strRequestBody);
+                parse("application/json"), strRequestBody);
 
-        Log.wtf("requestBody",requestBody.toString());
-
-        Call<ResponseBody> call = ServerService
+        Log.wtf("requestBody", requestBody.toString());
+        call = ServerService
                 .getInstance()
                 .getloginAuthReq()
                 .loginAuthRequest(requestBody);
@@ -138,6 +139,11 @@ public class Login extends AppCompatActivity {
                         appSharedPrefs.setServerToken(serverToken);
                         appSharedPrefs.setFbToken(fbToken);
 
+                        Intent i = new Intent(Login.this, OnboardingActivity.class);
+                        startActivity(i);
+
+                    } catch (ConnectException ex){
+                        ex.printStackTrace();
                     } catch (IOException e) {
                         e.printStackTrace();
                     } catch (JSONException e) {
@@ -148,7 +154,9 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                Log.wtf("Failure","Fail req");
+                setViewVisible();
+                LoginManager.getInstance().logOut();
             }
         });
     }
@@ -169,6 +177,7 @@ public class Login extends AppCompatActivity {
                if(AccessToken.getCurrentAccessToken() == null && appSharedPrefs.getServerToken() == null
                   && appSharedPrefs.getFbToken() == null){
                    setViewVisible();
+
                    Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
                }
 
@@ -188,7 +197,7 @@ public class Login extends AppCompatActivity {
             {
                 Log.wtf("RESPONSE",response.toString());
                 Toast.makeText(Login.this, "loadUserProfile" , Toast.LENGTH_SHORT).show();
-                loginAuthRequest(AccessToken.getCurrentAccessToken());
+                //loginAuthRequest(AccessToken.getCurrentAccessToken());
             }
         });
 
@@ -209,9 +218,7 @@ public class Login extends AppCompatActivity {
             }
         });
         request2.executeAsync();
-    }
-
-     */
+    }*/
 
     private void checkLogin(){
         if(appSharedPrefs.getServerToken() != null && appSharedPrefs.getFbToken() != null){
@@ -220,16 +227,22 @@ public class Login extends AppCompatActivity {
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
             Toast.makeText(this, "checkLogin()", Toast.LENGTH_SHORT).show();
+        }else{
+            if(AccessToken.getCurrentAccessToken() != null){
+                LoginManager.getInstance().logOut();
+            }
         }
     }
 
     private void setViewInvisible(){
-        findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
         findViewById(R.id.login_button).setVisibility(GONE);
+        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#293896"));
+        findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
     }
 
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
+        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#FFFFFF"));
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
     }
 

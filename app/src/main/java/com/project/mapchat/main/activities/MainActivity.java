@@ -100,7 +100,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
 
         appSharedPrefs = new SharedPrefs(this);
-        setDarkMode(appSharedPrefs);
+        //setDarkMode(appSharedPrefs);
+
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
 
         super.onCreate(savedInstanceState);
         context = this;
@@ -111,9 +117,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Mapbox.getInstance(this, getString(R.string.access_token));
         setContentView(R.layout.activity_main);
 
+        /*
         userLocation = findViewById(R.id.userLocation);
         userLocation.setImageDrawable(getDrawable(R.drawable.ic_my_location_black_24dp));
-        userLocation.bringToFront();
+        userLocation.bringToFront();*/
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
@@ -161,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
+        //mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5fyoun504er1iqmrzc7zlbk/draft"));
     }
 
     public void userLocation(View view) {
@@ -350,30 +358,30 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     ////////////////////////////////////// SET STYLE FOR MAP ///////////////////////////////////////
     private void setDarkModeMap(MapboxMap mapbox){
         if(appSharedPrefs.loadDarkModeState() == true){
-            mapbox.setStyle(Style.DARK, new Style.OnStyleLoaded() {
+            mapbox.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5hao1a708ya1iqfrrwlwd9d/draft"), new Style.OnStyleLoaded() {
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents();
+                    //getUserEvents();
                 }
             });
         }else {
-            mapbox.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
+            mapbox.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5fyoun504er1iqmrzc7zlbk/draft"), new Style.OnStyleLoaded() {
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    getEvents();
+                    //getUserEvents();
                 }
             });
         }
     }
 
     /////////////////////////////////// GET ALL EVENTS /////////////////////////////////////////////
-    private void getEvents() {
+    private void getUserEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
                 .getAllEvents()
-                .allEvents();
+                .getUserEventsRequest(serverToken);
 
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override

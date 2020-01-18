@@ -5,6 +5,7 @@
     android:background="?attr/bkgcolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/loginLayout"
     tools:context=".main.activities.Login">
 
 
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminate="true"
-        android:indeterminateTint="#0000A0"
+        android:indeterminateTint="#FF9750"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
