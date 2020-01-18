@@ -58,7 +58,6 @@ import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
-import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.Event;
 import com.project.mapchat.service.ServerService;
 
@@ -67,7 +66,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -403,14 +401,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     .withIconImage("location_icon")
             );
         }
-
+/*
         for (Event e: list) {
             symbolOptionsList.add(new SymbolOptions()
-                    .withLatLng(new LatLng(e.getLocation().getCoordinates().getLat(), e.getLocation().getCoordinates().getLon()))
+                    .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
             );
         }
-
+*/
         manager.create(symbolOptionsList);
 
         manager.addClickListener(new OnSymbolClickListener() {

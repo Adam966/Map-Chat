@@ -63,13 +63,11 @@
                 android:id="@+id/eventTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
                 android:text="Time: "
                 android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.559"
-                app:layout_constraintStart_toEndOf="@+id/eventDate"
-                app:layout_constraintTop_toTopOf="@+id/eventDate" />
+                app:layout_constraintStart_toEndOf="@+id/dateText"
+                app:layout_constraintTop_toTopOf="@+id/dateText" />
 
             <Button
                 android:id="@+id/button2"
@@ -111,37 +109,35 @@
                 app:layout_constraintTop_toBottomOf="@+id/eventName" />
 
             <TextView
-                android:id="@+id/friendName"
+                android:id="@+id/placeName"
                 android:layout_width="220dp"
                 android:layout_height="46dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textAlignment="center"
                 android:textSize="24sp"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button5"
-                app:layout_constraintTop_toTopOf="@+id/button5" />
-
-            <TextView
-                android:id="@+id/PlaceName"
-                android:layout_width="220dp"
-                android:layout_height="46dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:textSize="24sp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/button4"
                 app:layout_constraintTop_toTopOf="@+id/button4" />
 
-            <Button
-                android:id="@+id/button5"
+            <TextView
+                android:id="@+id/tags"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:onClick="chooseFriends"
-                android:text="CHOOSE FRIEND"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/eventVisibility" />
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.006"
+                app:layout_constraintStart_toEndOf="@+id/tagName"
+                app:layout_constraintTop_toTopOf="@+id/tagName" />
 
             <EditText
                 android:id="@+id/tagName"
@@ -153,7 +149,56 @@
                 android:hint="Tag"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:layout_constraintTop_toBottomOf="@+id/description" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventVisibility" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/eventDate"
+                app:layout_constraintTop_toTopOf="@+id/eventDate" />
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/eventTime"
+                app:layout_constraintTop_toTopOf="@+id/eventTime" />
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="19dp"
+                android:text=" Fill in each item"
+                android:textColor="#E70D0D"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="@+id/button3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

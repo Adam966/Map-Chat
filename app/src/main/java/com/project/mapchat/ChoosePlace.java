@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.SearchView;
 
 import com.mapbox.api.geocoding.v5.MapboxGeocoding;
@@ -14,6 +15,7 @@ import com.mapbox.api.geocoding.v5.models.GeocodingResponse;
 import com.project.mapchat.adapters.PlacesAdapter;
 import com.project.mapchat.main.activities.AddEventActivity;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -51,7 +53,8 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
     public void queryAddress(String query) {
         MapboxGeocoding geocode = MapboxGeocoding.builder()
                 .accessToken(getString(R.string.access_token))
-                .query(query)
+                .query(URLEncoder.encode(query))
+                .geocodingTypes("address")
                 .build();
 
         geocode.enqueueCall(new Callback<GeocodingResponse>() {
@@ -76,8 +79,21 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
     //////////////////////////////////////// CHOOSED ADDRESS //////////////////////////////////////
     @Override
     public void onItemClick(CarmenFeature feature) {
+        Log.wtf("FEATURE", feature.toJson());
         Intent intent = new Intent(this, AddEventActivity.class);
         intent.putExtra("placeName", feature.placeName());
+
+        intent.putExtra("address", feature.address());
+
+
+        intent.putExtra("city", feature.context().get(feature.context().size() - 2).text());
+        intent.putExtra("country", feature.context().get(feature.context().size() - 1).text());
+
+        intent.putExtra("postcode", feature.context().get(1).text());
+
+
+        intent.putExtra("latitued", feature.center().latitude());
+        intent.putExtra("longitued", feature.center().longitude());
         startActivity(intent);
     }
 }
