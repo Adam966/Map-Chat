@@ -125,6 +125,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
+
                 if(response.isSuccessful()){
                     try {
                         String responseData = response.body().string();
@@ -149,15 +150,29 @@ public class Login extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                }else {
+                    switch(response.code()){
+                        case 401:{
+                            Log.wtf("401","Unauthorized");
+                            setViewVisible();
+                            LoginManager.getInstance().logOut();
+                        }break;
+                        case 500:{
+                            Log.wtf("500","Server broken");
+                            setViewVisible();
+                            LoginManager.getInstance().logOut();
+                        }
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Log.wtf("Failure","Fail req");
+                Log.wtf("Failure","Server not response");
                 setViewVisible();
                 LoginManager.getInstance().logOut();
             }
+
         });
     }
 

@@ -21,6 +21,8 @@ import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.service.ServerService;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -76,11 +78,7 @@ public class SettingsActivity extends AppCompatActivity {
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginManager.getInstance().logOut();
-                appSharedPrefs.removeServerToken();
-                appSharedPrefs.removeFbToken();
-                Intent i = new Intent(SettingsActivity.this, Login.class);
-                startActivity(i);
+                new Logout().logout(appSharedPrefs,getApplicationContext());
             }
         });
 
@@ -149,14 +147,23 @@ public class SettingsActivity extends AppCompatActivity {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
                     Log.wtf("UserInfo","SUCCESS");
+                }else{
+                    switch(response.code()){
+                        case 401:{
+                            //new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                Intent i = new Intent(getApplicationContext(),Login.class);
+                startActivity(i);
+                finish();
             }
         });
     }
+
 
 }

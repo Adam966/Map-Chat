@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.facebook.login.LoginManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -387,7 +388,19 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override
             public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
-                setMapLayer(response.body());
+                if(response.isSuccessful()){
+                    setMapLayer(response.body());
+                }else {
+                    switch(response.code()){
+                        case 401:{
+                            Log.wtf("401","Unauthorized");
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
             }
 
             @Override

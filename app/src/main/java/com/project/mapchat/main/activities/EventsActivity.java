@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
@@ -80,7 +82,18 @@ public class EventsActivity extends AppCompatActivity {
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override
             public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
-                setAdapter(response.body());
+                if(response.isSuccessful()){
+                    setAdapter(response.body());
+                }else{
+                    switch(response.code()){
+                        case 401:{
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
             }
 
             @Override
