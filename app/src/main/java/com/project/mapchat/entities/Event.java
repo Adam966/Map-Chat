@@ -1,80 +1,45 @@
 
 package com.project.mapchat.entities;
 
+import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Event {
 
-    @SerializedName("eventName")
+    @SerializedName("groupName")
     @Expose
-    private String eventName;
-    @SerializedName("location")
+    private String groupName;
+    @SerializedName("type")
     @Expose
-    private Location location;
+    private Integer type;
     @SerializedName("description")
     @Expose
     private String description;
-    @SerializedName("date")
+    @SerializedName("meetTime")
     @Expose
-    private String date;
-    @SerializedName("type")
+    private String meetTime;
+    @SerializedName("tags")
     @Expose
-    private Boolean type;
-    @SerializedName("tag")
+    private List<String> tags = null;
+    @SerializedName("location")
     @Expose
-    private String tag;
-    @SerializedName("ownerID")
-    @Expose
-    private Double ownerID;
-    @SerializedName("id")
-    @Expose
-    private Integer id;
+    private Location location;
 
-    /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Event() {
+    public String getGroupName() {
+        return groupName;
     }
 
-    /**
-     * 
-     * @param date
-     * @param eventName
-     * @param description
-     * @param location
-     * @param tag
-     * @param id
-     * @param type
-     * @param ownerID
-     */
-    public Event(String eventName, Location location, String description, String date, Boolean type, String tag, Double ownerID, Integer id) {
-        super();
-        this.eventName = eventName;
-        this.location = location;
-        this.description = description;
-        this.date = date;
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
         this.type = type;
-        this.tag = tag;
-        this.ownerID = ownerID;
-        this.id = id;
-    }
-
-    public String getEventName() {
-        return eventName;
-    }
-
-    public void setEventName(String eventName) {
-        this.eventName = eventName;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
     }
 
     public String getDescription() {
@@ -85,44 +50,39 @@ public class Event {
         this.description = description;
     }
 
-    public String getDate() {
-        return date;
+    public String getMeetTime() {
+        return meetTime;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setMeetTime(String meetTime) {
+        this.meetTime = meetTime;
     }
 
-    public Boolean getType() {
-        return type;
+    public List<String> getTags() {
+        return tags;
     }
 
-    public void setType(Boolean type) {
-        this.type = type;
+    public void setTags(List<String> tags) {
+        this.tags = tags;
     }
 
-    public String getTag() {
-        return tag;
+    public Location getLocation() {
+        return location;
     }
 
-    public void setTag(String tag) {
-        this.tag = tag;
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
-    public Double getOwnerID() {
-        return ownerID;
+    @Override
+    public String toString() {
+        return "Event{" +
+                "groupName='" + groupName + '\'' +
+                ", type=" + type +
+                ", description='" + description + '\'' +
+                ", meetTime='" + meetTime + '\'' +
+                ", tags=" + tags +
+                ", location=" + location +
+                '}';
     }
-
-    public void setOwnerID(Double ownerID) {
-        this.ownerID = ownerID;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
 }

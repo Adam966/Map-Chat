@@ -34,9 +34,6 @@
         <activity
             android:name=".ChoosePlace"
             android:theme="@style/Transparent" />
-        <activity
-            android:name=".ChooseFriends"
-            android:theme="@style/Transparent" />
         <activity android:name=".tutorial.OnboardingActivity" />
         <activity android:name=".main.activities.SettingsActivity" />
         <activity android:name=".main.activities.EventsActivity" />
