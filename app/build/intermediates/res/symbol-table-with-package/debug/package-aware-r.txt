@@ -2012,7 +2012,6 @@ id ALT
 id CTRL
 id FUNCTION
 id META
-id PlaceName
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -2101,7 +2100,6 @@ id button
 id button2
 id button3
 id button4
-id button5
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -2135,8 +2133,10 @@ id coordinator
 id custom
 id customPanel
 id dark
+id dateText
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2153,6 +2153,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id error
 id eventDate
 id eventItemName
 id eventItemRecycle
@@ -2168,7 +2169,6 @@ id fill_vertical
 id filled
 id fixed
 id forever
-id friendName
 id friendNameAdapter
 id friendsList
 id ghost_view
@@ -2315,6 +2315,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tags
 id text
 id text2
 id textSpacerNoButtons
@@ -2326,6 +2327,7 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timeText
 id title
 id titleDividerNoCustom
 id title_template

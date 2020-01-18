@@ -33,6 +33,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppNormal" >
         <activity android:name="com.project.mapchat.main.activities.ChatActivity" />
         <activity
@@ -53,9 +54,6 @@
             android:theme="@style/Transparent" />
         <activity
             android:name="com.project.mapchat.ChoosePlace"
-            android:theme="@style/Transparent" />
-        <activity
-            android:name="com.project.mapchat.ChooseFriends"
             android:theme="@style/Transparent" />
         <activity android:name="com.project.mapchat.tutorial.OnboardingActivity" />
         <activity android:name="com.project.mapchat.main.activities.SettingsActivity" />

@@ -87,17 +87,17 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int action_container = 0x7f080030;
-        public static final int action_divider = 0x7f080032;
-        public static final int action_image = 0x7f080035;
-        public static final int action_text = 0x7f08003c;
-        public static final int actions = 0x7f08003d;
-        public static final int async = 0x7f080046;
-        public static final int blocking = 0x7f08004d;
-        public static final int bottom = 0x7f08004e;
-        public static final int chronometer = 0x7f080067;
+        public static final int action_container = 0x7f08002f;
+        public static final int action_divider = 0x7f080031;
+        public static final int action_image = 0x7f080034;
+        public static final int action_text = 0x7f08003b;
+        public static final int actions = 0x7f08003c;
+        public static final int async = 0x7f080045;
+        public static final int blocking = 0x7f08004c;
+        public static final int bottom = 0x7f08004d;
+        public static final int chronometer = 0x7f080065;
         public static final int end = 0x7f08008d;
-        public static final int forever = 0x7f08009f;
+        public static final int forever = 0x7f0800a0;
         public static final int glide_custom_view_target_tag = 0x7f0800a8;
         public static final int icon = 0x7f0800af;
         public static final int icon_group = 0x7f0800b0;
@@ -118,11 +118,11 @@ public final class R {
         public static final int tag_transition_group = 0x7f080130;
         public static final int tag_unhandled_key_event_manager = 0x7f080131;
         public static final int tag_unhandled_key_listeners = 0x7f080132;
-        public static final int text = 0x7f080133;
-        public static final int text2 = 0x7f080134;
-        public static final int time = 0x7f08013d;
-        public static final int title = 0x7f08013e;
-        public static final int top = 0x7f080141;
+        public static final int text = 0x7f080134;
+        public static final int text2 = 0x7f080135;
+        public static final int time = 0x7f08013e;
+        public static final int title = 0x7f080140;
+        public static final int top = 0x7f080143;
     }
     public static final class integer {
         private integer() {}
