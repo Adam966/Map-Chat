@@ -2,6 +2,6 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:drawable="@color/darkPurple" />
     <item
-        android:drawable="@drawable/ic_mapchatlogo"
+        android:drawable="@drawable/ic_mapchatlogotext"
         android:gravity="center"/>
 </layer-list>

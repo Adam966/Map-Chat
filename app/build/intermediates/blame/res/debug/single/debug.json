@@ -1760,6 +1760,10 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/font_poetsen_font.ttf.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/font/poetsen_font.ttf"
+    },
+    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
     },
@@ -1774,6 +1778,10 @@
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_ic_mapchatlogotextdark.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/drawable/ic_mapchatlogotextdark.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2808,6 +2816,10 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_ic_mapchatlogotext.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/drawable/ic_mapchatlogotext.xml"
+    },
+    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-v24_circle.xml.flat",
         "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/drawable-v24/circle.xml"
     },
@@ -2966,6 +2978,10 @@
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/2946ca0ea6c89dab7d7d9fbc18e54292/material-1.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/font_poetsen.xml.flat",
+        "source": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/font/poetsen.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_info_icon_default.png.flat",

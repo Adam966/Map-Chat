@@ -1948,6 +1948,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location_on_black_24dp
 drawable ic_mapchatlogo
+drawable ic_mapchatlogotext
+drawable ic_mapchatlogotextdark
 drawable ic_menu_24px
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2008,6 +2010,8 @@ drawable splash_bkg
 drawable their_message
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font poetsen
+font poetsen_font
 id ALT
 id CTRL
 id FUNCTION
@@ -2209,8 +2213,10 @@ id list_item
 id loadingBar
 id loginError
 id loginLayout
+id loginLayoutWrap
 id loginPageText
 id login_button
+id logoText
 id logoView
 id mapText
 id mapView

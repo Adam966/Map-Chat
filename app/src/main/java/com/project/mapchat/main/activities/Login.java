@@ -60,8 +60,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        findViewById(R.id.loadingBar).setVisibility(GONE);
-
         appSharedPrefs = new SharedPrefs(this);
 
         loginButton = findViewById(R.id.login_button);
@@ -250,15 +248,19 @@ public class Login extends AppCompatActivity {
     }
 
     private void setViewInvisible(){
-        findViewById(R.id.login_button).setVisibility(GONE);
-        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#293896"));
         findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
+        findViewById(R.id.loginLayoutWrap).setBackgroundColor(Color.parseColor("#293896"));
+        findViewById(R.id.loginLayout).setVisibility(GONE);
+        findViewById(R.id.login_button).setVisibility(GONE);
+        findViewById(R.id.logoText).setVisibility(GONE);
     }
 
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
-        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#FFFFFF"));
+        findViewById(R.id.loginLayoutWrap).setBackgroundColor(Color.parseColor("#FFFFFF"));
+        findViewById(R.id.loginLayout).setVisibility(View.VISIBLE);
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.logoText).setVisibility(View.VISIBLE );
     }
 
 }
