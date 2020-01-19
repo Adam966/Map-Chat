@@ -6930,6 +6930,12 @@ public final class R {
   public static final class font {
     public static final int poetsen=0x7f080000;
     public static final int poetsen_font=0x7f080001;
+    public static final int proxima_nova=0x7f080002;
+    public static final int proxima_nova_black=0x7f080003;
+    public static final int proxima_nova_bold=0x7f080004;
+    public static final int proxima_nova_extrabold=0x7f080005;
+    public static final int proxima_nova_regular=0x7f080006;
+    public static final int proxima_nova_thin=0x7f080007;
   }
   public static final class id {
     public static final int ALT=0x7f090000;

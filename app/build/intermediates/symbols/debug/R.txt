@@ -2011,6 +2011,12 @@ int drawable tooltip_frame_dark 0x7f0700dd
 int drawable tooltip_frame_light 0x7f0700de
 int font poetsen 0x7f080000
 int font poetsen_font 0x7f080001
+int font proxima_nova 0x7f080002
+int font proxima_nova_black 0x7f080003
+int font proxima_nova_bold 0x7f080004
+int font proxima_nova_extrabold 0x7f080005
+int font proxima_nova_regular 0x7f080006
+int font proxima_nova_thin 0x7f080007
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002

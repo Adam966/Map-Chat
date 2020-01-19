@@ -2012,6 +2012,12 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font poetsen
 font poetsen_font
+font proxima_nova
+font proxima_nova_black
+font proxima_nova_bold
+font proxima_nova_extrabold
+font proxima_nova_regular
+font proxima_nova_thin
 id ALT
 id CTRL
 id FUNCTION
