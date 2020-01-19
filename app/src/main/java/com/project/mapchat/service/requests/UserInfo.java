@@ -11,7 +11,8 @@ import retrofit2.http.Multipart;
 
 public interface UserInfo {
 
-    @Headers("Content-Type:application/json")
+    @Headers({ "Content-Type: application/json;charset=UTF-8",
+            "Content-Encoding: gzip"})
     @GET("api/user/userinfo")
     Call<ResponseBody> userInfoRequest(@Header("Authorization") String serverToken);
 

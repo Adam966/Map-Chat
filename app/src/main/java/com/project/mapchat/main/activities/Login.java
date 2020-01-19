@@ -192,6 +192,7 @@ public class Login extends AppCompatActivity {
                    setViewVisible();
 
                    Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
+
                }
 
             }else{

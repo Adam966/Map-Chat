@@ -21,6 +21,10 @@ import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.service.ServerService;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -123,23 +127,10 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void userInfoRequest(String serverToken){
 
-        HashMap<String, String> params = new HashMap<>();
-        // putting token to parameters of request
-        params.put("Authorization","Bearer"+" "+serverToken);
-
-        // making Request Body through Gson Library
-        String strRequestBody = new Gson().toJson(params);
-        Log.wtf("userInfo",strRequestBody);
-
-        final RequestBody requestBody = RequestBody.create(MediaType.
-                parse("application/json"),strRequestBody);
-
-        Log.wtf("requestBody",requestBody.toString());
-
         Call<ResponseBody> call = ServerService
                 .getInstance()
                 .getUserInfoReq()
-                .userInfoRequest(serverToken);
+                .userInfoRequest("Bearer"+" "+serverToken);
 
         call.enqueue(new Callback<ResponseBody>() {
             @Override
@@ -158,9 +149,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Intent i = new Intent(getApplicationContext(),Login.class);
-                startActivity(i);
-                finish();
+                new Logout().logout(appSharedPrefs,getApplicationContext());
             }
         });
     }
