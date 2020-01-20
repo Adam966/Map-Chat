@@ -2082,6 +2082,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addEvent
 id addEventActionButton
 id adjust_height
 id adjust_width

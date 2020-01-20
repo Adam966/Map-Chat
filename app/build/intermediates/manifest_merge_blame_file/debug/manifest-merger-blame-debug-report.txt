@@ -109,9 +109,9 @@
 58        <activity android:name="com.project.mapchat.main.activities.SettingsActivity" />
 58-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:9-70
 58-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:19-67
-59        <activity android:name="com.project.mapchat.main.activities.EventsActivity" />
-59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-68
-59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-65
+59        <activity android:name="com.project.mapchat.entities.EventsActivity" />
+59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-61
+59-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-58
 60        <activity android:name="com.project.mapchat.main.activities.MainActivity" />
 60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:9-66
 60-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:19-63

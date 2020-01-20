@@ -7,24 +7,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.project.mapchat.ChoosePlace;
 import com.project.mapchat.R;
+import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.dialogs.DatePickerFragment;
 import com.project.mapchat.dialogs.TimePickerFragment;
-import com.project.mapchat.entities.Event;
+import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.entities.Location;
+import com.project.mapchat.service.ServerService;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AddEventActivity extends AppCompatActivity implements DatePickerFragment.DialogListener, TimePickerFragment.DialogListener {
     /////////////////////////////// EVENT OBJ ////////////////////
-    private Event event;
+    private EventToSend eventToSend;
     private Location location;
     private int visibility;
 
@@ -45,10 +55,15 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
     private TextView error;
 
+    private SharedPrefs appSharedPrefs;
+    private Button addEventBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_event_layout);
+
+        appSharedPrefs = new SharedPrefs(this);
 
         eventName =  findViewById(R.id.eventName);
         eventVisibility = findViewById(R.id.eventVisibility);
@@ -63,8 +78,6 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         placeName = findViewById(R.id.placeName);
 
         placeName.setSelected(true);
-
-
 
         date.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +95,20 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
             }
         });
 
+        addEventBtn = findViewById(R.id.addEvent);
+        addEventBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(checkEvent()) {
+                    addNewEvent();
+                    Log.wtf("EVENT", eventToSend.toString());
+                    //startActivity(new Intent(this, MainActivity.class));
+                } else {
+                    error.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
         eventVisibility.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -94,7 +121,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     public void addEvent(View view) {
         if(checkEvent()) {
             addNewEvent();
-            Log.wtf("EVENT", event.toString());
+            Log.wtf("EVENT", eventToSend.toString());
             //startActivity(new Intent(this, MainActivity.class));
         } else {
             error.setVisibility(View.VISIBLE);
@@ -125,14 +152,14 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     }
 
     private void addNewEvent() {
-        event = new Event();
-        event.setGroupName(eventName.getText().toString());
-        event.setDescription(description.getText().toString());
-        event.setLocation(location);
-        //event.setTags();
-        event.setType(visibility);
-        event.setMeetTime(date.getText().toString() + "" + time.getText().toString());
-        //request to server
+        eventToSend = new EventToSend();
+        eventToSend.setGroupName(eventName.getText().toString());
+        eventToSend.setDescription(description.getText().toString());
+        eventToSend.setLocation(location);
+        //eventToSend.setTags();
+        eventToSend.setType(visibility);
+        eventToSend.setMeetTime(date.getText().toString() + "" + time.getText().toString());
+        createEvent(eventToSend,"Bearer"+" "+appSharedPrefs.getServerToken());
     }
 
     ////////////////////////////////////// TIME AND DATE PICKER ////////////////////////////////////
@@ -172,5 +199,36 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
             placeName.setText(intent.getStringExtra("placeName"));
         else
             placeName.setText("Choose place");
+    }
+
+    private void createEvent(EventToSend eventToSend,String serverToken){
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .createEvent()
+                .createEventRequest(serverToken,eventToSend);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if(response.isSuccessful()){
+                    Log.wtf("CreateEvent","Event was Created "+response.code());
+                }else {
+                    switch(response.code()){
+                        case 401:{
+                            Log.wtf("401","Unauthorized");
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

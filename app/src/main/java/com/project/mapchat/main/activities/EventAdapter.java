@@ -15,14 +15,16 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.mapchat.R;
+import com.project.mapchat.entities.EventFromServer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
-    private List<String> eventsData;
+    private ArrayList<EventFromServer> eventsData;
     private ConstraintLayout inflater;
 
-    public EventAdapter(List<String> eventsData, Context context) {
+    public EventAdapter(ArrayList<EventFromServer> eventsData, Context context) {
         this.eventsData = eventsData;
         //this.inflater = ConstraintLayout.from(context);
     }
@@ -37,7 +39,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-       final String eventName = eventsData.get(position);
+       final String eventName = eventsData.get(position).getGroupName();
        holder.eventName.setText(eventName);
 
        holder.parentLayout.setOnClickListener(new View.OnClickListener() {

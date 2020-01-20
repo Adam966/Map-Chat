@@ -21,7 +21,6 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import com.facebook.login.LoginManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -59,7 +58,7 @@ import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
-import com.project.mapchat.entities.Event;
+import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
 import java.lang.ref.WeakReference;
@@ -380,14 +379,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     /////////////////////////////////// GET ALL USER EVENTS /////////////////////////////////////////////
     private void getUserEvents(String serverToken) {
-        Call<ArrayList<Event>> call = ServerService
+        Call<ArrayList<EventToSend>> call = ServerService
                 .getInstance()
                 .getUserEvents()
                 .getUserEventsRequest(serverToken);
 
-        call.enqueue(new Callback<ArrayList<Event>>() {
+        call.enqueue(new Callback<ArrayList<EventToSend>>() {
             @Override
-            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
+            public void onResponse(Call<ArrayList<EventToSend>> call, Response<ArrayList<EventToSend>> response) {
                 if(response.isSuccessful()){
                     setMapLayer(response.body());
                 }else {
@@ -404,14 +403,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
 
             @Override
-            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EventToSend>> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
 
     ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
-    private void setMapLayer(ArrayList<Event> list) {
+    private void setMapLayer(ArrayList<EventToSend> list) {
         mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
 
         SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle());
@@ -424,7 +423,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             );
         }
 /*
-        for (Event e: list) {
+        for (EventToSend e: list) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")

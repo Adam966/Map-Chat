@@ -12,11 +12,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
-import com.project.mapchat.entities.Event;
+import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
 import java.util.ArrayList;
@@ -32,6 +32,7 @@ public class EventsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         appSharedPrefs = new SharedPrefs(this);
+        getEvents(appSharedPrefs.getServerToken());
 
         if(appSharedPrefs.loadDarkModeState() == true){
             setTheme(R.style.AppDark);
@@ -69,21 +70,21 @@ public class EventsActivity extends AppCompatActivity {
                 return true;
             }
         });
-
-        //getUserEvents();
     }
 
     private void getEvents(String serverToken) {
-        Call<ArrayList<Event>> call = ServerService
+        Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
-                .getUserEvents()
-                .getUserEventsRequest(serverToken);
+                .getEvents()
+                .getEventsRequest("Bearer"+" "+serverToken);
 
-        call.enqueue(new Callback<ArrayList<Event>>() {
+        call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override
-            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
+            public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    setAdapter(response.body());
+                    ArrayList<EventFromServer> list = response.body();
+                    setAdapter(list);
+                    Log.wtf("Events",response.body().toString());
                 }else{
                     switch(response.code()){
                         case 401:{
@@ -97,22 +98,21 @@ public class EventsActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
                 Toast.makeText(getBaseContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
 
-    private void setAdapter(ArrayList<Event> list) {
-        ArrayList<String> eventItems = new ArrayList<>();
+    private void setAdapter(ArrayList<EventFromServer> list) {
+        /*ArrayList<String> eventItems = new ArrayList<>();
         eventItems.add("event1");
-        eventItems.add("event2");
+        eventItems.add("event2");*/
 
         RecyclerView recyclerView = findViewById(R.id.eventItemRecycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        EventAdapter eventAdapter = new EventAdapter(eventItems,this);
+        EventAdapter eventAdapter = new EventAdapter(list,this);
         recyclerView.setAdapter(eventAdapter);
     }
 }
-
 

@@ -220,10 +220,10 @@ activity#com.project.mapchat.main.activities.SettingsActivity
 ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:9-70
 	android:name
 		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:38:19-67
-activity#com.project.mapchat.main.activities.EventsActivity
-ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-68
+activity#com.project.mapchat.entities.EventsActivity
+ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:9-61
 	android:name
-		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-65
+		ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:39:19-58
 activity#com.project.mapchat.main.activities.MainActivity
 ADDED from /Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:40:9-66
 	android:name
