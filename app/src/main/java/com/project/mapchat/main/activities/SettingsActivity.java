@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,6 +15,10 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.DecodeFormat;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.facebook.login.LoginManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
@@ -49,6 +54,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         appSharedPrefs = new SharedPrefs(this);
 
+        userInfoRequest(appSharedPrefs.getServerToken());
+
         if(appSharedPrefs.loadDarkModeState() == true){
             setTheme(R.style.AppDark);
         }else {
@@ -74,8 +81,6 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
-
-        userInfoRequest(appSharedPrefs.getServerToken());
 
         logoutBtn = findViewById(R.id.btn_logout);
         circleImageView = findViewById(R.id.profile_image);
@@ -116,11 +121,6 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
-    private void setImage(String id){
-        String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
-        Glide.with(SettingsActivity.this).load(imageUrl).into(circleImageView);
-    }
-
     private void restart(){
         Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
         startActivity(i);
@@ -156,5 +156,25 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
+    private void setImage(String id){
+        String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
+
+        RequestOptions requestOptions = new RequestOptions()
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .skipMemoryCache(true)
+                .centerCrop()
+                .dontAnimate()
+                .dontTransform()
+                .priority(Priority.IMMEDIATE)
+                .encodeFormat(Bitmap.CompressFormat.PNG)
+                .format(DecodeFormat.DEFAULT);
+
+        Glide.with(SettingsActivity.this)
+                .load(imageUrl)
+                .apply(requestOptions)
+                .dontTransform()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(circleImageView);
+    }
 
 }

@@ -16,10 +16,8 @@ import retrofit2.http.Headers;
 
 public interface CreateEvent {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/getUserEvents")
+    @GET("api/mapchat/createEvent")
     Call<ResponseBody> createEventRequest
-            (@Header("Authorization") String serverToken,
-             @Body HashMap eventToSend,
-             Location location
+            (@Header("Authorization") String serverToken
             );
 }

@@ -9,7 +9,7 @@ import retrofit2.http.Path;
 
 public interface LeaveEvent {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/leaveEvent?idE'={id}")
+    @GET("api/mapchat/leaveEvent?idE={id}")
     Call<ResponseBody> leaveEventRequest(
             @Header("Authorization") String serverToken,
             @Path("id") int eventId

@@ -10,7 +10,7 @@ import retrofit2.http.Path;
 public interface RemoveUserFromEvent {
     @Headers("Content-Type: application/json")
     @GET("api/mapchat/removeUserFromEvent?idUR={idU}&idE={idE}")
-    Call<ResponseBody> leaveEventRequest(
+    Call<ResponseBody> removeUserFromEventRequest(
             @Header("Authorization") String serverToken,
             @Path("idU") int userId,
             @Path("idE") int eventId

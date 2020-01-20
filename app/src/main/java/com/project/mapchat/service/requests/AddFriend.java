@@ -7,12 +7,11 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 
-public interface RevokeAdminPrivilege {
+public interface AddFriend {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/revokeAdmin?idUR={idU}&idE={idE}")
-    Call<ResponseBody> addAdminPrivilegeRequest(
+    @GET("api/user/addFriend?idF={idF}")
+    Call<ResponseBody> addFriendRequest(
             @Header("Authorization") String serverToken,
-            @Path("idUR") int userId,
-            @Path("idE") int eventId
+            @Path("idF") int friendId
     );
 }

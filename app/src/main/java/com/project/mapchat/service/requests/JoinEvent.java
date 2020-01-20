@@ -7,12 +7,11 @@ import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
 
-public interface RevokeAdminPrivilege {
+public interface JoinEvent {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/revokeAdmin?idUR={idU}&idE={idE}")
-    Call<ResponseBody> addAdminPrivilegeRequest(
+    @GET("/api/mapchat/joinEvent?idE={id}")
+    Call<ResponseBody> joinEventRequest(
             @Header("Authorization") String serverToken,
-            @Path("idUR") int userId,
-            @Path("idE") int eventId
+            @Path("id") int eventId
     );
 }

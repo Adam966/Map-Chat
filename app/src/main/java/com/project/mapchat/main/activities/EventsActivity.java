@@ -73,7 +73,7 @@ public class EventsActivity extends AppCompatActivity {
         //getUserEvents();
     }
 
-    private void getUserEvents(String serverToken) {
+    private void getEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
                 .getUserEvents()
