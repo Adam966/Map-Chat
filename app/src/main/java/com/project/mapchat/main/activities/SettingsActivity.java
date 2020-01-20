@@ -139,6 +139,7 @@ public class SettingsActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Log.wtf("UserInfo","Success");
                     UserInfoData data = response.body();
+                    setImage(data.getFacebookId());
                 }else{
                     switch(response.code()){
                         case 401:{

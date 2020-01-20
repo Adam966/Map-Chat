@@ -8,6 +8,7 @@
         <item name="iconcolor">#FF9750</item>
         <item name="coloriconchecked">#141B4A</item>
         <item name="textcolor">#FFFFFF</item>
+        <item name="textcolor2">#293896</item>
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
@@ -17,6 +18,7 @@
         <item name="iconcolor">#FF9750</item>
         <item name="coloriconchecked">#3E4CA0</item>
         <item name="textcolor">#FF9750</item>
+        <item name="textcolor2">#FFFFFF</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">

@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tomáš Varga"
-            android:textSize="@dimen/_32sdp"
+            android:textSize="@dimen/_26sdp"
             android:textColor="?attr/textcolor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,11 +71,25 @@
                 android:id="@+id/switchDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:textColor="?attr/textcolor"
                 android:textOff=""
                 android:textOn=""
-                tools:layout_editor_absoluteX="160dp"
-                tools:layout_editor_absoluteY="128dp" />
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Dark Mode"
+                android:textColor="?attr/textcolor2"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/btn_logout"
@@ -86,14 +100,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                tools:layout_editor_absoluteX="78dp"
-                tools:layout_editor_absoluteY="128dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
