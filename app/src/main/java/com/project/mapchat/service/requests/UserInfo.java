@@ -1,5 +1,7 @@
 package com.project.mapchat.service.requests;
 
+import com.project.mapchat.entities.UserInfoData;
+
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -14,6 +16,6 @@ public interface UserInfo {
     @Headers({ "Content-Type: application/json;charset=UTF-8",
             "Content-Encoding: gzip"})
     @GET("api/user/userinfo")
-    Call<ResponseBody> userInfoRequest(@Header("Authorization") String serverToken);
+    Call<UserInfoData> userInfoRequest(@Header("Authorization") String serverToken);
 
 }

@@ -19,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.gson.Gson;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
 
 import org.json.JSONException;
@@ -126,18 +127,18 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void userInfoRequest(String serverToken){
-
-        Call<ResponseBody> call = ServerService
+        Call<UserInfoData> call = ServerService
                 .getInstance()
                 .getUserInfoReq()
                 .userInfoRequest("Bearer"+" "+serverToken);
 
-        call.enqueue(new Callback<ResponseBody>() {
+        call.enqueue(new Callback<UserInfoData>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+            public void onResponse(Call<UserInfoData> call, Response<UserInfoData> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
-                    Log.wtf("UserInfo","SUCCESS");
+                    Log.wtf("UserInfo","Success");
+                    UserInfoData data = response.body();
                 }else{
                     switch(response.code()){
                         case 401:{
@@ -148,7 +149,7 @@ public class SettingsActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
+            public void onFailure(Call<UserInfoData> call, Throwable t) {
                 new Logout().logout(appSharedPrefs,getApplicationContext());
             }
         });
