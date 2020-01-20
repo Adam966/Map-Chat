@@ -7,7 +7,7 @@
         <item name="barcolor">#293896</item>
         <item name="iconcolor">#FF9750</item>
         <item name="coloriconchecked">#141B4A</item>
-        <item name="textcolor">#293896</item>
+        <item name="textcolor">#FFFFFF</item>
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">

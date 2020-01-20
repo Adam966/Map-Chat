@@ -2136,6 +2136,7 @@ id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id compassView
 id confirmation_code
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2278,6 +2279,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id searchViewFriends
 id search_badge
@@ -2333,6 +2335,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView4
 id text_input_password_toggle
 id textinput_counter
