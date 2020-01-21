@@ -2168,6 +2168,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id error
 id eventDate
+id eventDesc
 id eventItemName
 id eventItemRecycle
 id eventName
@@ -2227,7 +2228,6 @@ id loginPageText
 id login_button
 id logoText
 id logoView
-id mapText
 id mapView
 id masked
 id media_actions
@@ -2253,6 +2253,7 @@ id notification_main_column_container
 id off
 id on
 id openChatActionButton
+id openEvent
 id open_graph
 id outline
 id packed
@@ -2339,7 +2340,6 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error

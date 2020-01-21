@@ -115,6 +115,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // Permissions
     private PermissionsManager permissionsManager;
 
+    // State
+    static boolean isOpen = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -406,7 +409,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
                 .getEvents()
-                .getEventsRequest(serverToken);
+                .getEventsRequest("Bearer " + serverToken);
 
         call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override
@@ -439,7 +442,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle(), null, new GeoJsonOptions()
                 .withCluster(true)
-                .withClusterMaxZoom(14)
+                .withClusterMaxZoom(12)
                 .withClusterRadius(20));
 
         manager.setIconAllowOverlap(true);
@@ -452,7 +455,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     .withData(new JsonPrimitive(i))
             );
         }
-*/
+*/      Log.wtf("LIST", String.valueOf(list.size()));
         for (EventFromServer e: list) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
@@ -467,6 +470,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onAnnotationClick(Symbol symbol) {
                 Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData().getAsString(), Toast.LENGTH_SHORT).show();
+                if (!isOpen) {
+                    showMarkerView(symbol);
+                    isOpen = true;
+                }
+
             }
         });
     }
@@ -477,23 +485,34 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 */
     //////////////////////////// MARKER VIEW POP UP/////////////////////////////////////////////////
-    private void showMarkerView(LatLng latLng) {
+    private void showMarkerView(Symbol symbol) {
         markerViewManager = new MarkerViewManager(mapView, mapboxMap);
 
         View eventPopUp = LayoutInflater.from(MainActivity.this).inflate(R.layout.map_event_view, null);
         eventPopUp.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
-        TextView eventName = findViewById(R.id.eventName);
-        TextView eventDesc = findViewById(R.id.eventDesc);
+        TextView eventName = eventPopUp.findViewById(R.id.eventName);
+        TextView eventDesc = eventPopUp.findViewById(R.id.eventDesc);
+        ImageView btn = eventPopUp.findViewById(R.id.closeEventBtn);
+        Button openEvent = eventPopUp.findViewById(R.id.openEvent);
 
-        final MarkerView markerView = new MarkerView(new LatLng(latLng.getLatitude(), latLng.getLongitude()), eventPopUp);
+        eventName.setText(symbol.getData().getAsJsonPrimitive().getAsString());
+
+        final MarkerView markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(), symbol.getLatLng().getLongitude()), eventPopUp);
         markerViewManager.addMarker(markerView);
 
-        ImageView btn = findViewById(R.id.closeEventBtn);
+        openEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "OPEN EVENT DETAIL", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 markerViewManager.removeMarker(markerView);
+                isOpen = false;
             }
         });
     }

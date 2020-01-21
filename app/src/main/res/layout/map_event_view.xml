@@ -54,6 +54,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/eventName"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/openEvent"
+                android:layout_width="48dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:text="Open "
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventDesc" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
