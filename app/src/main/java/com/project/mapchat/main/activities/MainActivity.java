@@ -409,7 +409,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
                 .getEvents()
+<<<<<<< Updated upstream
                 .getEventsRequest("Bearer " + serverToken);
+=======
+                .getEventsRequest("Bearer"+" "+serverToken);
+>>>>>>> Stashed changes
 
         call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override

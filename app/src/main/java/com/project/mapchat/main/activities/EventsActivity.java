@@ -105,9 +105,6 @@ public class EventsActivity extends AppCompatActivity {
     }
 
     private void setAdapter(ArrayList<EventFromServer> list) {
-        /*ArrayList<String> eventItems = new ArrayList<>();
-        eventItems.add("event1");
-        eventItems.add("event2");*/
 
         RecyclerView recyclerView = findViewById(R.id.eventItemRecycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

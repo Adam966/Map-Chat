@@ -193,7 +193,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         Bundle data = intent.getExtras();
         Place place = data.getParcelable("place");
 
-        Log.wtf("PLACE", place.toString());
+        Log.wtf("PLACE_PARCELABLE", place.toString());
 
         location = new Location();
         location.setAddress(place.getRoad() + " " + place.getHouseNumber());

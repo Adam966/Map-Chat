@@ -99,17 +99,19 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
 
     private ArrayList<Place> getJsonPlaces(JSONArray array) {
         ArrayList<Place> list = new ArrayList<>();
-
+        Place place = new Place();
         for (int i = 0; i < array.length(); i++) {
-            Place place = new Place();
             try {
                 place.setCountry(array.getJSONObject(i).getJSONObject("components").getString("country"));
                 place.setHouseNumber(array.getJSONObject(i).getJSONObject("components").getString("house_number"));
                 place.setPostcode(array.getJSONObject(i).getJSONObject("components").getString("postcode"));
                 place.setRoad(array.getJSONObject(i).getJSONObject("components").getString("road"));
                 place.setTown(array.getJSONObject(i).getJSONObject("components").getString("town"));
-            } catch (JSONException e) {
 
+                Log.wtf("Postcode","idk   "+array.getJSONObject(i).getJSONObject("components").getString("postcode"));
+
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
 
             try {
