@@ -30,10 +30,6 @@ public class EventFromServer {
     @Expose
     private String active;
 
-    @SerializedName("location")
-    @Expose
-    private Location location;
-
     @SerializedName("type")
     @Expose
     private String type;
@@ -41,6 +37,10 @@ public class EventFromServer {
     @SerializedName("meetTime")
     @Expose
     private String meetTime;
+
+    @SerializedName("location")
+    @Expose
+    private Location location;
 
     public String getIdL() {
         return idL;

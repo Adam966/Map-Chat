@@ -40,6 +40,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
        final String eventName = eventsData.get(position).getGroupName();
+       final String Lat = eventsData.get(position).getLocation().getLatitude();
+       final String Lon = eventsData.get(position).getLocation().getLongtitude();
+
        holder.eventName.setText(eventName);
 
        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -48,8 +51,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder>{
                 Log.wtf("ONCLICK","Works");
                 Intent i = new Intent(view.getContext(),MainActivity.class);
                 i.putExtra("eventName",eventName);
-                i.putExtra("Lat", 50.56);
-                i.putExtra("Lon", 80.54);
+                i.putExtra("Lat", Double.valueOf(Lat));
+                i.putExtra("Lon", Double.valueOf(Lon));
                 view.getContext().startActivity(i);
            }
        });
