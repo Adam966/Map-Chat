@@ -38,8 +38,10 @@ import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 import com.mapbox.android.core.location.LocationEngine;
 import com.mapbox.android.core.location.LocationEngineCallback;
@@ -79,8 +81,12 @@ import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
@@ -190,7 +196,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
         setDarkModeMap(mapboxMap);
-        //mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/pralko/ck5fyoun504er1iqmrzc7zlbk/draft"));
     }
 
     public void userLocation(View view) {
@@ -409,11 +414,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
                 .getEvents()
-<<<<<<< Updated upstream
                 .getEventsRequest("Bearer " + serverToken);
-=======
-                .getEventsRequest("Bearer"+" "+serverToken);
->>>>>>> Stashed changes
 
         call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override
@@ -460,20 +461,29 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             );
         }
 */      Log.wtf("LIST", String.valueOf(list.size()));
+        Gson gson = new Gson();
         for (EventFromServer e: list) {
+
+            HashMap<String,Object> map = new HashMap<>();
+
+            map.put("groupName",e.getGroupName());
+            map.put("description",e.getDescription());
+
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
-                    .withData(new JsonPrimitive(e.getGroupName()))
+                    .withData(new JsonPrimitive(gson.toJson(map)))
             );
+
+            map.clear();
         }
 
         manager.create(symbolOptionsList);
-
         manager.addClickListener(new OnSymbolClickListener() {
             @Override
             public void onAnnotationClick(Symbol symbol) {
-                Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData().getAsString(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData().getAsString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData(), Toast.LENGTH_SHORT).show();
                 if (!isOpen) {
                     showMarkerView(symbol);
                     isOpen = true;
@@ -500,7 +510,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         ImageView btn = eventPopUp.findViewById(R.id.closeEventBtn);
         Button openEvent = eventPopUp.findViewById(R.id.openEvent);
 
-        eventName.setText(symbol.getData().getAsJsonPrimitive().getAsString());
+        JsonParser parser = new JsonParser();
+
+        JsonElement jsonElement = parser.parse(symbol.getData().getAsJsonPrimitive().getAsString());
+        JsonObject rootObject = jsonElement.getAsJsonObject();
+
+        eventName.setText(rootObject.get("groupName").getAsString());
+        eventDesc.setText(rootObject.get("description").getAsString());
 
         final MarkerView markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(), symbol.getLatLng().getLongitude()), eventPopUp);
         markerViewManager.addMarker(markerView);
