@@ -2124,7 +2124,6 @@ id checked
 id chronometer
 id clip_horizontal
 id clip_vertical
-id closeEventBtn
 id collapseActionView
 id com_facebook_body_frame
 id com_facebook_button_xout
@@ -2228,6 +2227,8 @@ id loginPageText
 id login_button
 id logoText
 id logoView
+id mapLayout
+id mapPopup
 id mapView
 id masked
 id media_actions
@@ -2428,6 +2429,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_chat
+layout activity_event_detail
 layout activity_events
 layout activity_login
 layout activity_main

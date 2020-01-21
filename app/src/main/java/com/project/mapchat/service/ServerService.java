@@ -3,6 +3,7 @@ package com.project.mapchat.service;
 import com.project.mapchat.service.requests.AddAdminPrivilege;
 import com.project.mapchat.service.requests.CreateEvent;
 import com.project.mapchat.service.requests.DeleteEvent;
+import com.project.mapchat.service.requests.GetEventById;
 import com.project.mapchat.service.requests.GetEventTags;
 import com.project.mapchat.service.requests.GetEventUsers;
 import com.project.mapchat.service.requests.GetEvents;
@@ -110,6 +111,10 @@ public class ServerService {
 
         public GetEventUsers getEventUsers(){
             return retrofit.create(GetEventUsers.class);
+        }
+
+        public GetEventById getEventById(){
+            return retrofit.create(GetEventById.class);
         }
 
 

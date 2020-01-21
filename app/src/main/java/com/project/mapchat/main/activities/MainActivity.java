@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -25,6 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -121,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // Permissions
     private PermissionsManager permissionsManager;
 
-    // State
+    // State of the marker which is opened or not
     static boolean isOpen = false;
 
     @Override
@@ -507,7 +509,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         TextView eventName = eventPopUp.findViewById(R.id.eventName);
         TextView eventDesc = eventPopUp.findViewById(R.id.eventDesc);
-        ImageView btn = eventPopUp.findViewById(R.id.closeEventBtn);
         Button openEvent = eventPopUp.findViewById(R.id.openEvent);
 
         JsonParser parser = new JsonParser();
@@ -525,17 +526,31 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "OPEN EVENT DETAIL", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),EventDetail.class);
+                startActivity(i);
             }
         });
 
+        findViewById(R.id.mapView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.wtf("DADA","DADA");
+                markerViewManager.removeMarker(markerView);
+                isOpen = false;
+            }
+        });
+
+        /*
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 markerViewManager.removeMarker(markerView);
                 isOpen = false;
             }
-        });
+        });*/
     }
+
+
 
     //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
     @Override
