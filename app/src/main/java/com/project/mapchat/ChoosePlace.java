@@ -1,12 +1,13 @@
 package com.project.mapchat;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.SearchView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.widget.SearchView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -14,7 +15,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.mapbox.api.geocoding.v5.models.CarmenFeature;
 import com.project.mapchat.adapters.PlacesAdapter;
 import com.project.mapchat.entities.Place;
 import com.project.mapchat.main.activities.AddEventActivity;
@@ -141,11 +141,9 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
     @Override
     public void onItemClick(Place place) {
         Intent intent = new Intent(this, AddEventActivity.class);
-        Bundle bundle = new Bundle();
+        intent.putExtra("place", place);
 
-        bundle.putSerializable("place", place);
-        intent.putExtra("place", bundle);
-
-        //startActivity(intent);
+        Log.wtf("PLACE", place.toString());
+        startActivity(intent);
     }
 }

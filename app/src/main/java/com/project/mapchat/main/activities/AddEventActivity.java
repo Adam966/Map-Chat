@@ -1,8 +1,5 @@
 package com.project.mapchat.main.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import com.project.mapchat.ChoosePlace;
 import com.project.mapchat.R;
@@ -157,7 +157,12 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         eventToSend.setGroupName(eventName.getText().toString());
         eventToSend.setDescription(description.getText().toString());
         eventToSend.setLocation(location);
-        //eventToSend.setTags();
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add(tagName.getText().toString());
+
+        eventToSend.setTags(list);
+        eventToSend.setTags(list);
         eventToSend.setType(visibility);
         eventToSend.setMeetTime(date.getText().toString() + "" + time.getText().toString());
         createEvent(eventToSend,"Bearer"+" "+appSharedPrefs.getServerToken());
@@ -185,7 +190,8 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-        Place place = (Place) getIntent().getBundleExtra("place").getSerializable("place");
+        Bundle data = intent.getExtras();
+        Place place = data.getParcelable("place");
 
         Log.wtf("PLACE", place.toString());
 
@@ -199,7 +205,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
         Log.wtf("Location", location.toString());
 
-        if (intent.getStringExtra("placeName") != null)
+        if (data.getParcelable("place") != null)
             placeName.setText(place.getFormatted());
         else
             placeName.setText("Choose place");

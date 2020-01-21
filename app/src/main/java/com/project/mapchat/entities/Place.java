@@ -1,11 +1,10 @@
 
 package com.project.mapchat.entities;
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Place implements Serializable {
+public class Place implements Parcelable {
 
     private String country;
     private String houseNumber;
@@ -80,6 +79,32 @@ public class Place implements Serializable {
         this.lng = lng;
     }
 
+    public Place() {
+    }
+
+    public static final Parcelable.Creator CREATOR = new Creator<Place>() {
+        @Override
+        public Place createFromParcel(Parcel parcel) {
+            return new Place(parcel);
+        }
+
+        @Override
+        public Place[] newArray(int i) {
+            return new Place[i];
+        }
+    };
+
+    public Place(Parcel parcel) {
+        this.country = parcel.readString();
+        this.houseNumber = parcel.readString();
+        this.postcode = parcel.readString();
+        this.town = parcel.readString();
+        this.road = parcel.readString();
+        this.lat = parcel.readDouble();
+        this.lng = parcel.readDouble();
+        this.formatted = parcel.readString();
+    }
+
     @Override
     public String toString() {
         return "Place{" +
@@ -91,5 +116,22 @@ public class Place implements Serializable {
                 ", lat=" + lat +
                 ", lng=" + lng +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(this.country);
+        parcel.writeString(this.houseNumber);
+        parcel.writeString(this.postcode);
+        parcel.writeString(this.road);
+        parcel.writeString(this.town);
+        parcel.writeDouble(this.lat);
+        parcel.writeDouble(this.lng);
+        parcel.writeString(this.formatted);
     }
 }
