@@ -12,7 +12,7 @@ public interface RevokeAdminPrivilege {
     @GET("api/mapchat/revokeAdmin?idUR={idU}&idE={idE}")
     Call<ResponseBody> addAdminPrivilegeRequest(
             @Header("Authorization") String serverToken,
-            @Path("idU") int userId,
+            @Path("idUR") int userId,
             @Path("idE") int eventId
     );
 }

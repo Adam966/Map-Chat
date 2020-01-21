@@ -1,9 +1,5 @@
 package com.project.mapchat.service.requests;
 
-import com.project.mapchat.entities.Event;
-
-import java.util.ArrayList;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -652,6 +652,7 @@ attr textInputStyle
 attr textLocale
 attr textStartPadding
 attr textcolor
+attr textcolor2
 attr theme
 attr thickness
 attr thumbTextPadding
@@ -1948,6 +1949,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location_on_black_24dp
 drawable ic_mapchatlogo
+drawable ic_mapchatlogotext
+drawable ic_mapchatlogotextdark
 drawable ic_menu_24px
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2008,11 +2011,18 @@ drawable splash_bkg
 drawable their_message
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font poetsen
+font poetsen_font
+font proxima_nova
+font proxima_nova_black
+font proxima_nova_bold
+font proxima_nova_extrabold
+font proxima_nova_regular
+font proxima_nova_thin
 id ALT
 id CTRL
 id FUNCTION
 id META
-id PlaceName
 id SHIFT
 id SYM
 id accessibility_action_clickable_span
@@ -2072,6 +2082,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addEvent
 id addEventActionButton
 id adjust_height
 id adjust_width
@@ -2101,7 +2112,6 @@ id button
 id button2
 id button3
 id button4
-id button5
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -2128,6 +2138,7 @@ id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
 id compassView
 id confirmation_code
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -2135,8 +2146,10 @@ id coordinator
 id custom
 id customPanel
 id dark
+id dateText
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -2153,6 +2166,7 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id error
 id eventDate
 id eventItemName
 id eventItemRecycle
@@ -2168,7 +2182,6 @@ id fill_vertical
 id filled
 id fixed
 id forever
-id friendName
 id friendNameAdapter
 id friendsList
 id ghost_view
@@ -2209,8 +2222,10 @@ id list_item
 id loadingBar
 id loginError
 id loginLayout
+id loginLayoutWrap
 id loginPageText
 id login_button
+id logoText
 id logoView
 id mapText
 id mapView
@@ -2266,6 +2281,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id searchViewFriends
 id search_badge
@@ -2315,17 +2331,21 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tags
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id textView4
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timeText
 id title
 id titleDividerNoCustom
 id title_template
@@ -3153,7 +3173,7 @@ styleable AppCompatSeekBar android_thumb tickMark tickMarkTint tickMarkTintMode
 styleable AppCompatTextHelper android_textAppearance android_drawableTop android_drawableBottom android_drawableLeft android_drawableRight android_drawableStart android_drawableEnd
 styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeMinTextSize autoSizePresetSizes autoSizeStepGranularity autoSizeTextType drawableBottomCompat drawableEndCompat drawableLeftCompat drawableRightCompat drawableStartCompat drawableTint drawableTintMode drawableTopCompat firstBaselineToTopHeight fontFamily fontVariationSettings lastBaselineToBottomHeight lineHeight textAllCaps textLocale
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listChoiceIndicatorMultipleAnimated listChoiceIndicatorSingleAnimated listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingEnd listPreferredItemPaddingLeft listPreferredItemPaddingRight listPreferredItemPaddingStart panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
-styleable AppTheme barcolor bkgcolor coloriconchecked iconcolor textcolor
+styleable AppTheme barcolor bkgcolor coloriconchecked iconcolor textcolor textcolor2
 styleable BottomAppBar backgroundTint fabAlignmentMode fabCradleMargin fabCradleRoundedCornerRadius fabCradleVerticalOffset hideOnScroll
 styleable BottomNavigationView elevation itemBackground itemHorizontalTranslationEnabled itemIconSize itemIconTint itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable BottomSheetBehavior_Layout behavior_fitToContents behavior_hideable behavior_peekHeight behavior_skipCollapsed

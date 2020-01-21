@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        app:fontStyle="normal"
+        app:font="@font/proxima_nova_regular" />
+    <font
+        app:fontStyle="normal"
+        app:font="@font/proxima_nova_thin" />
+    <font
+        app:fontStyle="normal"
+        app:font="@font/proxima_nova_bold" />
+
+    <font
+        app:fontStyle="normal"
+        app:font="@font/proxima_nova_extrabold" />
+
+    <font
+        app:fontStyle="normal"
+        app:font="@font/proxima_nova_black" />
+
+</font-family>

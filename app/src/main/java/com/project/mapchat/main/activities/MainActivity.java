@@ -65,7 +65,7 @@ import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
-import com.project.mapchat.entities.Event;
+import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
 import java.lang.ref.WeakReference;
@@ -301,6 +301,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void openChat(View view) {
         startActivity(new Intent(this, ChatActivity.class));
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -385,28 +386,40 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
-    /////////////////////////////////// GET ALL EVENTS /////////////////////////////////////////////
+    /////////////////////////////////// GET ALL USER EVENTS /////////////////////////////////////////////
     private void getUserEvents(String serverToken) {
-        Call<ArrayList<Event>> call = ServerService
+        Call<ArrayList<EventToSend>> call = ServerService
                 .getInstance()
                 .getEvents()
                 .getEventsRequest(serverToken);
 
-        call.enqueue(new Callback<ArrayList<Event>>() {
+        call.enqueue(new Callback<ArrayList<EventToSend>>() {
             @Override
-            public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
-                //setMapLayer(response.body());
+            public void onResponse(Call<ArrayList<EventToSend>> call, Response<ArrayList<EventToSend>> response) {
+                if(response.isSuccessful()){
+                    setMapLayer(response.body());
+                }else {
+                    switch(response.code()){
+                        case 401:{
+                            Log.wtf("401","Unauthorized");
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
             }
 
             @Override
-            public void onFailure(Call<ArrayList<Event>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EventToSend>> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
 
     ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
-    private void setMapLayer(ArrayList<Event> list) {
+    private void setMapLayer(ArrayList<EventToSend> list) {
         mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
 
         SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle(), null, new GeoJsonOptions()
@@ -423,8 +436,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     .withIconImage("location_icon")
             );
         }
-
-/*        for (Event e: list) {
+/*
+        for (EventToSend e: list) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")

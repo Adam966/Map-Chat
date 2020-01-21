@@ -15,6 +15,12 @@ import com.project.mapchat.service.requests.UpdateUserData;
 import com.project.mapchat.service.requests.UserFriends;
 import com.project.mapchat.service.requests.UserInfo;
 
+import java.net.CookieHandler;
+import java.net.CookieManager;
+import java.net.CookiePolicy;
+import java.net.JarURLConnection;
+import java.net.URLConnection;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -22,13 +28,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServerService {
     // change ip address when connected to another wifi or network
-    private final String BASE_URL = "http://192.168.1.15:5000/";
+    private final String BASE_URL = "http://map-chat.azurewebsites.net/";
     private static ServerService clientInstance;
     private Retrofit retrofit;
 
     public ServerService() {
 
         // for debugging request
+
+        CookieManager cookieManager = new CookieManager();
+        cookieManager.setCookiePolicy(CookiePolicy.ACCEPT_ALL);
+        CookieHandler.setDefault(cookieManager);
+
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder()
@@ -102,7 +113,7 @@ public class ServerService {
         }
 
 
-        // ADMIN REQUEST
+        // ADMIN REQUESTS
         public AddAdminPrivilege addAdminPrivilege(){
             return retrofit.create(AddAdminPrivilege.class);
         }

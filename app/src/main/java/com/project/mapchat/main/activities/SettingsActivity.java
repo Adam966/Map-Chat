@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -14,19 +15,17 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 
 import com.bumptech.glide.Glide;
-import com.facebook.login.LoginManager;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.load.DecodeFormat;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.gson.Gson;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
 
-import java.util.HashMap;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-import okhttp3.MediaType;
-import okhttp3.RequestBody;
-import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -41,6 +40,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         appSharedPrefs = new SharedPrefs(this);
+
+        userInfoRequest(appSharedPrefs.getServerToken());
 
         if(appSharedPrefs.loadDarkModeState() == true){
             setTheme(R.style.AppDark);
@@ -68,19 +69,13 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-        userInfoRequest(appSharedPrefs.getServerToken());
-
         logoutBtn = findViewById(R.id.btn_logout);
         circleImageView = findViewById(R.id.profile_image);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginManager.getInstance().logOut();
-                appSharedPrefs.removeServerToken();
-                appSharedPrefs.removeFbToken();
-                Intent i = new Intent(SettingsActivity.this, Login.class);
-                startActivity(i);
+                new Logout().logout(appSharedPrefs,getApplicationContext());
             }
         });
 
@@ -113,50 +108,60 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
-    private void setImage(String id){
-        String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
-        Glide.with(SettingsActivity.this).load(imageUrl).into(circleImageView);
-    }
-
     private void restart(){
         Intent i = new Intent(getApplicationContext(),SettingsActivity.class);
         startActivity(i);
     }
 
     private void userInfoRequest(String serverToken){
-
-        HashMap<String, String> params = new HashMap<>();
-        // putting token to parameters of request
-        params.put("Authorization","Bearer"+" "+serverToken);
-
-        // making Request Body through Gson Library
-        String strRequestBody = new Gson().toJson(params);
-        Log.wtf("userInfo",strRequestBody);
-
-        final RequestBody requestBody = RequestBody.create(MediaType.
-                parse("application/json"),strRequestBody);
-
-        Log.wtf("requestBody",requestBody.toString());
-
-        Call<ResponseBody> call = ServerService
+        Call<UserInfoData> call = ServerService
                 .getInstance()
                 .getUserInfoReq()
-                .userInfoRequest(serverToken);
+                .userInfoRequest("Bearer"+" "+serverToken);
 
-        call.enqueue(new Callback<ResponseBody>() {
+        call.enqueue(new Callback<UserInfoData>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+            public void onResponse(Call<UserInfoData> call, Response<UserInfoData> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
-                    Log.wtf("UserInfo","SUCCESS");
+                    Log.wtf("UserInfo","Success");
+                    UserInfoData data = response.body();
+                    setImage(data.getFacebookId());
+                }else{
+                    switch(response.code()){
+                        case 401:{
+                            //new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                    }
                 }
             }
 
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+            public void onFailure(Call<UserInfoData> call, Throwable t) {
+                new Logout().logout(appSharedPrefs,getApplicationContext());
             }
         });
+    }
+
+    private void setImage(String id){
+        String imageUrl = "https://graph.facebook.com/"+id+"/picture?type=normal";
+
+        RequestOptions requestOptions = new RequestOptions()
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .skipMemoryCache(true)
+                .centerCrop()
+                .dontAnimate()
+                .dontTransform()
+                .priority(Priority.IMMEDIATE)
+                .encodeFormat(Bitmap.CompressFormat.PNG)
+                .format(DecodeFormat.DEFAULT);
+
+        Glide.with(SettingsActivity.this)
+                .load(imageUrl)
+                .apply(requestOptions)
+                .dontTransform()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(circleImageView);
     }
 
 }

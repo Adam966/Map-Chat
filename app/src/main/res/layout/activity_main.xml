@@ -16,53 +16,16 @@
         android:layout_marginBottom="24dp"
         android:clickable="true"
         android:onClick="userLocation"
-        app:layout_constraintBottom_toTopOf="@id/openChatActionButton"
+        app:backgroundTint="?attr/iconcolor"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_my_location_black_24dp"
-        app:backgroundTint="?attr/barcolor"
-        app:tint="?attr/iconcolor" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/openChatActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:clickable="true"
-        android:onClick="openChat"
-        app:layout_constraintBottom_toTopOf="@id/addEventActionButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_chat_bubble_outline_24px"
-        app:backgroundTint="?attr/barcolor"
-        app:tint="?attr/iconcolor" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addEventActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:clickable="true"
-        android:onClick="addEvent"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_event_24px"
-        app:tint="?attr/iconcolor"
-        app:backgroundTint="?attr/barcolor"/>
+        app:tint="?attr/barcolor" />
 
     <com.mapbox.mapboxsdk.maps.MapView
+
         android:id="@+id/mapView"
         android:layout_width="412dp"
         android:layout_height="732dp"
@@ -79,17 +42,46 @@
 
     </com.mapbox.mapboxsdk.maps.MapView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/openChatActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="openChat"
+        app:backgroundTint="?attr/barcolor"
+        app:layout_constraintBottom_toTopOf="@+id/addEventActionButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_chat_bubble_outline_24px"
+        app:tint="?attr/iconcolor" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addEventActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:onClick="addEvent"
+        app:backgroundTint="?attr/barcolor"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_event_24px"
+        app:tint="?attr/iconcolor" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/barcolor"
+        app:itemIconSize="30dp"
         app:itemIconTint="@drawable/item_selected"
         app:itemTextColor="@drawable/nav_item_color_state"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_navigation_main"
-        app:itemIconSize="30dp"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

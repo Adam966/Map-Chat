@@ -60,8 +60,6 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        findViewById(R.id.loadingBar).setVisibility(GONE);
-
         appSharedPrefs = new SharedPrefs(this);
 
         loginButton = findViewById(R.id.login_button);
@@ -125,6 +123,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Log.wtf("ResponseCode",String.valueOf(response.code()));
+
                 if(response.isSuccessful()){
                     try {
                         String responseData = response.body().string();
@@ -149,15 +148,29 @@ public class Login extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                }else {
+                    switch(response.code()){
+                        case 401:{
+                            Log.wtf("401","Unauthorized");
+                            setViewVisible();
+                            LoginManager.getInstance().logOut();
+                        }break;
+                        case 500:{
+                            Log.wtf("500","Server broken");
+                            setViewVisible();
+                            LoginManager.getInstance().logOut();
+                        }
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                Log.wtf("Failure","Fail req");
+                Log.wtf("Failure","Server not response");
                 setViewVisible();
                 LoginManager.getInstance().logOut();
             }
+
         });
     }
 
@@ -179,6 +192,7 @@ public class Login extends AppCompatActivity {
                    setViewVisible();
 
                    Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
+
                }
 
             }else{
@@ -235,15 +249,19 @@ public class Login extends AppCompatActivity {
     }
 
     private void setViewInvisible(){
-        findViewById(R.id.login_button).setVisibility(GONE);
-        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#293896"));
         findViewById(R.id.loadingBar).setVisibility(View.VISIBLE);
+        findViewById(R.id.loginLayoutWrap).setBackgroundColor(Color.parseColor("#293896"));
+        findViewById(R.id.loginLayout).setVisibility(GONE);
+        findViewById(R.id.login_button).setVisibility(GONE);
+        findViewById(R.id.logoText).setVisibility(GONE);
     }
 
     private void setViewVisible() {
         findViewById(R.id.loadingBar).setVisibility(GONE);
-        findViewById(R.id.loginLayout).setBackgroundColor(Color.parseColor("#FFFFFF"));
+        findViewById(R.id.loginLayoutWrap).setBackgroundColor(Color.parseColor("#FFFFFF"));
+        findViewById(R.id.loginLayout).setVisibility(View.VISIBLE);
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.logoText).setVisibility(View.VISIBLE );
     }
 
 }
