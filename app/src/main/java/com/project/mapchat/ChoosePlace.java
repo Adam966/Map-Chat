@@ -146,6 +146,6 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
         bundle.putSerializable("place", place);
         intent.putExtra("place", bundle);
 
-        startActivity(intent);
+        //startActivity(intent);
     }
 }

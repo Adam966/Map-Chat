@@ -211,6 +211,8 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
                 .createEvent()
                 .createEventRequest(serverToken,eventToSend);
 
+        Log.wtf("EventToSend",eventToSend.toString());
+
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

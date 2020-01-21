@@ -9,10 +9,10 @@ import retrofit2.http.GET;
 import retrofit2.http.HTTP;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
+import retrofit2.http.POST;
 
 public interface CreateEvent {
     @Headers("Content-Type: application/json")
-    @HTTP(method = "GET", path = "api/mapchat/createEvent", hasBody = true)
-    //@GET("api/mapchat/createEvent")
+    @POST("api/mapchat/createEvent")
     Call<ResponseBody> createEventRequest(@Header("Authorization") String serverToken, @Body EventToSend eventToSend);
 }

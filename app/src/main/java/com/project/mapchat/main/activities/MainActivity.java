@@ -65,6 +65,7 @@ import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
@@ -388,16 +389,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     /////////////////////////////////// GET ALL USER EVENTS /////////////////////////////////////////////
     private void getUserEvents(String serverToken) {
-        Call<ArrayList<EventToSend>> call = ServerService
+        Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
                 .getEvents()
                 .getEventsRequest(serverToken);
 
-        call.enqueue(new Callback<ArrayList<EventToSend>>() {
+        call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override
-            public void onResponse(Call<ArrayList<EventToSend>> call, Response<ArrayList<EventToSend>> response) {
+            public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    setMapLayer(response.body());
+                    //setMapLayer(response.body());
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -412,7 +413,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
 
             @Override
-            public void onFailure(Call<ArrayList<EventToSend>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
