@@ -10,18 +10,23 @@ public class EventToSend {
     @SerializedName("groupName")
     @Expose
     private String groupName;
+
     @SerializedName("type")
     @Expose
     private Integer type;
+
     @SerializedName("description")
     @Expose
     private String description;
+
     @SerializedName("meetTime")
     @Expose
     private String meetTime;
+
     @SerializedName("tags")
     @Expose
     private List<String> tags = null;
+
     @SerializedName("location")
     @Expose
     private Location location;
