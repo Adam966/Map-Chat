@@ -40,6 +40,9 @@ import com.mapbox.android.core.location.LocationEngineRequest;
 import com.mapbox.android.core.location.LocationEngineResult;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
+import com.mapbox.geojson.Feature;
+import com.mapbox.geojson.FeatureCollection;
+import com.mapbox.geojson.Point;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.camera.CameraPosition;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
@@ -56,6 +59,10 @@ import com.mapbox.mapboxsdk.plugins.annotation.OnSymbolClickListener;
 import com.mapbox.mapboxsdk.plugins.annotation.Symbol;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
+import com.mapbox.mapboxsdk.style.layers.PropertyFactory;
+import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
+import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
+import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.entities.Event;
@@ -363,6 +370,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
                     //getUserEvents();
+                    setMapLayer(null);
                 }
             });
         }else {
@@ -371,6 +379,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
                     //getUserEvents();
+                    setMapLayer(null);
                 }
             });
         }
@@ -380,13 +389,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void getUserEvents(String serverToken) {
         Call<ArrayList<Event>> call = ServerService
                 .getInstance()
-                .getAllEvents()
-                .getUserEventsRequest(serverToken);
+                .getEvents()
+                .getEventsRequest(serverToken);
 
         call.enqueue(new Callback<ArrayList<Event>>() {
             @Override
             public void onResponse(Call<ArrayList<Event>> call, Response<ArrayList<Event>> response) {
-                setMapLayer(response.body());
+                //setMapLayer(response.body());
             }
 
             @Override
@@ -400,38 +409,43 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void setMapLayer(ArrayList<Event> list) {
         mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
 
-        SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle());
+        SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle(), null, new GeoJsonOptions()
+                .withCluster(true)
+                .withClusterMaxZoom(14)
+                .withClusterRadius(20));
+
         manager.setIconAllowOverlap(true);
 
         List<SymbolOptions> symbolOptionsList = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
-            symbolOptionsList.add(new SymbolOptions().withLatLng(createRandomLatLng())
+        for (int i = 0; i < 10000; i++) {
+            symbolOptionsList.add(new SymbolOptions()
+                    .withLatLng(createRandomLatLng())
                     .withIconImage("location_icon")
             );
         }
-/*
-        for (Event e: list) {
+
+/*        for (Event e: list) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
             );
-        }
-*/
+        }*/
+
         manager.create(symbolOptionsList);
 
         manager.addClickListener(new OnSymbolClickListener() {
             @Override
             public void onAnnotationClick(Symbol symbol) {
                 Toast.makeText(getApplicationContext(), "SYMBOL CLICKED", Toast.LENGTH_LONG).show();
+
             }
         });
     }
 
     private LatLng createRandomLatLng() {
         Random random = new Random();
-        return new LatLng((random.nextDouble() * -180.0) + 90.0, (random.nextDouble() * -360.0) + 180.0);
+        return new LatLng((random.nextDouble() * - 180.0) + 90.0, (random.nextDouble() * -360.0) + 180.0);
     }
-
 
     //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
     @Override

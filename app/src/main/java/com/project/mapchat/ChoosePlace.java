@@ -6,21 +6,25 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.SearchView;
 
-import com.mapbox.api.geocoding.v5.MapboxGeocoding;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.mapbox.api.geocoding.v5.models.CarmenFeature;
-import com.mapbox.api.geocoding.v5.models.GeocodingResponse;
 import com.project.mapchat.adapters.PlacesAdapter;
+import com.project.mapchat.entities.Place;
 import com.project.mapchat.main.activities.AddEventActivity;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.net.URLEncoder;
 import java.util.ArrayList;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.ItemClick {
     private SearchView search;
@@ -41,7 +45,7 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
 
             @Override
             public boolean onQueryTextChange(String s) {
-                if (!(s.length() < 3))
+                if (!(s.length() < 5))
                     queryAddress(s);
 
                 return false;
@@ -50,7 +54,7 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
     }
 
     /////////////////////////////////////// QUERY EVENT ADDRESS ////////////////////////////////////
-    public void queryAddress(String query) {
+    /*public void queryAddress(String query) {
         MapboxGeocoding geocode = MapboxGeocoding.builder()
                 .accessToken(getString(R.string.access_token))
                 .query(URLEncoder.encode(query))
@@ -68,6 +72,63 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
                 t.printStackTrace();
             }
         });
+    }*/
+
+    private void queryAddress(String query) {
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://api.opencagedata.com/geocode/v1/json?q=" + URLEncoder.encode(query) +"&key=a812717c7b764edea8377a9ed4caf3bc&pretty=1";
+
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url,  null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    setAdapter(getJsonPlaces(response.getJSONArray("results")));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+
+        queue.add(request);
+    }
+
+    private ArrayList<Place> getJsonPlaces(JSONArray array) {
+        ArrayList<Place> list = new ArrayList<>();
+
+        for (int i = 0; i < array.length(); i++) {
+            Place place = new Place();
+            try {
+                place.setCountry(array.getJSONObject(i).getJSONObject("components").getString("country"));
+                place.setHouseNumber(array.getJSONObject(i).getJSONObject("components").getString("house_number"));
+                place.setPostcode(array.getJSONObject(i).getJSONObject("components").getString("postcode"));
+                place.setRoad(array.getJSONObject(i).getJSONObject("components").getString("road"));
+                place.setTown(array.getJSONObject(i).getJSONObject("components").getString("town"));
+            } catch (JSONException e) {
+
+            }
+
+            try {
+                place.setLat(array.getJSONObject(i).getJSONObject("geometry").getDouble("lat"));
+                place.setLng(array.getJSONObject(i).getJSONObject("geometry").getDouble("lng"));
+
+                list.add(place);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                place.setFormatted(array.getJSONObject(i).getString("formatted"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return list;
     }
 
     private void setAdapter(ArrayList list) {
@@ -78,22 +139,13 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
 
     //////////////////////////////////////// CHOOSED ADDRESS //////////////////////////////////////
     @Override
-    public void onItemClick(CarmenFeature feature) {
-        Log.wtf("FEATURE", feature.toJson());
+    public void onItemClick(Place place) {
         Intent intent = new Intent(this, AddEventActivity.class);
-        intent.putExtra("placeName", feature.placeName());
+        Bundle bundle = new Bundle();
 
-        intent.putExtra("address", feature.address());
+        bundle.putSerializable("place", place);
+        intent.putExtra("place", bundle);
 
-
-        intent.putExtra("city", feature.context().get(feature.context().size() - 2).text());
-        intent.putExtra("country", feature.context().get(feature.context().size() - 1).text());
-
-        intent.putExtra("postcode", feature.context().get(1).text());
-
-
-        intent.putExtra("latitued", feature.center().latitude());
-        intent.putExtra("longitued", feature.center().longitude());
         startActivity(intent);
     }
 }

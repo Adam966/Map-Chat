@@ -8,16 +8,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mapbox.api.geocoding.v5.models.CarmenFeature;
 import com.project.mapchat.R;
+import com.project.mapchat.entities.Place;
 
 import java.util.ArrayList;
 
 public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder> {
-    private ArrayList<CarmenFeature> list;
+    private ArrayList<Place> list;
     private ItemClick itemClick;
 
-    public PlacesAdapter(ArrayList<CarmenFeature> list, ItemClick itemClick) {
+    public PlacesAdapter(ArrayList<Place> list, ItemClick itemClick) {
         this.list = list;
         this.itemClick = itemClick;
     }
@@ -31,7 +31,7 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.textView.setText(list.get(position).placeName());
+        holder.textView.setText(list.get(position).getFormatted());
     }
 
     @Override
@@ -59,6 +59,6 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
     }
 
     public interface ItemClick {
-        void onItemClick(CarmenFeature feature);
+        void onItemClick(Place feature);
     }
 }

@@ -18,6 +18,7 @@ import com.project.mapchat.dialogs.DatePickerFragment;
 import com.project.mapchat.dialogs.TimePickerFragment;
 import com.project.mapchat.entities.Event;
 import com.project.mapchat.entities.Location;
+import com.project.mapchat.entities.Place;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -156,19 +157,22 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
+        Place place = (Place) getIntent().getBundleExtra("place").getSerializable("place");
+
+        Log.wtf("PLACE", place.toString());
+
         location = new Location();
-        location.setAddress(intent.getStringExtra("address"));
-        location.setCountry(intent.getStringExtra("country"));
-        location.setPostalCode(intent.getStringExtra("postcode"));
-        location.setTown(intent.getStringExtra("city"));
-        location.setAddress(intent.getStringExtra("address"));
-        location.setLatitude(String.valueOf(intent.getDoubleExtra("latitued", 0)));
-        location.setLongtitude(String.valueOf(intent.getDoubleExtra("longitued", 0)));
+        location.setAddress(place.getRoad() + " " + place.getHouseNumber());
+        location.setCountry(place.getCountry());
+        location.setPostalCode(place.getPostcode());
+        location.setTown(place.getTown());
+        location.setLatitude(String.valueOf(place.getLat()));
+        location.setLongtitude(String.valueOf(place.getLng()));
 
         Log.wtf("Location", location.toString());
 
         if (intent.getStringExtra("placeName") != null)
-            placeName.setText(intent.getStringExtra("placeName"));
+            placeName.setText(place.getFormatted());
         else
             placeName.setText("Choose place");
     }
