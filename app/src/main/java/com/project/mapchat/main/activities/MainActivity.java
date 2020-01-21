@@ -13,10 +13,15 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -33,6 +38,9 @@ import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStates;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
 import com.mapbox.android.core.location.LocationEngine;
 import com.mapbox.android.core.location.LocationEngineCallback;
 import com.mapbox.android.core.location.LocationEngineProvider;
@@ -59,6 +67,8 @@ import com.mapbox.mapboxsdk.plugins.annotation.OnSymbolClickListener;
 import com.mapbox.mapboxsdk.plugins.annotation.Symbol;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolManager;
 import com.mapbox.mapboxsdk.plugins.annotation.SymbolOptions;
+import com.mapbox.mapboxsdk.plugins.markerview.MarkerView;
+import com.mapbox.mapboxsdk.plugins.markerview.MarkerViewManager;
 import com.mapbox.mapboxsdk.style.layers.PropertyFactory;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
@@ -88,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private long DEFAULT_MAX_WAIT_TIME = DEFAULT_INTERVAL_IN_MILLISECONDS * 1;
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
     private ImageView userLocation;
+    private MarkerViewManager markerViewManager;
 
     // Google
     public static final int REQUEST_LOCATION=001;
@@ -346,6 +357,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (locationEngine != null) {
             locationEngine.removeLocationUpdates(callback);
         }
+        if (markerViewManager != null)
+            markerViewManager.onDestroy();
+
         mapView.onDestroy();
     }
 
@@ -371,8 +385,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getUserEvents();
-                    setMapLayer(null);
+                    getUserEvents(appSharedPrefs.getServerToken());
+                    //setMapLayer(null);
                 }
             });
         }else {
@@ -380,8 +394,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 @Override
                 public void onStyleLoaded(@NonNull Style style) {
                     enableLocationComponent(style);
-                    //getUserEvents();
-                    setMapLayer(null);
+                    getUserEvents(appSharedPrefs.getServerToken());
+                    //setMapLayer(null);
                 }
             });
         }
@@ -398,7 +412,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    //setMapLayer(response.body());
+                    setMapLayer(response.body());
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -420,7 +434,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
-    private void setMapLayer(ArrayList<EventToSend> list) {
+    private void setMapLayer(ArrayList<EventFromServer> list) {
         mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
 
         SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle(), null, new GeoJsonOptions()
@@ -429,36 +443,59 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .withClusterRadius(20));
 
         manager.setIconAllowOverlap(true);
-
         List<SymbolOptions> symbolOptionsList = new ArrayList<>();
+/*
         for (int i = 0; i < 10000; i++) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(createRandomLatLng())
                     .withIconImage("location_icon")
+                    .withData(new JsonPrimitive(i))
             );
         }
-/*
-        for (EventToSend e: list) {
+*/
+        for (EventFromServer e: list) {
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
+                    .withData(new JsonPrimitive(e.getGroupName()))
             );
-        }*/
+        }
 
         manager.create(symbolOptionsList);
 
         manager.addClickListener(new OnSymbolClickListener() {
             @Override
             public void onAnnotationClick(Symbol symbol) {
-                Toast.makeText(getApplicationContext(), "SYMBOL CLICKED", Toast.LENGTH_LONG).show();
-
+                Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData().getAsString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
-
+/*
     private LatLng createRandomLatLng() {
         Random random = new Random();
         return new LatLng((random.nextDouble() * - 180.0) + 90.0, (random.nextDouble() * -360.0) + 180.0);
+    }
+*/
+    //////////////////////////// MARKER VIEW POP UP/////////////////////////////////////////////////
+    private void showMarkerView(LatLng latLng) {
+        markerViewManager = new MarkerViewManager(mapView, mapboxMap);
+
+        View eventPopUp = LayoutInflater.from(MainActivity.this).inflate(R.layout.map_event_view, null);
+        eventPopUp.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        TextView eventName = findViewById(R.id.eventName);
+        TextView eventDesc = findViewById(R.id.eventDesc);
+
+        final MarkerView markerView = new MarkerView(new LatLng(latLng.getLatitude(), latLng.getLongitude()), eventPopUp);
+        markerViewManager.addMarker(markerView);
+
+        ImageView btn = findViewById(R.id.closeEventBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                markerViewManager.removeMarker(markerView);
+            }
+        });
     }
 
     //////////////////////////// GOOGLE POPUP TO GPS ON ////////////////////////////////////////////
