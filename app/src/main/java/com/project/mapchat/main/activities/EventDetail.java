@@ -2,6 +2,7 @@ package com.project.mapchat.main.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -11,8 +12,6 @@ import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.service.ServerService;
 
-import java.util.ArrayList;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -20,6 +19,7 @@ import retrofit2.Response;
 public class EventDetail extends AppCompatActivity {
 
     SharedPrefs appSharedPrefs;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +27,17 @@ public class EventDetail extends AppCompatActivity {
         setContentView(R.layout.activity_event_detail);
 
         appSharedPrefs = new SharedPrefs(this);
-        int eventId=1;
 
-        getUserEvents(appSharedPrefs.getServerToken(),eventId);
+        intent = getIntent();
+        // getting event id from intent to use request
+        int eventId = Integer.parseInt(intent.getStringExtra("eventId"));
+
+        getEventById(appSharedPrefs.getServerToken(),eventId);
 
     }
 
-    private void getUserEvents(String serverToken, int eventId) {
+    // request for getting event by id
+    private void getEventById(String serverToken, int eventId) {
         Call<EventFromServer> call = ServerService
                 .getInstance()
                 .getEventById()

@@ -470,6 +470,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
             map.put("groupName",e.getGroupName());
             map.put("description",e.getDescription());
+            map.put("eventId",e.getId());
 
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
@@ -514,10 +515,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         JsonParser parser = new JsonParser();
 
         JsonElement jsonElement = parser.parse(symbol.getData().getAsJsonPrimitive().getAsString());
-        JsonObject rootObject = jsonElement.getAsJsonObject();
+        final JsonObject rootObject = jsonElement.getAsJsonObject();
 
         eventName.setText(rootObject.get("groupName").getAsString());
         eventDesc.setText(rootObject.get("description").getAsString());
+
 
         final MarkerView markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(), symbol.getLatLng().getLongitude()), eventPopUp);
         markerViewManager.addMarker(markerView);
@@ -527,6 +529,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "OPEN EVENT DETAIL", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),EventDetail.class);
+                i.putExtra("eventId",rootObject.get("eventId").getAsString());
                 startActivity(i);
             }
         });

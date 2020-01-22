@@ -10,6 +10,10 @@ public class EventFromServer {
     @Expose
     private String idL;
 
+    @SerializedName("id")
+    @Expose
+    private String id;
+
     @SerializedName("idU")
     @Expose
     private String idU;
@@ -41,6 +45,14 @@ public class EventFromServer {
     @SerializedName("location")
     @Expose
     private Location location;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getIdL() {
         return idL;
