@@ -1943,6 +1943,8 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_chat_bubble_outline_24px
+drawable ic_clear_24px
+drawable ic_done_24px
 drawable ic_event_24px
 drawable ic_home_24px
 drawable ic_launcher_background
@@ -2191,6 +2193,7 @@ id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
 id glide_custom_view_target_tag
 id gone
+id groupName
 id group_divider
 id groups
 id guideline
@@ -2210,6 +2213,7 @@ id invisible
 id italic
 id itemLayout
 id item_touch_helper_previous_elevation
+id joinBtn
 id labeled
 id large
 id largeLabel
@@ -2271,6 +2275,7 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id rejectBtn
 id right
 id right_icon
 id right_side
@@ -2339,7 +2344,6 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id text_input_password_toggle
 id textinput_counter
@@ -2367,6 +2371,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id userName
 id view_offset_helper
 id visible
 id wide
