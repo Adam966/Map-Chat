@@ -6,12 +6,13 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface DeleteEvent {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/deleteEvent?idE'={id}")
+    @GET("api/mapchat/deleteEvent")
     Call<ResponseBody> deleteEventRequest(
             @Header("Authorization") String serverToken,
-            @Path("id") int eventId
+            @Query("idE") int eventId
     );
 }

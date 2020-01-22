@@ -9,9 +9,9 @@ import retrofit2.http.Path;
 
 public interface GetEventTags {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/getEventTags?idE'={id}")
+    @GET("api/mapchat/getEventTags")
     Call<ResponseBody> getEventTags(
             @Header("Authorization") String serverToken,
-            @Path("id") int eventId
+            @Path("idE") int eventId
     );
 }

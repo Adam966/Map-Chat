@@ -6,13 +6,14 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface AddAdminPrivilege {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/addAdminPrivilege?idUR={idU}&idE={idE}")
+    @GET("api/mapchat/addAdminPrivilege")
     Call<ResponseBody> addAdminPrivilegeRequest(
             @Header("Authorization") String serverToken,
-            @Path("idU") int userId,
-            @Path("idE") int eventId
+            @Query("idUR") int userId,
+            @Query("idE") int eventId
     );
 }

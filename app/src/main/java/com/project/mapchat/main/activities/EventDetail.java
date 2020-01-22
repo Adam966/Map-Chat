@@ -33,7 +33,6 @@ public class EventDetail extends AppCompatActivity {
         int eventId = Integer.parseInt(intent.getStringExtra("eventId"));
 
         getEventById(appSharedPrefs.getServerToken(),eventId);
-
     }
 
     // request for getting event by id

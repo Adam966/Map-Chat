@@ -6,13 +6,14 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface AddUserToGroup {
     @Headers("Content-Type: application/json")
-    @GET("api/mapchat/addUserToGroup?idUTA={userId}&idE={id}  ")
+    @GET("api/mapchat/addUserToGroup")
     Call<ResponseBody> addUserToGroupRequest(
             @Header("Authorization") String serverToken,
-            @Path("userId") int userId,
-            @Path("id") int eventId
+            @Query("idUTA") int userId,
+            @Query("idE") int eventId
     );
 }

@@ -6,12 +6,13 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface AddFriend {
     @Headers("Content-Type: application/json")
-    @GET("api/user/addFriend?idF={idF}")
+    @GET("api/user/addFriend")
     Call<ResponseBody> addFriendRequest(
             @Header("Authorization") String serverToken,
-            @Path("idF") int friendId
+            @Query("idF") int friendId
     );
 }

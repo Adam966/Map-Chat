@@ -6,12 +6,13 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface GetEventUsers {
         @Headers("Content-Type: application/json")
-        @GET("api/mapchat/getEventUsers?idE'={id}")
+        @GET("api/mapchat/getEventUsers")
         Call<ResponseBody> getEventUsers(
                 @Header("Authorization") String serverToken,
-                @Path("id") int eventId
+                @Query("idE") int eventId
         );
 }
