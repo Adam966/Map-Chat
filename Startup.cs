@@ -16,6 +16,10 @@ using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using MapChatServer.Hubs;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
+using MapChatServer.Chat;
 
 namespace MapChatServer
 {
@@ -37,7 +41,6 @@ namespace MapChatServer
 
             services.AddDbContextPool<DataContext>(options => options
               .UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-                  //.ServerVersion(new ServerVersion(new Version(8, 0, 13), ServerType.MySql))));
                   
 
             services.AddControllers().AddNewtonsoftJson(opt => {
@@ -62,6 +65,14 @@ namespace MapChatServer
 
             services.AddSingleton<ICipherService, CipherService>();
 
+            services.AddSignalR().AddHubOptions<ChatHub>(options =>
+            {
+                options.EnableDetailedErrors = true;
+            });
+
+            services.AddScoped<IChatRepository, ChatRepository>();
+
+
             services.AddDataProtection()
                 .UseCryptographicAlgorithms(
                     new AuthenticatedEncryptorConfiguration()
@@ -83,6 +94,25 @@ namespace MapChatServer
                         ValidateIssuer = false,
                         ValidateAudience = false
                     };
+                    
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accessToken = context.Request.Query["access_token"];
+
+                            // If the request is for our hub...
+                            var path = context.HttpContext.Request.Path;
+
+                            if (!string.IsNullOrEmpty(accessToken) && (path.StartsWithSegments("/chat")))
+                            {
+                                // Read the token out of the query string
+                                context.Token = accessToken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
+                    
                 });
 
         }
@@ -99,7 +129,7 @@ namespace MapChatServer
             //app.UseHsts();
 
             app.UseRouting();
-  
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -107,6 +137,7 @@ namespace MapChatServer
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ChatHub>("/chat");
                 endpoints.MapControllers();
             });
         }

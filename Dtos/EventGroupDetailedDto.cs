@@ -7,6 +7,7 @@ namespace MapChatServer.Dtos
 {
     public class EventGroupDetailedDto
     {
+        public int id { get; set; }
         public int? IdL { get; set; }
         public int? idU { get; set; }
         public string groupName { get; set; }
