@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
@@ -35,6 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
     private Button logoutBtn;
     private CircleImageView circleImageView;
     private SharedPrefs appSharedPrefs;
+    private TextView usernameText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -127,6 +129,10 @@ public class SettingsActivity extends AppCompatActivity {
                     Log.wtf("UserInfo","Success");
                     UserInfoData data = response.body();
                     setImage(data.getFacebookId());
+
+                    usernameText = findViewById(R.id.userName);
+                    String username = data.getFirstName()+" "+data.getLastName();
+                    usernameText.setText(username);
                 }else{
                     switch(response.code()){
                         case 401:{

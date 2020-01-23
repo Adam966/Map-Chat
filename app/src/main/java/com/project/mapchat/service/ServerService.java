@@ -8,6 +8,7 @@ import com.project.mapchat.service.requests.GetEventTags;
 import com.project.mapchat.service.requests.GetEventUsers;
 import com.project.mapchat.service.requests.GetEvents;
 import com.project.mapchat.service.requests.GetUserEvents;
+import com.project.mapchat.service.requests.JoinEvent;
 import com.project.mapchat.service.requests.LeaveEvent;
 import com.project.mapchat.service.requests.LoginAuth;
 import com.project.mapchat.service.requests.RemoveUserFromEvent;
@@ -93,6 +94,10 @@ public class ServerService {
 
         public LeaveEvent leaveEvent(){
             return retrofit.create(LeaveEvent.class);
+        }
+
+        public JoinEvent joinEvent(){
+            return retrofit.create(JoinEvent.class);
         }
 
 

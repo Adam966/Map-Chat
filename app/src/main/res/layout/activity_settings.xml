@@ -28,12 +28,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tomáš Varga"
-            android:textSize="@dimen/_26sdp"
+            android:fontFamily="@font/proxima_nova_regular"
             android:textColor="?attr/textcolor"
+            android:textSize="@dimen/_26sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +86,7 @@
                 android:text="Dark Mode"
                 android:textColor="?attr/textcolor2"
                 android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/proxima_nova_regular"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.41"
                 app:layout_constraintStart_toStartOf="parent"
