@@ -1,5 +1,6 @@
 package com.project.mapchat.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Log.wtf("FORRMATTED", list.get(position).getFormatted());
         holder.textView.setText(list.get(position).getFormatted());
     }
 

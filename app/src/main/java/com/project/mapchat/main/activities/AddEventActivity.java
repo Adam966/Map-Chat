@@ -195,6 +195,11 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
         Log.wtf("PLACE_PARCELABLE", place.toString());
 
+        if (data.getParcelable("place") != null)
+            placeName.setText(place.getFormatted());
+        else
+            placeName.setText("Choose place");
+
         location = new Location();
         location.setAddress(place.getRoad() + " " + place.getHouseNumber());
         location.setCountry(place.getCountry());
@@ -203,16 +208,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         location.setLatitude(String.valueOf(place.getLat()));
         location.setLongtitude(String.valueOf(place.getLng()));
 
-        Log.wtf("OnNewIntent",location.getAddress()+" "+location.getCountry()
-                +" "+location.getPostalCode()+" "+location.getTown()+" "+location.getLatitude()
-        +location.getLongtitude());
-
         Log.wtf("Location", location.toString());
-
-        if (data.getParcelable("place") != null)
-            placeName.setText(place.getFormatted());
-        else
-            placeName.setText("Choose place");
     }
 
     private void createEvent(EventToSend eventToSend,String serverToken){

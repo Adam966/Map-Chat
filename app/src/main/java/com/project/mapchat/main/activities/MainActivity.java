@@ -96,7 +96,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, MapboxMap.OnMapClickListener {
 
     // Mapbox
     private MapView mapView;
@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private MainActivityLocationCallback callback = new MainActivityLocationCallback(this);
     private ImageView userLocation;
     private MarkerViewManager markerViewManager;
+    private MarkerView markerView;
 
     // Google
     public static final int REQUEST_LOCATION=001;
@@ -191,6 +192,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         mapView.getMapAsync(this);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+
 
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
     @Override
@@ -278,6 +286,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             changeCameraPosition(new LatLng(getIntent().getDoubleExtra("Lat", 0), getIntent().getDoubleExtra("Lon", 0)));
             getIntent().removeExtra("Lat");
         }
+    }
+
+    @Override
+    public boolean onMapClick(@NonNull LatLng point) {
+        Log.wtf("DADA","ON MAP CLICK");
+        markerViewManager.removeMarker(markerView);
+        isOpen = false;
+        return false;
     }
 
     ////////////////////////////////////////////// LOCATION CHANGE CALLBACK ////////////////////////
@@ -520,8 +536,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         eventName.setText(rootObject.get("groupName").getAsString());
         eventDesc.setText(rootObject.get("description").getAsString());
 
-
-        final MarkerView markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(), symbol.getLatLng().getLongitude()), eventPopUp);
+        markerView = new MarkerView(new LatLng(symbol.getLatLng().getLatitude(), symbol.getLatLng().getLongitude()), eventPopUp);
         markerViewManager.addMarker(markerView);
 
         openEvent.setOnClickListener(new View.OnClickListener() {
@@ -533,7 +548,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 startActivity(i);
             }
         });
-
+/*
         findViewById(R.id.mapView).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -542,7 +557,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 isOpen = false;
             }
         });
-
+*/
         /*
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

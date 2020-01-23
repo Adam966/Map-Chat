@@ -15,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.JsonIOException;
 import com.project.mapchat.adapters.PlacesAdapter;
 import com.project.mapchat.entities.Place;
 import com.project.mapchat.main.activities.AddEventActivity;
@@ -82,6 +83,7 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
             @Override
             public void onResponse(JSONObject response) {
                 try {
+                    Log.wtf("RESPONSE", response.toString());
                     setAdapter(getJsonPlaces(response.getJSONArray("results")));
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -102,15 +104,27 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
         Place place = new Place();
         for (int i = 0; i < array.length(); i++) {
             try {
-                place.setCountry(array.getJSONObject(i).getJSONObject("components").getString("country"));
-                place.setHouseNumber(array.getJSONObject(i).getJSONObject("components").getString("house_number"));
-                place.setPostcode(array.getJSONObject(i).getJSONObject("components").getString("postcode"));
                 place.setRoad(array.getJSONObject(i).getJSONObject("components").getString("road"));
-                place.setTown(array.getJSONObject(i).getJSONObject("components").getString("town"));
-
-                Log.wtf("Postcode","idk   "+array.getJSONObject(i).getJSONObject("components").getString("postcode"));
-
             } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                place.setPostcode(array.getJSONObject(i).getJSONObject("components").getString("postcode"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                place.setHouseNumber(array.getJSONObject(i).getJSONObject("components").getString("house_number"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                place.setCountry(array.getJSONObject(i).getJSONObject("components").getString("country"));
+                place.setTown(array.getJSONObject(i).getJSONObject("components").getString("town"));
+            } catch(JSONException e) {
                 e.printStackTrace();
             }
 
@@ -129,7 +143,7 @@ public class ChoosePlace extends AppCompatActivity implements PlacesAdapter.Item
                 e.printStackTrace();
             }
         }
-
+        Log.wtf("PLACE", place.toString());
         return list;
     }
 

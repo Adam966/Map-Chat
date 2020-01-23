@@ -128,8 +128,8 @@ public class Place implements Parcelable {
         parcel.writeString(this.country);
         parcel.writeString(this.houseNumber);
         parcel.writeString(this.postcode);
-        parcel.writeString(this.road);
         parcel.writeString(this.town);
+        parcel.writeString(this.road);
         parcel.writeDouble(this.lat);
         parcel.writeDouble(this.lng);
         parcel.writeString(this.formatted);
