@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.project.mapchat.R;
@@ -28,6 +29,9 @@ public class EventDetail extends AppCompatActivity {
     private ImageView join;
     private EventFromServer eventFromServer;
 
+    // views for show data from event
+    private TextView groupName,createDate,eventDesc,meetTime,place;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +39,16 @@ public class EventDetail extends AppCompatActivity {
 
         appSharedPrefs = new SharedPrefs(this);
 
+        // settings views
+        groupName = findViewById(R.id.groupName);
+        createDate = findViewById(R.id.createDate);
+        eventDesc = findViewById(R.id.eventDesc);
+        meetTime = findViewById(R.id.meetTime);
+        place = findViewById(R.id.place);
+
         intent = getIntent();
         // getting event id from intent to use request
-        int eventId = Integer.parseInt(intent.getStringExtra("eventId"));
+        final int eventId = Integer.parseInt(intent.getStringExtra("eventId"));
 
         getEventById(appSharedPrefs.getServerToken(),eventId);
 
@@ -56,7 +67,7 @@ public class EventDetail extends AppCompatActivity {
         join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                joinEvent(appSharedPrefs.getServerToken(),eventId);
             }
         });
     }
@@ -73,6 +84,7 @@ public class EventDetail extends AppCompatActivity {
             public void onResponse(Call<EventFromServer> call, Response<EventFromServer> response) {
                 if(response.isSuccessful()){
                     eventFromServer = response.body();
+                    setViewValues(eventFromServer);
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -117,7 +129,6 @@ public class EventDetail extends AppCompatActivity {
                     }
                 }
             }
-
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
@@ -156,5 +167,17 @@ public class EventDetail extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void setViewValues(EventFromServer event){
+        groupName.setText(event.getGroupName());
+        createDate.setText(event.getCreationTime());
+        eventDesc.setText(event.getDescription());
+        meetTime.setText(event.getMeetTime());
+
+        String location = event.getLocation().getTown() +" "+event.getLocation().getAddress()+ " " + event.getLocation().getPostalCode()+
+                " "+event.getLocation().getCountry();
+
+        place.setText(location);
     }
 }
