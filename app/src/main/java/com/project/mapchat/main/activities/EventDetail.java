@@ -3,10 +3,10 @@ package com.project.mapchat.main.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,7 +14,10 @@ import android.widget.Toast;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
+
+import java.util.ArrayList;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -28,6 +31,8 @@ public class EventDetail extends AppCompatActivity {
     private ImageView reject;
     private ImageView join;
     private EventFromServer eventFromServer;
+    private Button viewEventUsersBtn;
+    private ArrayList<UserInfoData> usersFromEventList;
 
     // views for show data from event
     private TextView groupName,createDate,eventDesc,meetTime,place;
@@ -45,6 +50,7 @@ public class EventDetail extends AppCompatActivity {
         eventDesc = findViewById(R.id.eventDesc);
         meetTime = findViewById(R.id.meetTime);
         place = findViewById(R.id.place);
+        viewEventUsersBtn = findViewById(R.id.viewEventUsers);
 
         intent = getIntent();
         // getting event id from intent to use request
@@ -73,7 +79,7 @@ public class EventDetail extends AppCompatActivity {
     }
 
     // request for getting event by id
-    private void getEventById(String serverToken, int eventId) {
+    private void getEventById(final String serverToken, final int eventId) {
         Call<EventFromServer> call = ServerService
                 .getInstance()
                 .getEventById()
@@ -85,6 +91,7 @@ public class EventDetail extends AppCompatActivity {
                 if(response.isSuccessful()){
                     eventFromServer = response.body();
                     setViewValues(eventFromServer);
+                    getEventUsers(serverToken,eventId);
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -107,16 +114,17 @@ public class EventDetail extends AppCompatActivity {
 
     // request for getting users from event by event id
     private void getEventUsers(String serverToken, int eventId) {
-        Call<ResponseBody> call = ServerService
+        Call<ArrayList<UserInfoData>> call = ServerService
                 .getInstance()
                 .getEventUsers()
                 .getEventUsers("Bearer " + serverToken,eventId);
 
-        call.enqueue(new Callback<ResponseBody>() {
+        call.enqueue(new Callback<ArrayList<UserInfoData>>() {
             @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+            public void onResponse(Call<ArrayList<UserInfoData>> call, Response<ArrayList<UserInfoData>> response) {
                 if(response.isSuccessful()){
-
+                    usersFromEventList = response.body();
+                    setButtonText(usersFromEventList);
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -130,7 +138,7 @@ public class EventDetail extends AppCompatActivity {
                 }
             }
             @Override
-            public void onFailure(Call<ResponseBody> call, Throwable t) {
+            public void onFailure(Call<ArrayList<UserInfoData>> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
@@ -148,7 +156,7 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if(response.isSuccessful()){
-
+                    Log.i("JOIN EVENT","SUCCESSFULL");
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -175,9 +183,16 @@ public class EventDetail extends AppCompatActivity {
         eventDesc.setText(event.getDescription());
         meetTime.setText(event.getMeetTime());
 
-        String location = event.getLocation().getTown() +" "+event.getLocation().getAddress()+ " " + event.getLocation().getPostalCode()+
+        String location = event.getLocation().getTown() +
+                " "+event.getLocation().getAddress()+
+                " "+event.getLocation().getPostalCode()+
                 " "+event.getLocation().getCountry();
 
         place.setText(location);
+    }
+
+    private void setButtonText(ArrayList<UserInfoData> list){
+        String userSize = String.valueOf(list.size());
+        viewEventUsersBtn.setText(userSize);
     }
 }
