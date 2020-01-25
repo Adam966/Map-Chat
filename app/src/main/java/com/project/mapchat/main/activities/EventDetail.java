@@ -166,15 +166,19 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if(response.isSuccessful()){
-                    Log.i("JOIN EVENT","SUCCESSFULL");
+                    Toast.makeText(getApplicationContext(),
+                            "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
                 }else {
                     switch(response.code()){
                         case 401:{
-                            Log.wtf("401","Unauthorized");
+
+                            Toast.makeText(getApplicationContext(),
+                                    "Rejected to join to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
                         case 500:{
-                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
                         }
                     }
                 }
