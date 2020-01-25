@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.DialogFragment;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -79,6 +80,7 @@ import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
@@ -96,7 +98,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, MapboxMap.OnMapClickListener {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback,PermissionsListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, MapboxMap.OnMapClickListener, ExitDialog.DialogListener {
 
     // Mapbox
     private MapView mapView;
@@ -193,18 +195,24 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapView.getMapAsync(this);
     }
 
+    //////////////////////////////////////////// EXIT APP DIALOG ///////////////////////////////////
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        DialogFragment fragment = new ExitDialog();
+        fragment.show(getSupportFragmentManager(), "EXIT");
     }
 
-
+    @Override
+    public void exitListener() {
+        finishAffinity();
+    }
 
     //////////////////////////////////////////// MAPBOX ON READY ///////////////////////////////////
     @Override
     public void onMapReady(@NonNull MapboxMap mapboxMap) {
         Log.wtf("MAPBOX", "MAP READY");
         this.mapboxMap = mapboxMap;
+        mapboxMap.addOnMapClickListener(this);
         setDarkModeMap(mapboxMap);
     }
 
@@ -291,8 +299,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public boolean onMapClick(@NonNull LatLng point) {
         Log.wtf("DADA","ON MAP CLICK");
-        markerViewManager.removeMarker(markerView);
-        isOpen = false;
+        if (isOpen) {
+            markerViewManager.removeMarker(markerView);
+            isOpen = false;
+            return true;
+        }
         return false;
     }
 

@@ -263,5 +263,4 @@ public class Login extends AppCompatActivity {
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
         findViewById(R.id.logoText).setVisibility(View.VISIBLE );
     }
-
 }
