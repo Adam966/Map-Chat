@@ -60,6 +60,14 @@ public class EventDetail extends AppCompatActivity {
 
         eventFromServer = new EventFromServer();
 
+        viewEventUsersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),ListOfUsers.class);
+                startActivity(i);
+            }
+        });
+
         reject = findViewById(R.id.rejectBtn);
         reject.setOnClickListener(new View.OnClickListener() {
             @Override

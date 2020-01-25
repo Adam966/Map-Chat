@@ -123,18 +123,18 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int messenger_button_send_blue_large = 0x7f0c0045;
-        public static final int messenger_button_send_blue_round = 0x7f0c0046;
-        public static final int messenger_button_send_blue_small = 0x7f0c0047;
-        public static final int messenger_button_send_white_large = 0x7f0c0048;
-        public static final int messenger_button_send_white_round = 0x7f0c0049;
-        public static final int messenger_button_send_white_small = 0x7f0c004a;
-        public static final int notification_action = 0x7f0c004e;
-        public static final int notification_action_tombstone = 0x7f0c004f;
-        public static final int notification_template_custom_big = 0x7f0c0056;
-        public static final int notification_template_icon_group = 0x7f0c0057;
-        public static final int notification_template_part_chronometer = 0x7f0c005b;
-        public static final int notification_template_part_time = 0x7f0c005c;
+        public static final int messenger_button_send_blue_large = 0x7f0c0046;
+        public static final int messenger_button_send_blue_round = 0x7f0c0047;
+        public static final int messenger_button_send_blue_small = 0x7f0c0048;
+        public static final int messenger_button_send_white_large = 0x7f0c0049;
+        public static final int messenger_button_send_white_round = 0x7f0c004a;
+        public static final int messenger_button_send_white_small = 0x7f0c004b;
+        public static final int notification_action = 0x7f0c004f;
+        public static final int notification_action_tombstone = 0x7f0c0050;
+        public static final int notification_template_custom_big = 0x7f0c0057;
+        public static final int notification_template_icon_group = 0x7f0c0058;
+        public static final int notification_template_part_chronometer = 0x7f0c005c;
+        public static final int notification_template_part_time = 0x7f0c005d;
     }
     public static final class string {
         private string() {}

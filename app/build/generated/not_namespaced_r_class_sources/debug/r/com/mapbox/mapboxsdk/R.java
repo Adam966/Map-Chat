@@ -270,16 +270,16 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int mapbox_attribution_list_item = 0x7f0c0041;
-        public static final int mapbox_infowindow_content = 0x7f0c0042;
-        public static final int mapbox_mapview_internal = 0x7f0c0043;
-        public static final int mapbox_view_image_marker = 0x7f0c0044;
-        public static final int notification_action = 0x7f0c004e;
-        public static final int notification_action_tombstone = 0x7f0c004f;
-        public static final int notification_template_custom_big = 0x7f0c0056;
-        public static final int notification_template_icon_group = 0x7f0c0057;
-        public static final int notification_template_part_chronometer = 0x7f0c005b;
-        public static final int notification_template_part_time = 0x7f0c005c;
+        public static final int mapbox_attribution_list_item = 0x7f0c0042;
+        public static final int mapbox_infowindow_content = 0x7f0c0043;
+        public static final int mapbox_mapview_internal = 0x7f0c0044;
+        public static final int mapbox_view_image_marker = 0x7f0c0045;
+        public static final int notification_action = 0x7f0c004f;
+        public static final int notification_action_tombstone = 0x7f0c0050;
+        public static final int notification_template_custom_big = 0x7f0c0057;
+        public static final int notification_template_icon_group = 0x7f0c0058;
+        public static final int notification_template_part_chronometer = 0x7f0c005c;
+        public static final int notification_template_part_time = 0x7f0c005d;
     }
     public static final class string {
         private string() {}
