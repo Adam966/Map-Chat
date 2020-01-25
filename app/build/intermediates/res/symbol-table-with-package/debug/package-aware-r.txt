@@ -2171,6 +2171,7 @@ id enterAlwaysCollapsed
 id error
 id eventDate
 id eventDesc
+id eventItemLayout
 id eventItemName
 id eventItemRecycle
 id eventName
@@ -2206,13 +2207,13 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id image_user
 id info
 id infowindow_description
 id infowindow_title
 id inline
 id invisible
 id italic
-id itemLayout
 id item_touch_helper_previous_elevation
 id joinBtn
 id labeled
@@ -2374,8 +2375,11 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id userItemLayout
 id userName
-id viewEventUsers
+id user_name
+id users_info_recycle
+id viewEventUsersBtn
 id view_offset_helper
 id visible
 id wide
@@ -2473,6 +2477,7 @@ layout dp_example
 layout event_item_layout
 layout friend_adapter_layout
 layout friends_picker_layout
+layout item_user_info
 layout layout_screen
 layout map_event_view
 layout mapbox_attribution_list_item
