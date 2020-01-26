@@ -2028,6 +2028,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id TextView
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -2087,6 +2088,7 @@ id activity_chooser_view_content
 id add
 id addEvent
 id addEventActionButton
+id addPlace
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2121,6 +2123,8 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id chatEventsPager
+id chatTabLayout
 id checkbox
 id checked
 id chronometer
@@ -2235,7 +2239,7 @@ id logoText
 id logoView
 id mapLayout
 id mapPopup
-id mapView
+id mapViewPlace
 id masked
 id media_actions
 id meetTime
@@ -2294,6 +2298,8 @@ id scrollIndicatorUp
 id scrollView
 id scrollView2
 id scrollable
+id searchPlace
+id searchViewEvents
 id searchViewFriends
 id search_badge
 id search_bar
@@ -2348,6 +2354,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
 id textView2
 id text_input_password_toggle
 id textinput_counter
@@ -2442,6 +2449,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_chat
+layout activity_chat_events
+layout activity_choose_place_map
 layout activity_event_detail
 layout activity_events
 layout activity_list_of_users
@@ -2475,6 +2484,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dp_example
 layout event_item_layout
+layout events_fragment
 layout friend_adapter_layout
 layout friends_picker_layout
 layout item_user_info
@@ -2516,6 +2526,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout their_message
+layout user_events_fragment
 menu bottom_navigation_main
 mipmap ic_launcher
 mipmap ic_launcher_round

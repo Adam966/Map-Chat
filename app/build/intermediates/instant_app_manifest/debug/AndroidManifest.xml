@@ -39,6 +39,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppNormal" >
+        <activity android:name="com.project.mapchat.chatEvents.ChatEvents" />
+        <activity android:name="com.project.mapchat.ChoosePlaceMap" />
         <activity android:name="com.project.mapchat.main.activities.ListOfUsers" />
         <activity android:name="com.project.mapchat.main.activities.EventDetail" />
         <activity android:name="com.project.mapchat.main.activities.ChatActivity" />

@@ -72,6 +72,7 @@ import com.mapbox.mapboxsdk.plugins.markerview.MarkerViewManager;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonOptions;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.chatEvents.ChatEvents;
 import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.service.ServerService;
@@ -334,8 +335,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         startActivity(new Intent(this, AddEventActivity.class));
     }
 
+    /////////////////////////////// OPEN CHAT ////////////////////////////////////
     public void openChat(View view) {
-        startActivity(new Intent(this, ChatActivity.class));
+        startActivity(new Intent(this, ChatEvents.class));
     }
 
     @Override
