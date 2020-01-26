@@ -36,6 +36,8 @@ public class FragmentUserEvents extends Fragment {
     View rootView;
     private ArrayList<EventFromServer> userEventsList;
     private SharedPrefs appSharedPrefs;
+    private RecyclerView myRecycle;
+    private ArrayList<EventFromServer> list;
 
     public FragmentUserEvents(){
 
@@ -46,6 +48,12 @@ public class FragmentUserEvents extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.user_events_fragment,container,false);
 
+        myRecycle = rootView.findViewById(R.id.userEventsFragmentRecycler);
+        ChatUsersEventsRecyclerAdapter adapter = new ChatUsersEventsRecyclerAdapter(userEventsList);
+        myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
+        myRecycle.setAdapter(adapter);
+
+        /*
         RecyclerView recyclerView = rootView.findViewById(R.id.userEventsFragmentRecycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
@@ -58,11 +66,16 @@ public class FragmentUserEvents extends Fragment {
         recyclerView.setAdapter(adapter);
         // 5. set item animator to DefaultAnimator
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+         */
 
         return rootView;
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
+    }
 
     private ArrayList<EventFromServer> getEventsList(){
         ChatEvents activity = (ChatEvents) getActivity();
