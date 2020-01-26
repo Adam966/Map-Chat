@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppNormal">
+        
         <activity android:name=".ChoosePlaceMap"></activity>
+        <activity android:name=".main.activities.ListOfUsers"></activity>
         <activity android:name=".main.activities.EventDetail" />
         <activity android:name=".main.activities.ChatActivity" />
         <activity

@@ -16,8 +16,8 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
+import com.project.mapchat.adapters.EventAdapter;
 import com.project.mapchat.entities.EventFromServer;
-import com.project.mapchat.entities.EventToSend;
 import com.project.mapchat.service.ServerService;
 
 import java.util.ArrayList;

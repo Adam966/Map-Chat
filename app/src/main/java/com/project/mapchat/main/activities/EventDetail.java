@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.entities.EventFromServer;
@@ -31,7 +32,7 @@ public class EventDetail extends AppCompatActivity {
     private ImageView reject;
     private ImageView join;
     private EventFromServer eventFromServer;
-    private Button viewEventUsersBtn;
+    private Button viewViewUsersBtn;
     private ArrayList<UserInfoData> usersFromEventList;
 
     // views for show data from event
@@ -50,7 +51,6 @@ public class EventDetail extends AppCompatActivity {
         eventDesc = findViewById(R.id.eventDesc);
         meetTime = findViewById(R.id.meetTime);
         place = findViewById(R.id.place);
-        viewEventUsersBtn = findViewById(R.id.viewEventUsers);
 
         intent = getIntent();
         // getting event id from intent to use request
@@ -59,6 +59,16 @@ public class EventDetail extends AppCompatActivity {
         getEventById(appSharedPrefs.getServerToken(),eventId);
 
         eventFromServer = new EventFromServer();
+
+        viewViewUsersBtn = findViewById(R.id.viewEventUsersBtn);
+        viewViewUsersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),ListOfUsers.class);
+                i.putExtra("userList",usersListToString(usersFromEventList));
+                startActivity(i);
+            }
+        });
 
         reject = findViewById(R.id.rejectBtn);
         reject.setOnClickListener(new View.OnClickListener() {
@@ -156,15 +166,19 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if(response.isSuccessful()){
-                    Log.i("JOIN EVENT","SUCCESSFULL");
+                    Toast.makeText(getApplicationContext(),
+                            "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
                 }else {
                     switch(response.code()){
                         case 401:{
-                            Log.wtf("401","Unauthorized");
+
+                            Toast.makeText(getApplicationContext(),
+                                    "Rejected to join to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
                         case 500:{
-                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
                         }
                     }
                 }
@@ -193,6 +207,13 @@ public class EventDetail extends AppCompatActivity {
 
     private void setButtonText(ArrayList<UserInfoData> list){
         String userSize = String.valueOf(list.size());
-        viewEventUsersBtn.setText(userSize);
+        viewViewUsersBtn.setText(userSize);
     }
+
+    private String usersListToString(ArrayList<UserInfoData> list){
+        Gson gson = new Gson();
+        String listToSend = gson.toJson(list);
+        return listToSend;
+    }
+
 }

@@ -232,35 +232,35 @@ public final class R {
         public static final int chronometer = 0x7f090065;
         public static final int compassView = 0x7f090073;
         public static final int end = 0x7f09008e;
-        public static final int forever = 0x7f0900a2;
-        public static final int icon = 0x7f0900b2;
-        public static final int icon_group = 0x7f0900b3;
-        public static final int image = 0x7f0900b6;
-        public static final int info = 0x7f0900b8;
-        public static final int infowindow_description = 0x7f0900b9;
-        public static final int infowindow_title = 0x7f0900ba;
-        public static final int italic = 0x7f0900bd;
-        public static final int left = 0x7f0900c4;
-        public static final int line1 = 0x7f0900c6;
-        public static final int line3 = 0x7f0900c7;
-        public static final int logoView = 0x7f0900d1;
-        public static final int none = 0x7f0900e6;
-        public static final int normal = 0x7f0900e7;
-        public static final int notification_background = 0x7f0900e8;
-        public static final int notification_main_column = 0x7f0900e9;
-        public static final int notification_main_column_container = 0x7f0900ea;
-        public static final int right = 0x7f090101;
-        public static final int right_icon = 0x7f090102;
-        public static final int right_side = 0x7f090103;
-        public static final int start = 0x7f09012e;
-        public static final int tag_transition_group = 0x7f09013c;
-        public static final int tag_unhandled_key_event_manager = 0x7f09013d;
-        public static final int tag_unhandled_key_listeners = 0x7f09013e;
-        public static final int text = 0x7f090140;
-        public static final int text2 = 0x7f090141;
-        public static final int time = 0x7f09014a;
-        public static final int title = 0x7f09014c;
-        public static final int top = 0x7f09014f;
+        public static final int forever = 0x7f0900a3;
+        public static final int icon = 0x7f0900b3;
+        public static final int icon_group = 0x7f0900b4;
+        public static final int image = 0x7f0900b7;
+        public static final int info = 0x7f0900ba;
+        public static final int infowindow_description = 0x7f0900bb;
+        public static final int infowindow_title = 0x7f0900bc;
+        public static final int italic = 0x7f0900bf;
+        public static final int left = 0x7f0900c5;
+        public static final int line1 = 0x7f0900c7;
+        public static final int line3 = 0x7f0900c8;
+        public static final int logoView = 0x7f0900d2;
+        public static final int none = 0x7f0900e7;
+        public static final int normal = 0x7f0900e8;
+        public static final int notification_background = 0x7f0900e9;
+        public static final int notification_main_column = 0x7f0900ea;
+        public static final int notification_main_column_container = 0x7f0900eb;
+        public static final int right = 0x7f090102;
+        public static final int right_icon = 0x7f090103;
+        public static final int right_side = 0x7f090104;
+        public static final int start = 0x7f09012f;
+        public static final int tag_transition_group = 0x7f09013d;
+        public static final int tag_unhandled_key_event_manager = 0x7f09013e;
+        public static final int tag_unhandled_key_listeners = 0x7f09013f;
+        public static final int text = 0x7f090141;
+        public static final int text2 = 0x7f090142;
+        public static final int time = 0x7f09014b;
+        public static final int title = 0x7f09014d;
+        public static final int top = 0x7f090150;
     }
     public static final class integer {
         private integer() {}
@@ -270,16 +270,16 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int mapbox_attribution_list_item = 0x7f0c0041;
-        public static final int mapbox_infowindow_content = 0x7f0c0042;
-        public static final int mapbox_mapview_internal = 0x7f0c0043;
-        public static final int mapbox_view_image_marker = 0x7f0c0044;
-        public static final int notification_action = 0x7f0c004e;
-        public static final int notification_action_tombstone = 0x7f0c004f;
-        public static final int notification_template_custom_big = 0x7f0c0056;
-        public static final int notification_template_icon_group = 0x7f0c0057;
-        public static final int notification_template_part_chronometer = 0x7f0c005b;
-        public static final int notification_template_part_time = 0x7f0c005c;
+        public static final int mapbox_attribution_list_item = 0x7f0c0043;
+        public static final int mapbox_infowindow_content = 0x7f0c0044;
+        public static final int mapbox_mapview_internal = 0x7f0c0045;
+        public static final int mapbox_view_image_marker = 0x7f0c0046;
+        public static final int notification_action = 0x7f0c0050;
+        public static final int notification_action_tombstone = 0x7f0c0051;
+        public static final int notification_template_custom_big = 0x7f0c0058;
+        public static final int notification_template_icon_group = 0x7f0c0059;
+        public static final int notification_template_part_chronometer = 0x7f0c005d;
+        public static final int notification_template_part_time = 0x7f0c005e;
     }
     public static final class string {
         private string() {}
