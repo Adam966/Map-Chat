@@ -9,7 +9,7 @@ import com.project.mapchat.SharedPrefs;
 
 public class Logout {
 
-    protected void logout(SharedPrefs prefs,Context context){
+    public void logout(SharedPrefs prefs,Context context){
 
         LoginManager.getInstance().logOut();
         prefs.removeServerToken();
