@@ -27,7 +27,7 @@
 
     <com.mapbox.mapboxsdk.maps.MapView
 
-        android:id="@+id/mapView"
+        android:id="@+id/mapViewPlace"
         android:layout_width="412dp"
         android:layout_height="732dp"
         android:layout_marginTop="12dp"

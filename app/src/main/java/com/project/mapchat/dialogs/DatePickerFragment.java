@@ -11,6 +11,7 @@ import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.widget.DatePicker;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
@@ -37,7 +38,10 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
         Calendar c = Calendar.getInstance();
         c.set(year, month, day);
-        dialogListener.getDate(c.getTime());
+
+        if (c.getTime().compareTo(new Date()) < 0)
+            dialogListener.getDate(c.getTime());
+
     }
 
     public interface DialogListener {

@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
 import com.project.mapchat.ChoosePlace;
+import com.project.mapchat.ChoosePlaceMap;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.dialogs.DatePickerFragment;
@@ -184,7 +185,8 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
     ///////////////////////////////////// CHOOSE PLACE /////////////////////////////////////////////
     public void choosePlace(View view) {
-        startActivity(new Intent(this, ChoosePlace.class));
+        //startActivity(new Intent(this, ChoosePlace.class));
+        startActivity(new Intent(this, ChoosePlaceMap.class));
     }
 
     @Override

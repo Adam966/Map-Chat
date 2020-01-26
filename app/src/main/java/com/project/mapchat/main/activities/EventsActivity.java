@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,6 +28,8 @@ import retrofit2.Response;
 
 public class EventsActivity extends AppCompatActivity {
     private SharedPrefs appSharedPrefs;
+    private SearchView searchView;
+    private EventAdapter eventAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,20 @@ public class EventsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
+
+        searchView = findViewById(R.id.searchViewEvents);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                eventAdapter.getFilter().filter(s.toLowerCase());
+                return false;
+            }
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
@@ -108,7 +125,7 @@ public class EventsActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.eventItemRecycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        EventAdapter eventAdapter = new EventAdapter(list,this);
+        eventAdapter = new EventAdapter(list,this);
         recyclerView.setAdapter(eventAdapter);
     }
 }
