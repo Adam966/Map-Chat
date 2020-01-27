@@ -20,6 +20,7 @@ import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.adapters.ChatUsersEventsRecyclerAdapter;
 import com.project.mapchat.chatEvents.ChatEvents;
 import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.entities.Location;
 import com.project.mapchat.main.activities.Logout;
 import com.project.mapchat.main.activities.MainActivity;
 import com.project.mapchat.service.ServerService;
@@ -76,7 +77,20 @@ public class FragmentUserEvents extends Fragment {
 
         appSharedPrefs = new SharedPrefs(getContext());
 
+       //test
+       /* EventFromServer event = new EventFromServer();
+        event.setGroupName("test");
+
+        userEventsList = new ArrayList<>();
+        userEventsList.add(event);
+
+        */
+
+        userEventsList = new ArrayList<>();
+
         getUserEvents(appSharedPrefs.getServerToken());
+
+        Log.wtf("UserEvent",userEventsList.toString());
 
     }
 
