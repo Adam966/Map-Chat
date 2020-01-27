@@ -2182,6 +2182,7 @@ id eventItemRecycle
 id eventName
 id eventTime
 id eventVisibility
+id eventsFragmentRecycler
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu

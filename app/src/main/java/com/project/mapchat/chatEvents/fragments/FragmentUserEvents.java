@@ -37,7 +37,6 @@ public class FragmentUserEvents extends Fragment {
     private ArrayList<EventFromServer> userEventsList;
     private SharedPrefs appSharedPrefs;
     private RecyclerView myRecycle;
-    private ArrayList<EventFromServer> list;
 
     public FragmentUserEvents(){
 
@@ -75,18 +74,40 @@ public class FragmentUserEvents extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        appSharedPrefs = new SharedPrefs(getContext());
+
+        getUserEvents(appSharedPrefs.getServerToken());
+
     }
 
-    private ArrayList<EventFromServer> getEventsList(){
-        ChatEvents activity = (ChatEvents) getActivity();
-        return activity.getEventsList();
+    private void getUserEvents(String serverToken) {
+        Call<ArrayList<EventFromServer>> call = ServerService
+                .getInstance()
+                .getUserEvents()
+                .getUserEventsRequest("Bearer"+" "+serverToken);
+
+        call.enqueue(new Callback<ArrayList<EventFromServer>>() {
+            @Override
+            public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
+                if(response.isSuccessful()){
+                    userEventsList = response.body();
+                    Log.wtf("FragmentUserEvents",response.body().toString());
+                }else{
+                    switch(response.code()){
+                        case 401:{
+                            new Logout().logout(appSharedPrefs,getContext());
+                        }
+                        case 500:{
+                            Toast.makeText(getContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
+                Toast.makeText(getContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
-
-    private ArrayList<EventFromServer> getUserEventsList(){
-        ChatEvents activity = (ChatEvents) getActivity();
-        return activity.getUserEventsList();
-    }
-
-
-
 }
