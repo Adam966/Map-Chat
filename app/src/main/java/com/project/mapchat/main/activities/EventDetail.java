@@ -192,7 +192,7 @@ public class EventDetail extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Toast.makeText(getApplicationContext(),
                             "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
-                    recreate();
+                    restart();
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -232,9 +232,8 @@ public class EventDetail extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Toast.makeText(getApplicationContext(),
                             "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
-                    recreate();
-                    overridePendingTransition(0, 0);
-                    
+                    restart();
+
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -344,6 +343,11 @@ public class EventDetail extends AppCompatActivity {
             rejectBtn.setVisibility(View.VISIBLE);
             exitEventBtn.setVisibility(View.GONE);
         }
+    }
+
+    private void restart(){
+        recreate();
+        overridePendingTransition(0, 0);
     }
 
 
