@@ -38,6 +38,7 @@ public class FragmentUserEvents extends Fragment {
     private ArrayList<EventFromServer> userEventsList;
     private SharedPrefs appSharedPrefs;
     private RecyclerView myRecycle;
+    private ChatUsersEventsRecyclerAdapter adapter;
 
     public FragmentUserEvents(){
 
@@ -49,24 +50,10 @@ public class FragmentUserEvents extends Fragment {
         rootView = inflater.inflate(R.layout.user_events_fragment,container,false);
 
         myRecycle = rootView.findViewById(R.id.userEventsFragmentRecycler);
-        ChatUsersEventsRecyclerAdapter adapter = new ChatUsersEventsRecyclerAdapter(userEventsList);
+        //ChatUsersEventsRecyclerAdapter adapter = new ChatUsersEventsRecyclerAdapter(userEventsList);
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);
-
-        /*
-        RecyclerView recyclerView = rootView.findViewById(R.id.userEventsFragmentRecycler);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-        ChatUsersEventsRecyclerAdapter adapter = new ChatUsersEventsRecyclerAdapter
-        (
-            getEventsList()
-        );
-
-        // 4. set adapter
-        recyclerView.setAdapter(adapter);
-        // 5. set item animator to DefaultAnimator
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-         */
+        getUserEvents(appSharedPrefs.getServerToken());
 
         return rootView;
     }
@@ -85,13 +72,6 @@ public class FragmentUserEvents extends Fragment {
         userEventsList.add(event);
 
         */
-
-        userEventsList = new ArrayList<>();
-
-        getUserEvents(appSharedPrefs.getServerToken());
-
-        Log.wtf("UserEvent",userEventsList.toString());
-
     }
 
     private void getUserEvents(String serverToken) {
@@ -104,8 +84,11 @@ public class FragmentUserEvents extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    userEventsList = response.body();
+                    //userEventsList = response.body();
+                    adapter = new ChatUsersEventsRecyclerAdapter(response.body());
+                    adapter.notifyDataSetChanged();
                     Log.wtf("FragmentUserEvents",response.body().toString());
+                    myRecycle.setAdapter(adapter);
                 }else{
                     switch(response.code()){
                         case 401:{
