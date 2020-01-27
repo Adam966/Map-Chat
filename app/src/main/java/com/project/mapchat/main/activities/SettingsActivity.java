@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
@@ -133,6 +134,12 @@ public class SettingsActivity extends AppCompatActivity {
                         case 401:{
                             //new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                        break;
                     }
                 }
             }

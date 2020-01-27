@@ -154,12 +154,15 @@ public class Login extends AppCompatActivity {
                             Log.wtf("401","Unauthorized");
                             setViewVisible();
                             LoginManager.getInstance().logOut();
-                        }break;
+                        }
+                        break;
+
                         case 500:{
                             Log.wtf("500","Server broken");
                             setViewVisible();
                             LoginManager.getInstance().logOut();
                         }
+                        break;
                     }
                 }
             }

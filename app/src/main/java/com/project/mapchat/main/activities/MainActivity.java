@@ -440,9 +440,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             Log.wtf("401","Unauthorized");
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
                         }
+                        break;
                     }
                 }
             }

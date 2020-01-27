@@ -101,9 +101,12 @@ public class EventsActivity extends AppCompatActivity {
                         case 401:{
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
                         }
+                        break;
                     }
                 }
             }
