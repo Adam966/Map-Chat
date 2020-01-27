@@ -61,12 +61,12 @@ namespace MapChatServer.Data
                 Eventgroup userEventInsert = _mapper.Map<Eventgroup>(userEvent);
                 Location eventLocation = _mapper.Map<Location>(userEvent.location);
 
-                await _context.Location.AddAsync(eventLocation);
+                await _context.Location.AddAsync(eventLocation).ConfigureAwait(true);
                 await _context.SaveChangesAsync().ConfigureAwait(true);
 
                 userEventInsert.IdL = eventLocation.Id;
 
-                await _context.Eventgroup.AddAsync(userEventInsert);
+                await _context.Eventgroup.AddAsync(userEventInsert).ConfigureAwait(true);
                 await _context.SaveChangesAsync().ConfigureAwait(true);
 
                 Eventgroupuser eGroupUser = new Eventgroupuser
@@ -76,7 +76,7 @@ namespace MapChatServer.Data
                     Admin = 1
                 };
 
-                await _context.Eventgroupuser.AddAsync(eGroupUser);
+                await _context.Eventgroupuser.AddAsync(eGroupUser).ConfigureAwait(true);
                 await _context.SaveChangesAsync().ConfigureAwait(true);
 
                 if (userEvent.tags != null)

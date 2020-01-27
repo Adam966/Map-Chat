@@ -10,6 +10,6 @@ namespace MapChatServer.Dtos
         public int? SenderId { get; set; }
         public int? ReceiverId { get; set; }
         public string MessageText { get; set; }
-        public DateTime? CTime { get; set; }
+        public DateTime? CTime { get; set; } = DateTime.Now;
     }
 }

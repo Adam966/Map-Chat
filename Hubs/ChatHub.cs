@@ -1,6 +1,8 @@
 ﻿using MapChatServer.Chat;
+using MapChatServer.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -52,19 +54,21 @@ namespace MapChatServer.Hubs
             return base.OnDisconnectedAsync(exception);
         }
 
-        public async Task SendMessageUser(string userID, string message)
+        public async Task SendMessageUser(MessageUserDto message)
         {
-            IdentifierO userConnection = connections.Where(id => id.userID == userID).FirstOrDefault();
+            IdentifierO userConnection = connections.Where(id => id.userID == message.ReceiverId.ToString()).FirstOrDefault();
 
-            if (userConnection != null) 
+            message.SenderId = int.Parse(Context.UserIdentifier);
+
+            if (userConnection != null)
             {
                 Debug.Write("SendingMessageTo: " + userConnection.connectionID + " NAME: " + userConnection.userID);
 
                 await Clients.Client(userConnection.connectionID).SendAsync("ReceiveMessagePrivate", message).ConfigureAwait(true);
             }
-            Debug.Write("NAME: "+userID);
+            Debug.Write("NAME: "+ message.ReceiverId);
 
-            await _chatRepository.writeUserMessagePrivate(Context.UserIdentifier, userID, message).ConfigureAwait(true);
+            await _chatRepository.writeUserMessagePrivate(message).ConfigureAwait(true);
         }
     }
 }

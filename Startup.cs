@@ -27,7 +27,6 @@ namespace MapChatServer
     {
         public Startup(IConfiguration configuration)
         {
-
             Configuration = configuration;
         }
 
@@ -97,14 +96,14 @@ namespace MapChatServer
                     
                     options.Events = new JwtBearerEvents
                     {
+
                         OnMessageReceived = context =>
                         {
                             var accessToken = context.Request.Query["access_token"];
-
                             // If the request is for our hub...
                             var path = context.HttpContext.Request.Path;
 
-                            if (!string.IsNullOrEmpty(accessToken) && (path.StartsWithSegments("/chat")))
+                            if (!string.IsNullOrEmpty(accessToken) && ((path.StartsWithSegments("/chat")) || (path.StartsWithSegments("/groupchat"))))
                             {
                                 // Read the token out of the query string
                                 context.Token = accessToken;
@@ -138,6 +137,7 @@ namespace MapChatServer
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<ChatHub>("/chat");
+                endpoints.MapHub<GroupChatHub>("/groupchat");
                 endpoints.MapControllers();
             });
         }

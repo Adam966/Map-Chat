@@ -23,7 +23,11 @@ namespace MapChatServer.Helpers
 
             CreateMap<Messageu, MessageUserDto>();
 
+            CreateMap<MessageUserDto, Messageu> ();
+
             CreateMap<Messageeg, MessageGroupDto>();
+
+            CreateMap<MessageGroupDto, Messageeg>();
         }
     }
 }

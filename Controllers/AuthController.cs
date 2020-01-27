@@ -34,7 +34,7 @@ namespace MapChatServer.Controllers
             
             if (token.ContainsKey("token"))
             {
-                UserAuthDto uInfo = await _repo.Login(token["token"].ToString());
+                UserAuthDto uInfo = await _repo.Login(token["token"].ToString()).ConfigureAwait(true);
 
                 if (!(uInfo.facebookToken == null))
                 {
