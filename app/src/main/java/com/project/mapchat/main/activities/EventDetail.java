@@ -29,7 +29,7 @@ public class EventDetail extends AppCompatActivity {
 
     private SharedPrefs appSharedPrefs;
     private Intent intent;
-    private ImageView rejectBtn, joinBtn;
+    private ImageView rejectBtn, joinBtn, exitEventBtn;
     private EventFromServer eventFromServer;
     private Button viewViewUsersBtn;
     private ArrayList<UserInfoData> usersFromEventList;
@@ -87,6 +87,15 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 joinEvent(appSharedPrefs.getServerToken(),eventId);
+            }
+        });
+
+        exitEventBtn = findViewById(R.id.exitEventBtn);
+        exitEventBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO leave request
+                leaveEvent(appSharedPrefs.getServerToken(),eventId);
             }
         });
     }
@@ -183,6 +192,49 @@ public class EventDetail extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Toast.makeText(getApplicationContext(),
                             "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                    recreate();
+                }else {
+                    switch(response.code()){
+                        case 401:{
+
+                            Toast.makeText(getApplicationContext(),
+                                    "Rejected to joinBtn to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    // exitBtn to leave event
+    private void leaveEvent(String serverToken, int eventId) {
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .leaveEvent()
+                .leaveEventRequest("Bearer " + serverToken,eventId);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if(response.isSuccessful()){
+                    Toast.makeText(getApplicationContext(),
+                            "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                    recreate();
+                    overridePendingTransition(0, 0);
+                    
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -286,9 +338,11 @@ public class EventDetail extends AppCompatActivity {
         if(state){
             joinBtn.setVisibility(View.GONE);
             rejectBtn.setVisibility(View.GONE);
+            exitEventBtn.setVisibility(View.VISIBLE);
         }else{
             joinBtn.setVisibility(View.VISIBLE);
             rejectBtn.setVisibility(View.VISIBLE);
+            exitEventBtn.setVisibility(View.GONE);
         }
     }
 
