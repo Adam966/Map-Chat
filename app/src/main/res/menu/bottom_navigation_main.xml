@@ -4,12 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
-    <item
-        android:id="@+id/action_groups"
-        android:enabled="true"
-        android:title="@string/events"
-        android:icon="@drawable/ic_menu_24px"
-        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_home"

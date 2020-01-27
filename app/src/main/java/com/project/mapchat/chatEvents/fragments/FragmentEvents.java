@@ -29,10 +29,10 @@ import retrofit2.Response;
 
 public class FragmentEvents extends Fragment {
 
-    View rootView;
-    private ArrayList<EventFromServer> eventsList;
+    private View rootView;
     private SharedPrefs appSharedPrefs;
     private RecyclerView myRecycle;
+    private ChatEventsRecyclerAdapter adapter;
 
     public FragmentEvents(){
 
@@ -42,13 +42,11 @@ public class FragmentEvents extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.events_fragment,container,false);
-/*
+        appSharedPrefs = new SharedPrefs(getContext());
         myRecycle = rootView.findViewById(R.id.eventsFragmentRecycler);
-        ChatEventsRecyclerAdapter adapter = new ChatEventsRecyclerAdapter(eventsList);
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);
-
- */
+        getEvents(appSharedPrefs.getServerToken());
 
         return rootView;
     }
@@ -57,10 +55,6 @@ public class FragmentEvents extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        appSharedPrefs = new SharedPrefs(getContext());
-
-        getEvents(appSharedPrefs.getServerToken());
     }
 
     private void getEvents(String serverToken) {
@@ -73,8 +67,10 @@ public class FragmentEvents extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    eventsList = response.body();
+                    adapter = new ChatEventsRecyclerAdapter(response.body());
+                    adapter.notifyDataSetChanged();
                     Log.wtf("FragmentEvents",response.body().toString());
+                    myRecycle.setAdapter(adapter);
                 }else{
                     switch(response.code()){
                         case 401:{

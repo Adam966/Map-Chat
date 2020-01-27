@@ -2072,7 +2072,6 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
-id action_groups
 id action_home
 id action_image
 id action_menu_divider
@@ -2302,7 +2301,6 @@ id scrollView
 id scrollView2
 id scrollable
 id searchPlace
-id searchUserViewEvents
 id searchViewEvents
 id searchViewFriends
 id search_badge
