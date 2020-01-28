@@ -18,7 +18,6 @@ import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -39,7 +38,7 @@ public class EventDetail extends AppCompatActivity {
     private ArrayList<UserInfoData> usersFromEventList;
 
     // views for show data from event
-    private TextView groupName,createDate,eventDesc,meetTime,place;
+    private TextView groupName,createDate,eventDesc, meetDate,place,timeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +51,9 @@ public class EventDetail extends AppCompatActivity {
         groupName = findViewById(R.id.groupName);
         createDate = findViewById(R.id.createDate);
         eventDesc = findViewById(R.id.eventDesc);
-        meetTime = findViewById(R.id.meetTime);
+        meetDate = findViewById(R.id.meetDate);
         place = findViewById(R.id.place);
+        timeText = findViewById(R.id.timeText);
 
         // getting intent
         intent = getIntent();
@@ -314,9 +314,18 @@ public class EventDetail extends AppCompatActivity {
         Log.wtf("LOCATION", event.getLocation().toString());
 
         groupName.setText(event.getGroupName());
-        createDate.setText(event.getCreationTime().replace('T', ' '));
         eventDesc.setText(event.getDescription());
-        meetTime.setText(event.getMeetTime().replace('T', ' '));
+        place.setText(event.getLocation().getAddress());
+
+        // parsing and setting date,time to views
+        createDate.setText(parseDate(event.getMeetTime(),"MM dd yyyy, HH:mm"));
+        meetDate.setText(parseDate(event.getMeetTime(),"EE d. MMMM, yyyy"));
+        timeText.setText(parseTime(event.getMeetTime()));
+
+        /*
+        createDate.setText(event.getCreationTime().replace('T', ' '));
+        meetDate.setText(event.getMeetTime().replace('T', ' '));
+         */
 
         /*
         String location = event.getLocation().getTown() +
@@ -324,8 +333,6 @@ public class EventDetail extends AppCompatActivity {
                 " "+event.getLocation().getPostalCode()+
                 " "+event.getLocation().getCountry();*/
 
-        Log.wtf("ADDRESS", event.getLocation().getAddress());
-        place.setText(event.getLocation().getAddress());
     }
 
     private void setButtonText(ArrayList<UserInfoData> list){
@@ -358,5 +365,30 @@ public class EventDetail extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
+    private String parseDate(String date,String parseType){
+
+        Date dateToParse = new Date();
+
+        try {
+            dateToParse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return new SimpleDateFormat(parseType).format(dateToParse);
+    }
+
+    private String parseTime(String date) {
+        Date dateToParse = new Date();
+
+        try {
+            dateToParse = new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        //String time = dateToParse.toString(11,17);
+
+        return new SimpleDateFormat("HH:mm:ss.S").format(dateToParse).substring(0,5);
+    }
 
 }

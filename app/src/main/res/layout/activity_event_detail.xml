@@ -31,19 +31,21 @@
             app:srcCompat="@drawable/ic_exit_to_app_24px" />
 
         <TextView
-            android:id="@+id/meetTime"
+            android:id="@+id/meetDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:fontFamily="@font/proxima_nova_bold"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/proxima_nova_regular"
             android:gravity="center"
             android:textColor="?attr/textcolor"
-            android:textSize="@dimen/_32sdp"
-            app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
+            android:textSize="@dimen/_26sdp"
+            app:layout_constraintBottom_toTopOf="@+id/timeText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
             android:id="@+id/joinBtn"
@@ -72,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="30dp"
             android:fontFamily="@font/proxima_nova"
             android:gravity="center"
@@ -80,8 +83,24 @@
             app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/meetTime"
+            app:layout_constraintTop_toBottomOf="@+id/timeText"
             app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:gravity="center"
+            android:textColor="?attr/textcolor"
+            android:textSize="@dimen/_40sdp"
+            app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

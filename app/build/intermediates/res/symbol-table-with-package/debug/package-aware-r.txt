@@ -2214,7 +2214,6 @@ id icon_only
 id ifRoom
 id image
 id imageView
-id imageView2
 id image_user
 id info
 id infowindow_description
@@ -2246,7 +2245,7 @@ id mapPopup
 id mapViewPlace
 id masked
 id media_actions
-id meetTime
+id meetDate
 id message
 id message_body
 id messages_view

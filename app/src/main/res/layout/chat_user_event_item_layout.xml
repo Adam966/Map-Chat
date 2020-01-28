@@ -6,31 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/messenger_bubble_large_blue" />
-
     <TextView
         android:id="@+id/chatUserEventName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="12dp"
         android:fontFamily="@font/proxima_nova_bold"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,5 +1,6 @@
 package com.project.mapchat.adapters;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.mapchat.R;
 import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.main.activities.ChatActivity;
 
 import java.util.ArrayList;
 
@@ -31,9 +33,23 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
         final String userEventName = userEventsData.get(position).getGroupName();
+        final String eventId = userEventsData.get(position).getId();
+        final String groupName = userEventsData.get(position).getGroupName();
+        final String active = userEventsData.get(position).getActive();
 
         holder.chatUserEventName.setText(userEventName);
+        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), ChatActivity.class);
+                i.putExtra("eventId",eventId);
+                i.putExtra("groupName",groupName);
+                i.putExtra("active",active);
+                v.getContext().startActivity(i);
+            }
+        });
     }
 
     @Override
