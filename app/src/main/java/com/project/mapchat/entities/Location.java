@@ -25,6 +25,18 @@ public class Location {
     @Expose
     private String latitude;
 
+    public Location(String country, String town, String postalCode, String address, String longtitude, String latitude) {
+        this.country = country;
+        this.town = town;
+        this.postalCode = postalCode;
+        this.address = address;
+        this.longtitude = longtitude;
+        this.latitude = latitude;
+    }
+
+    public Location() {
+    }
+
     public String getCountry() {
         return country;
     }

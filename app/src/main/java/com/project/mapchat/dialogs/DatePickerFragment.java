@@ -10,6 +10,7 @@ import android.content.Context;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 import java.time.LocalDateTime;
 import java.util.Date;
@@ -39,8 +40,10 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         Calendar c = Calendar.getInstance();
         c.set(year, month, day);
 
-        if (c.getTime().compareTo(new Date()) < 0)
+        if (c.getTime().compareTo(new Date()) > 0)
             dialogListener.getDate(c.getTime());
+        else
+            Toast.makeText(getContext(), "Wrong date bro!", Toast.LENGTH_SHORT).show();
 
     }
 

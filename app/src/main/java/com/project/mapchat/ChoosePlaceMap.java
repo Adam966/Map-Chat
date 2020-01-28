@@ -153,7 +153,7 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
             public void onResponse(JSONObject response) {
                 try {
                     place = getJsonPlaces(response.getJSONArray("results"));
-                    animateCameraPosition(new LatLng(place.getLat(), place.getLng()));
+                    animateCameraPosition(new LatLng(place.getLat(), place.getLng())    );
                     Log.wtf("PLACE", place.toString());
                 } catch (JSONException e) {
                     e.printStackTrace();

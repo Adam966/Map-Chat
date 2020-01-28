@@ -18,7 +18,11 @@ import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -307,10 +311,11 @@ public class EventDetail extends AppCompatActivity {
     }
 
     private void setViewValues(EventFromServer event){
+        Log.wtf("LOCATION", event.getLocation().toString());
         groupName.setText(event.getGroupName());
         createDate.setText(event.getCreationTime());
         eventDesc.setText(event.getDescription());
-        meetTime.setText(event.getMeetTime());
+        meetTime.setText(event.getMeetTime().replace('T', ' '));
 
         String location = event.getLocation().getTown() +
                 " "+event.getLocation().getAddress()+
