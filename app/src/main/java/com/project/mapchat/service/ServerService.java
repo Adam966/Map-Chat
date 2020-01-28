@@ -1,5 +1,8 @@
 package com.project.mapchat.service;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.project.mapchat.entities.Place;
 import com.project.mapchat.service.requests.AddAdminPrivilege;
 import com.project.mapchat.service.requests.CreateEvent;
 import com.project.mapchat.service.requests.DeleteEvent;
@@ -48,11 +51,15 @@ public class ServerService {
                 .addInterceptor(interceptor)
                 .build();
 
+        Gson gson = new GsonBuilder()
+                .registerTypeAdapter(Place.class, new PlaceTypeAdapter())
+                .create();
+
         // build retrofit client with url of the server
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(client)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
         }
 

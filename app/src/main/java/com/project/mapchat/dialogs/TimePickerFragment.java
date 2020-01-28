@@ -10,7 +10,9 @@ import android.content.Context;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -38,7 +40,9 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
     public void onTimeSet(TimePicker timePicker, int hour, int minute) {
         Calendar c = Calendar.getInstance();
         c.set(0,0,0,hour,minute);
+
         dialogListener.getTime(c.getTime());
+
     }
 
     public interface DialogListener {
