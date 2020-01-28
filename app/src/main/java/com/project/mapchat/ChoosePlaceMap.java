@@ -174,6 +174,7 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
             try {
                 place.setLat(array.getJSONObject(0).getJSONObject("geometry").getDouble("lat"));
                 place.setLng(array.getJSONObject(0).getJSONObject("geometry").getDouble("lng"));
+                place.setFormatted(array.getJSONObject(0).getString("formatted"));
 
             } catch (JSONException e) {
                 e.printStackTrace();

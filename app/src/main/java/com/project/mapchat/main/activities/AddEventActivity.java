@@ -209,6 +209,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         location.setTown(place.getTown());
         location.setLatitude(String.valueOf(place.getLat()));
         location.setLongtitude(String.valueOf(place.getLng()));
+        location.setAddress(place.getFormatted());
 
         Log.wtf("Location", location.toString());
     }

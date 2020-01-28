@@ -312,9 +312,12 @@ public class EventDetail extends AppCompatActivity {
 
     private void setViewValues(EventFromServer event){
         Log.wtf("LOCATION", event.getLocation().toString());
+        /*
         groupName.setText(event.getGroupName());
         createDate.setText(event.getCreationTime());
         eventDesc.setText(event.getDescription());
+        */
+        groupName.setText(event.getLocation().getAddress());
         meetTime.setText(event.getMeetTime().replace('T', ' '));
 
         String location = event.getLocation().getTown() +
