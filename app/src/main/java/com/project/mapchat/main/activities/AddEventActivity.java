@@ -167,6 +167,8 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         eventToSend.setType(visibility);
         eventToSend.setMeetTime(date.getText().toString() + "" + time.getText().toString());
         createEvent(eventToSend,"Bearer"+" "+appSharedPrefs.getServerToken());
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 
     ////////////////////////////////////// TIME AND DATE PICKER ////////////////////////////////////
@@ -193,7 +195,12 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         Bundle data = intent.getExtras();
-        Place place = data.getParcelable("place");
+        Place place;
+
+        if (data.getParcelable("place") != null)
+            place = data.getParcelable("place");
+        else
+            place = null;
 
         Log.wtf("PLACE_PARCELABLE", place.toString());
 

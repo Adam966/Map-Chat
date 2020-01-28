@@ -312,11 +312,11 @@ public class EventDetail extends AppCompatActivity {
 
     private void setViewValues(EventFromServer event){
         Log.wtf("LOCATION", event.getLocation().toString());
-        /*
+
         groupName.setText(event.getGroupName());
-        createDate.setText(event.getCreationTime());
+        createDate.setText(event.getCreationTime().replace('T', ' '));
         eventDesc.setText(event.getDescription());
-        */
+
         groupName.setText(event.getLocation().getAddress());
         meetTime.setText(event.getMeetTime().replace('T', ' '));
 
@@ -325,7 +325,8 @@ public class EventDetail extends AppCompatActivity {
                 " "+event.getLocation().getPostalCode()+
                 " "+event.getLocation().getCountry();
 
-        place.setText(location);
+        Log.wtf("ADDRESS", event.getLocation().getAddress());
+        place.setText(event.getLocation().getAddress());
     }
 
     private void setButtonText(ArrayList<UserInfoData> list){
