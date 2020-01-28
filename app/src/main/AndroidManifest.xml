@@ -18,7 +18,6 @@
         <activity android:name=".ChoosePlaceMap" />
         <activity android:name=".main.activities.ListOfUsers" />
         <activity android:name=".main.activities.EventDetail" />
-        <activity android:name=".main.activities.ChatActivity" />
         <activity
             android:name=".main.activities.Splash"
             android:theme="@style/SplashTheme">

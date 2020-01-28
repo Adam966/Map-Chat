@@ -157,11 +157,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         Intent intentHome = new Intent(MainActivity.this,MainActivity.class);
                         startActivity(intentHome);
                         break;
-                    case R.id.action_groups:
-                        //Toast.makeText(MainActivity.this, "Group Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentGroups = new Intent(MainActivity.this, EventsActivity.class);
-                        startActivity(intentGroups);
-                        break;
                     case R.id.action_settings:
                         //Toast.makeText(MainActivity.this, "Settings Clicked", Toast.LENGTH_SHORT).show();
                         Intent intentSettings = new Intent(MainActivity.this, SettingsActivity.class);
@@ -445,9 +440,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                             Log.wtf("401","Unauthorized");
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
                         }
+                        break;
                     }
                 }
             }

@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
@@ -83,7 +84,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem item = menu.getItem(2);
+        MenuItem item = menu.getItem(1);
         item.setChecked(true);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -93,11 +94,6 @@ public class SettingsActivity extends AppCompatActivity {
                         //Toast.makeText(MainActivity.this, "Home Clicked", Toast.LENGTH_SHORT).show();
                         Intent intentHome = new Intent(SettingsActivity.this, MainActivity.class);
                         startActivity(intentHome);
-                        break;
-                    case R.id.action_groups:
-                        //Toast.makeText(MainActivity.this, "Group Clicked", Toast.LENGTH_SHORT).show();
-                        Intent intentGroups = new Intent(SettingsActivity.this, EventsActivity.class);
-                        startActivity(intentGroups);
                         break;
                     case R.id.action_settings:
                         //Toast.makeText(MainActivity.this, "Settings Clicked", Toast.LENGTH_SHORT).show();
@@ -138,6 +134,12 @@ public class SettingsActivity extends AppCompatActivity {
                         case 401:{
                             //new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                        break;
                     }
                 }
             }

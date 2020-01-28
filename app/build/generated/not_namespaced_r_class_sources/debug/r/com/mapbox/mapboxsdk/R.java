@@ -185,53 +185,53 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int mapbox_compass_icon = 0x7f0700b1;
-        public static final int mapbox_info_bg_selector = 0x7f0700b2;
-        public static final int mapbox_info_icon_default = 0x7f0700b3;
-        public static final int mapbox_info_icon_selected = 0x7f0700b4;
-        public static final int mapbox_logo_helmet = 0x7f0700b5;
-        public static final int mapbox_logo_icon = 0x7f0700b6;
-        public static final int mapbox_marker_icon_default = 0x7f0700b7;
-        public static final int mapbox_markerview_icon_default = 0x7f0700b8;
-        public static final int mapbox_mylocation_bg_shape = 0x7f0700b9;
-        public static final int mapbox_mylocation_icon_bearing = 0x7f0700ba;
-        public static final int mapbox_mylocation_icon_default = 0x7f0700bb;
-        public static final int mapbox_popup_window_transparent = 0x7f0700bc;
-        public static final int mapbox_rounded_corner = 0x7f0700bd;
-        public static final int mapbox_user_bearing_icon = 0x7f0700be;
-        public static final int mapbox_user_icon = 0x7f0700bf;
-        public static final int mapbox_user_icon_shadow = 0x7f0700c0;
-        public static final int mapbox_user_icon_stale = 0x7f0700c1;
-        public static final int mapbox_user_puck_icon = 0x7f0700c2;
-        public static final int mapbox_user_stroke_icon = 0x7f0700c3;
-        public static final int notification_action_background = 0x7f0700d2;
-        public static final int notification_bg = 0x7f0700d3;
-        public static final int notification_bg_low = 0x7f0700d4;
-        public static final int notification_bg_low_normal = 0x7f0700d5;
-        public static final int notification_bg_low_pressed = 0x7f0700d6;
-        public static final int notification_bg_normal = 0x7f0700d7;
-        public static final int notification_bg_normal_pressed = 0x7f0700d8;
-        public static final int notification_icon_background = 0x7f0700d9;
-        public static final int notification_template_icon_bg = 0x7f0700da;
-        public static final int notification_template_icon_low_bg = 0x7f0700db;
-        public static final int notification_tile_bg = 0x7f0700dc;
-        public static final int notify_panel_notification_icon_bg = 0x7f0700dd;
+        public static final int mapbox_compass_icon = 0x7f0700b2;
+        public static final int mapbox_info_bg_selector = 0x7f0700b3;
+        public static final int mapbox_info_icon_default = 0x7f0700b4;
+        public static final int mapbox_info_icon_selected = 0x7f0700b5;
+        public static final int mapbox_logo_helmet = 0x7f0700b6;
+        public static final int mapbox_logo_icon = 0x7f0700b7;
+        public static final int mapbox_marker_icon_default = 0x7f0700b8;
+        public static final int mapbox_markerview_icon_default = 0x7f0700b9;
+        public static final int mapbox_mylocation_bg_shape = 0x7f0700ba;
+        public static final int mapbox_mylocation_icon_bearing = 0x7f0700bb;
+        public static final int mapbox_mylocation_icon_default = 0x7f0700bc;
+        public static final int mapbox_popup_window_transparent = 0x7f0700bd;
+        public static final int mapbox_rounded_corner = 0x7f0700be;
+        public static final int mapbox_user_bearing_icon = 0x7f0700bf;
+        public static final int mapbox_user_icon = 0x7f0700c0;
+        public static final int mapbox_user_icon_shadow = 0x7f0700c1;
+        public static final int mapbox_user_icon_stale = 0x7f0700c2;
+        public static final int mapbox_user_puck_icon = 0x7f0700c3;
+        public static final int mapbox_user_stroke_icon = 0x7f0700c4;
+        public static final int notification_action_background = 0x7f0700d3;
+        public static final int notification_bg = 0x7f0700d4;
+        public static final int notification_bg_low = 0x7f0700d5;
+        public static final int notification_bg_low_normal = 0x7f0700d6;
+        public static final int notification_bg_low_pressed = 0x7f0700d7;
+        public static final int notification_bg_normal = 0x7f0700d8;
+        public static final int notification_bg_normal_pressed = 0x7f0700d9;
+        public static final int notification_icon_background = 0x7f0700da;
+        public static final int notification_template_icon_bg = 0x7f0700db;
+        public static final int notification_template_icon_low_bg = 0x7f0700dc;
+        public static final int notification_tile_bg = 0x7f0700dd;
+        public static final int notify_panel_notification_icon_bg = 0x7f0700de;
     }
     public static final class id {
         private id() {}
 
         public static final int action_container = 0x7f09002f;
         public static final int action_divider = 0x7f090031;
-        public static final int action_image = 0x7f090034;
-        public static final int action_text = 0x7f09003b;
-        public static final int actions = 0x7f09003c;
-        public static final int async = 0x7f090047;
-        public static final int attributionView = 0x7f090048;
-        public static final int blocking = 0x7f09004e;
-        public static final int bottom = 0x7f09004f;
-        public static final int chronometer = 0x7f09006a;
-        public static final int compassView = 0x7f090078;
-        public static final int end = 0x7f090093;
+        public static final int action_image = 0x7f090033;
+        public static final int action_text = 0x7f09003a;
+        public static final int actions = 0x7f09003b;
+        public static final int async = 0x7f090046;
+        public static final int attributionView = 0x7f090047;
+        public static final int blocking = 0x7f09004d;
+        public static final int bottom = 0x7f09004e;
+        public static final int chronometer = 0x7f090069;
+        public static final int compassView = 0x7f090077;
+        public static final int end = 0x7f090092;
         public static final int forever = 0x7f0900a9;
         public static final int icon = 0x7f0900b9;
         public static final int icon_group = 0x7f0900ba;
@@ -252,15 +252,15 @@ public final class R {
         public static final int right = 0x7f090109;
         public static final int right_icon = 0x7f09010a;
         public static final int right_side = 0x7f09010b;
-        public static final int start = 0x7f090139;
-        public static final int tag_transition_group = 0x7f090147;
-        public static final int tag_unhandled_key_event_manager = 0x7f090148;
-        public static final int tag_unhandled_key_listeners = 0x7f090149;
-        public static final int text = 0x7f09014b;
-        public static final int text2 = 0x7f09014c;
-        public static final int time = 0x7f090155;
-        public static final int title = 0x7f090157;
-        public static final int top = 0x7f09015a;
+        public static final int start = 0x7f090138;
+        public static final int tag_transition_group = 0x7f090146;
+        public static final int tag_unhandled_key_event_manager = 0x7f090147;
+        public static final int tag_unhandled_key_listeners = 0x7f090148;
+        public static final int text = 0x7f09014a;
+        public static final int text2 = 0x7f09014b;
+        public static final int time = 0x7f090154;
+        public static final int title = 0x7f090156;
+        public static final int top = 0x7f090159;
     }
     public static final class integer {
         private integer() {}

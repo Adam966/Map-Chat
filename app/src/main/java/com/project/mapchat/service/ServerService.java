@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.project.mapchat.entities.Place;
 import com.project.mapchat.service.requests.AddAdminPrivilege;
+import com.project.mapchat.service.requests.CheckIfUserIsInEvent;
 import com.project.mapchat.service.requests.CreateEvent;
 import com.project.mapchat.service.requests.DeleteEvent;
 import com.project.mapchat.service.requests.GetEventById;
@@ -129,6 +130,9 @@ public class ServerService {
             return retrofit.create(GetEventById.class);
         }
 
+        public CheckIfUserIsInEvent getIfUserIsInEvent(){
+            return retrofit.create(CheckIfUserIsInEvent.class);
+        }
 
         // ADMIN REQUESTS
         public AddAdminPrivilege addAdminPrivilege(){

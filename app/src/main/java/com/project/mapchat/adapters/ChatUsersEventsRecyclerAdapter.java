@@ -26,8 +26,7 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.chat_user_event_item_layout,parent,false);
-        ViewHolder holder = new ViewHolder(view);
-        return holder;
+        return new ViewHolder(view);
     }
 
     @Override

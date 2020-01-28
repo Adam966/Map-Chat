@@ -1946,6 +1946,7 @@ drawable ic_chat_bubble_outline_24px
 drawable ic_clear_24px
 drawable ic_done_24px
 drawable ic_event_24px
+drawable ic_exit_to_app_24px
 drawable ic_home_24px
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2072,7 +2073,6 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
-id action_groups
 id action_home
 id action_image
 id action_menu_divider
@@ -2183,6 +2183,7 @@ id eventName
 id eventTime
 id eventVisibility
 id eventsFragmentRecycler
+id exitEventBtn
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2302,7 +2303,6 @@ id scrollView
 id scrollView2
 id scrollable
 id searchPlace
-id searchUserViewEvents
 id searchViewEvents
 id searchViewFriends
 id search_badge

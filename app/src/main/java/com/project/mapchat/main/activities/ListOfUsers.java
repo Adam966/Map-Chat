@@ -5,16 +5,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.project.mapchat.R;
-import com.project.mapchat.adapters.EventAdapter;
 import com.project.mapchat.adapters.ListOfUsersAdapter;
-import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.UserInfoData;
-import com.project.mapchat.service.requests.UserInfo;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

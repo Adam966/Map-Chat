@@ -33,8 +33,7 @@ public class EventDetail extends AppCompatActivity {
 
     private SharedPrefs appSharedPrefs;
     private Intent intent;
-    private ImageView reject;
-    private ImageView join;
+    private ImageView rejectBtn, joinBtn, exitEventBtn;
     private EventFromServer eventFromServer;
     private Button viewViewUsersBtn;
     private ArrayList<UserInfoData> usersFromEventList;
@@ -56,14 +55,16 @@ public class EventDetail extends AppCompatActivity {
         meetTime = findViewById(R.id.meetTime);
         place = findViewById(R.id.place);
 
+        // getting intent
         intent = getIntent();
+
         // getting event id from intent to use request
         final int eventId = Integer.parseInt(intent.getStringExtra("eventId"));
 
         getEventById(appSharedPrefs.getServerToken(),eventId);
+        getIfUserIsInEvent(appSharedPrefs.getServerToken(),eventId);
 
-        eventFromServer = new EventFromServer();
-
+        // show users who are in event already - getEventUsers request scroll down
         viewViewUsersBtn = findViewById(R.id.viewEventUsersBtn);
         viewViewUsersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,8 +75,9 @@ public class EventDetail extends AppCompatActivity {
             }
         });
 
-        reject = findViewById(R.id.rejectBtn);
-        reject.setOnClickListener(new View.OnClickListener() {
+        // onclick event that finish activity
+        rejectBtn = findViewById(R.id.rejectBtn);
+        rejectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -83,11 +85,21 @@ public class EventDetail extends AppCompatActivity {
         });
 
 
-        join = findViewById(R.id.joinBtn);
-        join.setOnClickListener(new View.OnClickListener() {
+        // onclick event for joinBtn to event - joinEvent request scroll down
+        joinBtn = findViewById(R.id.joinBtn);
+        joinBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 joinEvent(appSharedPrefs.getServerToken(),eventId);
+            }
+        });
+
+        exitEventBtn = findViewById(R.id.exitEventBtn);
+        exitEventBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO leave request
+                leaveEvent(appSharedPrefs.getServerToken(),eventId);
             }
         });
     }
@@ -104,8 +116,11 @@ public class EventDetail extends AppCompatActivity {
             public void onResponse(Call<EventFromServer> call, Response<EventFromServer> response) {
                 if(response.isSuccessful()){
                     eventFromServer = response.body();
-                    Log.wtf("RESPONSE", response.body().toString());
-                    setViewValues(response.body());
+
+                    // setting values to views in EventDetail activity layout
+                    setViewValues(eventFromServer);
+
+                    // getting users who are in event
                     getEventUsers(serverToken,eventId);
                 }else {
                     switch(response.code()){
@@ -113,9 +128,12 @@ public class EventDetail extends AppCompatActivity {
                             Log.wtf("401","Unauthorized");
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
                         }
+                        break;
                     }
                 }
             }
@@ -139,6 +157,8 @@ public class EventDetail extends AppCompatActivity {
             public void onResponse(Call<ArrayList<UserInfoData>> call, Response<ArrayList<UserInfoData>> response) {
                 if(response.isSuccessful()){
                     usersFromEventList = response.body();
+
+                    // set button number of people who are in actual event
                     setButtonText(usersFromEventList);
                 }else {
                     switch(response.code()){
@@ -146,9 +166,12 @@ public class EventDetail extends AppCompatActivity {
                             Log.wtf("401","Unauthorized");
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
                         }
+                        break;
                     }
                 }
             }
@@ -160,7 +183,7 @@ public class EventDetail extends AppCompatActivity {
     }
 
 
-    // join to event
+    // joinBtn to event
     private void joinEvent(String serverToken, int eventId) {
         Call<ResponseBody> call = ServerService
                 .getInstance()
@@ -173,18 +196,109 @@ public class EventDetail extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Toast.makeText(getApplicationContext(),
                             "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                    restart();
                 }else {
                     switch(response.code()){
                         case 401:{
 
                             Toast.makeText(getApplicationContext(),
-                                    "Rejected to join to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                                    "Rejected to joinBtn to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
 
                             new Logout().logout(appSharedPrefs,getApplicationContext());
                         }
+                        break;
+
                         case 500:{
                             Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
                         }
+                        break;
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    // exitBtn to leave event
+    private void leaveEvent(String serverToken, int eventId) {
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .leaveEvent()
+                .leaveEventRequest("Bearer " + serverToken,eventId);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if(response.isSuccessful()){
+                    Toast.makeText(getApplicationContext(),
+                            "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                    restart();
+
+                }else {
+                    switch(response.code()){
+                        case 401:{
+
+                            Toast.makeText(getApplicationContext(),
+                                    "Rejected to joinBtn to event - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    // check if user is in event or not, for purpose to hide joinBtn button
+    private void getIfUserIsInEvent(String serverToken, int eventId) {
+        Call<ResponseBody> call = ServerService
+                .getInstance()
+                .getIfUserIsInEvent()
+                .checkIfUserIsInEventRequest("Bearer " + serverToken,eventId);
+
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if(response.isSuccessful()){
+                    boolean state = true;
+                    checkJoinedUser(state);
+
+                }else {
+                    switch(response.code()){
+                        case 400 :{
+                            boolean state = false;
+                            checkJoinedUser(state);
+                        }
+                        break;
+
+                        case 401:{
+
+                            Toast.makeText(getApplicationContext(),
+                                    "Unauthorized - "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+
+                            new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Problem with connection or server ",Toast.LENGTH_LONG).show();
+                        }
+                        break;
                     }
                 }
             }
@@ -216,10 +330,30 @@ public class EventDetail extends AppCompatActivity {
         viewViewUsersBtn.setText(userSize);
     }
 
+    // method for passing list (user from actual event) to another activity (ListOfUsers)
     private String usersListToString(ArrayList<UserInfoData> list){
         Gson gson = new Gson();
         String listToSend = gson.toJson(list);
         return listToSend;
     }
+
+
+    private void checkJoinedUser(boolean state){
+        if(state){
+            joinBtn.setVisibility(View.GONE);
+            rejectBtn.setVisibility(View.GONE);
+            exitEventBtn.setVisibility(View.VISIBLE);
+        }else{
+            joinBtn.setVisibility(View.VISIBLE);
+            rejectBtn.setVisibility(View.VISIBLE);
+            exitEventBtn.setVisibility(View.GONE);
+        }
+    }
+
+    private void restart(){
+        recreate();
+        overridePendingTransition(0, 0);
+    }
+
 
 }
