@@ -46,6 +46,22 @@ public class EventFromServer {
     @Expose
     private Location location;
 
+    public EventFromServer(String idL, String id, String idU, String groupName, String creationTime, String description, String active, String type, String meetTime, Location location) {
+        this.idL = idL;
+        this.id = id;
+        this.idU = idU;
+        this.groupName = groupName;
+        this.creationTime = creationTime;
+        this.description = description;
+        this.active = active;
+        this.type = type;
+        this.meetTime = meetTime;
+        this.location = location;
+    }
+
+    public EventFromServer() {
+    }
+
     public String getId() {
         return id;
     }
