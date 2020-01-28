@@ -316,14 +316,13 @@ public class EventDetail extends AppCompatActivity {
         groupName.setText(event.getGroupName());
         createDate.setText(event.getCreationTime().replace('T', ' '));
         eventDesc.setText(event.getDescription());
-
-        groupName.setText(event.getLocation().getAddress());
         meetTime.setText(event.getMeetTime().replace('T', ' '));
 
+        /*
         String location = event.getLocation().getTown() +
                 " "+event.getLocation().getAddress()+
                 " "+event.getLocation().getPostalCode()+
-                " "+event.getLocation().getCountry();
+                " "+event.getLocation().getCountry();*/
 
         Log.wtf("ADDRESS", event.getLocation().getAddress());
         place.setText(event.getLocation().getAddress());

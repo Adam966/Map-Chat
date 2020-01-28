@@ -9,18 +9,23 @@ public class Location {
     @SerializedName("Country")
     @Expose
     private String country;
+
     @SerializedName("Town")
     @Expose
     private String town;
+
     @SerializedName("PostalCode")
     @Expose
     private String postalCode;
-    @SerializedName("Address")
+
+    @SerializedName("address")
     @Expose
     private String address;
+
     @SerializedName("longtitude")
     @Expose
     private String longtitude;
+
     @SerializedName("latitude")
     @Expose
     private String latitude;
