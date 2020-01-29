@@ -75,6 +75,7 @@ import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.chatEvents.ChatEvents;
 import com.project.mapchat.dialogs.ExitDialog;
 import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.entities.UserEvent;
 import com.project.mapchat.service.ServerService;
 
 import java.lang.ref.WeakReference;
@@ -116,6 +117,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     // State of the marker which is opened or not
     static boolean isOpen = false;
+    private ArrayList<EventFromServer> events;
+    private ArrayList<UserEvent> userEvents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -433,7 +436,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    setMapLayer(response.body());
+                    events = response.body();
+                    getUserEvents();
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -457,26 +461,60 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
     }
 
+    private void getUserEvents() {
+        Call<ArrayList<UserEvent>> call = ServerService
+                .getInstance()
+                .getUserJoinedEvents()
+                .getUserJoinedEventsRequest("Bearer " + appSharedPrefs.getServerToken());
+
+        call.enqueue(new Callback<ArrayList<UserEvent>>() {
+            @Override
+            public void onResponse(Call<ArrayList<UserEvent>> call, Response<ArrayList<UserEvent>> response) {
+                userEvents = response.body();
+                setMapLayer(events);
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<UserEvent>> call, Throwable t) {
+
+            }
+        });
+
+
+
+    }
+
     ////////////////////////////////// MAP LAYER MANAGER ///////////////////////////////////////////
     private void setMapLayer(ArrayList<EventFromServer> list) {
         mapboxMap.getStyle().addImage("location_icon", getDrawable(R.drawable.ic_location_on_black_24dp));
+        mapboxMap.getStyle().addImage("location_icon_user", getDrawable(R.drawable.ic_location_on_blue_24dp));
+
+        ArrayList<EventFromServer> userEvent = new ArrayList<>();
+
+        for (UserEvent e : userEvents) {
+            Log.wtf("User Event ID", String.valueOf(e.getEvent()));
+            for (EventFromServer es : list) {
+                if (e.getEvent() == Integer.valueOf(es.getId())) {
+                    userEvent.add(es);
+                }
+            }
+        }
+
+        list.removeAll(userEvent);
+
+        Log.wtf("USER LIST", String.valueOf(userEvent.size()));
+        Log.wtf("LIST", String.valueOf(list.size()));
 
         SymbolManager manager = new SymbolManager(mapView, mapboxMap, mapboxMap.getStyle(), null, new GeoJsonOptions()
                 .withCluster(true)
                 .withClusterMaxZoom(12)
-                .withClusterRadius(20));
+                .withClusterRadius(10));
 
         manager.setIconAllowOverlap(true);
         List<SymbolOptions> symbolOptionsList = new ArrayList<>();
-/*
-        for (int i = 0; i < 10000; i++) {
-            symbolOptionsList.add(new SymbolOptions()
-                    .withLatLng(createRandomLatLng())
-                    .withIconImage("location_icon")
-                    .withData(new JsonPrimitive(i))
-            );
-        }
-*/      Log.wtf("LIST", String.valueOf(list.size()));
+
+        //////////////////// ALL EVENTS ///////////////
+         Log.wtf("LIST", String.valueOf(list.size()));
         Gson gson = new Gson();
         for (EventFromServer e: list) {
 
@@ -489,6 +527,24 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             symbolOptionsList.add(new SymbolOptions()
                     .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
                     .withIconImage("location_icon")
+                    .withData(new JsonPrimitive(gson.toJson(map)))
+            );
+
+            map.clear();
+        }
+
+        //////////////////// USER EVENTS /////////////////
+        for (EventFromServer e: userEvent) {
+
+            HashMap<String,Object> map = new HashMap<>();
+
+            map.put("groupName",e.getGroupName());
+            map.put("description",e.getDescription());
+            map.put("eventId",e.getId());
+
+            symbolOptionsList.add(new SymbolOptions()
+                    .withLatLng(new LatLng(Double.valueOf(e.getLocation().getLatitude()), Double.valueOf(e.getLocation().getLongtitude())))
+                    .withIconImage("location_icon_user")
                     .withData(new JsonPrimitive(gson.toJson(map)))
             );
 
@@ -509,12 +565,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         });
     }
-/*
-    private LatLng createRandomLatLng() {
-        Random random = new Random();
-        return new LatLng((random.nextDouble() * - 180.0) + 90.0, (random.nextDouble() * -360.0) + 180.0);
-    }
-*/
+
     //////////////////////////// MARKER VIEW POP UP/////////////////////////////////////////////////
     private void showMarkerView(Symbol symbol) {
         markerViewManager = new MarkerViewManager(mapView, mapboxMap);
