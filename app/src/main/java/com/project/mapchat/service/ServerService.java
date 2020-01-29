@@ -12,6 +12,7 @@ import com.project.mapchat.service.requests.GetEventTags;
 import com.project.mapchat.service.requests.GetEventUsers;
 import com.project.mapchat.service.requests.GetEvents;
 import com.project.mapchat.service.requests.GetUserEvents;
+import com.project.mapchat.service.requests.GetUserJoinedEvents;
 import com.project.mapchat.service.requests.JoinEvent;
 import com.project.mapchat.service.requests.LeaveEvent;
 import com.project.mapchat.service.requests.LoginAuth;
@@ -132,6 +133,10 @@ public class ServerService {
 
         public CheckIfUserIsInEvent getIfUserIsInEvent(){
             return retrofit.create(CheckIfUserIsInEvent.class);
+        }
+
+        public GetUserJoinedEvents getUserJoinedEvents() {
+            return retrofit.create(GetUserJoinedEvents.class);
         }
 
         // ADMIN REQUESTS
