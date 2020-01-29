@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         Menu menu = bottomNavigationView.getMenu();
-        MenuItem item = menu.getItem(1);
+        MenuItem item = menu.getItem(0);
         item.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

@@ -12,7 +12,7 @@ import com.project.mapchat.chatEvents.fragments.FragmentUserEvents;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-    private String[] tabTitles = new String[]{"My Events", "All Events"};
+    private String[] tabTitles = new String[]{"Chat", "All Events"};
 
     public ViewPagerAdapter(@NonNull FragmentManager fm) {
         //super(fm, behavior);
