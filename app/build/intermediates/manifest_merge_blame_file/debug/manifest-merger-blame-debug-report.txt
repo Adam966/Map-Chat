@@ -69,9 +69,9 @@
 39        android:testOnly="true"
 40        android:theme="@style/AppNormal" >
 40-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:16:9-41
-41        <activity android:name="com.project.mapchat.main.activities.ChatActivity" />
-41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:9-75
-41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:19-63
+41        <activity android:name="com.project.mapchat.chat.ChatActivity" />
+41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:9-64
+41-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:17:19-52
 42        <activity android:name="com.project.mapchat.chatEvents.ChatEvents" />
 42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:9-59
 42-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:18:19-56
