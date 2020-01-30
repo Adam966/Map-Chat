@@ -146,4 +146,8 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
     }
+
+    private Boolean compareId(int idU,int idU2){
+        return idU == idU2;
+    }
 }
