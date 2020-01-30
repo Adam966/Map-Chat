@@ -60,7 +60,11 @@ public class ChatActivity extends AppCompatActivity {
 
         MessageGroup messageG = new MessageGroup();
 
-        messageG.setIdEG(16);
+        // getting values from function getEvenData
+        EventFromServer event = getEventData();
+
+        // getting onclicked event id
+        messageG.setIdEG(Integer.valueOf(event.getId()));
 
         adapter = new ChatAdapter(this);
         messageView.setAdapter(adapter);
@@ -149,5 +153,16 @@ public class ChatActivity extends AppCompatActivity {
 
     private Boolean compareId(int idU,int idU2){
         return idU == idU2;
+    }
+
+    private EventFromServer getEventData(){
+
+        Intent i = getIntent();
+        EventFromServer event = new EventFromServer();
+        event.setGroupName(i.getStringExtra("groupName"));
+        event.setId(i.getStringExtra("eventId"));
+        event.setActive(i.getStringExtra("active"));
+
+        return event;
     }
 }
