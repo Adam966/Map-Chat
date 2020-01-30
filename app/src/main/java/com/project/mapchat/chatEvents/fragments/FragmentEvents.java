@@ -43,6 +43,7 @@ public class FragmentEvents extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.events_fragment,container,false);
         appSharedPrefs = new SharedPrefs(getContext());
+        // setup recycle view
         myRecycle = rootView.findViewById(R.id.eventsFragmentRecycler);
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);

@@ -471,7 +471,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onResponse(Call<ArrayList<UserEvent>> call, Response<ArrayList<UserEvent>> response) {
                 userEvents = response.body();
-                setMapLayer(events);
+                if(userEvents != null){
+                    setMapLayer(events);
+                }
             }
 
             @Override

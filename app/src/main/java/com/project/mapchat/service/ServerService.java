@@ -11,6 +11,7 @@ import com.project.mapchat.service.requests.GetEventById;
 import com.project.mapchat.service.requests.GetEventTags;
 import com.project.mapchat.service.requests.GetEventUsers;
 import com.project.mapchat.service.requests.GetEvents;
+import com.project.mapchat.service.requests.GetGroupChat;
 import com.project.mapchat.service.requests.GetUserEvents;
 import com.project.mapchat.service.requests.GetUserJoinedEvents;
 import com.project.mapchat.service.requests.JoinEvent;
@@ -36,6 +37,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ServerService {
     // change ip address when connected to another wifi or network
     private final String BASE_URL = "http://map-chat.azurewebsites.net/";
+    /*private final String BASE_URL = "http://192.168.2.16:5000/";*/
     private static ServerService clientInstance;
     private Retrofit retrofit;
 
@@ -152,4 +154,8 @@ public class ServerService {
             return retrofit.create(RemoveUserFromEvent.class);
         }
 
+        // CHAT
+        public GetGroupChat getGroupChat(){
+            return retrofit.create(GetGroupChat.class);
+        }
 }
