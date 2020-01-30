@@ -2167,7 +2167,6 @@ id dimensions
 id direct
 id disableHome
 id display_always
-id editText
 id edit_query
 id end
 id end_padder
@@ -2316,6 +2315,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id sendBtn
 id shortcut
 id showCustom
 id showHome
@@ -2396,6 +2396,7 @@ id wide
 id withText
 id wrap
 id wrap_content
+id writeMessage
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
