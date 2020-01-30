@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private PermissionsManager permissionsManager;
 
     // State of the marker which is opened or not
-    static boolean isOpen = false;
+    private boolean isOpen = false;
     private ArrayList<EventFromServer> events;
     private ArrayList<UserEvent> userEvents;
 
@@ -364,7 +364,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (locationEngine != null) {
             locationEngine.removeLocationUpdates(callback);
         }
-
+        Log.wtf("STOP", String.valueOf(isOpen));
         mapView.onStop();
     }
 
@@ -384,6 +384,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         if (markerViewManager != null)
             markerViewManager.onDestroy();
 
+        Log.wtf("DESTROY", String.valueOf(isOpen));
         mapView.onDestroy();
     }
 

@@ -82,19 +82,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/tagName" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:onClick="cancel"
-                android:text="Cancel"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/addEvent"
-                app:layout_constraintTop_toTopOf="@+id/viewEventUsersBtn"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,12 +100,12 @@
                 android:layout_marginEnd="16dp"
                 android:ellipsize="marquee"
                 android:fadingEdge="horizontal"
+                android:gravity="center"
                 android:marqueeRepeatLimit="marquee_forever"
                 android:scrollHorizontally="true"
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textSize="24sp"
-                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/button4"
@@ -187,15 +174,12 @@
                 android:id="@+id/error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="19dp"
                 android:text=" Fill in each item"
                 android:textColor="#E70D0D"
                 android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/button3"
-                app:layout_constraintTop_toTopOf="@+id/button3" />
+                app:layout_constraintStart_toEndOf="@+id/addEvent"
+                tools:layout_editor_absoluteY="373dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
