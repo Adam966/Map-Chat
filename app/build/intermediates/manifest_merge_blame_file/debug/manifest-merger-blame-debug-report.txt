@@ -150,7 +150,7 @@
 77            android:label="@string/app_name"
 77-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:53:13-45
 78            android:theme="@style/com_facebook_activity_theme" />
-78-->[com.facebook.android:facebook-common:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/AndroidManifest.xml:33:13-63
+78-->[com.facebook.android:facebook-common:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/AndroidManifest.xml:33:13-63
 79        <activity
 79-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:54:9-65:20
 80            android:name="com.facebook.CustomTabActivity"
@@ -175,7 +175,7 @@
 88-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:63:23-72
 89            </intent-filter>
 90            <intent-filter>
-90-->[com.facebook.android:facebook-common:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/AndroidManifest.xml:39:13-48:29
+90-->[com.facebook.android:facebook-common:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/AndroidManifest.xml:39:13-48:29
 91                <action android:name="android.intent.action.VIEW" />
 91-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:17-69
 91-->/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/AndroidManifest.xml:58:25-66
@@ -195,8 +195,8 @@
 99            </intent-filter>
 100        </activity>
 101        <activity android:name="com.facebook.CustomTabMainActivity" />
-101-->[com.facebook.android:facebook-common:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/AndroidManifest.xml:34:9-71
-101-->[com.facebook.android:facebook-common:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/AndroidManifest.xml:34:19-68
+101-->[com.facebook.android:facebook-common:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/AndroidManifest.xml:34:9-71
+101-->[com.facebook.android:facebook-common:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/AndroidManifest.xml:34:19-68
 102        <!--
 103         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
 104         with the application context. This config is merged in with the host app's manifest,
@@ -207,25 +207,25 @@
 109         a completely different provider.
 110        -->
 111        <provider
-111-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:39:9-42:40
+111-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:39:9-42:40
 112            android:name="com.facebook.internal.FacebookInitProvider"
-112-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:40:13-70
+112-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:40:13-70
 113            android:authorities="com.project.mapchat.FacebookInitProvider"
-113-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:41:13-72
+113-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:41:13-72
 114            android:exported="false" />
-114-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:42:13-37
+114-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:42:13-37
 115
 116        <receiver
-116-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:44:9-50:20
+116-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:44:9-50:20
 117            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-117-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:45:13-86
+117-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:45:13-86
 118            android:exported="false" >
-118-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:46:13-37
+118-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:46:13-37
 119            <intent-filter>
-119-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:47:13-49:29
+119-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:47:13-49:29
 120                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-120-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:48:17-95
-120-->[com.facebook.android:facebook-core:5.15.0] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/abb4f11cc0d63f097b2973bfa8920daa/jetified-facebook-core-5.15.0/AndroidManifest.xml:48:25-92
+120-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:48:17-95
+120-->[com.facebook.android:facebook-core:5.15.1] /Users/tomvarga/.gradle/caches/transforms-2/files-2.1/4a6f728fc364f02c35060214c8e6e1a8/jetified-facebook-core-5.15.1/AndroidManifest.xml:48:25-92
 121            </intent-filter>
 122        </receiver>
 123

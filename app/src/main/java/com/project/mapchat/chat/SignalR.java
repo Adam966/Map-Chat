@@ -13,7 +13,7 @@ public class SignalR
 
     private static void initSocket()
     {
-        hubConnection = HubConnectionBuilder.create("http://192.168.2.200:5000/groupchat")
+        hubConnection = HubConnectionBuilder.create("http://192.168.2.134:5000/groupchat")
                 .withAccessTokenProvider(Single.defer(() -> {
                     return Single.just(tokken);
                 })).build();

@@ -21,7 +21,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
@@ -49,7 +49,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_messenger_button_blue_bg_selector.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable/messenger_button_blue_bg_selector.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable/messenger_button_blue_bg_selector.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
@@ -85,7 +85,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_marker_icon_default.png.flat",
@@ -217,7 +217,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_messenger_button_blue_bg_round.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable/messenger_button_blue_bg_round.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
@@ -293,7 +293,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -305,7 +305,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_info_icon_selected.png.flat",
@@ -377,7 +377,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_design_navigation_item_header.xml.flat",
@@ -413,7 +413,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_icon.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_button_icon.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_button_icon.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -468,6 +468,10 @@
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/d74b5b498b35fd5cb32d0a6997bb1d3d/appcompat-1.1.0/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_close.png.flat",
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-xxhdpi-v4/com_facebook_close.png"
+    },
+    {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_info_icon_default.png.flat",
         "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/8e5040ea1426f05e177b2f9501b2b861/jetified-mapbox-android-sdk-8.4.0/res/drawable-hdpi-v4/mapbox_info_icon_default.png"
     },
@@ -497,7 +501,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_activity_layout.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/layout/com_facebook_activity_layout.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_icon.png.flat",
@@ -533,7 +537,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xhdpi-v4/messenger_bubble_small_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xhdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
@@ -561,7 +565,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -625,7 +629,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_like_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_button_like_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_button_like_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -645,7 +649,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -653,7 +657,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xhdpi-v4/messenger_bubble_large_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xhdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -685,7 +689,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_small.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_white_small.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
@@ -741,7 +745,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_marker_icon_default.png.flat",
@@ -757,7 +761,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-hdpi-v4/com_facebook_close.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-hdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -781,7 +785,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -813,11 +817,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_auth_dialog_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -953,11 +957,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_header_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_auth_dialog_header_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xxhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -1065,7 +1069,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-hdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-hdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
@@ -1105,7 +1109,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_send_button_icon.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable/com_facebook_send_button_icon.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable/com_facebook_send_button_icon.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1145,7 +1149,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_layout_screen.xml.flat",
@@ -1189,7 +1193,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-mdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1217,7 +1221,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xxhdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -1229,7 +1233,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xhdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat",
@@ -1249,11 +1253,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1261,11 +1265,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_close.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-mdpi-v4/com_facebook_close.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-mdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_btn_borderless_material.xml.flat",
@@ -1273,7 +1277,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_messenger_button_white_bg_round.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable/messenger_button_white_bg_round.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/anim_abc_tooltip_enter.xml.flat",
@@ -1289,7 +1293,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xxhdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1297,7 +1301,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xhdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xhdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -1309,7 +1313,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_ic_location_on_black_24dp.xml.flat",
@@ -1349,7 +1353,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xxhdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
@@ -1385,11 +1389,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_send_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable/com_facebook_button_send_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable/com_facebook_button_send_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_design_snackbar_background.xml.flat",
@@ -1421,7 +1425,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_round.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_blue_round.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1541,7 +1545,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_messenger_button_white_bg_selector.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable/messenger_button_white_bg_selector.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable/messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1569,7 +1573,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -1697,7 +1701,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-xxhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1721,7 +1725,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_logo_icon.png.flat",
@@ -1737,7 +1741,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat",
@@ -1765,7 +1769,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_round.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_white_round.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_white_round.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -1781,7 +1785,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color_com_facebook_button_text_color.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/color/com_facebook_button_text_color.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1841,7 +1845,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_small.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_blue_small.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_blue_small.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
@@ -1849,11 +1853,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_design_layout_snackbar.xml.flat",
@@ -1905,7 +1909,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-mdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
@@ -1945,7 +1949,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_large_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-hdpi-v4/messenger_bubble_large_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-hdpi-v4/messenger_bubble_large_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
@@ -1981,7 +1985,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1989,7 +1993,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_background.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_button_background.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_button_background.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility.png.flat",
@@ -2021,7 +2025,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -2033,7 +2037,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-mdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
@@ -2045,7 +2049,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color_mtrl_tabs_colored_ripple_color.xml.flat",
@@ -2057,7 +2061,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
@@ -2117,7 +2121,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_bearing_icon.png.flat",
@@ -2145,7 +2149,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/font_proxima_nova_regular.otf.flat",
@@ -2181,7 +2185,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_login_fragment.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/layout/com_facebook_login_fragment.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_markerview_icon_default.png.flat",
@@ -2193,7 +2197,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_checked_mtrl_animation_interpolator_0.xml.flat",
@@ -2277,7 +2281,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
@@ -2301,7 +2305,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_button_send_round_shadow.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-mdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
@@ -2329,7 +2333,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_white_large.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_white_large.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_white_large.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -2345,11 +2349,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
@@ -2385,7 +2389,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_messenger_button_send_blue_large.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/layout/messenger_button_send_blue_large.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_design_fab_background.xml.flat",
@@ -2405,7 +2409,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_com_facebook_tooltip_bubble.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -2421,7 +2425,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-mdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -2437,7 +2441,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_large_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-hdpi-v4/messenger_bubble_large_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-hdpi-v4/messenger_bubble_large_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
@@ -2457,15 +2461,15 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
@@ -2473,7 +2477,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
@@ -2553,7 +2557,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
@@ -2609,7 +2613,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_com_facebook_favicon_blue.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable/com_facebook_favicon_blue.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -2629,11 +2633,11 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/layout_event_item_layout.xml.flat",
@@ -2713,7 +2717,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_small_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-hdpi-v4/messenger_bubble_small_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-hdpi-v4/messenger_bubble_small_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_stroke_icon.png.flat",
@@ -2733,7 +2737,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -2809,7 +2813,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_messenger_bubble_small_blue.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7bc269bf634f796057e98ce6f6e83a8f/facebook-messenger-5.11.2/res/drawable-hdpi-v4/messenger_bubble_small_blue.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/7dacfb7469ff8f4647a3dc4364463fba/facebook-messenger-5.15.1/res/drawable-hdpi-v4/messenger_bubble_small_blue.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -2845,7 +2849,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
@@ -2953,7 +2957,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_close.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/eba9402eb25ef4bf8c16d42afee13782/jetified-facebook-common-5.15.0/res/drawable-xhdpi-v4/com_facebook_close.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/e12eaf212724a24e218b834b8561fe35/jetified-facebook-common-5.15.1/res/drawable-xhdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
@@ -2997,7 +3001,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/078d4db869daebb8cf15ac8182179306/jetified-facebook-login-5.15.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/85f26c9c1f89f6196fd81b510c702428/jetified-facebook-login-5.15.1/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
@@ -3093,7 +3097,7 @@
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/color_com_facebook_send_button_text_color.xml.flat",
-        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/ac2e4b3852fe47835216b03b7fe68109/jetified-facebook-share-5.15.0/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/Users/tomvarga/.gradle/caches/transforms-2/files-2.1/0837c56b8c9a291f6a3505191f7e5f43/jetified-facebook-share-5.15.1/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/Users/tomvarga/Desktop/GIT/Map-Chat/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_info_icon_selected.png.flat",

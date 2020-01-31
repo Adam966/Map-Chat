@@ -5,7 +5,6 @@ public class MessageGroup {
     private int idEG;
     private String messageText;
     private String  cTime;
-    private String recieverName;
     private boolean belongToUser;
 
     public MessageGroup(int idEG, String messageText, String cTime, boolean belongToUser) {
@@ -13,14 +12,6 @@ public class MessageGroup {
         this.messageText = messageText;
         this.cTime = cTime;
         this.belongToUser = belongToUser;
-    }
-
-    public String getRecieverName() {
-        return recieverName;
-    }
-
-    public void setRecieverName(String recieverName) {
-        this.recieverName = recieverName;
     }
 
     public boolean isBelongToUser() {

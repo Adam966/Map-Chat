@@ -2114,7 +2114,6 @@ id btnFinish
 id btnOnboarding
 id btn_logout
 id button
-id button3
 id button4
 id buttonPanel
 id cancel_action

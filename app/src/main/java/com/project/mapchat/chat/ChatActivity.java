@@ -81,6 +81,9 @@ public class ChatActivity extends AppCompatActivity {
             ChatActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
                     //textView.setText(message.getMessageText());
+
+                    // changes
+                    message.setBelongToUser(true);
                     adapter.add(message);
                 }
             });
@@ -90,7 +93,10 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+                // changes
+                messageG.setBelongToUser(false);
                 attemptSend2(messageG);
+                adapter.add(messageG);
                 Log.d("SENDNING0", "???????????????,");
             }
         });

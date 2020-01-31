@@ -60,7 +60,7 @@ public class ChatAdapter extends BaseAdapter {
             holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
             convertView.setTag(holder);
 
-            holder.name.setText(messageGroup.getRecieverName());
+            //holder.name.setText(messageGroup.getRecieverName());
             holder.messageBody.setText(messageGroup.getMessageText());
         }
         return convertView;
