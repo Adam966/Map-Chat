@@ -1,5 +1,6 @@
 package com.project.mapchat.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +16,10 @@ import java.util.ArrayList;
 
 public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private ArrayList<MessageGroup> list;
+    private int id;
 
-    public ChatAdapter2(ArrayList<MessageGroup> list) {
+    public ChatAdapter2(ArrayList<MessageGroup> list, int id) {
+        this.id = id;
         this.list = list;
     }
 
@@ -25,9 +28,9 @@ public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     public VieHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view;
         if (viewType == 1)
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_message, parent, false);
-        else
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.their_message, parent, false);
+        else
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_message, parent, false);
 
         return new VieHolder(view);
     }
@@ -39,7 +42,9 @@ public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @Override
     public int getItemViewType(int position) {
-        if(list.get(position).isBelongToUser())
+        Log.wtf("IF", String.valueOf(list.get(position).getIdU())+ " " + id);
+        Log.wtf("state", String.valueOf(list.get(position).getIdU() == id));
+        if(list.get(position).getIdU() != id)
             return 1;
         else
             return 2;

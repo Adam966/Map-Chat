@@ -14,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.facebook.internal.LockOnGetVariable;
 import com.google.gson.Gson;
 import com.microsoft.signalr.HubConnection;
 import com.project.mapchat.R;
@@ -40,7 +41,7 @@ public class ChatActivity extends AppCompatActivity {
     private SharedPrefs appSharedPrefs;
 
     private ChatAdapter2 adapter;
-    private String idU = "";
+    private int idU;
 
     HubConnection mSocket;
     private ArrayList<MessageGroup> list = new ArrayList<>();
@@ -64,9 +65,6 @@ public class ChatActivity extends AppCompatActivity {
         Intent i = getIntent();
         String idE = i.getStringExtra("eventId");
 
-
-
-        Log.wtf("ID USER", idU);
         // call request for history
         getGroupChat(appSharedPrefs.getServerToken(),Integer.valueOf(idE));
 
@@ -78,10 +76,6 @@ public class ChatActivity extends AppCompatActivity {
         // getting onclicked event id
         messageG.setIdEG(Integer.valueOf(event.getId()));
 
-        adapter = new ChatAdapter2(list);
-        messageView.setLayoutManager(new LinearLayoutManager(this));
-        messageView.setAdapter(adapter);
-
         mSocket.send("AddToUGroup", messageG.getIdEG());
 
         mSocket.on("groupConnection", (message) -> { //you get essage if you successfully connected to the group or not
@@ -91,15 +85,15 @@ public class ChatActivity extends AppCompatActivity {
         }, GroupConnection.class);
 
         mSocket.on("ReceiveMessageGroup", (message) -> {
-            Log.wtf("MESSAGE WE GOT", message.getMessageText() + " " + message.getcTime());
-            Log.wtf("MESSAGE", message.toString());
+            //Log.wtf("MESSAGE WE GOT", message.getMessageText() + " " + message.getcTime());
+            Log.wtf("MESSAGE GOT", message.toString());
 
             ChatActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
                     //textView.setText(message.getMessageText());
 
                     // changes
-                    if (message.getIdU() != Integer.valueOf(idU)) {
+                    if (message.getIdU() != idU) {
                         message.setBelongToUser(true);
                         list.add(message);
                         adapter.notifyItemInserted(list.size() - 1);
@@ -114,12 +108,24 @@ public class ChatActivity extends AppCompatActivity {
             {
                 // changes
                 messageG.setBelongToUser(false);
+                messageG.setIdU(idU);
                 attemptSend2(messageG);
                 list.add(messageG);
                 adapter.notifyItemInserted(list.size() - 1);
                 Log.d("SENDNING0", messageG.toString());
             }
         });
+    }
+
+    private void setAdapter() {
+        adapter = new ChatAdapter2(list, idU);
+        messageView.setLayoutManager(new LinearLayoutManager(this));
+        messageView.setAdapter(adapter);
+/*
+        for (MessageGroup msg: list)
+            adapter.notifyItemInserted(list.indexOf(msg));
+            */
+
     }
 
     private void attemptSend2(MessageGroup messageG) {
@@ -153,7 +159,8 @@ public class ChatActivity extends AppCompatActivity {
             public void onResponse(Call<ArrayList<MessageGroup>> call, Response<ArrayList<MessageGroup>> response) {
                 if(response.isSuccessful()){
                     Log.wtf("HISTORY", response.body().toString());
-                    //list = response.body();
+                    list = response.body();
+                    setAdapter();
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -176,12 +183,6 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
 
-
-
-    private Boolean compareId(int idU,int idU2){
-        return idU == idU2;
-    }
-
     private EventFromServer getEventData(){
 
         Intent i = getIntent();
@@ -202,11 +203,9 @@ public class ChatActivity extends AppCompatActivity {
         call.enqueue(new Callback<UserInfoData>() {
             @Override
             public void onResponse(Call<UserInfoData> call, Response<UserInfoData> response) {
-                Log.wtf("ResponseCode",String.valueOf(response.code()));
                 if(response.isSuccessful()){
-                    Log.wtf("UserInfo","Success");
-                    UserInfoData data = response.body();
-                        idU = String.valueOf(data.getId());
+                    idU = response.body().getId();
+                    Log.wtf("id user", String.valueOf(idU));
                 }else{
                     switch(response.code()){
                         case 401:{
