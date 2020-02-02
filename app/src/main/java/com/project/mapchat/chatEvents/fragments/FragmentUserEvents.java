@@ -1,5 +1,6 @@
 package com.project.mapchat.chatEvents.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -38,7 +39,7 @@ public class FragmentUserEvents extends Fragment {
     private SharedPrefs appSharedPrefs;
     private RecyclerView myRecycle;
     private ChatUsersEventsRecyclerAdapter adapter;
-
+    private ArrayList<EventFromServer> events =   new ArrayList<>();
     public FragmentUserEvents(){
 
     }
@@ -52,6 +53,7 @@ public class FragmentUserEvents extends Fragment {
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);
         getUserEvents(appSharedPrefs.getServerToken());
+        getUserJoinedEvents(appSharedPrefs.getServerToken());
 
         return rootView;
     }
@@ -71,10 +73,9 @@ public class FragmentUserEvents extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
-                    adapter = new ChatUsersEventsRecyclerAdapter(response.body());
-                    adapter.notifyDataSetChanged();
-                    Log.wtf("FragmentUserEvents",response.body().toString());
-                    myRecycle.setAdapter(adapter);
+                    events.addAll(response.body());
+                    Intent i = new Intent();
+
                 }else{
                     switch(response.code()){
                         case 401:{
@@ -90,6 +91,29 @@ public class FragmentUserEvents extends Fragment {
             @Override
             public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
                 Toast.makeText(getContext(), t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void getUserJoinedEvents(String serverToken) {
+        Call<ArrayList<EventFromServer>> call = ServerService
+                .getInstance()
+                .getUserJoinedEvents()
+                .getUserJoinedEventsRequest("Bearer"+" "+serverToken);
+
+        call.enqueue(new Callback<ArrayList<EventFromServer>>() {
+            @Override
+            public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
+                Log.wtf("DATA: ", response.body().toString());
+                events.removeAll(response.body());
+                events.addAll(response.body());
+                adapter = new ChatUsersEventsRecyclerAdapter(events);
+                myRecycle.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
+
             }
         });
     }

@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     // State of the marker which is opened or not
     private boolean isOpen = false;
     private ArrayList<EventFromServer> events;
-    private ArrayList<UserEvent> userEvents;
+    private ArrayList<EventFromServer> userEvents;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -437,6 +437,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 if(response.isSuccessful()){
+                    Log.wtf("RESPONSE", response.body().toString());
                     events = response.body();
                     getUserEvents();
                 }else {
@@ -463,14 +464,14 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void getUserEvents() {
-        Call<ArrayList<UserEvent>> call = ServerService
+        Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
                 .getUserJoinedEvents()
                 .getUserJoinedEventsRequest("Bearer " + appSharedPrefs.getServerToken());
 
-        call.enqueue(new Callback<ArrayList<UserEvent>>() {
+        call.enqueue(new Callback<ArrayList<EventFromServer>>() {
             @Override
-            public void onResponse(Call<ArrayList<UserEvent>> call, Response<ArrayList<UserEvent>> response) {
+            public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 userEvents = response.body();
                 if(userEvents != null){
                     setMapLayer(events);
@@ -478,7 +479,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
 
             @Override
-            public void onFailure(Call<ArrayList<UserEvent>> call, Throwable t) {
+            public void onFailure(Call<ArrayList<EventFromServer>> call, Throwable t) {
 
             }
         });
@@ -494,10 +495,11 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         ArrayList<EventFromServer> userEvent = new ArrayList<>();
 
-        for (UserEvent e : userEvents) {
-            Log.wtf("User Event ID", String.valueOf(e.getEvent()));
+
+        for (EventFromServer e : userEvents) {
+            Log.wtf("User Event ID", e.getId());
             for (EventFromServer es : list) {
-                if (e.getEvent() == Integer.valueOf(es.getId())) {
+                if (e.getId().equals(es.getId())) {
                     userEvent.add(es);
                 }
             }

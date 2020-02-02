@@ -48,6 +48,7 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
         final String eventId = userEventsData.get(position).getId();
         final String groupName = userEventsData.get(position).getGroupName();
         final String active = userEventsData.get(position).getActive();
+        //final String userId = userEventsData.get(0).getIdU();
 
         holder.chatUserEventName.setText(userEventName);
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +58,7 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
                 i.putExtra("eventId",eventId);
                 i.putExtra("groupName",groupName);
                 i.putExtra("active",active);
+                //i.putExtra("userId", userId);
                 v.getContext().startActivity(i);
             }
         });

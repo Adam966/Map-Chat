@@ -2,6 +2,7 @@ package com.project.mapchat.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class ChatAdapter extends BaseAdapter {
 
-    List<MessageGroup> messages = new ArrayList<MessageGroup>();
+    List<MessageGroup> messages = new ArrayList<>();
     Context context;
 
     public ChatAdapter(Context context) {
@@ -48,16 +49,16 @@ public class ChatAdapter extends BaseAdapter {
         MessageViewHolder holder = new MessageViewHolder();
         LayoutInflater messageInflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         MessageGroup messageGroup = messages.get(position);
-
+        Log.wtf("GET VIEW", "NOW");
         if(messageGroup.isBelongToUser()){
             convertView = messageInflater.inflate(R.layout.my_message, null);
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            holder.messageBody =  convertView.findViewById(R.id.message_body);
             convertView.setTag(holder);
             holder.messageBody.setText(messageGroup.getMessageText());
         }else {
             convertView = messageInflater.inflate(R.layout.their_message, null);
             holder.name = convertView.findViewById(R.id.name);
-            holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+            holder.messageBody = convertView.findViewById(R.id.message_body);
             convertView.setTag(holder);
 
             //holder.name.setText(messageGroup.getRecieverName());

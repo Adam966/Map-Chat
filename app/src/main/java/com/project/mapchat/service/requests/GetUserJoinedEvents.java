@@ -13,5 +13,5 @@ import retrofit2.http.Headers;
 public interface GetUserJoinedEvents {
     @Headers("Content-Type: application/json")
     @GET("api/mapchat/getUserJoinedEvents")
-    Call<ArrayList<UserEvent>> getUserJoinedEventsRequest(@Header("Authorization") String serverToken);
+    Call<ArrayList<EventFromServer>> getUserJoinedEventsRequest(@Header("Authorization") String serverToken);
 }

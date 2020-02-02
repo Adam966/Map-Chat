@@ -20,6 +20,17 @@ public class UserInfoData {
     @SerializedName("lastOnline")
     @Expose
     private String lastOnline;
+    @SerializedName("id")
+    @Expose
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFacebookId() {
         return facebookId;

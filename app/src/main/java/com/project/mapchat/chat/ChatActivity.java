@@ -1,6 +1,7 @@
 package com.project.mapchat.chat;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -18,7 +19,9 @@ import com.microsoft.signalr.HubConnection;
 import com.project.mapchat.R;
 import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.adapters.ChatAdapter;
+import com.project.mapchat.adapters.ChatAdapter2;
 import com.project.mapchat.entities.EventFromServer;
+import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.main.activities.Logout;
 import com.project.mapchat.service.ServerService;
 
@@ -32,14 +35,15 @@ public class ChatActivity extends AppCompatActivity {
 
     private EditText writeMessage;
     private ImageButton sendMessageBtn;
-    private ListView messageView;
+    private RecyclerView messageView;
 
     private SharedPrefs appSharedPrefs;
 
-    private ChatAdapter adapter;
+    private ChatAdapter2 adapter;
+    private String idU = "";
 
-
-    HubConnection mSocket = SignalR.getInstance();
+    HubConnection mSocket;
+    private ArrayList<MessageGroup> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +56,17 @@ public class ChatActivity extends AppCompatActivity {
         messageView = findViewById(R.id.messages_view);
 
         appSharedPrefs = new SharedPrefs(this);
+        userInfoRequest(appSharedPrefs.getServerToken());
+
+        SignalR.getToken(appSharedPrefs.getServerToken());
+        mSocket = SignalR.getInstance();
+
         Intent i = getIntent();
         String idE = i.getStringExtra("eventId");
 
+
+
+        Log.wtf("ID USER", idU);
         // call request for history
         getGroupChat(appSharedPrefs.getServerToken(),Integer.valueOf(idE));
 
@@ -66,25 +78,32 @@ public class ChatActivity extends AppCompatActivity {
         // getting onclicked event id
         messageG.setIdEG(Integer.valueOf(event.getId()));
 
-        adapter = new ChatAdapter(this);
+        adapter = new ChatAdapter2(list);
+        messageView.setLayoutManager(new LinearLayoutManager(this));
         messageView.setAdapter(adapter);
+
+        mSocket.send("AddToUGroup", messageG.getIdEG());
 
         mSocket.on("groupConnection", (message) -> { //you get essage if you successfully connected to the group or not
             //if the client disconnects always you need to reconnect to every group
-            Log.d("MESSAGE WE GOT", message.idG + " " + message.isConnected());
+            Log.wtf("MESSAGE WE GOT", message.idG + " " + message.isConnected());
 
         }, GroupConnection.class);
 
         mSocket.on("ReceiveMessageGroup", (message) -> {
-            Log.d("MESSAGE WE GOT", message.getMessageText() + " " + message.getcTime());
+            Log.wtf("MESSAGE WE GOT", message.getMessageText() + " " + message.getcTime());
+            Log.wtf("MESSAGE", message.toString());
 
             ChatActivity.this.runOnUiThread(new Runnable() {
                 public void run() {
                     //textView.setText(message.getMessageText());
 
                     // changes
-                    message.setBelongToUser(true);
-                    adapter.add(message);
+                    if (message.getIdU() != Integer.valueOf(idU)) {
+                        message.setBelongToUser(true);
+                        list.add(message);
+                        adapter.notifyItemInserted(list.size() - 1);
+                    }
                 }
             });
         }, MessageGroup.class);
@@ -96,8 +115,9 @@ public class ChatActivity extends AppCompatActivity {
                 // changes
                 messageG.setBelongToUser(false);
                 attemptSend2(messageG);
-                adapter.add(messageG);
-                Log.d("SENDNING0", "???????????????,");
+                list.add(messageG);
+                adapter.notifyItemInserted(list.size() - 1);
+                Log.d("SENDNING0", messageG.toString());
             }
         });
     }
@@ -108,9 +128,6 @@ public class ChatActivity extends AppCompatActivity {
 
             messageG.setMessageText(message);
             Log.d("STATE", mSocket.getConnectionState().toString());
-
-            Gson gson = new Gson();
-            String jsonMessage = gson.toJson(messageG);
 
             mSocket.send("SendMessageGroup",messageG);
 
@@ -135,6 +152,8 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ArrayList<MessageGroup>> call, Response<ArrayList<MessageGroup>> response) {
                 if(response.isSuccessful()){
+                    Log.wtf("HISTORY", response.body().toString());
+                    //list = response.body();
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -157,6 +176,8 @@ public class ChatActivity extends AppCompatActivity {
         });
     }
 
+
+
     private Boolean compareId(int idU,int idU2){
         return idU == idU2;
     }
@@ -170,5 +191,41 @@ public class ChatActivity extends AppCompatActivity {
         event.setActive(i.getStringExtra("active"));
 
         return event;
+    }
+
+    private void userInfoRequest(String serverToken){
+        Call<UserInfoData> call = ServerService
+                .getInstance()
+                .getUserInfoReq()
+                .userInfoRequest("Bearer"+" "+serverToken);
+
+        call.enqueue(new Callback<UserInfoData>() {
+            @Override
+            public void onResponse(Call<UserInfoData> call, Response<UserInfoData> response) {
+                Log.wtf("ResponseCode",String.valueOf(response.code()));
+                if(response.isSuccessful()){
+                    Log.wtf("UserInfo","Success");
+                    UserInfoData data = response.body();
+                        idU = String.valueOf(data.getId());
+                }else{
+                    switch(response.code()){
+                        case 401:{
+                            //new Logout().logout(appSharedPrefs,getApplicationContext());
+                        }
+                        break;
+
+                        case 500:{
+                            Toast.makeText(getApplicationContext(),"Server Problem",Toast.LENGTH_LONG).show();
+                        }
+                        break;
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UserInfoData> call, Throwable t) {
+                new Logout().logout(appSharedPrefs,getApplicationContext());
+            }
+        });
     }
 }

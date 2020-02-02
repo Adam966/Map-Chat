@@ -6,12 +6,22 @@ public class MessageGroup {
     private String messageText;
     private String  cTime;
     private boolean belongToUser;
+    private int idU;
 
-    public MessageGroup(int idEG, String messageText, String cTime, boolean belongToUser) {
+    public MessageGroup(int idEG, String messageText, String cTime, boolean belongToUser, int idU) {
         this.idEG = idEG;
         this.messageText = messageText;
         this.cTime = cTime;
         this.belongToUser = belongToUser;
+        this.idU = idU;
+    }
+
+    public int getIdU() {
+        return idU;
+    }
+
+    public void setIdU(int idU) {
+        this.idU = idU;
     }
 
     public boolean isBelongToUser() {
@@ -46,5 +56,16 @@ public class MessageGroup {
 
     public void setcTime(String cTime) {
         this.cTime = cTime;
+    }
+
+    @Override
+    public String toString() {
+        return "MessageGroup{" +
+                "idEG=" + idEG +
+                ", messageText='" + messageText + '\'' +
+                ", cTime='" + cTime + '\'' +
+                ", belongToUser=" + belongToUser +
+                ", idU=" + idU +
+                '}';
     }
 }

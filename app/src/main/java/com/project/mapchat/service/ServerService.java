@@ -37,7 +37,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ServerService {
     // change ip address when connected to another wifi or network
     private final String BASE_URL = "http://map-chat.azurewebsites.net/";
-    /*private final String BASE_URL = "http://192.168.2.16:5000/";*/
+    //private final String BASE_URL = "http://192.168.1.15:5000/";
     private static ServerService clientInstance;
     private Retrofit retrofit;
 
