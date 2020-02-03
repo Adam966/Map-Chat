@@ -11,16 +11,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.mapchat.R;
 import com.project.mapchat.chat.MessageGroup;
+import com.project.mapchat.entities.UserInfoData;
 
 import java.util.ArrayList;
 
 public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private ArrayList<MessageGroup> list;
     private int id;
+    private ArrayList<UserInfoData> users;
 
-    public ChatAdapter2(ArrayList<MessageGroup> list, int id) {
+    public ChatAdapter2(ArrayList<MessageGroup> list, int id, ArrayList<UserInfoData> users) {
         this.id = id;
         this.list = list;
+        this.users = users;
     }
 
     @NonNull
@@ -38,6 +41,14 @@ public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         ((VieHolder) holder).message.setText(list.get(position).getMessageText());
+
+        for (UserInfoData u: users) {
+            Log.wtf("USER ID", list.get(position).getIdU() + " " + u.getId());
+            if (list.get(position).getIdU() == u.getId() && u.getId() != id) {
+                Log.wtf("USER NAME", (u.getFirstName() + " " + u.getLastName()));
+                ((VieHolder) holder).name.setText((u.getFirstName() + " " + u.getLastName()));
+            }
+        }
     }
 
     @Override
@@ -58,10 +69,12 @@ public class ChatAdapter2 extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     class VieHolder extends RecyclerView.ViewHolder {
         TextView message;
+        TextView name;
 
         public VieHolder(@NonNull View itemView) {
             super(itemView);
             message = itemView.findViewById(R.id.message_body);
+            name = itemView.findViewById(R.id.message_name_holder);
         }
     }
 }

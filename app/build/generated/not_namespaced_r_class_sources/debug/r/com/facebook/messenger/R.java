@@ -102,7 +102,7 @@ public final class R {
         public static final int italic = 0x7f0900c3;
         public static final int line1 = 0x7f0900cb;
         public static final int line3 = 0x7f0900cc;
-        public static final int messenger_send_button = 0x7f0900e0;
+        public static final int messenger_send_button = 0x7f0900e1;
         public static final int normal = 0x7f0900ec;
         public static final int notification_background = 0x7f0900ed;
         public static final int notification_main_column = 0x7f0900ee;

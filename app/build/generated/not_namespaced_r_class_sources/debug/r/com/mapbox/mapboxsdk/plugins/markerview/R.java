@@ -794,7 +794,7 @@ public final class R {
         public static final int list_item = 0x7f0900ce;
         public static final int logoView = 0x7f0900d6;
         public static final int message = 0x7f0900dd;
-        public static final int multiply = 0x7f0900e5;
+        public static final int multiply = 0x7f0900e6;
         public static final int none = 0x7f0900eb;
         public static final int normal = 0x7f0900ec;
         public static final int notification_background = 0x7f0900ed;

@@ -743,7 +743,7 @@ public final class R {
         public static final int list_item = 0x7f0900ce;
         public static final int media_actions = 0x7f0900db;
         public static final int message = 0x7f0900dd;
-        public static final int multiply = 0x7f0900e5;
+        public static final int multiply = 0x7f0900e6;
         public static final int never_display = 0x7f0900ea;
         public static final int none = 0x7f0900eb;
         public static final int normal = 0x7f0900ec;

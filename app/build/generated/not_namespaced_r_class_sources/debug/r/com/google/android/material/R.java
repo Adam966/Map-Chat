@@ -1069,10 +1069,10 @@ public final class R {
         public static final int list_item = 0x7f0900ce;
         public static final int masked = 0x7f0900da;
         public static final int message = 0x7f0900dd;
-        public static final int mini = 0x7f0900e2;
-        public static final int mtrl_child_content_container = 0x7f0900e3;
-        public static final int mtrl_internal_children_alpha_tag = 0x7f0900e4;
-        public static final int multiply = 0x7f0900e5;
+        public static final int mini = 0x7f0900e3;
+        public static final int mtrl_child_content_container = 0x7f0900e4;
+        public static final int mtrl_internal_children_alpha_tag = 0x7f0900e5;
+        public static final int multiply = 0x7f0900e6;
         public static final int navigation_header_container = 0x7f0900e8;
         public static final int none = 0x7f0900eb;
         public static final int normal = 0x7f0900ec;

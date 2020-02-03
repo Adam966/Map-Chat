@@ -42,9 +42,11 @@ public class ChatActivity extends AppCompatActivity {
 
     private ChatAdapter2 adapter;
     private int idU;
+    String idE;
 
     HubConnection mSocket;
     private ArrayList<MessageGroup> list = new ArrayList<>();
+    private ArrayList<UserInfoData> users = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +65,12 @@ public class ChatActivity extends AppCompatActivity {
         mSocket = SignalR.getInstance();
 
         Intent i = getIntent();
-        String idE = i.getStringExtra("eventId");
+        idE = i.getStringExtra("eventId");
 
         // call request for history
         getGroupChat(appSharedPrefs.getServerToken(),Integer.valueOf(idE));
+
+        getEventUser(appSharedPrefs.getServerToken());
 
         MessageGroup messageG = new MessageGroup();
 
@@ -118,7 +122,7 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     private void setAdapter() {
-        adapter = new ChatAdapter2(list, idU);
+        adapter = new ChatAdapter2(list, idU, users);
         messageView.setLayoutManager(new LinearLayoutManager(this));
         messageView.setAdapter(adapter);
 /*
@@ -160,7 +164,6 @@ public class ChatActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Log.wtf("HISTORY", response.body().toString());
                     list = response.body();
-                    setAdapter();
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -224,6 +227,29 @@ public class ChatActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<UserInfoData> call, Throwable t) {
                 new Logout().logout(appSharedPrefs,getApplicationContext());
+            }
+        });
+    }
+
+    private void getEventUser(String serverToken) {
+        Call<ArrayList<UserInfoData>> call = ServerService
+                .getInstance()
+                .getEventUsers()
+                .getEventUsers("Bearer"+" "+serverToken, Integer.parseInt(idE));
+
+
+        call.enqueue(new Callback<ArrayList<UserInfoData>>() {
+            @Override
+            public void onResponse(Call<ArrayList<UserInfoData>> call, Response<ArrayList<UserInfoData>> response) {
+                Log.wtf("event users", response.body().toString());
+                users = response.body();
+
+                setAdapter();
+            }
+
+            @Override
+            public void onFailure(Call<ArrayList<UserInfoData>> call, Throwable t) {
+
             }
         });
     }

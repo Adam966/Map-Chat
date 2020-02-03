@@ -57,7 +57,7 @@ public class ChatAdapter extends BaseAdapter {
             holder.messageBody.setText(messageGroup.getMessageText());
         }else {
             convertView = messageInflater.inflate(R.layout.their_message, null);
-            holder.name = convertView.findViewById(R.id.name);
+            holder.name = convertView.findViewById(R.id.message_name_holder);
             holder.messageBody = convertView.findViewById(R.id.message_body);
             convertView.setTag(holder);
 
