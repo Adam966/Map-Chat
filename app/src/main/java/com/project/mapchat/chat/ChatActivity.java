@@ -53,6 +53,8 @@ public class ChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
+
+
         // initializing views in activity_chat.xml
         writeMessage = findViewById(R.id.writeMessage);
         sendMessageBtn = findViewById(R.id.sendBtn);
@@ -68,9 +70,9 @@ public class ChatActivity extends AppCompatActivity {
         idE = i.getStringExtra("eventId");
 
         // call request for history
-        getGroupChat(appSharedPrefs.getServerToken(),Integer.valueOf(idE));
 
-        getEventUser(appSharedPrefs.getServerToken());
+
+
 
         MessageGroup messageG = new MessageGroup();
 
@@ -149,7 +151,7 @@ public class ChatActivity extends AppCompatActivity {
 
     public void onBackPressed() {
         SignalR.disconnectScoket();
-        super.onBackPressed();
+        finish();
     }
 
     private void getGroupChat(String serverToken,int idE) {
@@ -164,6 +166,8 @@ public class ChatActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     Log.wtf("HISTORY", response.body().toString());
                     list = response.body();
+
+                    getEventUser(appSharedPrefs.getServerToken());
                 }else {
                     switch(response.code()){
                         case 401:{
@@ -209,6 +213,7 @@ public class ChatActivity extends AppCompatActivity {
                 if(response.isSuccessful()){
                     idU = response.body().getId();
                     Log.wtf("id user", String.valueOf(idU));
+                    getGroupChat(appSharedPrefs.getServerToken(),Integer.valueOf(idE));
                 }else{
                     switch(response.code()){
                         case 401:{
