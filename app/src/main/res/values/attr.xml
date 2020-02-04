@@ -7,5 +7,8 @@
         <attr name="textcolor2" format="color" />
         <attr name="bkgcolor" format="color" />
         <attr name="barcolor" format="color"/>
+        <!-- popup color -->
+        <attr name="popupcolor" format="color"/>
+        <attr name="popupcolortext" format="color" />
     </declare-styleable>
 </resources>
