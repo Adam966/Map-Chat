@@ -68,13 +68,10 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         appSharedPrefs = new SharedPrefs(this);
 
         eventName =  findViewById(R.id.eventName);
-        eventVisibility = findViewById(R.id.eventVisibility);
         date = findViewById(R.id.eventDate);
         time = findViewById(R.id.eventTime);
         timeText = findViewById(R.id.timeText);
         dateText = findViewById(R.id.dateText);
-        tagName = findViewById(R.id.tagName);
-        tags = findViewById(R.id.tags);
         description = findViewById(R.id.description);
         error = findViewById(R.id.error);
         placeName = findViewById(R.id.placeName);
