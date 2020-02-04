@@ -2152,6 +2152,7 @@ id content
 id contentPanel
 id coordinator
 id createDate
+id createEventHeading
 id custom
 id customPanel
 id dark
@@ -3055,6 +3056,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style Transparent
+style TransparentDark
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

@@ -4110,6 +4110,19 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowNoTitle">true</item>
+
+        <item name="iconcolor">#293896</item>
+        <item name="textcolor">#FFFFFF</item>
+        <item name="textcolor2">#FFFFFF</item>
+
+    </style><style name="TransparentDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="iconcolor">#FF9750</item>
+        <item name="textcolor">#FF9750</item>
+        <item name="textcolor2">#FFFFFF</item>
     </style></file><file path="/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/values/attr.xml" qualifiers=""><declare-styleable name="AppTheme">
         <attr format="color" name="iconcolor"/>
         <attr format="color" name="coloriconchecked"/>
