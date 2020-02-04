@@ -91,6 +91,7 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 joinEvent(appSharedPrefs.getServerToken(),eventId);
+                //startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
 
@@ -189,7 +190,7 @@ public class EventDetail extends AppCompatActivity {
                 .getInstance()
                 .joinEvent()
                 .joinEventRequest("Bearer " + serverToken,eventId);
-
+        Log.wtf("ID", String.valueOf(eventId));
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

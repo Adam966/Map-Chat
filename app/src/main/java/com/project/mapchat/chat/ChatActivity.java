@@ -127,11 +127,8 @@ public class ChatActivity extends AppCompatActivity {
         adapter = new ChatAdapter2(list, idU, users);
         messageView.setLayoutManager(new LinearLayoutManager(this));
         messageView.setAdapter(adapter);
-/*
-        for (MessageGroup msg: list)
-            adapter.notifyItemInserted(list.indexOf(msg));
-            */
 
+        messageView.scrollToPosition(list.size() - 1);
     }
 
     private void attemptSend2(MessageGroup messageG) {
