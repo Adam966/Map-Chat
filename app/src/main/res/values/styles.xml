@@ -9,6 +9,11 @@
         <item name="coloriconchecked">#141B4A</item>
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#293896</item>
+
+        <!-- popup -->
+        <item name="popupcolor">#293896</item>
+        <item name="popupcolortext">#FFFFFF</item>
+
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
@@ -19,6 +24,11 @@
         <item name="coloriconchecked">#3E4CA0</item>
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
+
+        <!-- popup -->
+        <item name="popupcolor">#171A1A</item>
+        <item name="popupcolortext">#FFFFFF</item>
+
     </style>
 
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">

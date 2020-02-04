@@ -52,7 +52,7 @@ public class FragmentUserEvents extends Fragment {
         myRecycle = rootView.findViewById(R.id.userEventsFragmentRecycler);
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);
-        getUserEvents(appSharedPrefs.getServerToken());
+       // getUserEvents(appSharedPrefs.getServerToken());
         getUserJoinedEvents(appSharedPrefs.getServerToken());
 
         return rootView;
@@ -105,9 +105,12 @@ public class FragmentUserEvents extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<EventFromServer>> call, Response<ArrayList<EventFromServer>> response) {
                 Log.wtf("DATA: ", response.body().toString());
+                /*
                 events.removeAll(response.body());
                 events.addAll(response.body());
-                adapter = new ChatUsersEventsRecyclerAdapter(events);
+                 */
+                adapter = new ChatUsersEventsRecyclerAdapter(response.body());
+                adapter.notifyDataSetChanged();
                 myRecycle.setAdapter(adapter);
             }
 
