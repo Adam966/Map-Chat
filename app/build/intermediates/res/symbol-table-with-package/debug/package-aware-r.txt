@@ -2182,7 +2182,6 @@ id eventItemName
 id eventItemRecycle
 id eventName
 id eventTime
-id eventVisibility
 id eventsFragmentRecycler
 id exitEventBtn
 id exitUntilCollapsed
@@ -2344,7 +2343,6 @@ id submit_area
 id switchDark
 id tabMode
 id tab_tutorial
-id tagName
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2353,7 +2351,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id tags
 id text
 id text2
 id textSpacerNoButtons
