@@ -38,24 +38,22 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
     /////////////////////////////// EVENT OBJ ////////////////////
     private EventToSend eventToSend;
     private Location location;
-    private int visibility;
+
 
     /////////////////////////////// EVENT UI///////////////////////
     private EditText eventName;
-    private Switch eventVisibility;
 
     private TextView date;
     private TextView time;
     private TextView timeText;
     private TextView dateText;
     private EditText description;
-
-    private TextView tags;
-
     private TextView placeName;
-    private EditText tagName;
-
     private TextView error;
+
+    ////////////////////////////// DATE ////////////////////////////
+    private Date dateObj;
+    private Date timeObj;
 
     private SharedPrefs appSharedPrefs;
     private Button addEventBtn;
@@ -98,6 +96,7 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         addEventBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.wtf("status", String.valueOf(checkEvent()));
                 if(checkEvent()) {
                     addNewEvent();
                     Log.wtf("EVENT", eventToSend.toString());
@@ -107,17 +106,11 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
                 }
             }
         });
-
-        eventVisibility.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                visibility = b ? 1 : 0;
-            }
-        });
     }
-
+/*
     ////////////////////////////////////// ADD EVENT FUNCTIONS /////////////////////////////////////
     public void addEvent(View view) {
+
         if(checkEvent()) {
             addNewEvent();
             Log.wtf("EVENT", eventToSend.toString());
@@ -126,28 +119,37 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
             error.setVisibility(View.VISIBLE);
         }
     }
-
-    public void cancel(View view) {
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
-    }
-
+*/
     private boolean checkEvent() {
-        boolean isCorrect = false;
+        boolean name = false;
+        boolean date = false;
+        boolean descriptionT = false;
+        //boolean place = false;
+
 
         if (eventName.getText().toString().length() > 3 )
-            isCorrect = true;
+            name = true;
 
-        if (!(timeText.getText().toString().equals("") && dateText.getText().toString().equals("")))
-            isCorrect = true;
+        if (!(dateObj == null && timeObj == null))
+            date = true;
 
         if (description.getText().toString().length() != 0)
-            isCorrect = true;
-
+            descriptionT = true;
+/*
         if (!placeName.getText().toString().equals(""))
-            isCorrect = true;
+            place = true;
+*/
 
-        return isCorrect;
+        Log.wtf("time string", timeText.getText().toString());
+        Log.wtf("date string", dateText.getText().toString());
+        Log.wtf("desc string", description.getText().toString());
+
+        Log.wtf("time", String.valueOf(!timeText.getText().toString().equals("")));
+        Log.wtf("date", String.valueOf(!dateText.getText().toString().equals("")));
+        Log.wtf("desc", String.valueOf(description.getText().toString().length() != 0));
+        Log.wtf("place", placeName.getText().toString());
+
+        return (name && date && descriptionT) ? true : false;
     }
 
     private void addNewEvent() {
@@ -156,12 +158,6 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         eventToSend.setDescription(description.getText().toString());
         eventToSend.setLocation(location);
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add(tagName.getText().toString());
-
-        eventToSend.setTags(list);
-        eventToSend.setTags(list);
-        eventToSend.setType(visibility);
         eventToSend.setMeetTime(date.getText().toString() + "" + time.getText().toString());
         createEvent(eventToSend,"Bearer"+" "+appSharedPrefs.getServerToken());
         startActivity(new Intent(this, MainActivity.class));
@@ -175,11 +171,13 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String formattedDate = simpleDateFormat.format(date);
         this.date.setText(formattedDate);
+        dateObj = date;
     }
 
     @Override
     public void getTime(Date date) {
         time.setText(date.toString().substring(10, 19));
+        timeObj = date;
     }
 
     ///////////////////////////////////// CHOOSE PLACE /////////////////////////////////////////////
