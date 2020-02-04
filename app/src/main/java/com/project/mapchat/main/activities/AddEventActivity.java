@@ -65,6 +65,14 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
         appSharedPrefs = new SharedPrefs(this);
 
+        Log.wtf("DARKMODE_STATE",appSharedPrefs.loadDarkModeState().toString());
+
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.TransparentDark);
+        }else {
+            setTheme(R.style.Transparent);
+        }
+
         eventName =  findViewById(R.id.eventName);
         date = findViewById(R.id.eventDate);
         time = findViewById(R.id.eventTime);
