@@ -52,7 +52,7 @@ public class FragmentUserEvents extends Fragment {
         myRecycle = rootView.findViewById(R.id.userEventsFragmentRecycler);
         myRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         myRecycle.setAdapter(adapter);
-        getUserEvents(appSharedPrefs.getServerToken());
+        //getUserEvents(appSharedPrefs.getServerToken());
         getUserJoinedEvents(appSharedPrefs.getServerToken());
 
         return rootView;
@@ -62,7 +62,7 @@ public class FragmentUserEvents extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
+/*
     private void getUserEvents(String serverToken) {
         Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
@@ -94,7 +94,7 @@ public class FragmentUserEvents extends Fragment {
             }
         });
     }
-
+*/
     private void getUserJoinedEvents(String serverToken) {
         Call<ArrayList<EventFromServer>> call = ServerService
                 .getInstance()
