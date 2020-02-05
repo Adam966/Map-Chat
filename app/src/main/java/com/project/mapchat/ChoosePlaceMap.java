@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.SearchView;
@@ -47,6 +48,7 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
     private Symbol symbol;
     private FloatingActionButton button;
     private Place place;
+    private boolean isAddress = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +113,10 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
         symbol = symbolManager.create(new SymbolOptions()
                 .withLatLng(point)
                 .withIconImage("location_icon"));
+
+        Log.wtf("SYMBOL", point.toString());
+        queryPoint(point);
+
         return true;
     }
 
@@ -143,7 +149,7 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
             });
         }
     }
-
+    /////////////////////////////////// QUERY ADDRESS ///////////////////////////////////////////////
     private void queryAddress(String query) {
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = "https://api.opencagedata.com/geocode/v1/json?q=" + URLEncoder.encode(query) +"&key=a812717c7b764edea8377a9ed4caf3bc&pretty=1";
@@ -154,7 +160,7 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
                 try {
                     place = getJsonPlaces(response.getJSONArray("results"));
                     if (place.getLat() != null || place.getLng() != null)
-                        animateCameraPosition(new LatLng(place.getLat(), place.getLng())    );
+                        animateCameraPosition(new LatLng(place.getLat(), place.getLng()));
                     Log.wtf("PLACE", place.toString());
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -188,6 +194,37 @@ public class ChoosePlaceMap extends AppCompatActivity implements OnMapReadyCallb
             }
             return place;
     }
+
+    ////////////////////////////////////////// QUERY POINT ///////////////////////////////////////
+    private void queryPoint(LatLng point) {
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://api.opencagedata.com/geocode/v1/json?q=" + URLEncoder.encode(point.getLatitude() + "," + point.getLongitude()) +"&key=a812717c7b764edea8377a9ed4caf3bc&pretty=1";
+
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url,  null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    place = getJsonPlaces(response.getJSONArray("results"));
+                    if (place.getLat() != null || place.getLng() != null) {
+                        //animateCameraPosition(new LatLng(place.getLat(), place.getLng()));
+                        Log.wtf("PLACE", place.getFormatted());
+                        searchView.setQuery(place.getFormatted(), false);
+                    }
+                    Log.wtf("PLACE", place.toString());
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+
+        queue.add(request);
+    }
+
 
     @Override
     public void onResume() {
