@@ -21,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/message_body"
+        android:textColor="?attr/chatbubbletext2"
         android:layout_below="@+id/message_name_holder"
         android:layout_alignLeft="@+id/message_name_holder"
         android:background="@drawable/their_message"

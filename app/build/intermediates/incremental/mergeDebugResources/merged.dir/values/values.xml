@@ -1449,7 +1449,12 @@
         <item name="popupcolortext">#FFFFFF</item>
 
         <!-- chat -->
-        <item name="chatbubblebkg">#293896</item>
+        <item name="chatbubblebkg">#FF9750</item>
+        <item name="chatbubblebkg2">#333333</item>
+
+        <item name="chatbubbletext">#FFFFFF</item>
+        <item name="chatbubbletext2">#FFFFFF</item>
+
         <item name="chatbkg">#000000</item>
 
     </style>
@@ -1468,7 +1473,12 @@
 
         <!-- chat -->
         <item name="chatbubblebkg">#293896</item>
-        <item name="chatbkg">#FFFFFF</item>
+        <item name="chatbubblebkg2">#FFFFFF</item>
+
+        <item name="chatbubbletext">#FFFFFF</item>
+        <item name="chatbubbletext2">#333333</item>
+
+        <item name="chatbkg">#E6E6E6</item>
 
     </style>
     <style name="AppNormal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
@@ -4659,7 +4669,12 @@
         <attr format="color" name="popupcolortext"/>
         <!-- chat -->
         <attr format="color" name="chatbubblebkg"/>
+        <attr format="color" name="chatbubblebkg2"/>
+
         <attr format="color" name="chatbkg"/>
+
+        <attr format="color" name="chatbubbletext"/>
+        <attr format="color" name="chatbubbletext2"/>
     </declare-styleable>
     <declare-styleable name="BottomAppBar"><attr name="backgroundTint"/><attr name="fabAlignmentMode">
       
