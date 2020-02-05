@@ -10,7 +10,8 @@
         <!-- popup color -->
         <attr name="popupcolor" format="color"/>
         <attr name="popupcolortext" format="color" />
-        <!-- chat bubble -->
+        <!-- chat -->
         <attr name="chatbubblebkg" format="color"/>
+        <attr name="chatbkg" format="color"/>
     </declare-styleable>
 </resources>

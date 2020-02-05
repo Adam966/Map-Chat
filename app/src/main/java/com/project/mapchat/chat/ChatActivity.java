@@ -50,6 +50,15 @@ public class ChatActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        appSharedPrefs = new SharedPrefs(this);
+
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
@@ -60,7 +69,6 @@ public class ChatActivity extends AppCompatActivity {
         sendMessageBtn = findViewById(R.id.sendBtn);
         messageView = findViewById(R.id.messages_view);
 
-        appSharedPrefs = new SharedPrefs(this);
         userInfoRequest(appSharedPrefs.getServerToken());
 
         SignalR.getToken(appSharedPrefs.getServerToken());

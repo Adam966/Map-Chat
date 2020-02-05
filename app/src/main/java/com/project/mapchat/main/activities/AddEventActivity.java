@@ -60,18 +60,21 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_event_layout);
 
         appSharedPrefs = new SharedPrefs(this);
-
-        Log.wtf("DARKMODE_STATE",appSharedPrefs.loadDarkModeState().toString());
 
         if(appSharedPrefs.loadDarkModeState() == true){
             setTheme(R.style.TransparentDark);
         }else {
             setTheme(R.style.Transparent);
         }
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.add_event_layout);
+
+        Log.wtf("DARKMODE_STATE",appSharedPrefs.loadDarkModeState().toString());
+
+
 
         eventName =  findViewById(R.id.eventName);
         date = findViewById(R.id.eventDate);

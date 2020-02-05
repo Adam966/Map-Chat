@@ -18,6 +18,7 @@
         android:fontFamily="@font/proxima_nova_bold"
         android:maxLines="1"
         android:textSize="@dimen/_22sdp"
+        android:textColor="?attr/textcolor2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
