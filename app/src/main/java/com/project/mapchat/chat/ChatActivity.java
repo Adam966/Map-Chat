@@ -142,6 +142,7 @@ public class ChatActivity extends AppCompatActivity {
     private void attemptSend2(MessageGroup messageG) {
         try {
             String message = writeMessage.getText().toString().trim();
+            writeMessage.setText("");
 
             messageG.setMessageText(message);
             Log.d("STATE", mSocket.getConnectionState().toString());

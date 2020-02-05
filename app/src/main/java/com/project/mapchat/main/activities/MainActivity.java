@@ -180,7 +180,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
         mapView.getMapAsync(this);
     }
-
+/*
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Log.wtf("NEW INTENT", intent.toString());
+        if (intent.getDoubleExtra("Lat", 0) != 0 && intent.getDoubleExtra("Lat", 0) != 0) {
+            changeCameraPosition(new LatLng(intent.getDoubleExtra("Lat", 0), intent.getDoubleExtra("Lng", 0)));
+        }
+    }
+*/
     //////////////////////////////////////////// EXIT APP DIALOG ///////////////////////////////////
     @Override
     public void onBackPressed() {

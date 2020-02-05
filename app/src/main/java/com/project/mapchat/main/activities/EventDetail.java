@@ -92,7 +92,13 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 joinEvent(appSharedPrefs.getServerToken(),eventId);
-                //startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            /*
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("Lat", eventFromServer.getLocation().getLatitude());
+                intent.putExtra("Lat", eventFromServer.getLocation().getLongtitude());
+                startActivity(intent);
+                */
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
 
@@ -201,8 +207,6 @@ public class EventDetail extends AppCompatActivity {
                     restart();
                 }else {
                     switch(response.code()){
-                        case 400: {
-                        }
                         case 401:{
 
                             Toast.makeText(getApplicationContext(),
