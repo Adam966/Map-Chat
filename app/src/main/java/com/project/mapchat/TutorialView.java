@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.project.mapchat.tutorial.ScreenItem;
+
 import org.w3c.dom.Text;
 
 import java.util.List;

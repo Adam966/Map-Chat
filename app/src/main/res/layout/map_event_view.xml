@@ -25,10 +25,11 @@
 
             <TextView
                 android:id="@+id/eventName"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/proxima_nova_bold"
                 android:maxLines="1"
@@ -41,11 +42,11 @@
 
             <TextView
                 android:id="@+id/eventDesc"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:ellipsize="end"
                 android:fontFamily="@font/proxima_nova_regular"
                 android:maxLines="2"
@@ -63,7 +64,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="8dp"
                 android:text="Open "
-                android:textSize="8sp"
+                android:textSize="@dimen/_9sdp"
                 android:theme="@android:style/Theme.Material"
 
                 android:backgroundTint="?attr/iconcolor"

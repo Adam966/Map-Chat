@@ -52,9 +52,9 @@ public class OnboardingActivity extends AppCompatActivity {
         // List that contains items for screenPager in activity_onboarding.xml
         final List<ScreenItem> list = new ArrayList<>();
         // add item and setup item text and image throughScreenItem class constructor
-        list.add(new ScreenItem("Text1","text1",R.drawable.ic_menu_24px));
-        list.add(new ScreenItem("Text2","text2",R.drawable.ic_home_24px));
-        list.add(new ScreenItem("Text3","text3",R.drawable.ic_settings_applications_24px));
+        list.add(new ScreenItem("Create","Choose name,date,time destination and create the event. ",R.drawable.create));
+        list.add(new ScreenItem("Find","Events are everywhere around the globe, find the most interestings ones and join to them!",R.drawable.find));
+        list.add(new ScreenItem("Chat!","Chat in the event with a friends or get to know some new people.",R.drawable.chat));
 
         screenPager = findViewById(R.id.screen_viewpager);
         tutorialView = new TutorialView(this,list);

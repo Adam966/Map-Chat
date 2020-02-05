@@ -22,6 +22,7 @@
         android:textColor="?attr/textcolor2"
         android:textSize="@dimen/_24sdp"
         android:textStyle="bold"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -29,11 +30,15 @@
 
     <TextView
         android:id="@+id/tutorialDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="16dp"
-        android:textColor="?attr/textcolor3"
+        android:layout_marginEnd="62dp"
         android:text="TextView"
+        android:textColor="?attr/textcolor3"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,9 +47,9 @@
 
     <ImageView
         android:id="@+id/tutorialImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tutorialTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
