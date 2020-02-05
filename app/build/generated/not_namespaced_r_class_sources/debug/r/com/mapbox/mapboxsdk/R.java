@@ -185,37 +185,37 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int mapbox_compass_icon = 0x7f0700b3;
-        public static final int mapbox_info_bg_selector = 0x7f0700b4;
-        public static final int mapbox_info_icon_default = 0x7f0700b5;
-        public static final int mapbox_info_icon_selected = 0x7f0700b6;
-        public static final int mapbox_logo_helmet = 0x7f0700b7;
-        public static final int mapbox_logo_icon = 0x7f0700b8;
-        public static final int mapbox_marker_icon_default = 0x7f0700b9;
-        public static final int mapbox_markerview_icon_default = 0x7f0700ba;
-        public static final int mapbox_mylocation_bg_shape = 0x7f0700bb;
-        public static final int mapbox_mylocation_icon_bearing = 0x7f0700bc;
-        public static final int mapbox_mylocation_icon_default = 0x7f0700bd;
-        public static final int mapbox_popup_window_transparent = 0x7f0700be;
-        public static final int mapbox_rounded_corner = 0x7f0700bf;
-        public static final int mapbox_user_bearing_icon = 0x7f0700c0;
-        public static final int mapbox_user_icon = 0x7f0700c1;
-        public static final int mapbox_user_icon_shadow = 0x7f0700c2;
-        public static final int mapbox_user_icon_stale = 0x7f0700c3;
-        public static final int mapbox_user_puck_icon = 0x7f0700c4;
-        public static final int mapbox_user_stroke_icon = 0x7f0700c5;
-        public static final int notification_action_background = 0x7f0700d4;
-        public static final int notification_bg = 0x7f0700d5;
-        public static final int notification_bg_low = 0x7f0700d6;
-        public static final int notification_bg_low_normal = 0x7f0700d7;
-        public static final int notification_bg_low_pressed = 0x7f0700d8;
-        public static final int notification_bg_normal = 0x7f0700d9;
-        public static final int notification_bg_normal_pressed = 0x7f0700da;
-        public static final int notification_icon_background = 0x7f0700db;
-        public static final int notification_template_icon_bg = 0x7f0700dc;
-        public static final int notification_template_icon_low_bg = 0x7f0700dd;
-        public static final int notification_tile_bg = 0x7f0700de;
-        public static final int notify_panel_notification_icon_bg = 0x7f0700df;
+        public static final int mapbox_compass_icon = 0x7f0700b4;
+        public static final int mapbox_info_bg_selector = 0x7f0700b5;
+        public static final int mapbox_info_icon_default = 0x7f0700b6;
+        public static final int mapbox_info_icon_selected = 0x7f0700b7;
+        public static final int mapbox_logo_helmet = 0x7f0700b8;
+        public static final int mapbox_logo_icon = 0x7f0700b9;
+        public static final int mapbox_marker_icon_default = 0x7f0700ba;
+        public static final int mapbox_markerview_icon_default = 0x7f0700bb;
+        public static final int mapbox_mylocation_bg_shape = 0x7f0700bc;
+        public static final int mapbox_mylocation_icon_bearing = 0x7f0700bd;
+        public static final int mapbox_mylocation_icon_default = 0x7f0700be;
+        public static final int mapbox_popup_window_transparent = 0x7f0700bf;
+        public static final int mapbox_rounded_corner = 0x7f0700c0;
+        public static final int mapbox_user_bearing_icon = 0x7f0700c1;
+        public static final int mapbox_user_icon = 0x7f0700c2;
+        public static final int mapbox_user_icon_shadow = 0x7f0700c3;
+        public static final int mapbox_user_icon_stale = 0x7f0700c4;
+        public static final int mapbox_user_puck_icon = 0x7f0700c5;
+        public static final int mapbox_user_stroke_icon = 0x7f0700c6;
+        public static final int notification_action_background = 0x7f0700d5;
+        public static final int notification_bg = 0x7f0700d6;
+        public static final int notification_bg_low = 0x7f0700d7;
+        public static final int notification_bg_low_normal = 0x7f0700d8;
+        public static final int notification_bg_low_pressed = 0x7f0700d9;
+        public static final int notification_bg_normal = 0x7f0700da;
+        public static final int notification_bg_normal_pressed = 0x7f0700db;
+        public static final int notification_icon_background = 0x7f0700dc;
+        public static final int notification_template_icon_bg = 0x7f0700dd;
+        public static final int notification_template_icon_low_bg = 0x7f0700de;
+        public static final int notification_tile_bg = 0x7f0700df;
+        public static final int notify_panel_notification_icon_bg = 0x7f0700e0;
     }
     public static final class id {
         private id() {}
@@ -312,15 +312,15 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int TextAppearance_Compat_Notification = 0x7f100129;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f10012a;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f10012c;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f10012f;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f100131;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f1001dd;
-        public static final int Widget_Compat_NotificationActionText = 0x7f1001de;
-        public static final int Widget_Support_CoordinatorLayout = 0x7f10020d;
-        public static final int mapbox_LocationComponent = 0x7f100216;
+        public static final int TextAppearance_Compat_Notification = 0x7f10012a;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f10012b;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f10012d;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f100130;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f100132;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f1001de;
+        public static final int Widget_Compat_NotificationActionText = 0x7f1001df;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f10020e;
+        public static final int mapbox_LocationComponent = 0x7f100217;
     }
     public static final class styleable {
         private styleable() {}

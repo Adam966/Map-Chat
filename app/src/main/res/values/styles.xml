@@ -114,4 +114,10 @@
         <item name="buttontext">#293896</item>
     </style>
 
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+        <item name="android:textColorHint">#808080</item>
+    </style>
+
 </resources>

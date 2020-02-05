@@ -14,13 +14,15 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:clickable="true"
+        app:backgroundTint="?attr/barcolor"
+        app:tint="?attr/iconcolor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        mapbox:srcCompat="@android:drawable/ic_input_add" />
+        mapbox:srcCompat="@drawable/ic_add_circle_outline_24px" />
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapViewPlace"
@@ -43,6 +45,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+
+        android:background="@drawable/oval"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="?attr/textcolor2"
+        android:backgroundTint="?attr/fieldcolor"
+        app:theme="@style/SearchViewStyle"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

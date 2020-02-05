@@ -1954,6 +1954,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add_circle_outline_24px
 drawable ic_chat_bubble_outline_24px
 drawable ic_clear_24px
 drawable ic_done_24px
@@ -2911,6 +2912,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SearchViewStyle
 style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
