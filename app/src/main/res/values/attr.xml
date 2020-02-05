@@ -26,5 +26,7 @@
         <attr name="buttoncolor" format="color"/>
         <attr name="buttontext" format="color"/>
 
+        <attr name="fieldcolor" format="color"/>
+
     </declare-styleable>
 </resources>

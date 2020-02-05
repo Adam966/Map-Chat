@@ -54,8 +54,8 @@
         <item name="chatbkg">#000000</item>
 
         <!-- button -->
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
 
     </style>
 
@@ -81,6 +81,9 @@
         <item name="iconcolor">#293896</item>
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#FFFFFF</item>
+        <item name="textcolor3">#808080</item>
+
+        <item name="fieldcolor">#404040</item>
 
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
@@ -95,6 +98,9 @@
         <item name="iconcolor">#FF9750</item>
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
+        <item name="textcolor3">#808080</item>
+
+        <item name="fieldcolor">#404040</item>
 
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
