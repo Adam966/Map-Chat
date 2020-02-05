@@ -18,6 +18,7 @@ import com.project.mapchat.entities.EventFromServer;
 import com.project.mapchat.entities.UserInfoData;
 import com.project.mapchat.service.ServerService;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -318,8 +319,8 @@ public class EventDetail extends AppCompatActivity {
         place.setText(event.getLocation().getAddress());
 
         // parsing and setting date,time to views
-        createDate.setText(parseDate(event.getMeetTime(),"MM dd yyyy, HH:mm"));
-        meetDate.setText(parseDate(event.getMeetTime(),"EE d. MMMM, yyyy"));
+        createDate.setText(parseDate(event.getCreationTime()));
+        meetDate.setText(parseDate(event.getMeetTime()));
         timeText.setText(parseTime(event.getMeetTime()));
 
         /*
@@ -365,30 +366,14 @@ public class EventDetail extends AppCompatActivity {
         overridePendingTransition(0, 0);
     }
 
-    private String parseDate(String date,String parseType){
+    private String parseDate(String date) {
 
-        Date dateToParse = new Date();
-
-        try {
-            dateToParse = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        return new SimpleDateFormat(parseType).format(dateToParse);
+        return date.replaceAll("T"," ").replaceAll("-",".");
     }
 
     private String parseTime(String date) {
-        Date dateToParse = new Date();
 
-        try {
-            dateToParse = new SimpleDateFormat("yyyy-MM-dd HH:mm").parse(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        //String time = dateToParse.toString(11,17);
-
-        return new SimpleDateFormat("HH:mm:ss.S").format(dateToParse).substring(0,5);
+        return date.substring(11,16);
     }
 
 }
