@@ -8,9 +8,11 @@
         <attr name="textcolor3" format="color" />
         <attr name="bkgcolor" format="color" />
         <attr name="barcolor" format="color"/>
+
         <!-- popup color -->
         <attr name="popupcolor" format="color"/>
         <attr name="popupcolortext" format="color" />
+
         <!-- chat -->
         <attr name="chatbubblebkg" format="color"/>
         <attr name="chatbubblebkg2" format="color"/>
@@ -19,5 +21,10 @@
 
         <attr name="chatbubbletext" format="color"/>
         <attr name="chatbubbletext2" format="color"/>
+
+        <!-- button -->
+        <attr name="buttoncolor" format="color"/>
+        <attr name="buttontext" format="color"/>
+
     </declare-styleable>
 </resources>
