@@ -13,11 +13,11 @@ public final class R {
         private attr() {}
 
         public static final int buttonSize = 0x7f030059;
-        public static final int circleCrop = 0x7f030083;
-        public static final int colorScheme = 0x7f03009e;
-        public static final int imageAspectRatio = 0x7f030121;
-        public static final int imageAspectRatioAdjust = 0x7f030122;
-        public static final int scopeUris = 0x7f030208;
+        public static final int circleCrop = 0x7f030085;
+        public static final int colorScheme = 0x7f0300a0;
+        public static final int imageAspectRatio = 0x7f030124;
+        public static final int imageAspectRatioAdjust = 0x7f030125;
+        public static final int scopeUris = 0x7f03020b;
     }
     public static final class color {
         private color() {}
@@ -96,11 +96,11 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] LoadingImageView = { 0x7f030083, 0x7f030121, 0x7f030122 };
+        public static final int[] LoadingImageView = { 0x7f030085, 0x7f030124, 0x7f030125 };
         public static final int LoadingImageView_circleCrop = 0;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-        public static final int[] SignInButton = { 0x7f030059, 0x7f03009e, 0x7f030208 };
+        public static final int[] SignInButton = { 0x7f030059, 0x7f0300a0, 0x7f03020b };
         public static final int SignInButton_buttonSize = 0;
         public static final int SignInButton_colorScheme = 1;
         public static final int SignInButton_scopeUris = 2;

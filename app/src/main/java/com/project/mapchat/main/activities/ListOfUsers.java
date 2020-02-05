@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.project.mapchat.R;
+import com.project.mapchat.SharedPrefs;
 import com.project.mapchat.adapters.ListOfUsersAdapter;
 import com.project.mapchat.entities.UserInfoData;
 
@@ -18,9 +19,18 @@ import java.util.ArrayList;
 public class ListOfUsers extends AppCompatActivity {
 
     private ArrayList<UserInfoData> usersFromEventList;
-
+    private SharedPrefs appSharedPrefs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        appSharedPrefs = new SharedPrefs(this);
+
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_of_users);
 

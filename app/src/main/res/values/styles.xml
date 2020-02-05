@@ -9,6 +9,9 @@
         <item name="coloriconchecked">#141B4A</item>
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#293896</item>
+        <item name="textcolor3">#4D4D4D</item>
+
+        <item name="fieldcolor">#808080</item>
 
         <!-- popup -->
         <item name="popupcolor">#293896</item>
@@ -23,6 +26,12 @@
 
         <item name="chatbkg">#E6E6E6</item>
 
+        <!-- button -->
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
+
+        <item name="sendbtn">#293896</item>
+
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
@@ -33,6 +42,9 @@
         <item name="coloriconchecked">#3E4CA0</item>
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
+        <item name="textcolor3">#FFFFFF</item>
+
+        <item name="fieldcolor">#808080</item>
 
         <!-- popup -->
         <item name="popupcolor">#171A1A</item>
@@ -46,6 +58,12 @@
         <item name="chatbubbletext2">#FFFFFF</item>
 
         <item name="chatbkg">#000000</item>
+
+        <!-- button -->
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
+
+        <item name="sendbtn">#6A84E5</item>
 
     </style>
 
@@ -71,7 +89,12 @@
         <item name="iconcolor">#293896</item>
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#FFFFFF</item>
+        <item name="textcolor3">#808080</item>
 
+        <item name="fieldcolor">#404040</item>
+
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
 
     <!-- Transparent background -->
@@ -83,6 +106,12 @@
         <item name="iconcolor">#FF9750</item>
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
+        <item name="textcolor3">#808080</item>
+
+        <item name="fieldcolor">#404040</item>
+
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
 
 </resources>

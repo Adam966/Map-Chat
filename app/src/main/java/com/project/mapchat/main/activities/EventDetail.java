@@ -43,10 +43,17 @@ public class EventDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event_detail);
 
         appSharedPrefs = new SharedPrefs(this);
+
+        if(appSharedPrefs.loadDarkModeState() == true){
+            setTheme(R.style.AppDark);
+        }else {
+            setTheme(R.style.AppNormal);
+        }
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_event_detail);
 
         // settings views
         groupName = findViewById(R.id.groupName);
