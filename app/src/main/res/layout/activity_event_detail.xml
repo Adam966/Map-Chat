@@ -36,20 +36,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginBottom="16dp"
             android:ellipsize="end"
             android:fontFamily="@font/proxima_nova_regular"
             android:gravity="center"
             android:maxLines="1"
             android:textColor="?attr/textcolor"
             android:textSize="@dimen/_26sdp"
-            app:layout_constraintBottom_toTopOf="@+id/timeText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/joinBtn"
@@ -80,12 +78,12 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="30dp"
+            android:ellipsize="end"
             android:fontFamily="@font/proxima_nova"
             android:gravity="center"
+            android:maxLines="2"
             android:textColor="?attr/textcolor"
             android:textSize="@dimen/_22sdp"
-            android:ellipsize="end"
-            android:maxLines="2"
             app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,19 +95,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginBottom="16dp"
             android:ellipsize="end"
             android:fontFamily="@font/proxima_nova_bold"
             android:gravity="center"
             android:maxLines="1"
             android:textColor="?attr/textcolor"
             android:textSize="@dimen/_40sdp"
-            app:layout_constraintBottom_toTopOf="@+id/rejectBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.45" />
+            app:layout_constraintTop_toBottomOf="@+id/meetDate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
