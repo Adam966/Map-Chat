@@ -17,6 +17,7 @@
         android:ellipsize="end"
         android:fontFamily="@font/proxima_nova_bold"
         android:maxLines="1"
+        android:textColor="?attr/textcolor2"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -9,6 +9,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/messages_view"
+        android:background="?attr/chatbkg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="2" />
