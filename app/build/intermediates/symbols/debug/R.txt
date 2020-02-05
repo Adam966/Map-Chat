@@ -3199,7 +3199,8 @@ int style com_facebook_button_send 0x7f100214
 int style com_facebook_button_share 0x7f100215
 int style com_facebook_loginview_default_style 0x7f100216
 int style mapbox_LocationComponent 0x7f100217
-int style tooltip_bubble_text 0x7f100218
+int style switchColor 0x7f100218
+int style tooltip_bubble_text 0x7f100219
 int[] styleable ActionBar { 0x7f030031, 0x7f030032, 0x7f030033, 0x7f0300b5, 0x7f0300b6, 0x7f0300b7, 0x7f0300b8, 0x7f0300b9, 0x7f0300ba, 0x7f0300c8, 0x7f0300cd, 0x7f0300ce, 0x7f0300e1, 0x7f03010d, 0x7f030112, 0x7f030117, 0x7f030118, 0x7f03011a, 0x7f030127, 0x7f030131, 0x7f03018a, 0x7f0301ea, 0x7f0301fb, 0x7f030201, 0x7f030202, 0x7f030232, 0x7f030235, 0x7f03027e, 0x7f030288 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

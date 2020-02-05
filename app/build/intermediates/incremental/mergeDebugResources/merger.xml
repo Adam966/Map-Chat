@@ -4174,6 +4174,10 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:editTextColor">#FFFFFF</item>
         <item name="android:textColorHint">#808080</item>
+    </style><style name="switchColor" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">#FF9750</item>
+        <item name="colorSwitchThumbNormal">#A8C2FF</item>
+        <item name="android:colorForeground">#A8C2FF</item>
     </style></file><file path="/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/values/attr.xml" qualifiers=""><declare-styleable name="AppTheme">
         <attr format="color" name="iconcolor"/>
         <attr format="color" name="coloriconchecked"/>

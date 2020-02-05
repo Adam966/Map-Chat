@@ -75,6 +75,7 @@
                 android:textColor="?attr/textcolor"
                 android:textOff=""
                 android:textOn=""
+                android:theme="@style/switchColor"
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
                 app:layout_constraintStart_toEndOf="@+id/textView2" />
 

@@ -7720,7 +7720,8 @@ public final class R {
     public static final int com_facebook_button_share=0x7f100215;
     public static final int com_facebook_loginview_default_style=0x7f100216;
     public static final int mapbox_LocationComponent=0x7f100217;
-    public static final int tooltip_bubble_text=0x7f100218;
+    public static final int switchColor=0x7f100218;
+    public static final int tooltip_bubble_text=0x7f100219;
   }
   public static final class styleable {
     /**

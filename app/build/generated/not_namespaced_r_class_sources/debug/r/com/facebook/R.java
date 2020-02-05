@@ -1311,7 +1311,7 @@ public final class R {
         public static final int com_facebook_button_send = 0x7f100214;
         public static final int com_facebook_button_share = 0x7f100215;
         public static final int com_facebook_loginview_default_style = 0x7f100216;
-        public static final int tooltip_bubble_text = 0x7f100218;
+        public static final int tooltip_bubble_text = 0x7f100219;
     }
     public static final class styleable {
         private styleable() {}
