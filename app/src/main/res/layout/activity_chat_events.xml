@@ -7,10 +7,13 @@
     tools:context=".chatEvents.ChatEvents">
 
     <com.google.android.material.tabs.TabLayout
+        android:textAllCaps="false"
         android:id="@+id/chatTabLayout"
         android:layout_width="0dp"
         app:tabIndicatorHeight="0dp"
-        android:backgroundTint="?attr/barcolor"
+        android:background="?attr/barcolor"
+        app:tabTextColor="#FFFFFF"
+        app:tabSelectedTextColor="?attr/iconcolor"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

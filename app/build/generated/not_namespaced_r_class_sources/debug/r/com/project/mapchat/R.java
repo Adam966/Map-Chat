@@ -788,7 +788,6 @@ public final class R {
      */
     public static final int buttonTintMode=0x7f03005d;
     /**
-     * button
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -859,7 +858,6 @@ public final class R {
      */
     public static final int chatbkg=0x7f030068;
     /**
-     * chat
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -4004,7 +4002,6 @@ public final class R {
      */
     public static final int popupWindowStyle=0x7f0301fc;
     /**
-     * popup color
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -4169,7 +4166,6 @@ public final class R {
      */
     public static final int selectableItemBackgroundBorderless=0x7f030214;
     /**
-     * send btn
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -11359,19 +11355,19 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppTheme_barcolor com.project.mapchat:barcolor}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_bkgcolor com.project.mapchat:bkgcolor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppTheme_buttoncolor com.project.mapchat:buttoncolor}</code></td><td>button</td></tr>
+     * <tr><td><code>{@link #AppTheme_buttoncolor com.project.mapchat:buttoncolor}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_buttontext com.project.mapchat:buttontext}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_chatbkg com.project.mapchat:chatbkg}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppTheme_chatbubblebkg com.project.mapchat:chatbubblebkg}</code></td><td>chat</td></tr>
+     * <tr><td><code>{@link #AppTheme_chatbubblebkg com.project.mapchat:chatbubblebkg}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_chatbubblebkg2 com.project.mapchat:chatbubblebkg2}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_chatbubbletext com.project.mapchat:chatbubbletext}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_chatbubbletext2 com.project.mapchat:chatbubbletext2}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_coloriconchecked com.project.mapchat:coloriconchecked}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_fieldcolor com.project.mapchat:fieldcolor}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_iconcolor com.project.mapchat:iconcolor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppTheme_popupcolor com.project.mapchat:popupcolor}</code></td><td>popup color</td></tr>
+     * <tr><td><code>{@link #AppTheme_popupcolor com.project.mapchat:popupcolor}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_popupcolortext com.project.mapchat:popupcolortext}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppTheme_sendbtn com.project.mapchat:sendbtn}</code></td><td>send btn</td></tr>
+     * <tr><td><code>{@link #AppTheme_sendbtn com.project.mapchat:sendbtn}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_textcolor com.project.mapchat:textcolor}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_textcolor2 com.project.mapchat:textcolor2}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppTheme_textcolor3 com.project.mapchat:textcolor3}</code></td><td></td></tr>
@@ -11425,9 +11421,8 @@ public final class R {
      */
     public static final int AppTheme_bkgcolor=1;
     /**
-     * <p>
-     * @attr description
-     * button
+     * <p>This symbol is the offset where the {@link com.project.mapchat.R.attr#buttoncolor}
+     * attribute's value can be found in the {@link #AppTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11459,9 +11454,8 @@ public final class R {
      */
     public static final int AppTheme_chatbkg=4;
     /**
-     * <p>
-     * @attr description
-     * chat
+     * <p>This symbol is the offset where the {@link com.project.mapchat.R.attr#chatbubblebkg}
+     * attribute's value can be found in the {@link #AppTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11537,9 +11531,8 @@ public final class R {
      */
     public static final int AppTheme_iconcolor=11;
     /**
-     * <p>
-     * @attr description
-     * popup color
+     * <p>This symbol is the offset where the {@link com.project.mapchat.R.attr#popupcolor}
+     * attribute's value can be found in the {@link #AppTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11560,9 +11553,8 @@ public final class R {
      */
     public static final int AppTheme_popupcolortext=13;
     /**
-     * <p>
-     * @attr description
-     * send btn
+     * <p>This symbol is the offset where the {@link com.project.mapchat.R.attr#sendbtn}
+     * attribute's value can be found in the {@link #AppTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
