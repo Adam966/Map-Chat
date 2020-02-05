@@ -62,13 +62,19 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="?attr/iconcolor"
-                android:fontFamily="@font/proxima_nova_bold"
-                android:textAllCaps="false"
-                android:textColor="?attr/textcolor2"
                 android:text="Open "
                 android:textSize="8sp"
                 android:theme="@android:style/Theme.Material"
+
+                android:backgroundTint="?attr/iconcolor"
+                android:textColor="?attr/textcolor2"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textAllCaps="false"
+
+                android:background="@drawable/oval"
+                android:padding="8dp"
+                android:elevation="2dp"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
