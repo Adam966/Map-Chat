@@ -11,6 +11,8 @@
         <item name="textcolor2">#293896</item>
         <item name="textcolor3">#4D4D4D</item>
 
+        <item name="fieldcolor">#808080</item>
+
         <!-- popup -->
         <item name="popupcolor">#293896</item>
         <item name="popupcolortext">#FFFFFF</item>
@@ -39,6 +41,8 @@
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
         <item name="textcolor3">#FFFFFF</item>
+
+        <item name="fieldcolor">#808080</item>
 
         <!-- popup -->
         <item name="popupcolor">#171A1A</item>

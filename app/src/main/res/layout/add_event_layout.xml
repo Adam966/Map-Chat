@@ -176,7 +176,7 @@
         android:text=" Fill in each item"
         android:visibility="invisible"
         android:fontFamily="@font/proxima_nova_bold"
-        android:textColor="?attr/textcolor"
+        android:textColor="#CC0A00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
