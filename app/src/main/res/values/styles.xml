@@ -25,8 +25,8 @@
         <item name="chatbkg">#E6E6E6</item>
 
         <!-- button -->
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
 
     </style>
 
@@ -82,8 +82,8 @@
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
 
     <!-- Transparent background -->
@@ -96,8 +96,8 @@
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
 
 </resources>

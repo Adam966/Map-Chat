@@ -4099,8 +4099,8 @@
         <item name="chatbkg">#E6E6E6</item>
 
         
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
 
     </style><style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
         
@@ -4143,8 +4143,8 @@
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style><style name="TransparentDark" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@color/transparent</item>
@@ -4154,8 +4154,8 @@
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style></file><file path="/Users/tomvarga/Desktop/GIT/Map-Chat/app/src/main/res/values/attr.xml" qualifiers=""><declare-styleable name="AppTheme">
         <attr format="color" name="iconcolor"/>
         <attr format="color" name="coloriconchecked"/>

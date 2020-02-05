@@ -1487,8 +1487,8 @@
         <item name="chatbkg">#E6E6E6</item>
 
         <!-- button -->
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
 
     </style>
     <style name="AppNormal.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
@@ -3560,8 +3560,8 @@
         <item name="textcolor">#FFFFFF</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
     <style name="TransparentDark" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
@@ -3572,8 +3572,8 @@
         <item name="textcolor">#FF9750</item>
         <item name="textcolor2">#FFFFFF</item>
 
-        <item name="buttoncolor">#808080</item>
-        <item name="buttontext">#FFFFFF</item>
+        <item name="buttoncolor">#A8C2FF</item>
+        <item name="buttontext">#293896</item>
     </style>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
