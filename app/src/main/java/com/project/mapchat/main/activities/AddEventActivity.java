@@ -165,8 +165,10 @@ public class AddEventActivity extends AppCompatActivity implements DatePickerFra
         eventToSend.setGroupName(eventName.getText().toString());
         eventToSend.setDescription(description.getText().toString());
         eventToSend.setLocation(location);
+        eventToSend.setType(0);
 
         eventToSend.setMeetTime(date.getText().toString() + "" + time.getText().toString());
+        Log.wtf("EVENT CREATED", eventToSend.toString());
         createEvent(eventToSend,"Bearer"+" "+appSharedPrefs.getServerToken());
         startActivity(new Intent(this, MainActivity.class));
         finish();

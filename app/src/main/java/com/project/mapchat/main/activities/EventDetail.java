@@ -201,6 +201,8 @@ public class EventDetail extends AppCompatActivity {
                     restart();
                 }else {
                     switch(response.code()){
+                        case 400: {
+                        }
                         case 401:{
 
                             Toast.makeText(getApplicationContext(),

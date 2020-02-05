@@ -13,7 +13,7 @@ public class EventToSend {
 
     @SerializedName("type")
     @Expose
-    private Integer type;
+    private int type;
 
     @SerializedName("description")
     @Expose
@@ -39,11 +39,11 @@ public class EventToSend {
         this.groupName = groupName;
     }
 
-    public Integer getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(Integer type) {
+    public void setType(int type) {
         this.type = type;
     }
 
