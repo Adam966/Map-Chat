@@ -34,6 +34,7 @@
             android:fontFamily="@font/proxima_nova_bold"
             android:text="TextView"
             android:textSize="@dimen/_24sdp"
+            android:textColor="?attr/textcolor3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"

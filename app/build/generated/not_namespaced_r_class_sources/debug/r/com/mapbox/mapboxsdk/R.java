@@ -116,7 +116,7 @@ public final class R {
         public static final int mapbox_uiTiltGestures = 0x7f0301db;
         public static final int mapbox_uiZoomGestures = 0x7f0301dc;
         public static final int statusBarBackground = 0x7f030228;
-        public static final int ttcIndex = 0x7f03028d;
+        public static final int ttcIndex = 0x7f03028e;
     }
     public static final class bool {
         private bool() {}
@@ -347,7 +347,7 @@ public final class R {
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0300fb, 0x7f030103, 0x7f030104, 0x7f030105, 0x7f03028d };
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0300fb, 0x7f030103, 0x7f030104, 0x7f030105, 0x7f03028e };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;
