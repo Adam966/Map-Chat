@@ -12,7 +12,17 @@
         android:id="@+id/btnOnboarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="skip"
+        android:text="Skip"
+
+        android:backgroundTint="?attr/buttoncolor"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textAllCaps="false"
+        android:textColor="?attr/buttontext"
+
+        android:background="@drawable/oval"
+        android:padding="8dp"
+        android:elevation="2dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +33,17 @@
         android:id="@+id/btnFinish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="finish"
+        android:text="Finish"
+
+        android:backgroundTint="?attr/buttoncolor"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textAllCaps="false"
+        android:textColor="?attr/buttontext"
+
+        android:background="@drawable/oval"
+        android:padding="8dp"
+        android:elevation="2dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +73,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.888"
         app:tabBackground="@drawable/indicator_selector"
-        app:tabIndicator="@null"></com.google.android.material.tabs.TabLayout>
+        app:tabIndicator="@null">
+
+    </com.google.android.material.tabs.TabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
