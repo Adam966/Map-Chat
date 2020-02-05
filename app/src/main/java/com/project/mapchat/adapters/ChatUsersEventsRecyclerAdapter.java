@@ -48,7 +48,6 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
         final String eventId = userEventsData.get(position).getId();
         final String groupName = userEventsData.get(position).getGroupName();
         final String active = userEventsData.get(position).getActive();
-        //final String userId = userEventsData.get(0).getIdU();
 
         holder.chatUserEventName.setText(userEventName);
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -74,9 +73,11 @@ public class ChatUsersEventsRecyclerAdapter extends RecyclerView.Adapter<ChatUse
 
         ConstraintLayout parentLayout;
         TextView chatUserEventName;
+        TextView chatUserEventAdress;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            //chatUserEventAdress = itemView.findViewById(R.id.chatUserEventAdress);
             chatUserEventName = itemView.findViewById(R.id.chatUserEventName);
             parentLayout = itemView.findViewById(R.id.chatUserEventItemLayout);
         }
