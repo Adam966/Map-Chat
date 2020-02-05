@@ -30,6 +30,8 @@
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
 
+        <item name="sendbtn">#293896</item>
+
     </style>
 
     <style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
@@ -60,6 +62,8 @@
         <!-- button -->
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
+
+        <item name="sendbtn">#6A84E5</item>
 
     </style>
 

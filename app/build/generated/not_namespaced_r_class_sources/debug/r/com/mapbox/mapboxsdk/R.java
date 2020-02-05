@@ -115,8 +115,8 @@ public final class R {
         public static final int mapbox_uiScrollGestures = 0x7f0301dd;
         public static final int mapbox_uiTiltGestures = 0x7f0301de;
         public static final int mapbox_uiZoomGestures = 0x7f0301df;
-        public static final int statusBarBackground = 0x7f03022b;
-        public static final int ttcIndex = 0x7f030291;
+        public static final int statusBarBackground = 0x7f03022c;
+        public static final int ttcIndex = 0x7f030292;
     }
     public static final class bool {
         private bool() {}
@@ -329,7 +329,7 @@ public final class R {
         public static final int ColorStateListItem_android_color = 0;
         public static final int ColorStateListItem_android_alpha = 1;
         public static final int ColorStateListItem_alpha = 2;
-        public static final int[] CoordinatorLayout = { 0x7f030137, 0x7f03022b };
+        public static final int[] CoordinatorLayout = { 0x7f030137, 0x7f03022c };
         public static final int CoordinatorLayout_keylines = 0;
         public static final int CoordinatorLayout_statusBarBackground = 1;
         public static final int[] CoordinatorLayout_Layout = { 0x10100b3, 0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f03016a, 0x7f030173, 0x7f030174 };
@@ -347,7 +347,7 @@ public final class R {
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0300fe, 0x7f030106, 0x7f030107, 0x7f030108, 0x7f030291 };
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0300fe, 0x7f030106, 0x7f030107, 0x7f030108, 0x7f030292 };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;

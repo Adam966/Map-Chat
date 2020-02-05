@@ -4104,6 +4104,8 @@
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
 
+        <item name="sendbtn">#293896</item>
+
     </style><style name="AppDark" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="bkgcolor">#242424</item>
@@ -4132,6 +4134,8 @@
         
         <item name="buttoncolor">#A8C2FF</item>
         <item name="buttontext">#293896</item>
+
+        <item name="sendbtn">#6A84E5</item>
 
     </style><style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_bkg</item>
@@ -4191,6 +4195,9 @@
         
         <attr format="color" name="buttoncolor"/>
         <attr format="color" name="buttontext"/>
+
+        
+        <attr format="color" name="sendbtn"/>
 
         <attr format="color" name="fieldcolor"/>
 
@@ -4825,6 +4832,9 @@
         
         <attr format="color" name="buttoncolor"/>
         <attr format="color" name="buttontext"/>
+
+        
+        <attr format="color" name="sendbtn"/>
 
         <attr format="color" name="fieldcolor"/>
 
