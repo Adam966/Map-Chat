@@ -43,7 +43,7 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         if (c.getTime().compareTo(new Date()) > 0)
             dialogListener.getDate(c.getTime());
         else
-            Toast.makeText(getContext(), "Wrong date bro!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Wrong date !", Toast.LENGTH_SHORT).show();
 
     }
 

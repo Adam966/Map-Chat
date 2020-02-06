@@ -2548,6 +2548,7 @@ layout their_message
 layout user_events_fragment
 menu bottom_navigation_main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string abc_action_bar_home_description
 string abc_action_bar_up_description

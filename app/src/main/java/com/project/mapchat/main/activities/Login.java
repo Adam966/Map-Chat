@@ -194,7 +194,7 @@ public class Login extends AppCompatActivity {
                   && appSharedPrefs.getFbToken() == null){
                    setViewVisible();
 
-                   Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
+                   //Toast.makeText(Login.this, "TOKENS REMOVED", Toast.LENGTH_SHORT).show();
 
                }
 
@@ -213,7 +213,7 @@ public class Login extends AppCompatActivity {
             public void onCompleted(JSONObject object, GraphResponse response)
             {
                 Log.wtf("RESPONSE",response.toString());
-                Toast.makeText(Login.this, "loadUserProfile" , Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Login.this, "loadUserProfile" , Toast.LENGTH_SHORT).show();
                 //loginAuthRequest(AccessToken.getCurrentAccessToken());
             }
         });
@@ -243,7 +243,7 @@ public class Login extends AppCompatActivity {
             Intent i = new Intent(Login.this, MainActivity.class);
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(i);
-            Toast.makeText(this, "checkLogin()", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(this, "checkLogin()", Toast.LENGTH_SHORT).show();
         }else{
             if(AccessToken.getCurrentAccessToken() != null){
                 LoginManager.getInstance().logOut();

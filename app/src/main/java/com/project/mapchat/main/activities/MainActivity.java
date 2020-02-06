@@ -570,7 +570,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             @Override
             public void onAnnotationClick(Symbol symbol) {
                 //Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData().getAsString(), Toast.LENGTH_SHORT).show();
-                Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData(), Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getApplicationContext(), "SYMBOL CLICKED " + symbol.getData(), Toast.LENGTH_SHORT).show();
                 if (!isOpen) {
                     showMarkerView(symbol);
                     isOpen = true;
@@ -605,7 +605,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         openEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "OPEN EVENT DETAIL", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "OPEN EVENT DETAIL", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),EventDetail.class);
                 i.putExtra("eventId",rootObject.get("eventId").getAsString());
                 startActivity(i);

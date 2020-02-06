@@ -249,8 +249,7 @@ public class EventDetail extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if(response.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),
-                            "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
+                   // Toast.makeText(getApplicationContext(), "You have joined the event "+eventFromServer.getGroupName(),Toast.LENGTH_LONG);
                     restart();
 
                 }else {
